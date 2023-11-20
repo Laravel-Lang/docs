@@ -1,0 +1,11 @@
+.idea/
+build/
+
+.DS_Store
+.env
+.temp
+
+*.bak
+*.cache
+*.clover
+*.orig

@@ -1,0 +1,14 @@
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <variables>
+        <algolia-id>TFI39P0622</algolia-id>
+        <algolia-index>laravel-lang</algolia-index>
+        <algolia-api-key>a0063db6c09308e75a69bb9ba3bf83ba</algolia-api-key>
+        <versions-switcher>https://laravel-lang.com/versions.json</versions-switcher>
+        <primary-color>frozen</primary-color>
+        <og-image>social-logo.png</og-image>
+        <header-logo>logo.svg</header-logo>
+        <locale-code>en_US</locale-code>
+    </variables>
+    <build-profile instance="laravel-lang" />
+</buildprofiles>
