@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+    -   name: Feature Request
+        url: https://github.com/Laravel-Lang/common/issues/new?labels=feature%2Cdocs&projects=&template=feature_request.yml
+        about: Propose a new feature
+    -   name: Questions & Other
+        url: https://github.com/Laravel-Lang/common/discussions
+        about: 'If you want to ask about something else, use the discussions.'
+    -   name: Laravel Issue
+        url: https://github.com/laravel/framework/issues
+        about: 'If you have a question about your Laravel implementation, ask it in your Laravel project.'

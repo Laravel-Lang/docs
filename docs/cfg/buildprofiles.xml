@@ -8,7 +8,9 @@
         <og-image>social-logo.png</og-image>
         <header-logo>logo.svg</header-logo>
         <locale-code>en_US</locale-code>
-        <versions-switcher>https://raw.githubusercontent.com/Laravel-Lang/.github/main/docs/help-versions.json</versions-switcher>
+        <versions-switcher>
+            https://raw.githubusercontent.com/Laravel-Lang/docs/main/versions.json
+        </versions-switcher>
     </variables>
     <build-profile instance="laravel-lang" />
 </buildprofiles>

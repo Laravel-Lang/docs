@@ -1,0 +1,4 @@
+[
+    { "version": "main", "url": "/main/", "isCurrent": false },
+    { "version": "5.x", "url": "/5.x/", "isCurrent": true }
+]
