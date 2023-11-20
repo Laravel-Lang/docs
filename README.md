@@ -13,7 +13,7 @@ Please see [CONTRIBUTING](https://laravel-lang.com/contributing.html) for detail
 
 ## License
 
-This package is licensed under the [MIT License][LICENSE].
+This package is licensed under the [MIT License][link_license].
 
 
 [link_license]: LICENSE
