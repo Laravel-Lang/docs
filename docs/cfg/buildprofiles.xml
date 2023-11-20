@@ -9,7 +9,7 @@
         <header-logo>logo.svg</header-logo>
         <locale-code>en_US</locale-code>
         <versions-switcher>
-            https://raw.githubusercontent.com/Laravel-Lang/.github/main/docs/help-versions.json
+            https://raw.githubusercontent.com/Laravel-Lang/docs/main/versions.json
         </versions-switcher>
     </variables>
     <build-profile instance="laravel-lang" />
