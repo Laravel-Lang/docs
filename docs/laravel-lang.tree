@@ -2,13 +2,15 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="laravel-lang-5.x"
+<instance-profile id="laravel-lang"
                   name="Laravel Lang"
                   start-page="welcome.md">
 
     <toc-element topic="prologue.md">
         <toc-element toc-title="Introduction" topic="welcome.md" />
         <toc-element topic="release-notes.md" />
+        <toc-element topic="security-policy.md" />
+        <toc-element topic="questions-and-issues.md" />
         <toc-element topic="our-team.md" />
         <toc-element topic="license.md" toc-title="License" />
     </toc-element>

@@ -1,5 +1,5 @@
 # Completion status: Attributes
 
-<title instance="laravel-lang-5.x">Attributes</title>
+<title instance="laravel-lang">Attributes</title>
 
 Coming soon...

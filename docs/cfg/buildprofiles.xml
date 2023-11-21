@@ -13,7 +13,7 @@
             https://raw.githubusercontent.com/Laravel-Lang/docs/main/help-versions.json
         </versions-switcher>
     </variables>
-    <build-profile instance="laravel-lang-5.x">
+    <build-profile instance="laravel-lang">
         <variables>
             <noindex-content>false</noindex-content>
         </variables>

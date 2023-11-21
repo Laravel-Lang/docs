@@ -1,5 +1,5 @@
 # Completion status: Lang
 
-<title instance="laravel-lang-5.x">Lang</title>
+<title instance="laravel-lang">Lang</title>
 
 Coming soon...
