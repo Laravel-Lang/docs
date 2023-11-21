@@ -5,13 +5,19 @@
     <var name="command-add-empty" value="php artisan lang:add <locale>" />
     <var name="command-add-many" value="php artisan lang:add fr de de_CH vi zh_CN" />
     <var name="command-remove" value="php artisan lang:rm" />
+    <var name="command-remove-empty" value="php artisan lang:rm <locale>" />
+    <var name="command-remove-force" value="php artisan lang:rm en --force" />
+    <var name="command-remove-many" value="php artisan lang:rm fr de de_CH vi zh_CN" />
+    <var name="command-reset" value="php artisan lang:reset" />
     <var name="command-update" value="php artisan lang:update" />
     <var name="install-common" value="composer require laravel-lang/common --dev" />
     <var name="install-lang" value="composer require laravel-lang/lang --dev" />
+    <var name="install-publisher" value="composer require laravel-lang/publisher --dev" />
     <var name="package-attributes" value="laravel-lang/attributes" />
     <var name="package-common" value="laravel-lang/common" />
     <var name="package-http-statuses" value="laravel-lang/http-statuses" />
     <var name="package-lang" value="laravel-lang/lang" />
     <var name="package-locales" value="laravel-lang/locales" />
     <var name="package-publisher" value="laravel-lang/publisher" />
+    <var name="team-name" value="Laravel Lang Team" />
 </vars>

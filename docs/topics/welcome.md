@@ -1,10 +1,10 @@
-# Laravel Lang
+# %instance%
 
 ![laravel-lang localize your app](https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark)
 
 ## Introduction
 
-**Laravel Lang** projects allow you to easily connect translation packages to your project that serve different tasks.
+**%instance%** projects allow you to easily connect translation packages to your project that serve different tasks.
 
 ### Support Projects:
 
@@ -20,4 +20,4 @@
 - <a href="https://github.com/laravel/ui/">Laravel UI</a>
 - and other
 
-And these are not all the projects that the Laravel Lang Team supports 😎!
+And these are not all the projects that the **%team-name%** supports 😎!
