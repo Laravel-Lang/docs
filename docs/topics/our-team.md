@@ -34,3 +34,9 @@ Here is a list of **%team-name%** team members responsible for translations.
 | [zh_CN](statuses/lang/statuses/zh_CN.md)           | [zh_CN](statuses/attributes/statuses/zh_CN.md)           | [zh_CN](statuses/http-statuses/statuses/zh_CN.md)           | [overtrue](https://github.com/overtrue)                                                            |
 | [zh_HK](statuses/lang/statuses/zh_HK.md)           | [zh_HK](statuses/attributes/statuses/zh_HK.md)           | [zh_HK](statuses/http-statuses/statuses/zh_HK.md)           | [overtrue](https://github.com/overtrue)                                                            |
 | [zh_TW](statuses/lang/statuses/zh_TW.md)           | [zh_TW](statuses/attributes/statuses/zh_TW.md)           | [zh_TW](statuses/http-statuses/statuses/zh_TW.md)           | [overtrue](https://github.com/overtrue)                                                            |
+
+> If you want to join **%team-name%**, then all you need to do is send a PR to any of our projects.
+>
+> For translation projects, we look at the volume of translated material, as well as the number of errors made.
+>
+> For service projects, we look at the proposed ideas, as well as the implementation of functionality.
