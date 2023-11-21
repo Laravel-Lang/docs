@@ -19,6 +19,6 @@
     <var name="package-lang" value="laravel-lang/lang" />
     <var name="package-locales" value="laravel-lang/locales" />
     <var name="package-publisher" value="laravel-lang/publisher" />
-    <var name="team-name" value="Laravel Lang Team" />
+    <var name="team-name" value="Laravel-Lang Team" />
     <var name="year" value="2023" />
 </vars>
