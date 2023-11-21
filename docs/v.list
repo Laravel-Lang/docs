@@ -10,15 +10,25 @@
     <var name="command-remove-many" value="php artisan lang:rm fr de de_CH vi zh_CN" />
     <var name="command-reset" value="php artisan lang:reset" />
     <var name="command-update" value="php artisan lang:update" />
-    <var name="install-common" value="composer require laravel-lang/common --dev" />
-    <var name="install-lang" value="composer require laravel-lang/lang --dev" />
-    <var name="install-publisher" value="composer require laravel-lang/publisher --dev" />
+    <var name="config-filename" value="config/localization.php" />
+    <var name="install-attributes" value="composer require --dev laravel-lang/attributes" />
+    <var name="install-common" value="composer require --dev laravel-lang/common" />
+    <var name="install-http-statuses" value="composer require --dev laravel-lang/http-statuses" />
+    <var name="install-lang" value="composer require --dev laravel-lang/lang" />
+    <var name="install-locale-list" value="composer require laravel-lang/locale-list" />
+    <var name="install-locales" value="composer require laravel-lang/locales" />
+    <var name="install-native-country-names" value="composer require laravel-lang/native-country-names" />
+    <var name="install-native-currency-names" value="composer require laravel-lang/native-currency-names" />
+    <var name="install-native-locale-names" value="composer require laravel-lang/native-locale-names" />
+    <var name="install-publisher" value="composer require --dev laravel-lang/publisher" />
     <var name="package-attributes" value="laravel-lang/attributes" />
     <var name="package-common" value="laravel-lang/common" />
     <var name="package-http-statuses" value="laravel-lang/http-statuses" />
     <var name="package-lang" value="laravel-lang/lang" />
     <var name="package-locales" value="laravel-lang/locales" />
+    <var name="package-locales-namespace" value="LaravelLang\Locales\ServiceProvider" />
     <var name="package-publisher" value="laravel-lang/publisher" />
+    <var name="package-publisher-namespace" value="LaravelLang\Publisher\ServiceProvider" />
     <var name="team-name" value="Laravel-Lang Team" />
     <var name="year" value="2023" />
 </vars>

@@ -9,6 +9,11 @@
     <toc-element topic="prologue.md">
         <toc-element toc-title="Introduction" topic="welcome.md" />
         <toc-element topic="release-notes.md" />
+        <toc-element topic="our-team.md" />
+        <toc-element topic="license.md" toc-title="License" />
+    </toc-element>
+    <toc-element topic="getting-started.md" >
+        <toc-element topic="installation.md" />
     </toc-element>
     <toc-element topic="usage.md" >
         <toc-element topic="managing-locales.md" />
