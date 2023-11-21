@@ -2,7 +2,7 @@
 
 List of plugins developed and maintained by the community.
 
-| Package                                                                                                         | Comment                             |
+| Package                                                                                                         | Description                         |
 |:----------------------------------------------------------------------------------------------------------------|:------------------------------------|
 | [forxer/generic-term-translations-for-laravel](https://github.com/forxer/generic-term-translations-for-laravel) | A set of generic term translations. |
 

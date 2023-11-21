@@ -2,7 +2,7 @@
 
 List of plugins developed and maintained by the %team-name%.
 
-| Package                                                               | Comment                                                                      |
+| Package                                                               | Description                                                                  |
 |:----------------------------------------------------------------------|:-----------------------------------------------------------------------------|
 | [laravel&#x2011;lang/lang](packages-lang.md)                          | Laravel Framework, Jetstream , Fortify, Breeze, Cashier, Nova, Spark and UI. |
 | [laravel&#x2011;lang/attributes](packages-attributes.md)              | Translation of custom fields for the validator.                              |
