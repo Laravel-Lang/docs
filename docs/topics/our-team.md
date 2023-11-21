@@ -1,5 +1,7 @@
 # Our Team
 
+Here is a list of **%team-name%** team members responsible for translations.
+
 | Lang                                               | Attributes                                               | HTTP Statuses                                               | Referents                                                                                          |
 |----------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | [ar](statuses/lang/statuses/ar.md)                 | [ar](statuses/attributes/statuses/ar.md)                 | [ar](statuses/http-statuses/statuses/ar.md)                 | [mohamedsabil83](https://github.com/mohamedsabil83), [Khuthaily](https://github.com/Khuthaily)     |
