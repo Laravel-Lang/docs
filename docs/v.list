@@ -8,4 +8,10 @@
     <var name="command-update" value="php artisan lang:update" />
     <var name="install-common" value="composer require laravel-lang/common --dev" />
     <var name="install-lang" value="composer require laravel-lang/lang --dev" />
+    <var name="package-attributes" value="laravel-lang/attributes" />
+    <var name="package-common" value="laravel-lang/common" />
+    <var name="package-http-statuses" value="laravel-lang/http-statuses" />
+    <var name="package-lang" value="laravel-lang/lang" />
+    <var name="package-locales" value="laravel-lang/locales" />
+    <var name="package-publisher" value="laravel-lang/publisher" />
 </vars>
