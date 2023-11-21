@@ -25,6 +25,9 @@ jobs:
                     fetch-depth: 0
                     token: ${{ secrets.GITHUB_TOKEN }}
 
+            -   name: Configure git
+                run: git config --global --add safe.directory /github/workspace
+
             -   name: Build documentation
                 uses: JetBrains/writerside-github-action@v4
                 with:
