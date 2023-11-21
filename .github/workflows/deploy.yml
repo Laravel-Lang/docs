@@ -11,9 +11,9 @@ permissions:
     pages: write
 
 env:
-    INSTANCE: docs/laravel-lang
-    ARTIFACT: webHelpLARAVEL-LANG2-all.zip
-    ALGOLIA_ARTIFACT: algolia-indexes-LARAVEL-LANG.zip
+    INSTANCE: docs/laravel-lang-5.x
+    ARTIFACT: webHelpLARAVEL-LANG-5.X2-all.zip
+    ALGOLIA_ARTIFACT: algolia-indexes-LARAVEL-LANG-5.X.zip
 
 jobs:
     build:
