@@ -10,6 +10,9 @@
         <toc-element toc-title="Introduction" topic="welcome.md" />
         <toc-element topic="release-notes.md" />
     </toc-element>
+    <toc-element topic="usage.md" >
+        <toc-element topic="managing-locales.md" />
+    </toc-element>
     <toc-element topic="packages.md">
         <toc-element topic="packages-common.md" />
         <toc-element topic="packages-publisher.md" />
