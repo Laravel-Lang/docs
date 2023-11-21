@@ -20,3 +20,10 @@ keys from all files will be combined.
 > [Translations Template](https://github.com/Laravel-Lang/translations-template).
 
 Enjoy! 😊
+
+<seealso style="cards">
+    <category ref="plugins-lists">
+        <a href="plugins-official.md">Official Plugins</a>
+        <a href="plugins-community.md">Community Plugins</a>
+    </category>
+</seealso>

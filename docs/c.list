@@ -2,5 +2,5 @@
 <!DOCTYPE categories
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/categories.dtd">
 <categories>
-    <category id="laravel-projects-list" name="List of Laravel projects" order="1"/>
+    <category id="plugins-lists" name="Plugins" order="1" />
 </categories>
