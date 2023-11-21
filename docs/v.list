@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE vars SYSTEM "https://resources.jetbrains.com/writerside/1.0/vars.dtd">
 <vars>
-    <var name="install-common" value="composer require laravel-lang/common --dev"/>
-    <var name="install-lang" value="composer require laravel-lang/lang --dev"/>
-    <var name="command-add-empty" value="php artisan lang:add <locale>"/>
-    <var name="command-update" value="php artisan lang:update"/>
-    <var name="command-remove" value="php artisan lang:rm"/>
+    <var name="command-add" value="php artisan lang:add fr" />
+    <var name="command-add-empty" value="php artisan lang:add <locale>" />
+    <var name="command-add-many" value="php artisan lang:add fr de de_CH vi zh_CN" />
+    <var name="command-remove" value="php artisan lang:rm" />
+    <var name="command-update" value="php artisan lang:update" />
+    <var name="install-common" value="composer require laravel-lang/common --dev" />
+    <var name="install-lang" value="composer require laravel-lang/lang --dev" />
 </vars>
