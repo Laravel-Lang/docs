@@ -17,4 +17,9 @@
             <noindex-content>false</noindex-content>
         </variables>
     </build-profile>
+    <build-profile instance="laravel-lang-5.x">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
 </buildprofiles>
