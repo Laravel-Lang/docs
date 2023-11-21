@@ -1,5 +1,7 @@
 # Official Plugins
 
+List of plugins developed and maintained by the %team-name%.
+
 | Package                                                                                   | Comment                                                                      |
 |:------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------|
 | [laravel&#x2011;lang/lang](https://github.com/Laravel-Lang/lang)                          | Laravel Framework, Jetstream , Fortify, Breeze, Cashier, Nova, Spark and UI. |
