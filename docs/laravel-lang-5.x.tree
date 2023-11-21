@@ -3,14 +3,14 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="laravel-lang-5.x"
-                 name="Laravel Lang"
-                 start-page="welcome.md">
+                  name="Laravel Lang"
+                  start-page="welcome.md">
 
     <toc-element topic="prologue.md">
         <toc-element toc-title="Introduction" topic="welcome.md" />
         <toc-element topic="release-notes.md" />
     </toc-element>
-    <toc-element topic="packages.md" >
+    <toc-element topic="packages.md">
         <toc-element topic="packages-common.md" />
         <toc-element topic="packages-publisher.md" />
         <toc-element topic="packages-lang.md" />
@@ -23,21 +23,21 @@
         <toc-element topic="packages-native-country-names.md" />
         <toc-element topic="packages-json-fallback.md" />
     </toc-element>
-    <toc-element topic="plugins.md" >
+    <toc-element topic="plugins.md">
         <toc-element topic="plugins-installation.md" />
         <toc-element topic="plugins-official.md" />
         <toc-element topic="plugins-community.md" />
     </toc-element>
-    <toc-element topic="statuses.md" >
+    <toc-element topic="statuses.md">
         <toc-element toc-title="Lang" topic="statuses-lang.md" />
         <toc-element toc-title="Attributes" topic="statuses-attributes.md" />
         <toc-element topic="statuses-http.md" toc-title="HTTP Statuses" />
     </toc-element>
-    <toc-element topic="development.md" >
+    <toc-element topic="development.md">
         <toc-element topic="contributing.md" />
         <toc-element topic="code-of-conduct.md" />
     </toc-element>
-    <toc-element topic="about.md" >
+    <toc-element topic="about.md">
         <toc-element topic="referents.md" />
         <toc-element topic="license.md" />
     </toc-element>

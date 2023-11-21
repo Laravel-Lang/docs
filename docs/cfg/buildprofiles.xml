@@ -8,15 +8,11 @@
         <og-image>social-logo.png</og-image>
         <header-logo>logo.svg</header-logo>
         <locale-code>en_US</locale-code>
+        <generate-canonicals>true</generate-canonicals>
         <versions-switcher>
-            https://raw.githubusercontent.com/Laravel-Lang/docs/main/versions.json
+            https://raw.githubusercontent.com/Laravel-Lang/docs/main/help-versions.json
         </versions-switcher>
     </variables>
-    <build-profile instance="laravel-lang" >
-        <variables>
-            <noindex-content>false</noindex-content>
-        </variables>
-    </build-profile>
     <build-profile instance="laravel-lang-5.x">
         <variables>
             <noindex-content>false</noindex-content>
