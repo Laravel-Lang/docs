@@ -84,7 +84,7 @@ In some languages there are some strings whose translation is the same as in Eng
 generates the [status](status.md) adds them by default to the
 list of pending translations. This affects the *completion status* for this language which would never be marked in
 *status list* with (
-✔) but with (❗) even if all other strings were translated.
+) but with () even if all other strings were translated.
 
 We can avoid this situation in the following way:
 

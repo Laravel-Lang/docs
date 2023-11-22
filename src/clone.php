@@ -6,12 +6,10 @@ use LaravelLang\LocaleList\Locale;
 
 require 'autoload.php';
 
-function moveMain(string $package): void
+function moveMain(string $package, string $title): void
 {
     $sourcePath = __DIR__ . "/../tmp/$package/docs/status.md";
     $targetPath = __DIR__ . '/../docs/topics/';
-
-    $title = ucfirst($package);
 
     // main
     $content = file_get_contents($sourcePath);
@@ -38,9 +36,9 @@ function moveStatus(string $package, Locale $locale): void
     file_put_contents($targetPath . "statuses-$package-$locale->value.md", $content);
 }
 
-moveMain('attributes');
-moveMain('http-statuses');
-moveMain('lang');
+moveMain('attributes', 'Attributes');
+moveMain('http-statuses', 'HTTP Statuses');
+moveMain('lang', 'Lang');
 
 foreach (Locale::cases() as $locale) {
     if ($locale === Locale::English) {
