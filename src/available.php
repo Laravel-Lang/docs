@@ -14,14 +14,14 @@ function getLocale(string $locale): string
     $english   = LocaleNames::get('en')[$locale];
 
     return <<<HTML
-## $localized
+        ## $localized
 
-The $english locale is added using the console command:
+        The $english locale is added using the console command:
 
-```Bash
-%command-add% $locale
-```
-HTML;
+        ```Bash
+        %command-add% $locale
+        ```
+        HTML;
 }
 
 $dom = Xml::init('topic', [
