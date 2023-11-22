@@ -15,3 +15,5 @@ vendor/
 *.BASE
 *.LOCAL
 *.REMOTE
+
+composer.lock
