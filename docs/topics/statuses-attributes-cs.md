@@ -1,4 +1,4 @@
-# cs
+# Čeština
 
 ##### All missed: 0
 

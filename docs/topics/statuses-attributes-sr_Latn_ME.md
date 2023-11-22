@@ -1,4 +1,4 @@
-# sr_Latn_ME
+# Srpski (Crna Gora)
 
 ##### All missed: 0
 

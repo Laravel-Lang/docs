@@ -1,4 +1,4 @@
-# eu
+# Euskara
 
 ##### All missed: 0
 

@@ -1,4 +1,4 @@
-# uz_Cyrl
+# Ўзбекча
 
 ##### All missed: 0
 

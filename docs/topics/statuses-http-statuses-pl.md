@@ -1,4 +1,4 @@
-# pl
+# Polski
 
 ##### All missed: 0
 

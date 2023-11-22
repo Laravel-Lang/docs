@@ -1,4 +1,4 @@
-# sk
+# Slovenčina
 
 ##### All missed: 0
 

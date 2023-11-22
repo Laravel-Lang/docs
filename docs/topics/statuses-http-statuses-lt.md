@@ -1,4 +1,4 @@
-# lt
+# Lietuvių
 
 ##### All missed: 0
 

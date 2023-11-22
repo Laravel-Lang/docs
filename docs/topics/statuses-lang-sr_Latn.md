@@ -1,4 +1,4 @@
-# sr_Latn
+# Srpski
 
 ##### All missed: 0
 

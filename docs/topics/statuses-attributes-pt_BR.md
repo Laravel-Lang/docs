@@ -1,4 +1,4 @@
-# pt_BR
+# Português (Brasil)
 
 ##### All missed: 0
 

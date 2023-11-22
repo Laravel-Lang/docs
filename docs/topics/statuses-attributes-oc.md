@@ -1,4 +1,4 @@
-# oc
+# Occitan
 
 ##### All missed: 0
 

@@ -1,4 +1,4 @@
-# lv
+# Latviešu
 
 ##### All missed: 0
 

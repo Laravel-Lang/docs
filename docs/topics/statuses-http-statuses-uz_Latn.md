@@ -1,4 +1,4 @@
-# uz_Latn
+# O‘zbek
 
 ##### All missed: 0
 

@@ -1,4 +1,4 @@
-# hu
+# Magyar
 
 ##### All missed: 0
 

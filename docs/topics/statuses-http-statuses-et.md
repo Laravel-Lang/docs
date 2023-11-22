@@ -1,4 +1,4 @@
-# et
+# Eesti
 
 ##### All missed: 0
 

@@ -1,4 +1,4 @@
-# de_CH
+# Deutsch (Schweiz)
 
 ##### All missed: 0
 

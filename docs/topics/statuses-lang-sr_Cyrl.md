@@ -1,4 +1,4 @@
-# sr_Cyrl
+# Српски
 
 ##### All missed: 0
 

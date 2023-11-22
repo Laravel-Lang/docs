@@ -1,328 +1,328 @@
-# Completion Status: Http Statuses
+# Completion Status: HTTP Statuses
 
-> Translation of localizations is completed by **x.x%** (xK / xK).
+> Translation of localizations is completed by **N/A%** (N/AK / N/AK).
 
 <table width="100%">
 <tr><td width="12%">
 
-[af](statuses-http-statuses-af.md)
+<a href="statuses-http-statuses-af.md" summary="Afrikaans">af</a>
 
 </td><td width="12%">
 
-[ar](statuses-http-statuses-ar.md)
+<a href="statuses-http-statuses-af.md" summary="العربية">ar</a>
 
 </td><td width="12%">
 
-[az](statuses-http-statuses-az.md)
+<a href="statuses-http-statuses-af.md" summary="Azərbaycan">az</a>
 
 </td><td width="12%">
 
-[be](statuses-http-statuses-be.md)
+<a href="statuses-http-statuses-af.md" summary="Беларуская">be</a>
 
 </td><td width="12%">
 
-[bg](statuses-http-statuses-bg.md)
+<a href="statuses-http-statuses-af.md" summary="Български">bg</a>
 
 </td><td width="12%">
 
-[bn](statuses-http-statuses-bn.md)
+<a href="statuses-http-statuses-af.md" summary="বাংলা">bn</a>
 
 </td><td width="12%">
 
-[bs](statuses-http-statuses-bs.md)
+<a href="statuses-http-statuses-af.md" summary="Bosanski">bs</a>
 
 </td><td width="12%">
 
-[ca](statuses-http-statuses-ca.md)
-
-</td></tr>
-<tr><td width="12%">
-
-[cs](statuses-http-statuses-cs.md)
-
-</td><td width="12%">
-
-[cy](statuses-http-statuses-cy.md)
-
-</td><td width="12%">
-
-[da](statuses-http-statuses-da.md)
-
-</td><td width="12%">
-
-[de](statuses-http-statuses-de.md)
-
-</td><td width="12%">
-
-[de_CH](statuses-http-statuses-de_CH.md)
-
-</td><td width="12%">
-
-[el](statuses-http-statuses-el.md)
-
-</td><td width="12%">
-
-[es](statuses-http-statuses-es.md)
-
-</td><td width="12%">
-
-[et](statuses-http-statuses-et.md)
+<a href="statuses-http-statuses-af.md" summary="Català">ca</a>
 
 </td></tr>
 <tr><td width="12%">
 
-[eu](statuses-http-statuses-eu.md)
+<a href="statuses-http-statuses-af.md" summary="Čeština">cs</a>
 
 </td><td width="12%">
 
-[fa](statuses-http-statuses-fa.md)
+<a href="statuses-http-statuses-af.md" summary="Cymraeg">cy</a>
 
 </td><td width="12%">
 
-[fi](statuses-http-statuses-fi.md)
+<a href="statuses-http-statuses-af.md" summary="Dansk">da</a>
 
 </td><td width="12%">
 
-[fil](statuses-http-statuses-fil.md)
+<a href="statuses-http-statuses-af.md" summary="Deutsch">de</a>
 
 </td><td width="12%">
 
-[fr](statuses-http-statuses-fr.md)
+<a href="statuses-http-statuses-af.md" summary="Deutsch (Schweiz)">de_CH</a>
 
 </td><td width="12%">
 
-[gl](statuses-http-statuses-gl.md)
+<a href="statuses-http-statuses-af.md" summary="Ελληνικά">el</a>
 
 </td><td width="12%">
 
-[gu](statuses-http-statuses-gu.md)
+<a href="statuses-http-statuses-af.md" summary="Español">es</a>
 
 </td><td width="12%">
 
-[he](statuses-http-statuses-he.md)
+<a href="statuses-http-statuses-af.md" summary="Eesti">et</a>
 
 </td></tr>
 <tr><td width="12%">
 
-[hi](statuses-http-statuses-hi.md)
+<a href="statuses-http-statuses-af.md" summary="Euskara">eu</a>
 
 </td><td width="12%">
 
-[hr](statuses-http-statuses-hr.md)
+<a href="statuses-http-statuses-af.md" summary="فارسی">fa</a>
 
 </td><td width="12%">
 
-[hu](statuses-http-statuses-hu.md)
+<a href="statuses-http-statuses-af.md" summary="Suomi">fi</a>
 
 </td><td width="12%">
 
-[hy](statuses-http-statuses-hy.md)
+<a href="statuses-http-statuses-af.md" summary="Filipino">fil</a>
 
 </td><td width="12%">
 
-[id](statuses-http-statuses-id.md)
+<a href="statuses-http-statuses-af.md" summary="Français">fr</a>
 
 </td><td width="12%">
 
-[is](statuses-http-statuses-is.md)
+<a href="statuses-http-statuses-af.md" summary="Galego">gl</a>
 
 </td><td width="12%">
 
-[it](statuses-http-statuses-it.md)
+<a href="statuses-http-statuses-af.md" summary="ગુજરાતી">gu</a>
 
 </td><td width="12%">
 
-[ja](statuses-http-statuses-ja.md)
+<a href="statuses-http-statuses-af.md" summary="עברית">he</a>
 
 </td></tr>
 <tr><td width="12%">
 
-[ka](statuses-http-statuses-ka.md)
+<a href="statuses-http-statuses-af.md" summary="हिन्दी">hi</a>
 
 </td><td width="12%">
 
-[kk](statuses-http-statuses-kk.md)
+<a href="statuses-http-statuses-af.md" summary="Hrvatski">hr</a>
 
 </td><td width="12%">
 
-[km](statuses-http-statuses-km.md)
+<a href="statuses-http-statuses-af.md" summary="Magyar">hu</a>
 
 </td><td width="12%">
 
-[kn](statuses-http-statuses-kn.md)
+<a href="statuses-http-statuses-af.md" summary="Հայերեն">hy</a>
 
 </td><td width="12%">
 
-[ko](statuses-http-statuses-ko.md)
+<a href="statuses-http-statuses-af.md" summary="Indonesia">id</a>
 
 </td><td width="12%">
 
-[lt](statuses-http-statuses-lt.md)
+<a href="statuses-http-statuses-af.md" summary="Íslenska">is</a>
 
 </td><td width="12%">
 
-[lv](statuses-http-statuses-lv.md)
+<a href="statuses-http-statuses-af.md" summary="Italiano">it</a>
 
 </td><td width="12%">
 
-[mk](statuses-http-statuses-mk.md)
+<a href="statuses-http-statuses-af.md" summary="日本語">ja</a>
 
 </td></tr>
 <tr><td width="12%">
 
-[mn](statuses-http-statuses-mn.md)
+<a href="statuses-http-statuses-af.md" summary="ქართული">ka</a>
 
 </td><td width="12%">
 
-[mr](statuses-http-statuses-mr.md)
+<a href="statuses-http-statuses-af.md" summary="Қазақ Тілі">kk</a>
 
 </td><td width="12%">
 
-[ms](statuses-http-statuses-ms.md)
+<a href="statuses-http-statuses-af.md" summary="ខ្មែរ">km</a>
 
 </td><td width="12%">
 
-[nb](statuses-http-statuses-nb.md)
+<a href="statuses-http-statuses-af.md" summary="ಕನ್ನಡ">kn</a>
 
 </td><td width="12%">
 
-[ne](statuses-http-statuses-ne.md)
+<a href="statuses-http-statuses-af.md" summary="한국어">ko</a>
 
 </td><td width="12%">
 
-[nl](statuses-http-statuses-nl.md)
+<a href="statuses-http-statuses-af.md" summary="Lietuvių">lt</a>
 
 </td><td width="12%">
 
-[nn](statuses-http-statuses-nn.md)
+<a href="statuses-http-statuses-af.md" summary="Latviešu">lv</a>
 
 </td><td width="12%">
 
-[oc](statuses-http-statuses-oc.md)
+<a href="statuses-http-statuses-af.md" summary="Македонски">mk</a>
 
 </td></tr>
 <tr><td width="12%">
 
-[pl](statuses-http-statuses-pl.md)
+<a href="statuses-http-statuses-af.md" summary="Монгол">mn</a>
 
 </td><td width="12%">
 
-[ps](statuses-http-statuses-ps.md)
+<a href="statuses-http-statuses-af.md" summary="मराठी">mr</a>
 
 </td><td width="12%">
 
-[pt](statuses-http-statuses-pt.md)
+<a href="statuses-http-statuses-af.md" summary="Melayu">ms</a>
 
 </td><td width="12%">
 
-[pt_BR](statuses-http-statuses-pt_BR.md)
+<a href="statuses-http-statuses-af.md" summary="Norsk Bokmål">nb</a>
 
 </td><td width="12%">
 
-[ro](statuses-http-statuses-ro.md)
+<a href="statuses-http-statuses-af.md" summary="नेपाली">ne</a>
 
 </td><td width="12%">
 
-[ru](statuses-http-statuses-ru.md)
+<a href="statuses-http-statuses-af.md" summary="Nederlands">nl</a>
 
 </td><td width="12%">
 
-[sc](statuses-http-statuses-sc.md)
+<a href="statuses-http-statuses-af.md" summary="Norsk Nynorsk">nn</a>
 
 </td><td width="12%">
 
-[si](statuses-http-statuses-si.md)
+<a href="statuses-http-statuses-af.md" summary="Occitan">oc</a>
 
 </td></tr>
 <tr><td width="12%">
 
-[sk](statuses-http-statuses-sk.md)
+<a href="statuses-http-statuses-af.md" summary="Polski">pl</a>
 
 </td><td width="12%">
 
-[sl](statuses-http-statuses-sl.md)
+<a href="statuses-http-statuses-af.md" summary="پښتو">ps</a>
 
 </td><td width="12%">
 
-[sq](statuses-http-statuses-sq.md)
+<a href="statuses-http-statuses-af.md" summary="Português">pt</a>
 
 </td><td width="12%">
 
-[sr_Cyrl](statuses-http-statuses-sr_Cyrl.md)
+<a href="statuses-http-statuses-af.md" summary="Português (Brasil)">pt_BR</a>
 
 </td><td width="12%">
 
-[sr_Latn](statuses-http-statuses-sr_Latn.md)
+<a href="statuses-http-statuses-af.md" summary="Română">ro</a>
 
 </td><td width="12%">
 
-[sr_Latn_ME](statuses-http-statuses-sr_Latn_ME.md)
+<a href="statuses-http-statuses-af.md" summary="Русский">ru</a>
 
 </td><td width="12%">
 
-[sv](statuses-http-statuses-sv.md)
+<a href="statuses-http-statuses-af.md" summary="Sardu">sc</a>
 
 </td><td width="12%">
 
-[sw](statuses-http-statuses-sw.md)
+<a href="statuses-http-statuses-af.md" summary="සිංහල">si</a>
 
 </td></tr>
 <tr><td width="12%">
 
-[tg](statuses-http-statuses-tg.md)
+<a href="statuses-http-statuses-af.md" summary="Slovenčina">sk</a>
 
 </td><td width="12%">
 
-[th](statuses-http-statuses-th.md)
+<a href="statuses-http-statuses-af.md" summary="Slovenščina">sl</a>
 
 </td><td width="12%">
 
-[tk](statuses-http-statuses-tk.md)
+<a href="statuses-http-statuses-af.md" summary="Shqip">sq</a>
 
 </td><td width="12%">
 
-[tl](statuses-http-statuses-tl.md)
+<a href="statuses-http-statuses-af.md" summary="Српски">sr_Cyrl</a>
 
 </td><td width="12%">
 
-[tr](statuses-http-statuses-tr.md)
+<a href="statuses-http-statuses-af.md" summary="Srpski">sr_Latn</a>
 
 </td><td width="12%">
 
-[ug](statuses-http-statuses-ug.md)
+<a href="statuses-http-statuses-af.md" summary="Srpski (Crna Gora)">sr_Latn_ME</a>
 
 </td><td width="12%">
 
-[uk](statuses-http-statuses-uk.md)
+<a href="statuses-http-statuses-af.md" summary="Svenska">sv</a>
 
 </td><td width="12%">
 
-[ur](statuses-http-statuses-ur.md)
+<a href="statuses-http-statuses-af.md" summary="Kiswahili">sw</a>
 
 </td></tr>
 <tr><td width="12%">
 
-[uz_Cyrl](statuses-http-statuses-uz_Cyrl.md)
+<a href="statuses-http-statuses-af.md" summary="Тоҷикӣ">tg</a>
 
 </td><td width="12%">
 
-[uz_Latn](statuses-http-statuses-uz_Latn.md)
+<a href="statuses-http-statuses-af.md" summary="ไทย">th</a>
 
 </td><td width="12%">
 
-[vi](statuses-http-statuses-vi.md)
+<a href="statuses-http-statuses-af.md" summary="Türkmen Dili">tk</a>
 
 </td><td width="12%">
 
-[zh_CN](statuses-http-statuses-zh_CN.md)
+<a href="statuses-http-statuses-af.md" summary="Tagalog">tl</a>
 
 </td><td width="12%">
 
-[zh_HK](statuses-http-statuses-zh_HK.md)
+<a href="statuses-http-statuses-af.md" summary="Türkçe">tr</a>
 
 </td><td width="12%">
 
-[zh_TW](statuses-http-statuses-zh_TW.md)
+<a href="statuses-http-statuses-af.md" summary="ئۇيغۇرچە">ug</a>
+
+</td><td width="12%">
+
+<a href="statuses-http-statuses-af.md" summary="Українська">uk</a>
+
+</td><td width="12%">
+
+<a href="statuses-http-statuses-af.md" summary="اردو">ur</a>
+
+</td></tr>
+<tr><td width="12%">
+
+<a href="statuses-http-statuses-af.md" summary="Ўзбекча">uz_Cyrl</a>
+
+</td><td width="12%">
+
+<a href="statuses-http-statuses-af.md" summary="O‘zbek">uz_Latn</a>
+
+</td><td width="12%">
+
+<a href="statuses-http-statuses-af.md" summary="Tiếng Việt">vi</a>
+
+</td><td width="12%">
+
+<a href="statuses-http-statuses-af.md" summary="中文 (中国)">zh_CN</a>
+
+</td><td width="12%">
+
+<a href="statuses-http-statuses-af.md" summary="中文 (中国香港特别行政区)">zh_HK</a>
+
+</td><td width="12%">
+
+<a href="statuses-http-statuses-af.md" summary="中文 (台湾)">zh_TW</a>
 
 </td></tr>
 </table>
