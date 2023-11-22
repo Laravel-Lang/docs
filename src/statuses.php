@@ -61,7 +61,7 @@ foreach (Locale::cases() as $locale) {
         continue;
     }
 
-    getLocale('attributes', $locale);
-    getLocale('http-statuses', $locale);
-    getLocale('lang', $locale);
+    moveStatus('attributes', $locale);
+    moveStatus('http-statuses', $locale);
+    moveStatus('lang', $locale);
 }
