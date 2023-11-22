@@ -1,5 +1,7 @@
 .idea/
 build/
+tmp/
+vendor/
 
 .DS_Store
 .env

@@ -1,0 +1,25 @@
+{
+    "name": "laravel-lang/docs",
+    "description": "Documentation for Laravel Lang projects",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Laravel-Lang Team",
+            "homepage": "https://github.com/Laravel-Lang"
+        },
+        {
+            "name": "Andrey Helldar",
+            "email": "helldar@dragon-code.pro",
+            "homepage": "https://dragon-code.pro"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel-lang/locale-list": "^1.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.3"
+    },
+    "minimum-stability": "stable"
+}

@@ -1,330 +1,328 @@
-# Completion status: Lang
-
-<title instance="laravel-lang">Completion status: Lang</title>
+# Completion Status: Lang
 
 > Translation of localizations is completed by **93.03%** (105.4K / 113.3K).
 
 <table width="100%">
 <tr><td width="12%">
 
-[af&nbsp;❗](statuses/af.md)
+[af&nbsp;❗](statuses-lang-af.md)
 
 </td><td width="12%">
 
-[ar&nbsp;✔](statuses/ar.md)
+[ar&nbsp;✔](statuses-lang-ar.md)
 
 </td><td width="12%">
 
-[az&nbsp;❗](statuses/az.md)
+[az&nbsp;❗](statuses-lang-az.md)
 
 </td><td width="12%">
 
-[be&nbsp;❗](statuses/be.md)
+[be&nbsp;❗](statuses-lang-be.md)
 
 </td><td width="12%">
 
-[bg&nbsp;❗](statuses/bg.md)
+[bg&nbsp;❗](statuses-lang-bg.md)
 
 </td><td width="12%">
 
-[bn&nbsp;❗](statuses/bn.md)
+[bn&nbsp;❗](statuses-lang-bn.md)
 
 </td><td width="12%">
 
-[bs&nbsp;❗](statuses/bs.md)
+[bs&nbsp;❗](statuses-lang-bs.md)
 
 </td><td width="12%">
 
-[ca&nbsp;❗](statuses/ca.md)
-
-</td></tr>
-<tr><td width="12%">
-
-[cs&nbsp;❗](statuses/cs.md)
-
-</td><td width="12%">
-
-[cy&nbsp;❗](statuses/cy.md)
-
-</td><td width="12%">
-
-[da&nbsp;❗](statuses/da.md)
-
-</td><td width="12%">
-
-[de&nbsp;❗](statuses/de.md)
-
-</td><td width="12%">
-
-[de_CH&nbsp;❗](statuses/de_CH.md)
-
-</td><td width="12%">
-
-[el&nbsp;❗](statuses/el.md)
-
-</td><td width="12%">
-
-[es&nbsp;❗](statuses/es.md)
-
-</td><td width="12%">
-
-[et&nbsp;❗](statuses/et.md)
+[ca&nbsp;❗](statuses-lang-ca.md)
 
 </td></tr>
 <tr><td width="12%">
 
-[eu&nbsp;❗](statuses/eu.md)
+[cs&nbsp;❗](statuses-lang-cs.md)
 
 </td><td width="12%">
 
-[fa&nbsp;✔](statuses/fa.md)
+[cy&nbsp;❗](statuses-lang-cy.md)
 
 </td><td width="12%">
 
-[fi&nbsp;❗](statuses/fi.md)
+[da&nbsp;❗](statuses-lang-da.md)
 
 </td><td width="12%">
 
-[fil&nbsp;❗](statuses/fil.md)
+[de&nbsp;❗](statuses-lang-de.md)
 
 </td><td width="12%">
 
-[fr&nbsp;❗](statuses/fr.md)
+[de_CH&nbsp;❗](statuses-lang-de_CH.md)
 
 </td><td width="12%">
 
-[gl&nbsp;❗](statuses/gl.md)
+[el&nbsp;❗](statuses-lang-el.md)
 
 </td><td width="12%">
 
-[gu&nbsp;❗](statuses/gu.md)
+[es&nbsp;❗](statuses-lang-es.md)
 
 </td><td width="12%">
 
-[he&nbsp;❗](statuses/he.md)
+[et&nbsp;❗](statuses-lang-et.md)
 
 </td></tr>
 <tr><td width="12%">
 
-[hi&nbsp;❗](statuses/hi.md)
+[eu&nbsp;❗](statuses-lang-eu.md)
 
 </td><td width="12%">
 
-[hr&nbsp;❗](statuses/hr.md)
+[fa&nbsp;✔](statuses-lang-fa.md)
 
 </td><td width="12%">
 
-[hu&nbsp;❗](statuses/hu.md)
+[fi&nbsp;❗](statuses-lang-fi.md)
 
 </td><td width="12%">
 
-[hy&nbsp;❗](statuses/hy.md)
+[fil&nbsp;❗](statuses-lang-fil.md)
 
 </td><td width="12%">
 
-[id&nbsp;❗](statuses/id.md)
+[fr&nbsp;❗](statuses-lang-fr.md)
 
 </td><td width="12%">
 
-[is&nbsp;❗](statuses/is.md)
+[gl&nbsp;❗](statuses-lang-gl.md)
 
 </td><td width="12%">
 
-[it&nbsp;❗](statuses/it.md)
+[gu&nbsp;❗](statuses-lang-gu.md)
 
 </td><td width="12%">
 
-[ja&nbsp;❗](statuses/ja.md)
+[he&nbsp;❗](statuses-lang-he.md)
 
 </td></tr>
 <tr><td width="12%">
 
-[ka&nbsp;❗](statuses/ka.md)
+[hi&nbsp;❗](statuses-lang-hi.md)
 
 </td><td width="12%">
 
-[kk&nbsp;❗](statuses/kk.md)
+[hr&nbsp;❗](statuses-lang-hr.md)
 
 </td><td width="12%">
 
-[km&nbsp;❗](statuses/km.md)
+[hu&nbsp;❗](statuses-lang-hu.md)
 
 </td><td width="12%">
 
-[kn&nbsp;❗](statuses/kn.md)
+[hy&nbsp;❗](statuses-lang-hy.md)
 
 </td><td width="12%">
 
-[ko&nbsp;❗](statuses/ko.md)
+[id&nbsp;❗](statuses-lang-id.md)
 
 </td><td width="12%">
 
-[lt&nbsp;❗](statuses/lt.md)
+[is&nbsp;❗](statuses-lang-is.md)
 
 </td><td width="12%">
 
-[lv&nbsp;❗](statuses/lv.md)
+[it&nbsp;❗](statuses-lang-it.md)
 
 </td><td width="12%">
 
-[mk&nbsp;❗](statuses/mk.md)
+[ja&nbsp;❗](statuses-lang-ja.md)
 
 </td></tr>
 <tr><td width="12%">
 
-[mn&nbsp;❗](statuses/mn.md)
+[ka&nbsp;❗](statuses-lang-ka.md)
 
 </td><td width="12%">
 
-[mr&nbsp;❗](statuses/mr.md)
+[kk&nbsp;❗](statuses-lang-kk.md)
 
 </td><td width="12%">
 
-[ms&nbsp;❗](statuses/ms.md)
+[km&nbsp;❗](statuses-lang-km.md)
 
 </td><td width="12%">
 
-[nb&nbsp;❗](statuses/nb.md)
+[kn&nbsp;❗](statuses-lang-kn.md)
 
 </td><td width="12%">
 
-[ne&nbsp;❗](statuses/ne.md)
+[ko&nbsp;❗](statuses-lang-ko.md)
 
 </td><td width="12%">
 
-[nl&nbsp;✔](statuses/nl.md)
+[lt&nbsp;❗](statuses-lang-lt.md)
 
 </td><td width="12%">
 
-[nn&nbsp;❗](statuses/nn.md)
+[lv&nbsp;❗](statuses-lang-lv.md)
 
 </td><td width="12%">
 
-[oc&nbsp;❗](statuses/oc.md)
+[mk&nbsp;❗](statuses-lang-mk.md)
 
 </td></tr>
 <tr><td width="12%">
 
-[pl&nbsp;✔](statuses/pl.md)
+[mn&nbsp;❗](statuses-lang-mn.md)
 
 </td><td width="12%">
 
-[ps&nbsp;❗](statuses/ps.md)
+[mr&nbsp;❗](statuses-lang-mr.md)
 
 </td><td width="12%">
 
-[pt&nbsp;❗](statuses/pt.md)
+[ms&nbsp;❗](statuses-lang-ms.md)
 
 </td><td width="12%">
 
-[pt_BR&nbsp;❗](statuses/pt_BR.md)
+[nb&nbsp;❗](statuses-lang-nb.md)
 
 </td><td width="12%">
 
-[ro&nbsp;❗](statuses/ro.md)
+[ne&nbsp;❗](statuses-lang-ne.md)
 
 </td><td width="12%">
 
-[ru&nbsp;✔](statuses/ru.md)
+[nl&nbsp;✔](statuses-lang-nl.md)
 
 </td><td width="12%">
 
-[sc&nbsp;❗](statuses/sc.md)
+[nn&nbsp;❗](statuses-lang-nn.md)
 
 </td><td width="12%">
 
-[si&nbsp;❗](statuses/si.md)
+[oc&nbsp;❗](statuses-lang-oc.md)
 
 </td></tr>
 <tr><td width="12%">
 
-[sk&nbsp;❗](statuses/sk.md)
+[pl&nbsp;✔](statuses-lang-pl.md)
 
 </td><td width="12%">
 
-[sl&nbsp;❗](statuses/sl.md)
+[ps&nbsp;❗](statuses-lang-ps.md)
 
 </td><td width="12%">
 
-[sq&nbsp;❗](statuses/sq.md)
+[pt&nbsp;❗](statuses-lang-pt.md)
 
 </td><td width="12%">
 
-[sr_Cyrl&nbsp;❗](statuses/sr_Cyrl.md)
+[pt_BR&nbsp;❗](statuses-lang-pt_BR.md)
 
 </td><td width="12%">
 
-[sr_Latn&nbsp;❗](statuses/sr_Latn.md)
+[ro&nbsp;❗](statuses-lang-ro.md)
 
 </td><td width="12%">
 
-[sr_Latn_ME&nbsp;❗](statuses/sr_Latn_ME.md)
+[ru&nbsp;✔](statuses-lang-ru.md)
 
 </td><td width="12%">
 
-[sv&nbsp;❗](statuses/sv.md)
+[sc&nbsp;❗](statuses-lang-sc.md)
 
 </td><td width="12%">
 
-[sw&nbsp;✔](statuses/sw.md)
+[si&nbsp;❗](statuses-lang-si.md)
 
 </td></tr>
 <tr><td width="12%">
 
-[tg&nbsp;❗](statuses/tg.md)
+[sk&nbsp;❗](statuses-lang-sk.md)
 
 </td><td width="12%">
 
-[th&nbsp;❗](statuses/th.md)
+[sl&nbsp;❗](statuses-lang-sl.md)
 
 </td><td width="12%">
 
-[tk&nbsp;❗](statuses/tk.md)
+[sq&nbsp;❗](statuses-lang-sq.md)
 
 </td><td width="12%">
 
-[tl&nbsp;❗](statuses/tl.md)
+[sr_Cyrl&nbsp;❗](statuses-lang-sr_Cyrl.md)
 
 </td><td width="12%">
 
-[tr&nbsp;❗](statuses/tr.md)
+[sr_Latn&nbsp;❗](statuses-lang-sr_Latn.md)
 
 </td><td width="12%">
 
-[ug&nbsp;❗](statuses/ug.md)
+[sr_Latn_ME&nbsp;❗](statuses-lang-sr_Latn_ME.md)
 
 </td><td width="12%">
 
-[uk&nbsp;❗](statuses/uk.md)
+[sv&nbsp;❗](statuses-lang-sv.md)
 
 </td><td width="12%">
 
-[ur&nbsp;❗](statuses/ur.md)
+[sw&nbsp;✔](statuses-lang-sw.md)
 
 </td></tr>
 <tr><td width="12%">
 
-[uz_Cyrl&nbsp;❗](statuses/uz_Cyrl.md)
+[tg&nbsp;❗](statuses-lang-tg.md)
 
 </td><td width="12%">
 
-[uz_Latn&nbsp;❗](statuses/uz_Latn.md)
+[th&nbsp;❗](statuses-lang-th.md)
 
 </td><td width="12%">
 
-[vi&nbsp;✔](statuses/vi.md)
+[tk&nbsp;❗](statuses-lang-tk.md)
 
 </td><td width="12%">
 
-[zh_CN&nbsp;❗](statuses/zh_CN.md)
+[tl&nbsp;❗](statuses-lang-tl.md)
 
 </td><td width="12%">
 
-[zh_HK&nbsp;❗](statuses/zh_HK.md)
+[tr&nbsp;❗](statuses-lang-tr.md)
 
 </td><td width="12%">
 
-[zh_TW&nbsp;❗](statuses/zh_TW.md)
+[ug&nbsp;❗](statuses-lang-ug.md)
+
+</td><td width="12%">
+
+[uk&nbsp;❗](statuses-lang-uk.md)
+
+</td><td width="12%">
+
+[ur&nbsp;❗](statuses-lang-ur.md)
+
+</td></tr>
+<tr><td width="12%">
+
+[uz_Cyrl&nbsp;❗](statuses-lang-uz_Cyrl.md)
+
+</td><td width="12%">
+
+[uz_Latn&nbsp;❗](statuses-lang-uz_Latn.md)
+
+</td><td width="12%">
+
+[vi&nbsp;✔](statuses-lang-vi.md)
+
+</td><td width="12%">
+
+[zh_CN&nbsp;❗](statuses-lang-zh_CN.md)
+
+</td><td width="12%">
+
+[zh_HK&nbsp;❗](statuses-lang-zh_HK.md)
+
+</td><td width="12%">
+
+[zh_TW&nbsp;❗](statuses-lang-zh_TW.md)
 
 </td></tr>
 </table>

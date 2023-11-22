@@ -1,8 +1,4 @@
----
-editLink: false
----
-
-# af
+# Afrikaans
 
 ##### All missed: 59
 
@@ -536,9 +532,6 @@ Yukon
 </td></tr>
 </table>
 
-[ [go back](../status.md) | [to top](#) ]
-
-
 
 ### php-inline
 
@@ -565,9 +558,6 @@ This field must be a valid hexadecimal color.
 </td></tr>
 </table>
 
-[ [go back](../status.md) | [to top](#) ]
-
-
 
 ### php
 
@@ -593,5 +583,3 @@ The :attribute field must be a valid hexadecimal color.
 
 </td></tr>
 </table>
-
-[ [go back](../status.md) | [to top](#) ]
