@@ -13,7 +13,7 @@ You should update the following dependency in your application's `composer.json`
 Rename the configuration file:
 
 ```Bash
-mv config/lang-publisher.php config/localization.php
+mv config/lang-publisher.php %config-filename%
 ```
 
 Run the update dependency console command:

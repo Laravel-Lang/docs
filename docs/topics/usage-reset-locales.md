@@ -1,4 +1,4 @@
-# Reset locales
+# Reset
 
 To reset files to default state, use the console command:
 

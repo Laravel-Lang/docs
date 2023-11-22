@@ -1,4 +1,4 @@
-# Remove locales
+# Remove
 
 > When this command is executed, the entire locale folder with all files is deleted except default and fallback locales.
 >

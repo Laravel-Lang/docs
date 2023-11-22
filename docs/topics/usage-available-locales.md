@@ -1,4 +1,4 @@
-# Available locales
+# Available
 
 Here you will find a complete list of localizations available for installation by **%team-name%** projects.
 

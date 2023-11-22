@@ -24,18 +24,31 @@
         <toc-element topic="our-team.md" />
         <toc-element topic="license.md" toc-title="License" />
     </toc-element>
-    <toc-element topic="getting-started.md">
+    <toc-element topic="getting-started.md" id="toc-getting-started">
         <toc-element topic="installation.md" />
         <toc-element topic="configuration.md" />
     </toc-element>
     <toc-element topic="usage.md">
-        <toc-element topic="managing-locales.md">
+        <toc-element topic="manage-locales.md">
             <toc-element topic="usage-add-locales.md" />
             <toc-element topic="usage-update-locales.md" />
             <toc-element topic="usage-reset-locales.md" />
             <toc-element topic="usage-remove-locales.md" />
+            <toc-element topic="usage-available-locales.md" />
         </toc-element>
-        <toc-element topic="usage-available-locales.md" />
+        <toc-element topic="usage-facade.md" />
+        <toc-element topic="usage-aliases.md" />
+        <toc-element topic="usage-list-of-locales.md" />
+        <toc-element topic="usage-native-locales.md" >
+            <toc-element topic="usage-native-locale-names.md" />
+            <toc-element topic="usage-native-country-names.md" />
+            <toc-element topic="usage-native-currency-names.md" />
+        </toc-element>
+    </toc-element>
+    <toc-element topic="plugins.md">
+        <toc-element topic="plugins-installation.md" />
+        <toc-element topic="plugins-official.md" />
+        <toc-element topic="plugins-community.md" />
     </toc-element>
     <toc-element topic="packages.md">
         <toc-element topic="packages-common.md" />
@@ -49,11 +62,6 @@
         <toc-element topic="packages-native-country-names.md" />
         <toc-element topic="packages-native-currency-names.md" />
         <toc-element topic="packages-json-fallback.md" />
-    </toc-element>
-    <toc-element topic="plugins.md">
-        <toc-element topic="plugins-installation.md" />
-        <toc-element topic="plugins-official.md" />
-        <toc-element topic="plugins-community.md" />
     </toc-element>
     <toc-element topic="statuses.md">
         <toc-element topic="statuses-lang.md" toc-title="Lang">

@@ -1,4 +1,4 @@
-# Managing locales
+# Management
 
 > <include from="packages-json-fallback.md" element-id="json-fallback-doesnt-allow" />
 >

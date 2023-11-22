@@ -29,8 +29,9 @@ $dom = Xml::init('topic', [
 
     'xsi:noNamespaceSchemaLocation' => 'https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd',
 
-    'title' => 'Lists Available Locales',
-    'id'    => 'lists-available-locales-instance',
+    'title'      => 'Lists Available Locales',
+    'id'         => 'lists-available-locales',
+    'is-library' => 'true',
 ])->setSkipEmptyAttributes();
 
 $dom->doctype('topic', '', 'https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd');

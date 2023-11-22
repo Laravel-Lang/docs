@@ -4,8 +4,10 @@
 <topic
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Lists Laravel Projects" id="lists-laravel-projects">
-
+    title="Lists Laravel Projects"
+    id="lists-laravel-projects"
+    is-library="true"
+>
     <snippet id="lists-laravel-projects-inline">
         <p>
             <a href="https://laravel.com">Laravel Framework</a>,
@@ -34,5 +36,4 @@
             <li>and other</li>
         </list>
     </snippet>
-
 </topic>

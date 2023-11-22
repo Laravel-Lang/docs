@@ -1,4 +1,8 @@
-# Add locales
+# Add
+
+> A list of available locale codes can be found [here](usage-available-locales.md).
+>
+{style="note"}
 
 You can install the required locales by calling the console command `%command-add-empty%`,
 passing it one or more locale codes, separated by a space:
