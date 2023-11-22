@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb8958b3e6da5f22c169bba263658892",
+    "content-hash": "ae630aa3347360f1b686416ec2927516",
     "packages": [
         {
             "name": "archtechx/enums",
@@ -52,64 +52,6 @@
             },
             "time": "2023-02-15T13:05:41+00:00"
         },
-        {
-            "name": "laravel-lang/locale-list",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Laravel-Lang/locale-list.git",
-                "reference": "ae1160643f9d6bdf37fdc32eb53660d49c4a8efe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/locale-list/zipball/ae1160643f9d6bdf37fdc32eb53660d49c4a8efe",
-                "reference": "ae1160643f9d6bdf37fdc32eb53660d49c4a8efe",
-                "shasum": ""
-            },
-            "require": {
-                "archtechx/enums": "^0.3.2",
-                "php": "^8.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "LaravelLang\\LocaleList\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andrey Helldar",
-                    "email": "helldar@dragon-code.pro"
-                },
-                {
-                    "name": "Laravel-Lang Team",
-                    "homepage": "https://laravel-lang.com"
-                }
-            ],
-            "description": "List of localizations available in Laravel Lang projects",
-            "keywords": [
-                "Laravel-lang",
-                "lang",
-                "languages",
-                "laravel",
-                "locale",
-                "locales",
-                "localization",
-                "translation",
-                "translations"
-            ],
-            "support": {
-                "issues": "https://github.com/Laravel-Lang/locale-list/issues",
-                "source": "https://github.com/Laravel-Lang/locale-list"
-            },
-            "time": "2023-11-19T21:17:29+00:00"
-        }
-    ],
-    "packages-dev": [
         {
             "name": "dragon-code/contracts",
             "version": "v2.21.0",
@@ -292,6 +234,62 @@
                 }
             ],
             "time": "2023-08-03T09:43:52+00:00"
+        },
+        {
+            "name": "laravel-lang/locale-list",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Lang/locale-list.git",
+                "reference": "ae1160643f9d6bdf37fdc32eb53660d49c4a8efe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Lang/locale-list/zipball/ae1160643f9d6bdf37fdc32eb53660d49c4a8efe",
+                "reference": "ae1160643f9d6bdf37fdc32eb53660d49c4a8efe",
+                "shasum": ""
+            },
+            "require": {
+                "archtechx/enums": "^0.3.2",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaravelLang\\LocaleList\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Helldar",
+                    "email": "helldar@dragon-code.pro"
+                },
+                {
+                    "name": "Laravel-Lang Team",
+                    "homepage": "https://laravel-lang.com"
+                }
+            ],
+            "description": "List of localizations available in Laravel Lang projects",
+            "keywords": [
+                "Laravel-lang",
+                "lang",
+                "languages",
+                "laravel",
+                "locale",
+                "locales",
+                "localization",
+                "translation",
+                "translations"
+            ],
+            "support": {
+                "issues": "https://github.com/Laravel-Lang/locale-list/issues",
+                "source": "https://github.com/Laravel-Lang/locale-list"
+            },
+            "time": "2023-11-19T21:17:29+00:00"
         },
         {
             "name": "laravel-lang/native-locale-names",
@@ -1565,6 +1563,7 @@
             "time": "2022-03-08T17:03:00+00:00"
         }
     ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

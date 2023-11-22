@@ -50,7 +50,7 @@ LaravelLang\Locales\Enums\Locale::Afrikaans; // af
 The name of the cases is aligned with the [PER standard](https://www.php-fig.org/per/coding-style)
 (see `enumerations` section).
 
-Also [changed](installation.md#aliases) `aliases` section in the configuration file.
+Also [changed](configuration.md#aliases) `aliases` section in the configuration file.
 
 ## New facade helper
 

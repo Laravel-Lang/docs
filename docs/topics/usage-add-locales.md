@@ -4,8 +4,8 @@ You can install the required locales by calling the console command `%command-ad
 passing it one or more locale codes, separated by a space:
 
 ```Bash
-%command-add%
-%command-add-many%
+%command-add% %locale-many%
+%command-add% %locale-one%
 ```
 
 If the target files exist, you will be asked what to do in this case - skip installing the files or replace them.
