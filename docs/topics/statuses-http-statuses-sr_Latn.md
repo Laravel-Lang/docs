@@ -1,4 +1,4 @@
-# SerbianLatin
+# sr_Latn
 
 ##### All missed: 152
 

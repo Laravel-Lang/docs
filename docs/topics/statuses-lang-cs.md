@@ -1,4 +1,4 @@
-# Czech
+# cs
 
 ##### All missed: 105
 

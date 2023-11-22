@@ -1,4 +1,4 @@
-# Pashto
+# ps
 
 ##### All missed: 0
 

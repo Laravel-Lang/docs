@@ -1,4 +1,4 @@
-# Afrikaans
+# af
 
 ##### All missed: 59
 

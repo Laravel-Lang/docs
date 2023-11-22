@@ -1,4 +1,4 @@
-# Mongolian
+# mn
 
 ##### All missed: 0
 

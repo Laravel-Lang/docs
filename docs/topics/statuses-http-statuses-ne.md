@@ -1,4 +1,4 @@
-# Nepali
+# ne
 
 ##### All missed: 0
 

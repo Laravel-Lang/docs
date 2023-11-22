@@ -1,4 +1,4 @@
-# Georgian
+# ka
 
 ##### All missed: 0
 

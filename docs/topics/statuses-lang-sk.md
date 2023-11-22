@@ -1,4 +1,4 @@
-# Slovak
+# sk
 
 ##### All missed: 110
 

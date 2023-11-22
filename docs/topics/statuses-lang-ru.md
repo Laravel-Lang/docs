@@ -1,4 +1,4 @@
-# Russian
+# ru
 
 ##### All missed: 0
 

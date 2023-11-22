@@ -1,4 +1,4 @@
-# UzbekLatin
+# uz_Latn
 
 ##### All missed: 733
 

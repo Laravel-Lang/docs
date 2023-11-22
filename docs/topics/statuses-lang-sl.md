@@ -1,4 +1,4 @@
-# Slovenian
+# sl
 
 ##### All missed: 98
 

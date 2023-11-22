@@ -1,4 +1,4 @@
-# Korean
+# ko
 
 ##### All missed: 0
 

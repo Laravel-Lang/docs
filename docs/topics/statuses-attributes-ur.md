@@ -1,4 +1,4 @@
-# Urdu
+# ur
 
 ##### All missed: 0
 

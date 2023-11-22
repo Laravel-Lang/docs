@@ -1,4 +1,4 @@
-# ChineseHongKong
+# zh_HK
 
 ##### All missed: 2
 

@@ -1,4 +1,4 @@
-# NorwegianBokmal
+# nb
 
 ##### All missed: 2
 

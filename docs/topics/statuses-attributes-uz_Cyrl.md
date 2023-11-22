@@ -1,4 +1,4 @@
-# UzbekCyrillic
+# uz_Cyrl
 
 ##### All missed: 0
 

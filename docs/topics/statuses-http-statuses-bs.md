@@ -1,4 +1,4 @@
-# Bosnian
+# bs
 
 ##### All missed: 24
 

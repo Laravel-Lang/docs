@@ -1,4 +1,4 @@
-# NorwegianNynorsk
+# nn
 
 ##### All missed: 2
 

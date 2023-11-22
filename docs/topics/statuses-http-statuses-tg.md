@@ -1,4 +1,4 @@
-# Tajik
+# tg
 
 ##### All missed: 0
 

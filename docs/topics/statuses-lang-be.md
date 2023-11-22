@@ -1,4 +1,4 @@
-# Belarusian
+# be
 
 ##### All missed: 3
 

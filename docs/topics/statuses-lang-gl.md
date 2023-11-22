@@ -1,4 +1,4 @@
-# Galician
+# gl
 
 ##### All missed: 126
 

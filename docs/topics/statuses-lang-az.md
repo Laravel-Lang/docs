@@ -1,4 +1,4 @@
-# Azerbaijani
+# az
 
 ##### All missed: 46
 

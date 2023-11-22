@@ -1,4 +1,4 @@
-# Chinese
+# zh_CN
 
 ##### All missed: 2
 

@@ -1,4 +1,4 @@
-# PortugueseBrazil
+# pt_BR
 
 ##### All missed: 2
 

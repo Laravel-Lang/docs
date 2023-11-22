@@ -1,4 +1,4 @@
-# GermanSwitzerland
+# de_CH
 
 ##### All missed: 0
 

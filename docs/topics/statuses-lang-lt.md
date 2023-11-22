@@ -1,4 +1,4 @@
-# Lithuanian
+# lt
 
 ##### All missed: 30
 

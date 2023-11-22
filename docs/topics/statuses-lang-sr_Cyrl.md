@@ -1,4 +1,4 @@
-# SerbianCyrillic
+# sr_Cyrl
 
 ##### All missed: 2
 

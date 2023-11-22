@@ -1,4 +1,4 @@
-# Armenian
+# hy
 
 ##### All missed: 0
 

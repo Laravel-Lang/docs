@@ -1,4 +1,4 @@
-# Estonian
+# et
 
 ##### All missed: 2
 

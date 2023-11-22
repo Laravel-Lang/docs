@@ -33,7 +33,7 @@ function moveStatus(string $package, Locale $locale): void
 
     $content = str_replace('---' . PHP_EOL . 'editLink: false' . PHP_EOL . '---' . PHP_EOL . PHP_EOL, '', $content);
     $content = str_replace(PHP_EOL . '[ [go back](../status.md) | [to top](#) ]' . PHP_EOL . PHP_EOL, '', $content);
-    $content = preg_replace('/^#\s([a-zA-Z-_]+)/', '# ' . $locale->name, $content);
+    $content = preg_replace('/^#\s([a-zA-Z-_]+)/', '# ' . $locale->value, $content);
 
     file_put_contents($targetPath . "statuses-$package-$locale->value.md", $content);
 }

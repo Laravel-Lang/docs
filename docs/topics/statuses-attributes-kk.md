@@ -1,4 +1,4 @@
-# Kazakh
+# kk
 
 ##### All missed: 0
 

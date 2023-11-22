@@ -1,4 +1,4 @@
-# Bulgarian
+# bg
 
 ##### All missed: 0
 

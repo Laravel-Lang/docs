@@ -1,4 +1,4 @@
-# Sardinian
+# sc
 
 ##### All missed: 152
 

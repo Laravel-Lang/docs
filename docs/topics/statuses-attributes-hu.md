@@ -1,4 +1,4 @@
-# Hungarian
+# hu
 
 ##### All missed: 1
 

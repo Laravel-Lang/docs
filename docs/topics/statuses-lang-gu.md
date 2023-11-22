@@ -1,4 +1,4 @@
-# Gujarati
+# gu
 
 ##### All missed: 8
 

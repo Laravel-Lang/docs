@@ -1,4 +1,4 @@
-# Kannada
+# kn
 
 ##### All missed: 0
 

@@ -1,4 +1,4 @@
-# Uighur
+# ug
 
 ##### All missed: 149
 
