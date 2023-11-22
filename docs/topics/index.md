@@ -8,18 +8,6 @@
 
 ### Support Projects:
 
-- <a href="https://laravel.com/docs/">Laravel Framework</a>
-- <a href="https://laravel.com/docs/starter-kits#laravel-jetstream">Laravel Jetstream</a>
-- <a href="https://laravel.com/docs/fortify#main-content">Laravel Fortify</a>
-- <a href="https://laravel.com/docs/starter-kits#laravel-breeze">Laravel Breeze</a>
-- <a href="https://laravel.com/docs/billing#main-content">Laravel Cashier</a>
-- <a href="https://nova.laravel.com">Laravel Nova</a>
-- <a href="https://github.com/laravel/nova-dusk-suite">Laravel Nova Dusk Suite</a>
-- <a href="https://github.com/laravel/nova-log-viewer">Laravel Nova Log Viewer</a>
-- <a href="https://spark.laravel.com">Laravel Spark (Stripe, Paddle, Aurelius, Aurelius Mollie)</a>
-- <a href="https://github.com/laravel/ui/">Laravel UI</a>
-- and other
-
-{id="laravel-projects-list"}
+<include from="lists-laravel-projects.topic" element-id="lists-laravel-projects"/>
 
 And these are not all the projects that the **%team-name%** supports 😎!
