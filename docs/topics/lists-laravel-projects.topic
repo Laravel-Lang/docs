@@ -9,16 +9,14 @@
     is-library="true"
 >
     <snippet id="lists-laravel-projects-inline">
-        <p>
-            <a href="https://laravel.com">Laravel Framework</a>,
-            <a href="https://jetstream.laravel.com/">Jetstream</a>,
-            <a href="https://github.com/laravel/fortify">Fortify</a>,
-            <a href="https://laravel.com/docs/billing">Cashier</a>,
-            <a href="https://github.com/laravel/breeze">Breeze</a>,
-            <a href="https://nova.laravel.com/">Nova</a>,
-            <a href="https://spark.laravel.com/">Spark</a>
-            and <a href="https://github.com/laravel/ui">UI</a>
-        </p>
+        <a href="https://laravel.com">Laravel Framework</a>,
+        <a href="https://jetstream.laravel.com/">Jetstream</a>,
+        <a href="https://github.com/laravel/fortify">Fortify</a>,
+        <a href="https://laravel.com/docs/billing">Cashier</a>,
+        <a href="https://github.com/laravel/breeze">Breeze</a>,
+        <a href="https://nova.laravel.com/">Nova</a>,
+        <a href="https://spark.laravel.com/">Spark</a>
+        and <a href="https://github.com/laravel/ui">UI</a>
     </snippet>
 
     <snippet id="lists-laravel-projects">

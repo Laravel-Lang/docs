@@ -25,12 +25,5 @@ Where:
 
 > When performing any work with files (`install`, `uninstall`, `reset` and `update`), in addition to php files, work
 > with json files, including translation for
-> [Laravel Framework](https://laravel.com),
-> [Jetstream](https://jetstream.laravel.com/),
-> [Fortify](https://github.com/laravel/fortify),
-> [Cashier](https://laravel.com/docs/billing),
-> [Breeze](https://github.com/laravel/breeze),
-> [Nova](https://nova.laravel.com/),
-> [Spark](https://spark.laravel.com/)
-> and [UI](https://github.com/laravel/ui)
+> <include from="lists-laravel-projects.topic" element-id="lists-laravel-projects-inline"/>
 > , will also be automatically performed.
