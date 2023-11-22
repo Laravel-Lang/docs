@@ -8,6 +8,16 @@
 
     <toc-element topic="prologue.md">
         <toc-element toc-title="Introduction" topic="index.md" />
+        <toc-element topic="upgrade-guide.md" >
+            <toc-element topic="upgrade-common.md" >
+                <toc-element topic="upgrade-common-to-5-from-4.md" />
+            </toc-element>
+            <toc-element topic="upgrade-publisher.md" >
+                <toc-element topic="upgrade-publisher-to-15-from-14.md" />
+            </toc-element>
+            <toc-element topic="upgrade-from-laravel-lang.md" />
+            <toc-element topic="upgrade-from-caouecs-laravel-lang.md" />
+        </toc-element>
         <toc-element topic="release-notes.md" />
         <toc-element topic="security-policy.md" />
         <toc-element topic="questions-and-issues.md" />
