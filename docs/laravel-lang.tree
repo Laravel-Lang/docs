@@ -28,7 +28,12 @@
         <toc-element topic="installation.md" />
     </toc-element>
     <toc-element topic="usage.md">
-        <toc-element topic="managing-locales.md" />
+        <toc-element topic="managing-locales.md" >
+            <toc-element topic="usage-add-locales.md" />
+            <toc-element topic="usage-update-locales.md" />
+            <toc-element topic="usage-reset-locales.md" />
+            <toc-element topic="usage-remove-locales.md" />
+        </toc-element>
     </toc-element>
     <toc-element topic="packages.md">
         <toc-element topic="packages-common.md" />
