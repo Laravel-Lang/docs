@@ -11,6 +11,6 @@ To install, run the console command:
 ```
 
 > You can also easily create your own plugin using a
-ready-made [`translations template`](https://github.com/Laravel-Lang/translations-template).
-> 
+> ready-made [`translations template`](https://github.com/Laravel-Lang/translations-template).
+>
 {style="note"}

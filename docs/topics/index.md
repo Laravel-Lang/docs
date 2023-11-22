@@ -20,4 +20,6 @@
 - <a href="https://github.com/laravel/ui/">Laravel UI</a>
 - and other
 
+{id="laravel-projects-list"}
+
 And these are not all the projects that the **%team-name%** supports 😎!

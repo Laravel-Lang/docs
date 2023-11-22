@@ -3,4 +3,5 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/categories.dtd">
 <categories>
     <category id="plugins-lists" name="Plugins" order="1" />
+    <category id="laravel-projects-list" name="Plugins" order="2" />
 </categories>

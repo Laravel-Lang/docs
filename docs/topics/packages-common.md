@@ -18,8 +18,8 @@ To install, run the console command:
 
 This package will install the following dependencies:
 
+- [`%package-lang%`](packages-lang.md)
 - [`%package-attributes%`](packages-attributes.md)
 - [`%package-http-statuses%`](packages-http-statuses.md)
-- [`%package-lang%`](packages-lang.md)
 - [`%package-locales%`](packages-locales.md)
 - [`%package-publisher%`](packages-publisher.md)

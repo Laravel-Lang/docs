@@ -14,6 +14,7 @@
     <var name="install-attributes" value="composer require --dev laravel-lang/attributes" />
     <var name="install-common" value="composer require --dev laravel-lang/common" />
     <var name="install-http-statuses" value="composer require --dev laravel-lang/http-statuses" />
+    <var name="install-json-fallback-hotfix" value="composer require laravel-lang/json-fallback-hotfix" />
     <var name="install-lang" value="composer require --dev laravel-lang/lang" />
     <var name="install-locale-list" value="composer require laravel-lang/locale-list" />
     <var name="install-locales" value="composer require laravel-lang/locales" />
