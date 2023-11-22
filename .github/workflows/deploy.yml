@@ -51,6 +51,7 @@ jobs:
             -   name: Move completion statuses
                 run: |
                     php src/statuses.php
+                    php src/available.php
 
             -   name: Build documentation
                 uses: JetBrains/writerside-github-action@v4
