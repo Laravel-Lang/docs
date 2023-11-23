@@ -7,7 +7,7 @@
     - [Update locales](usage-update-locales.md)
     - [Reset locales](usage-reset-locales.md)
     - [Remove locales](usage-remove-locales.md)
-    - [Available list](usage-available-locales.md)
+    - [Available list](available-locales-list.md)
 - [Facade](usage-facade.md)
 - [Aliases](usage-aliases.md)
 - [Locales List](usage-list-of-locales.md)

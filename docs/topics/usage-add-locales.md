@@ -1,6 +1,6 @@
 # Add
 
-> A list of available locale codes can be found [here](usage-available-locales.md).
+> A list of available locale codes can be found [here](available-locales-list.md).
 >
 {style="note"}
 

@@ -28,6 +28,7 @@
     <toc-element topic="getting-started.md" id="toc-getting-started">
         <toc-element topic="installation.md" />
         <toc-element topic="configuration.md" />
+        <toc-element topic="available-locales-list.md" />
     </toc-element>
     <toc-element topic="usage.md">
         <toc-element topic="manage-locales.md">
@@ -35,7 +36,6 @@
             <toc-element topic="usage-update-locales.md" />
             <toc-element topic="usage-reset-locales.md" />
             <toc-element topic="usage-remove-locales.md" />
-            <toc-element topic="usage-available-locales.md" />
         </toc-element>
         <toc-element topic="usage-facade.md" />
         <toc-element topic="usage-aliases.md" />
