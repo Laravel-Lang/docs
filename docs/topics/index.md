@@ -6,7 +6,7 @@
 
 **%instance%** projects allow you to easily connect translation packages to your project that serve different tasks.
 
-### Support Projects:
+### Support Projects
 
 <include from="lists-laravel-projects.topic" element-id="lists-laravel-projects"/>
 
