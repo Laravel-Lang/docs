@@ -1,5 +1,6 @@
-# Afrikaans
+# Afrikaans (af)
+{id="statuses-http-statuses-af-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

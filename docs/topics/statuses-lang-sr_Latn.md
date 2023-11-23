@@ -1,5 +1,6 @@
-# Srpski
+# Srpski (sr_Latn)
+{id="statuses-lang-sr_Latn-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

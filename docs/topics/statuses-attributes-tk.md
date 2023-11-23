@@ -1,5 +1,6 @@
-# Türkmen Dili
+# Türkmen Dili (tk)
+{id="statuses-attributes-tk-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

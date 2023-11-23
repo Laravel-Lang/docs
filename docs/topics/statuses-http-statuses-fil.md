@@ -1,5 +1,6 @@
-# Filipino
+# Filipino (fil)
+{id="statuses-http-statuses-fil-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

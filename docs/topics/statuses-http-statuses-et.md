@@ -1,5 +1,6 @@
-# Eesti
+# Eesti (et)
+{id="statuses-http-statuses-et-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

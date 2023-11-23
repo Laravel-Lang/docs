@@ -1,5 +1,6 @@
-# پښتو
+# پښتو (ps)
+{id="statuses-attributes-ps-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

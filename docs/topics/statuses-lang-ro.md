@@ -1,5 +1,6 @@
-# Română
+# Română (ro)
+{id="statuses-lang-ro-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

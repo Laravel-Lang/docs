@@ -1,5 +1,6 @@
-# 中文 (中国香港特别行政区)
+# 中文 (中国香港特别行政区) (zh_HK)
+{id="statuses-http-statuses-zh_HK-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

@@ -1,5 +1,6 @@
-# ខ្មែរ
+# ខ្មែរ (km)
+{id="statuses-attributes-km-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

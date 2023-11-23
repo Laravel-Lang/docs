@@ -1,6 +1,6 @@
 # Completion Status: Lang
 
-> Translation of localizations is completed by **N/A%** (N/AK / N/AK).
+> Translation of localizations is completed by **x.x%** (xK / xK).
 
 <table width="100%">
 <tr><td width="12%">

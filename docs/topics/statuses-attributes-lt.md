@@ -1,5 +1,6 @@
-# Lietuvių
+# Lietuvių (lt)
+{id="statuses-attributes-lt-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

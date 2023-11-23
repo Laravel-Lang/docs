@@ -1,5 +1,6 @@
-# Polski
+# Polski (pl)
+{id="statuses-attributes-pl-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

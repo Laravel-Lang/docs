@@ -1,5 +1,6 @@
-# Kiswahili
+# Kiswahili (sw)
+{id="statuses-lang-sw-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

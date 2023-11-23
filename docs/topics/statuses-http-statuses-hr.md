@@ -1,5 +1,6 @@
-# Hrvatski
+# Hrvatski (hr)
+{id="statuses-http-statuses-hr-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

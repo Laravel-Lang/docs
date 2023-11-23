@@ -1,5 +1,6 @@
-# Svenska
+# Svenska (sv)
+{id="statuses-attributes-sv-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

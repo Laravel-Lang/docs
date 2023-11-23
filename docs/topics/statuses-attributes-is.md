@@ -1,5 +1,6 @@
-# Íslenska
+# Íslenska (is)
+{id="statuses-attributes-is-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

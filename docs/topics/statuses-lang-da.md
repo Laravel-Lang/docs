@@ -1,5 +1,6 @@
-# Dansk
+# Dansk (da)
+{id="statuses-lang-da-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

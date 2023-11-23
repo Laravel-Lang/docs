@@ -1,5 +1,6 @@
-# हिन्दी
+# हिन्दी (hi)
+{id="statuses-attributes-hi-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

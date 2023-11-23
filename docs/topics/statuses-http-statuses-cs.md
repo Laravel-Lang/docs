@@ -1,5 +1,6 @@
-# Čeština
+# Čeština (cs)
+{id="statuses-http-statuses-cs-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

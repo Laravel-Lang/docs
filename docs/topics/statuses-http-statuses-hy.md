@@ -1,5 +1,6 @@
-# Հայերեն
+# Հայերեն (hy)
+{id="statuses-http-statuses-hy-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

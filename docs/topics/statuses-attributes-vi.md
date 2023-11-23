@@ -1,5 +1,6 @@
-# Tiếng Việt
+# Tiếng Việt (vi)
+{id="statuses-attributes-vi-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

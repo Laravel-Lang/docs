@@ -69,8 +69,8 @@ function moveStatus(string $package, Locale $locale): void
 }
 
 moveMain('attributes', 'Attributes');
-//moveMain('http-statuses', 'HTTP Statuses');
-//moveMain('lang', 'Lang');
+moveMain('http-statuses', 'HTTP Statuses');
+moveMain('lang', 'Lang');
 
 foreach (Locale::cases() as $locale) {
     if ($locale === Locale::English) {
@@ -78,6 +78,6 @@ foreach (Locale::cases() as $locale) {
     }
 
     moveStatus('attributes', $locale);
-    //moveStatus('http-statuses', $locale);
-    //moveStatus('lang', $locale);
+    moveStatus('http-statuses', $locale);
+    moveStatus('lang', $locale);
 }

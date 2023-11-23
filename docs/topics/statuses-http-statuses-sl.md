@@ -1,5 +1,6 @@
-# Slovenščina
+# Slovenščina (sl)
+{id="statuses-http-statuses-sl-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

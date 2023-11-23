@@ -1,5 +1,6 @@
-# Català
+# Català (ca)
+{id="statuses-lang-ca-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

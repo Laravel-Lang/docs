@@ -1,5 +1,6 @@
-# Sardu
+# Sardu (sc)
+{id="statuses-attributes-sc-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

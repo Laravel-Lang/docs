@@ -1,5 +1,6 @@
-# Ўзбекча
+# Ўзбекча (uz_Cyrl)
+{id="statuses-attributes-uz_Cyrl-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

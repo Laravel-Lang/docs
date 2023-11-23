@@ -1,5 +1,6 @@
-# नेपाली
+# नेपाली (ne)
+{id="statuses-lang-ne-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

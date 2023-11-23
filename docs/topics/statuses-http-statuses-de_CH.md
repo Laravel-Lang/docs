@@ -1,5 +1,6 @@
-# Deutsch (Schweiz)
+# Deutsch (Schweiz) (de_CH)
+{id="statuses-http-statuses-de_CH-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

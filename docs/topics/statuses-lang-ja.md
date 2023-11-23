@@ -1,5 +1,6 @@
-# 日本語
+# 日本語 (ja)
+{id="statuses-lang-ja-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

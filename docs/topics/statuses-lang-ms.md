@@ -1,5 +1,6 @@
-# Melayu
+# Melayu (ms)
+{id="statuses-lang-ms-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

@@ -1,5 +1,6 @@
-# Indonesia
+# Indonesia (id)
+{id="statuses-attributes-id-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

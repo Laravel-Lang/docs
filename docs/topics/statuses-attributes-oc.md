@@ -1,5 +1,6 @@
-# Occitan
+# Occitan (oc)
+{id="statuses-attributes-oc-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

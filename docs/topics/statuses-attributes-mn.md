@@ -1,5 +1,6 @@
-# Монгол
+# Монгол (mn)
+{id="statuses-attributes-mn-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

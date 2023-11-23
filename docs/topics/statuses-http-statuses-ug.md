@@ -1,5 +1,6 @@
-# ئۇيغۇرچە
+# ئۇيغۇرچە (ug)
+{id="statuses-http-statuses-ug-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

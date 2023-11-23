@@ -1,5 +1,6 @@
-# O‘zbek
+# O‘zbek (uz_Latn)
+{id="statuses-lang-uz_Latn-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

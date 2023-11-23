@@ -1,5 +1,6 @@
-# فارسی
+# فارسی (fa)
+{id="statuses-http-statuses-fa-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

@@ -1,5 +1,6 @@
-# Suomi
+# Suomi (fi)
+{id="statuses-http-statuses-fi-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

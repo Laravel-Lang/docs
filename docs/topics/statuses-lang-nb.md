@@ -1,5 +1,6 @@
-# Norsk Bokmål
+# Norsk Bokmål (nb)
+{id="statuses-lang-nb-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

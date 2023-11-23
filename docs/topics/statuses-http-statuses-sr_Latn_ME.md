@@ -1,5 +1,6 @@
-# Srpski (Crna Gora)
+# Srpski (Crna Gora) (sr_Latn_ME)
+{id="statuses-http-statuses-sr_Latn_ME-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

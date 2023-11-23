@@ -1,5 +1,6 @@
-# 中文 (中国)
+# 中文 (中国) (zh_CN)
+{id="statuses-lang-zh_CN-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

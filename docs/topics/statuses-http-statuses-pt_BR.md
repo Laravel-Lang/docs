@@ -1,5 +1,6 @@
-# Português (Brasil)
+# Português (Brasil) (pt_BR)
+{id="statuses-http-statuses-pt_BR-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

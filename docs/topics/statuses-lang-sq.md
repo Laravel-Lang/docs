@@ -1,5 +1,6 @@
-# Shqip
+# Shqip (sq)
+{id="statuses-lang-sq-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

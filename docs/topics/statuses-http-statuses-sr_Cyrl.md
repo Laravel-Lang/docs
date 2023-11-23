@@ -1,5 +1,6 @@
-# Српски
+# Српски (sr_Cyrl)
+{id="statuses-http-statuses-sr_Cyrl-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

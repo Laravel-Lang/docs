@@ -1,5 +1,6 @@
-# اردو
+# اردو (ur)
+{id="statuses-attributes-ur-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

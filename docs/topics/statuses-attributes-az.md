@@ -1,5 +1,6 @@
-# Azərbaycan
+# Azərbaycan (az)
+{id="statuses-attributes-az-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

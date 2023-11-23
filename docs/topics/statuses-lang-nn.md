@@ -1,5 +1,6 @@
-# Norsk Nynorsk
+# Norsk Nynorsk (nn)
+{id="statuses-lang-nn-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

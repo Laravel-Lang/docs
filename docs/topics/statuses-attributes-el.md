@@ -1,5 +1,6 @@
-# Ελληνικά
+# Ελληνικά (el)
+{id="statuses-attributes-el-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

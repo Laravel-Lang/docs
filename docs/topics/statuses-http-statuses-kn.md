@@ -1,5 +1,6 @@
-# ಕನ್ನಡ
+# ಕನ್ನಡ (kn)
+{id="statuses-http-statuses-kn-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

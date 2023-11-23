@@ -1,5 +1,6 @@
-# Italiano
+# Italiano (it)
+{id="statuses-http-statuses-it-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

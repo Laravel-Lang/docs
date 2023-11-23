@@ -1,5 +1,6 @@
-# עברית
+# עברית (he)
+{id="statuses-lang-he-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

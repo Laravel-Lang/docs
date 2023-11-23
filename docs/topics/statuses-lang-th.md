@@ -1,5 +1,6 @@
-# ไทย
+# ไทย (th)
+{id="statuses-lang-th-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

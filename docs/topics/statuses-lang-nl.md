@@ -1,5 +1,6 @@
-# Nederlands
+# Nederlands (nl)
+{id="statuses-lang-nl-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}

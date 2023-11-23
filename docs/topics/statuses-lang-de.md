@@ -1,5 +1,6 @@
-# Deutsch
+# Deutsch (de)
+{id="statuses-lang-de-title"}
 
-##### All missed: 0
-
-All lines are translated 😊
+> All lines are translated 😊
+>
+{style="note"}
