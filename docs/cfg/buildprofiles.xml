@@ -10,6 +10,10 @@
         <og-image>social-logo.png</og-image>
         <primary-color>frozen</primary-color>
         <web-root>https://laravel-lang.com</web-root>
+        <enable-browser-edits>true</enable-browser-edits>
+        <browser-edits-url>
+            https://github.com/Laravel-Lang/docs/edit/main/docs/
+        </browser-edits-url>
         <versions-switcher>
             https://raw.githubusercontent.com/Laravel-Lang/docs/main/help-versions.json
         </versions-switcher>
