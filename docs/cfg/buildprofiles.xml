@@ -23,5 +23,11 @@
         <link href="https://github.com/Laravel-Lang/common">
             GitHub
         </link>
+        <link href="https://github.com/Laravel-Lang/common/issues">
+            Issues
+        </link>
+        <link href="https://github.com/Laravel-Lang/common/discussions">
+            Discussions
+        </link>
     </footer>
 </buildprofiles>
