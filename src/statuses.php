@@ -51,14 +51,26 @@ function moveStatus(string $package, Locale $locale): void
     $content = str_replace(PHP_EOL . '[ [go back](../status.md) | [to top](#) ]' . PHP_EOL . PHP_EOL, '', $content);
     $content = preg_replace('/^#\s([a-zA-Z-_]+)/m', "# $title ($locale->value)\n{id=\"$id-title\"}", $content);
     $content = preg_replace('/^###\s([\w-]+)\n?\r?$/m', "## \$1\n{id=\"$id-\$1\"}", $content);
-    $content = preg_replace('/^#####\s(.+):\s(\d+)/m', "> \$1: \$2\n>\n{style=\"warning\"}", $content);
+    $content = preg_replace('/^#####\s(.+):\s0/m', '', $content);
+    $content = preg_replace('/^#####\s(.+):\s([1-9]\d*)/m', "> \$1: \$2\n>\n{style=\"warning\"}", $content);
+
+    $content = str_replace(
+        'All lines are translated 😊',
+        <<<HTML
+        > All lines are translated 😊
+        >
+        {style="note"}
+        HTML
+        ,
+        $content
+    );
 
     file_put_contents($targetPath . "statuses-$package-$locale->value.md", $content);
 }
 
 moveMain('attributes', 'Attributes');
-moveMain('http-statuses', 'HTTP Statuses');
-moveMain('lang', 'Lang');
+//moveMain('http-statuses', 'HTTP Statuses');
+//moveMain('lang', 'Lang');
 
 foreach (Locale::cases() as $locale) {
     if ($locale === Locale::English) {
@@ -66,6 +78,6 @@ foreach (Locale::cases() as $locale) {
     }
 
     moveStatus('attributes', $locale);
-    moveStatus('http-statuses', $locale);
-    moveStatus('lang', $locale);
+    //moveStatus('http-statuses', $locale);
+    //moveStatus('lang', $locale);
 }
