@@ -141,7 +141,7 @@ jobs:
                     args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
 
             -   name: Deploy to Algolia
-            -   run: |
+                run: |
                     env "algolia-key=${{ secrets.ALGOLIA_KEY }}" java -jar /opt/builder/help-publication-agent.jar \
                     update-index \
                     --application-name ${{ env.ALGOLIA_APP_NAME }} \
