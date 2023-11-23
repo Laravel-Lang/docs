@@ -5,6 +5,9 @@ on:
         branches:
             - main
     workflow_dispatch:
+    repository_dispatch:
+        types:
+            - docs
 
 permissions:
     id-token: write
