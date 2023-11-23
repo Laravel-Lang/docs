@@ -49,7 +49,7 @@ function moveStatus(string $package, Locale $locale): void
 
     $content = str_replace('---' . PHP_EOL . 'editLink: false' . PHP_EOL . '---' . PHP_EOL . PHP_EOL, '', $content);
     $content = str_replace(PHP_EOL . '[ [go back](../status.md) | [to top](#) ]' . PHP_EOL . PHP_EOL, '', $content);
-    $content = preg_replace('/^#\s([a-zA-Z-_]+)/m', "# $title\n{id=\"$id-title\"}", $content);
+    $content = preg_replace('/^#\s([a-zA-Z-_]+)/m', "# $title ($locale->value)\n{id=\"$id-title\"}", $content);
     $content = preg_replace('/^###\s([\w-]+)\n?\r?$/m', "## \$1\n{id=\"$id-\$1\"}", $content);
     $content = preg_replace('/^#####\s(.+):\s(\d+)/m', "> \$1: \$2\n>\n{style=\"warning\"}", $content);
 
