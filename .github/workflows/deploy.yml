@@ -14,11 +14,13 @@ permissions:
     pages: write
 
 env:
-    INSTANCE: docs/laravel-lang
-    ARTIFACT: webHelpLARAVEL-LANG2-all.zip
+    ALGOLIA_APP_NAME: laravel-lang
     ALGOLIA_ARTIFACT: algolia-indexes-LARAVEL-LANG.zip
+    ALGOLIA_INDEX_NAME: laravel-lang
+    ARTIFACT: webHelpLARAVEL-LANG2-all.zip
     CONFIG_JSON_PRODUCT: LARAVEL-LANG
     CONFIG_JSON_VERSION: 5.x
+    INSTANCE: docs/laravel-lang
 
 jobs:
     build:
