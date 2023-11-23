@@ -1,5 +1,7 @@
 # Usage
 
+<tldr>
+
 - [Managing locales](manage-locales.md)
     - [Add locales](usage-add-locales.md)
     - [Update locales](usage-update-locales.md)
@@ -13,3 +15,5 @@
     - [Locale Names](packages-native-locale-names.md)
     - [Country Names](packages-native-country-names.md)
     - [Currency Names](packages-native-currency-names.md)
+
+</tldr>

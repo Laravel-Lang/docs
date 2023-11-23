@@ -1,4 +1,4 @@
-# Questions and issues
+# Questions and Issues
 
 Find yourself stuck using the package? Found a bug?
 Do you have general questions or suggestions for improving **%instance%** projects?
