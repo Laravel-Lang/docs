@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE vars SYSTEM "https://resources.jetbrains.com/writerside/1.0/vars.dtd">
 <vars>
+    <var name="badge-not-supported" value="badge-not-supported.svg" />
+    <var name="badge-supported" value="badge-supported.svg" />
     <var name="command-add" value="php artisan lang:add" />
     <var name="command-add-empty" value="php artisan lang:add <locale>" />
     <var name="command-base" value="php artisan lang:<command>" />
