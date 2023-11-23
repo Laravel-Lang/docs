@@ -131,12 +131,12 @@ jobs:
         
         steps:
             -   name: Download artifact
-            -   uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v3
                 with:
                     name: algolia-indexes
 
             -   name: Unzip artifact
-            -   uses: montudor/action-zip@v1
+                uses: montudor/action-zip@v1
                 with:
                     args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
 
