@@ -17,3 +17,6 @@ vendor/
 *.REMOTE
 
 composer.lock
+
+*.zip
+*.tar.gz
