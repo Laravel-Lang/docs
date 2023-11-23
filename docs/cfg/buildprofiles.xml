@@ -19,4 +19,9 @@
             <noindex-content>false</noindex-content>
         </variables>
     </build-profile>
+    <footer>
+        <link href="https://github.com/Laravel-Lang/common">
+            GitHub
+        </link>
+    </footer>
 </buildprofiles>
