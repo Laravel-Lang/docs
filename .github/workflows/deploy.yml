@@ -130,6 +130,7 @@ jobs:
     deploy-indexes:
         needs: test
         runs-on: ubuntu-latest
+        timeout-minutes: 10
         
         container:
             image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-2
