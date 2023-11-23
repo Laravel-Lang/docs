@@ -17,6 +17,7 @@ env:
     ALGOLIA_APP_NAME: TFI39P0622
     ALGOLIA_ARTIFACT: algolia-indexes-LARAVEL-LANG.zip
     ALGOLIA_INDEX_NAME: laravel-lang
+    ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
     ARTIFACT: webHelpLARAVEL-LANG2-all.zip
     CONFIG_JSON_PRODUCT: LARAVEL-LANG
     CONFIG_JSON_VERSION: 5.x
@@ -146,7 +147,7 @@ jobs:
 
             -   name: Deploy to Algolia
                 run: |
-                    env "algolia-key=${{ secrets.ALGOLIA_KEY }}" java -jar /opt/builder/help-publication-agent.jar \
+                    env "algolia-key=${{ env.ALGOLIA_KEY }}" java -jar /opt/builder/help-publication-agent.jar \
                     update-index \
                     --application-name ${{ env.ALGOLIA_APP_NAME }} \
                     --index-name ${{ env.ALGOLIA_INDEX_NAME }} \
