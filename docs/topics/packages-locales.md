@@ -1,5 +1,7 @@
 # Locales
 
+> The compatibility table can be viewed [here](release-notes.md#locales).
+
 This package contains the core mechanics for working with locales.
 
 It can display the following lists of locales:

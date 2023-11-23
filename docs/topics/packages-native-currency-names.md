@@ -1,5 +1,7 @@
 # Native Currency Names
 
+> The compatibility table can be viewed [here](release-notes.md#native-currency-names).
+
 This package contains a list of localized currency names.
 
 I think there is no need to explain why it can be useful 🙂

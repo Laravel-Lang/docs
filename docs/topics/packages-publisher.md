@@ -1,5 +1,8 @@
 # Publisher
 
+> The compatibility table can be viewed [here](release-notes.md#publisher).
+
+
 This is the main package responsible for updating translations in the application.
 By itself, it does not contain any keys, but in combination with [`official`](plugins-official.md)
 or [`community`](plugins-community.md) plugins, its potential is revealed.

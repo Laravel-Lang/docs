@@ -1,5 +1,7 @@
 # Common
 
+> The compatibility table can be viewed [here](release-notes.md#common).
+
 This package is needed for quick installation and updating of all our projects.
 
 When installing it, all the main packages necessary for working with localizations and translations will be installed in
