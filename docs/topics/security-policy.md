@@ -9,9 +9,8 @@ releases.
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability within **%instance%**, please email us %security-name%
-at <a href="mailto:%security-email%;%security-caouecs-email%">%security-name%, %security-caouecs-name%</a>
-or %security-caouecs-name%.
+If you discover a security vulnerability within **%instance%** products, please email
+<a href="mailto:%security-email%;%security-caouecs-email%">%security-name%, %security-caouecs-name%</a>.
 All security vulnerabilities will be promptly addressed.
 
 Please email us.
