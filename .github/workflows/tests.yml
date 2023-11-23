@@ -1,21 +1,14 @@
-name: Documentation
+name: Tests
 
 on:
     push:
-        branches:
-            - main
-    workflow_dispatch:
+    pull_request:
 
-permissions:
-    id-token: write
-    pages: write
+permissions: read-all
 
 env:
     INSTANCE: docs/laravel-lang
     ARTIFACT: webHelpLARAVEL-LANG2-all.zip
-    ALGOLIA_ARTIFACT: algolia-indexes-LARAVEL-LANG.zip
-    CONFIG_JSON_PRODUCT: LARAVEL-LANG
-    CONFIG_JSON_VERSION: 5.x
 
 jobs:
     build:
@@ -89,63 +82,3 @@ jobs:
                 uses: JetBrains/writerside-checker-action@v1
                 with:
                     instance: ${{ env.INSTANCE }}
-
-    deploy-docs:
-        environment:
-            name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
-
-        needs: test
-        runs-on: ubuntu-latest
-
-        steps:
-            -   name: Download artifact
-                uses: actions/download-artifact@v3
-                with:
-                    name: docs
-
-            -   name: Unzip artifact
-                uses: montudor/action-zip@v1
-                with:
-                    args: unzip -qq ${{ env.ARTIFACT }} -d dir
-
-            -   name: Setup Pages
-                uses: actions/configure-pages@v3
-
-            -   name: Upload artifact
-                uses: actions/upload-pages-artifact@v2
-                with:
-                    path: dir
-
-            -   name: Deploy to GitHub Pages
-                id: deployment
-                uses: actions/deploy-pages@v2
-
-    deploy-indexes:
-        needs: test
-        runs-on: ubuntu-latest
-        
-        container:
-            image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-2
-        
-        steps:
-            -   name: Download artifact
-                uses: actions/download-artifact@v3
-                with:
-                    name: algolia-indexes
-
-            -   name: Unzip artifact
-                uses: montudor/action-zip@v1
-                with:
-                    args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
-
-            -   name: Deploy to Algolia
-                run: |
-                    env "algolia-key=${{ secrets.ALGOLIA_KEY }}" java -jar /opt/builder/help-publication-agent.jar \
-                    update-index \
-                    --application-name ${{ env.ALGOLIA_APP_NAME }} \
-                    --index-name ${{ env.ALGOLIA_INDEX_NAME }} \
-                    --product ${{ env.CONFIG_JSON_PRODUCT }} \
-                    --version ${{ env.CONFIG_JSON_VERSION }} \
-                    --index-directory algolia-indexes/ \
-                    2>&1 | tee algolia-update-index-log.txt
