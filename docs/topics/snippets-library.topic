@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Lists Laravel Projects"
-    id="lists-laravel-projects"
+    title="Snippets library"
     is-library="true"
 >
+    <snippet id="json-fallback-doesnt-allow">
+        Out of the box, Laravel
+        <a href="https://github.com/laravel/framework/issues/41565#issuecomment-1073572954">doesn't allow</a>
+        fallback translations for JSON keys.
+        For example, when you call <code>__('Remember Me')</code>, you get <code>Remember Me</code> instead of
+        <code>Se souvenir de moi</code> for French fallback language.
+    </snippet>
+
     <snippet id="lists-laravel-projects-inline">
         <a href="https://laravel.com">Laravel Framework</a>,
         <a href="https://jetstream.laravel.com/">Jetstream</a>,

@@ -8,6 +8,6 @@
 
 ### Support Projects
 
-<include from="lists-laravel-projects.topic" element-id="lists-laravel-projects"/>
+<include from="snippets-library.topic" element-id="lists-laravel-projects"/>
 
 And these are not all the projects that the **%team-name%** supports 😎!

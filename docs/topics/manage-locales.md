@@ -1,6 +1,6 @@
 # Management
 
-> <include from="packages-json-fallback.md" element-id="json-fallback-doesnt-allow" />
+> <include from="snippets-library.topic" element-id="json-fallback-doesnt-allow"/>
 >
 {style="warning"}
 
@@ -25,5 +25,5 @@ Where:
 
 > When performing any work with files (`install`, `uninstall`, `reset` and `update`), in addition to php files, work
 > with json files, including translation for
-> <include from="lists-laravel-projects.topic" element-id="lists-laravel-projects-inline"/>
+> <include from="snippets-library.topic" element-id="lists-laravel-projects-inline"/>
 > , will also be automatically performed.

@@ -60,4 +60,4 @@ foreach (Locale::values() as $locale) {
 
 $dom->appendToRoot($snippet);
 
-file_put_contents(__DIR__ . '/../docs/topics/lists-available-locales.topic', $dom->get());
+file_put_contents(__DIR__ . '/../docs/topics/snippets-library-locales.topic', $dom->get());
