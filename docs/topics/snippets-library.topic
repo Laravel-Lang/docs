@@ -16,6 +16,12 @@
         <code>Se souvenir de moi</code> for French fallback language.
     </snippet>
 
+    <snippet id="json-fallback-doesnt-need">
+        <warning>
+            If you use English as a fallback localization, then you do not need to install this package.
+        </warning>
+    </snippet>
+
     <snippet id="lists-laravel-projects-inline">
         <a href="https://laravel.com">Laravel Framework</a>,
         <a href="https://jetstream.laravel.com/">Jetstream</a>,

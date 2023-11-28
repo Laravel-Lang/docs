@@ -1,5 +1,7 @@
 # Installation
 
+## Common Package
+
 You can install the package via [Composer](https://getcomposer.org):
 
 ```Bash
@@ -41,3 +43,52 @@ run the following console commands:
 %install-common%
 %install-locales%
 ```
+
+## JSON Fallback
+
+<include from="snippets-library.topic" element-id="json-fallback-doesnt-need"/>
+
+<include from="snippets-library.topic" element-id="json-fallback-doesnt-allow"/>
+
+To install, run the console command:
+
+```Bash
+%install-json-fallback-hotfix%
+```
+
+After this, you need to add a link to the service provider in the `providers` section of the `config/app.php`
+settings file:
+
+<tabs>
+    <tab title="Laravel 10+">
+        <code-block lang="php">
+        use Illuminate\Support\ServiceProvider;
+<br/>
+return [
+    'providers' => ServiceProvider::defaultProviders()->merge([
+        LaravelLang\JsonFallbackHotfix\TranslationServiceProvider::class,
+<br/>
+        // ...
+    ])
+    ->replace([
+        Illuminate\Translation\TranslationServiceProvider::class => LaravelLang\JsonFallbackHotfix\TranslationServiceProvider::class,
+    ])
+    ->toArray()
+];
+</code-block>
+    </tab>
+    <tab title="Laravel 6-9">
+<code-block lang="php">
+return [
+    'providers' => [
+        // Illuminate\Translation\TranslationServiceProvider::class, &laquo; disabled this one<br/>
+        LaravelLang\JsonFallbackHotfix\TranslationServiceProvider::class,
+<br/>
+        // ...
+    ]
+];
+</code-block>
+    </tab>
+</tabs>
+
+Now JSON keys will correctly output the value based on the selected localization.

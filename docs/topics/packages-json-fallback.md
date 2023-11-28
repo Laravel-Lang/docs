@@ -8,8 +8,6 @@ This package solves the problem of using JSON translations in applications where
 
 This package solves this problem.
 
-To install, run the console command:
-
-```Bash
-%install-json-fallback-hotfix%
-```
+> Read more about installation and configuration
+> [**here**](installation.md#json-fallback)
+> .
