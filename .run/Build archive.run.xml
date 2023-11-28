@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Build ZIP" type="StardustRunConfiguration" factoryName="save-as-zip">
+  <configuration default="false" name="Build archive" type="StardustRunConfiguration" factoryName="save-as-zip">
     <option name="folderPath" value="$PROJECT_DIR$" />
     <option name="instanceId" value="laravel-lang" />
     <option name="instanceName" value="Laravel Lang" />
