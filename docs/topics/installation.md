@@ -61,14 +61,10 @@ settings file:
 
 <tabs>
     <tab title="Laravel 10+">
-        <code-block lang="php">
-            <include from="json-fallback-install-laravel-10.php"/>
-        </code-block>
+        <code-block src="json-fallback-install-laravel-10.php" lang="php"/>
     </tab>
     <tab title="Laravel 6-9">
-        <code-block lang="php">
-            <include from="json-fallback-install-laravel-10.php"/>
-        </code-block>
+        <code-block src="json-fallback-install-laravel-9.php" lang="php"/>
     </tab>
 </tabs>
 

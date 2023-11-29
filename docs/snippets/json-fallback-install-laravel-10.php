@@ -6,10 +6,8 @@ use LaravelLang\JsonFallbackHotfix\TranslationServiceProvider as JsonTranslation
 
 return [
     'providers' => ServiceProvider::defaultProviders()->merge([
-        // ...
-    ])
-    ->replace([
+        // your service providers
+    ])->replace([
         BaseTranslationServiceProvider::class => JsonTranslationServiceProvider::class,
-    ])
-    ->toArray()
+    ])->toArray(),
 ];

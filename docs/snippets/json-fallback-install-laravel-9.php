@@ -6,5 +6,5 @@ return [
         LaravelLang\JsonFallbackHotfix\TranslationServiceProvider::class,
 
         // ...
-    ]
+    ],
 ];
