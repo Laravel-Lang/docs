@@ -7,13 +7,15 @@
     is-library="true"
 >
     <snippet id="json-fallback-doesnt-allow">
-        Out of the box, Laravel
-        <a
-            href="https://github.com/laravel/framework/issues/41565#issuecomment-1073572954"
-            target="_blank">doesn't allow</a>
-        fallback translations for JSON keys.
-        For example, when you call <code>__('Remember Me')</code>, you get <code>Remember Me</code> instead of
-        <code>Se souvenir de moi</code> for French fallback language.
+        <p>
+            Out of the box, Laravel
+            <a
+                href="https://github.com/laravel/framework/issues/41565#issuecomment-1073572954"
+                target="_blank">doesn't allow</a>
+            fallback translations for JSON keys.
+            For example, when you call <code>__('Remember Me')</code>, you get <code>Remember Me</code> instead of
+            <code>Se souvenir de moi</code> for French fallback language.
+        </p>
     </snippet>
 
     <snippet id="json-fallback-doesnt-need">
