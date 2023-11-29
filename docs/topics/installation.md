@@ -55,3 +55,21 @@ To install, run the console command:
 ```Bash
 %install-json-fallback-hotfix%
 ```
+
+After this, you need to add a link to the service provider in the `providers` section of the `config/app.php`
+settings file:
+
+<tabs>
+    <tab title="Laravel 10+">
+        <code-block lang="php">
+            <include from="json-fallback-install-laravel-10.php"/>
+        </code-block>
+    </tab>
+    <tab title="Laravel 6-9">
+        <code-block lang="php">
+            <include from="json-fallback-install-laravel-10.php"/>
+        </code-block>
+    </tab>
+</tabs>
+
+Now JSON keys will correctly output the value based on the selected localization.
