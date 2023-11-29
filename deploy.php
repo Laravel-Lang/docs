@@ -39,6 +39,7 @@ task('deploy', [
     'rsync',
     'deploy:symlink',
     'deploy:unlock',
+    'deploy:cleanup',
     'deploy:success',
 ]);
 
