@@ -25,6 +25,7 @@ env:
 
 jobs:
     build:
+        name: Build Application
         runs-on: ubuntu-latest
 
         steps:
@@ -86,6 +87,7 @@ jobs:
 
     test:
         needs: build
+        name: Testing
         runs-on: ubuntu-latest
 
         steps:
@@ -102,10 +104,11 @@ jobs:
 
     deploy-pages:
         environment:
-            name: pages
+            name: deploy
             url: ${{ steps.deployment.outputs.page_url }}
 
         needs: test
+        name: Deploy to Pages
         runs-on: ubuntu-latest
 
         steps:
@@ -135,9 +138,10 @@ jobs:
                 uses: actions/deploy-pages@v2
 
     deploy-server:
-        environment: pages
+        environment: deploy
 
         needs: test
+        name: Deploy to Web-Server
         runs-on: ubuntu-latest
 
         steps:
@@ -164,9 +168,10 @@ jobs:
                     deployer-version: 7.3.0
 
 #    deploy-indexes:
-#        environment: algolia-indexes
+#        environment: deploy
 #
 #        needs: test
+#        name: Deploy to Algolia
 #        runs-on: ubuntu-latest
 #        timeout-minutes: 3
 #
