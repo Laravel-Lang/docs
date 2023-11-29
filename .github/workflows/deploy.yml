@@ -9,10 +9,7 @@ on:
         types:
             - docs
 
-permissions:
-    id-token: write
-    pages: write
-    contents: write
+permissions: write-all
 
 env:
     ALGOLIA_APP_NAME: TFI39P0622
