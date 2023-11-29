@@ -69,6 +69,9 @@ jobs:
                     instance: ${{ env.INSTANCE }}
                     artifact: ${{ env.ARTIFACT }}
 
+            -   name: Move deploy configuration file
+                run: mv deploy.php artifacts/deploy.php
+
             -   name: Upload artifacts
                 uses: actions/upload-artifact@v3
                 with:
@@ -154,9 +157,6 @@ jobs:
                 uses: montudor/action-zip@v1
                 with:
                     args: unzip -qq ${{ env.ARTIFACT }} -d dir
-                    
-            -   name: Directory list
-                run: ls -l
 
             -   name: Deploy
                 uses: deployphp/action@v1
