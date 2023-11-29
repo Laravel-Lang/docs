@@ -96,7 +96,7 @@ jobs:
                 with:
                     instance: ${{ env.INSTANCE }}
 
-    deploy-docs:
+    deploy-pages:
         environment:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
@@ -126,6 +126,34 @@ jobs:
             -   name: Deploy to GitHub Pages
                 id: deployment
                 uses: actions/deploy-pages@v2
+
+    deploy-server:
+        needs: test
+        runs-on: ubuntu-latest
+
+        steps:
+            -   name: Download artifact
+                uses: actions/download-artifact@v3
+                with:
+                    name: docs
+
+            -   name: Unzip artifact
+                uses: montudor/action-zip@v1
+                with:
+                    args: unzip -qq ${{ env.ARTIFACT }} -d dir
+
+            -   name: Deploy
+                uses: deployphp/action@v1
+                env:
+                    DEPLOY_IP: ${{ secrets.DEPLOY_IP }}
+                    DEPLOY_USERNAME: ${{ secrets.DEPLOY_USERNAME }}
+                    DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+                with:
+                    private-key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+                    known-hosts: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+                    dep: deploy production --revision=${{ github.sha }} --file=../scripts/deploy.php
+                    deployer-version: 7.3.0
+                    sub-directory: dir
 
     deploy-indexes:
         needs: test
