@@ -34,7 +34,7 @@ jobs:
                 uses: shivammathur/setup-php@v2
                 with:
                     php-version: ${{ matrix.php }}
-                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv
+                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
                     coverage: xdebug
 
             -   name: Configure git
@@ -57,6 +57,10 @@ jobs:
                 run: |
                     php src/statuses.php
                     php src/available.php
+
+            -   name: Generate sitemap
+                run: |
+                    php src/sitemap.php
 
             -   name: Build documentation
                 uses: JetBrains/writerside-github-action@v4
