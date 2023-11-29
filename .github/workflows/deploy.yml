@@ -65,9 +65,6 @@ jobs:
                     instance: ${{ env.INSTANCE }}
                     artifact: ${{ env.ARTIFACT }}
 
-            -   name: Generate sitemap
-                run: php src/sitemap.php
-
             -   name: Upload artifacts
                 uses: actions/upload-artifact@v3
                 with:
@@ -76,7 +73,6 @@ jobs:
                         artifacts/${{ env.ARTIFACT }}
                         artifacts/report.json
                         deploy.php
-                        sitemap.xml
                     retention-days: 7
 
             -   name: Upload algolia-indexes
@@ -92,7 +88,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            -   name: Download artifacts
+            -   name: Download docs artifact
                 uses: actions/download-artifact@v3
                 with:
                     name: docs
@@ -102,18 +98,29 @@ jobs:
                 uses: JetBrains/writerside-checker-action@v1
                 with:
                     instance: ${{ env.INSTANCE }}
-
-    deploy-pages:
-        environment:
-            name: deploy
-            url: ${{ steps.deployment.outputs.page_url }}
-
-        needs: test
-        name: Deploy to Pages
+    
+    sitemap:
+        needs: build
+        name: Generate Sitemap
         runs-on: ubuntu-latest
 
         steps:
-            -   name: Download artifact
+            -   uses: actions/checkout@v4
+
+            -   name: Setup PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: ${{ matrix.php }}
+                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
+                    coverage: xdebug
+
+            -   name: Configure git
+                run: git config --global --add safe.directory /github/workspace
+
+            -   name: Install dependencies
+                run: composer update --no-progress --no-interaction
+
+            -   name: Download docs artifact
                 uses: actions/download-artifact@v3
                 with:
                     name: docs
@@ -123,8 +130,46 @@ jobs:
                 with:
                     args: unzip -qq ${{ env.ARTIFACT }} -d dir
 
-            -   name: Change chmod
-                run: sudo chmod 775 ./dir
+            -   name: Generate sitemap
+                run: php src/sitemap.php
+
+            -   name: Upload artifacts
+                uses: actions/upload-artifact@v3
+                with:
+                    name: sitemap
+                    path: sitemap.xml
+                    retention-days: 7
+
+    deploy-pages:
+        environment:
+            name: deploy
+            url: ${{ steps.deployment.outputs.page_url }}
+
+        needs:
+            - test
+            - sitemap
+
+        name: Deploy to Pages
+        runs-on: ubuntu-latest
+
+        steps:
+            -   name: Download docs artifact
+                uses: actions/download-artifact@v3
+                with:
+                    name: docs
+
+            -   name: Download sitemap artifact
+                uses: actions/download-artifact@v3
+                with:
+                    name: sitemap
+
+            -   name: Unzip artifact
+                uses: montudor/action-zip@v1
+                with:
+                    args: unzip -qq ${{ env.ARTIFACT }} -d dir
+
+            -   name: Move sitemap
+                run: mv sitemap.xml dir/sitemap.xml
 
             -   name: Setup Pages
                 uses: actions/configure-pages@v3
@@ -141,15 +186,23 @@ jobs:
     deploy-server:
         environment: deploy
 
-        needs: test
+        needs:
+            - test
+            - sitemap
+
         name: Deploy to Web-Server
         runs-on: ubuntu-latest
 
         steps:
-            -   name: Download artifact
+            -   name: Download docs artifact
                 uses: actions/download-artifact@v3
                 with:
                     name: docs
+
+            -   name: Download sitemap artifact
+                uses: actions/download-artifact@v3
+                with:
+                    name: sitemap
 
             -   name: Unzip artifact
                 uses: montudor/action-zip@v1
@@ -183,7 +236,7 @@ jobs:
 #            image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-2
 #
 #        steps:
-#            -   name: Download artifact
+#            -   name: Download search artifact
 #                uses: actions/download-artifact@v3
 #                with:
 #                    name: algolia-indexes
