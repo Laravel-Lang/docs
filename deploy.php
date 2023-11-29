@@ -23,7 +23,7 @@ set('rsync', [
     'timeout'       => 60,
 ]);
 
-set('rsync_src', __DIR__ . '/../dir');
+set('rsync_src', __DIR__ . '/dir');
 set('rsync_dest', '{{release_path}}');
 
 host('production')
