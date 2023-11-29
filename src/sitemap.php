@@ -6,9 +6,14 @@ use DragonCode\Core\Xml\Facades\Xml;
 
 require 'autoload.php';
 
-$host = 'https://laravel-lang.com/';
+$host   = 'https://laravel-lang.com/';
+$source = __DIR__ . '/../dir/Map.jhm';
 
-$map = simplexml_load_file(__DIR__ . '/../dir/Map.jhm');
+if (! file_exists($source)) {
+    throw new RuntimeException('File not exists: ' . $source);
+}
+
+$map = simplexml_load_file($source);
 
 $dom = Xml::init('urlset', ['xmlns' => 'http://www.sitemaps.org/schemas/sitemap/0.9'])->setSkipEmptyAttributes();
 
