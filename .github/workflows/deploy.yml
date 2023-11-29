@@ -161,42 +161,35 @@ jobs:
                     deployer-version: 7.3.0
                     sub-directory: dir
 
-    deploy-indexes:
-        environment:
-            name: algolia-indexes
-
-        needs: test
-        runs-on: ubuntu-latest
-        timeout-minutes: 3
-
-        container:
-            image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-2
-
-        steps:
-            -   name: Download artifact
-                uses: actions/download-artifact@v3
-                with:
-                    name: algolia-indexes
-
-            -   name: Unzip artifact
-                uses: montudor/action-zip@v1
-                with:
-                    args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
-
-            -   name: Upload help publication agent
-                uses: actions/upload-artifact@v3
-                with:
-                    name: help-publication-agent
-                    path: /opt/builder/help-publication-agent.jar
-                    retention-days: 1
-
-            -   name: Deploy to Algolia
-                run: |
-                    env "algolia-key=${{ env.ALGOLIA_KEY }}" java -jar /opt/builder/help-publication-agent.jar \
-                    update-index \
-                    --application-name ${{ env.ALGOLIA_APP_NAME }} \
-                    --index-name ${{ env.ALGOLIA_INDEX_NAME }} \
-                    --product ${{ env.CONFIG_JSON_PRODUCT }} \
-                    --version ${{ env.CONFIG_JSON_VERSION }} \
-                    --index-directory algolia-indexes/ \
-                    2>&1 | tee algolia-update-index-log.txt
+#    deploy-indexes:
+#        environment:
+#            name: algolia-indexes
+#
+#        needs: test
+#        runs-on: ubuntu-latest
+#        timeout-minutes: 3
+#
+#        container:
+#            image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-2
+#
+#        steps:
+#            -   name: Download artifact
+#                uses: actions/download-artifact@v3
+#                with:
+#                    name: algolia-indexes
+#
+#            -   name: Unzip artifact
+#                uses: montudor/action-zip@v1
+#                with:
+#                    args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
+#
+#            -   name: Deploy to Algolia
+#                run: |
+#                    env "algolia-key=${{ env.ALGOLIA_KEY }}" java -jar /opt/builder/help-publication-agent.jar \
+#                    update-index \
+#                    --application-name ${{ env.ALGOLIA_APP_NAME }} \
+#                    --index-name ${{ env.ALGOLIA_INDEX_NAME }} \
+#                    --product ${{ env.CONFIG_JSON_PRODUCT }} \
+#                    --version ${{ env.CONFIG_JSON_VERSION }} \
+#                    --index-directory algolia-indexes/ \
+#                    2>&1 | tee algolia-update-index-log.txt
