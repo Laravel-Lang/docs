@@ -128,7 +128,6 @@ jobs:
     deploy-server:
         environment:
             name: pages
-            url: ${{ steps.deployment.outputs.page_url }}
 
         needs: test
         runs-on: ubuntu-latest
@@ -160,7 +159,6 @@ jobs:
     deploy-indexes:
         environment:
             name: algolia-indexes
-            url: ${{ steps.deployment.outputs.page_url }}
 
         needs: test
         runs-on: ubuntu-latest
