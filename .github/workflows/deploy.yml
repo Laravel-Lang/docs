@@ -135,8 +135,7 @@ jobs:
                 uses: actions/deploy-pages@v2
 
     deploy-server:
-        environment:
-            name: pages
+        environment: pages
 
         needs: test
         runs-on: ubuntu-latest
@@ -166,8 +165,7 @@ jobs:
                     sub-directory: scripts
 
 #    deploy-indexes:
-#        environment:
-#            name: algolia-indexes
+#        environment: algolia-indexes
 #
 #        needs: test
 #        runs-on: ubuntu-latest
