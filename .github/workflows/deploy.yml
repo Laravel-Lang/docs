@@ -116,7 +116,7 @@ jobs:
                     args: unzip -qq ${{ env.ARTIFACT }} -d dir
 
             -   name: Change chmod
-                run: chmod 775 ./dir
+                run: sudo chmod 775 ./dir
 
             -   name: Setup Pages
                 uses: actions/configure-pages@v3
@@ -182,6 +182,13 @@ jobs:
                 uses: montudor/action-zip@v1
                 with:
                     args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
+
+            -   name: Upload help publication agent
+                uses: actions/upload-artifact@v3
+                with:
+                    name: help-publication-agent
+                    path: /opt/builder/help-publication-agent.jar
+                    retention-days: 1
 
             -   name: Deploy to Algolia
                 run: |
