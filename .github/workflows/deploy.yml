@@ -162,7 +162,6 @@ jobs:
                     known-hosts: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
                     dep: deploy production --revision=${{ github.sha }} --file=scripts/deploy.php
                     deployer-version: 7.3.0
-                    sub-directory: ./../scripts
 
 #    deploy-indexes:
 #        environment: algolia-indexes
