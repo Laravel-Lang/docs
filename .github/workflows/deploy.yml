@@ -59,18 +59,14 @@ jobs:
                     php src/statuses.php
                     php src/available.php
 
-            -   name: Generate sitemap
-                run: |
-                    php src/sitemap.php
-
             -   name: Build documentation
                 uses: JetBrains/writerside-github-action@v4
                 with:
                     instance: ${{ env.INSTANCE }}
                     artifact: ${{ env.ARTIFACT }}
 
-            -   name: Move deploy configuration file
-                run: mv deploy.php artifacts/deploy.php
+            -   name: Generate sitemap
+                run: php src/sitemap.php
 
             -   name: Upload artifacts
                 uses: actions/upload-artifact@v3
@@ -79,6 +75,8 @@ jobs:
                     path: |
                         artifacts/${{ env.ARTIFACT }}
                         artifacts/report.json
+                        deploy.php
+                        sitemap.xml
                     retention-days: 7
 
             -   name: Upload algolia-indexes
@@ -157,6 +155,9 @@ jobs:
                 uses: montudor/action-zip@v1
                 with:
                     args: unzip -qq ${{ env.ARTIFACT }} -d dir
+
+            -   name: Move sitemap
+                run: mv sitemap.xml dir/sitemap.xml
 
             -   name: Deploy
                 uses: deployphp/action@v1
