@@ -8,7 +8,7 @@
         start-page="introduction.md"
 >
     <toc-element topic="prologue.md">
-        <toc-element toc-title="Introduction" topic="introduction.md" />
+        <toc-element toc-title="Introduction" topic="introduction.md" accepts-web-file-names-ref="21475ca0" />
         <toc-element topic="upgrade-guide.md">
             <toc-element topic="upgrade-common.md">
                 <toc-element topic="upgrade-common-to-5-from-4.md" />
