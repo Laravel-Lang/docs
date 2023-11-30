@@ -199,7 +199,6 @@ jobs:
                 uses: actions/download-artifact@v3
                 with:
                     name: docs
-                    path: artifacts
 
             -   name: Download sitemap artifact
                 uses: actions/download-artifact@v3
