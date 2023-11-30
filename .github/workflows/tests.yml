@@ -9,9 +9,11 @@ permissions: read-all
 env:
     INSTANCE: docs/laravel-lang
     ARTIFACT: webHelpLARAVEL-LANG2-all.zip
+    BUILDER_VERSION: 232.10275
 
 jobs:
     build:
+        name: Build Application
         runs-on: ubuntu-latest
 
         steps:
@@ -21,7 +23,7 @@ jobs:
                 uses: shivammathur/setup-php@v2
                 with:
                     php-version: ${{ matrix.php }}
-                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv
+                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
                     coverage: xdebug
 
             -   name: Configure git
@@ -50,6 +52,7 @@ jobs:
                 with:
                     instance: ${{ env.INSTANCE }}
                     artifact: ${{ env.ARTIFACT }}
+                    docker-version: ${{ env.BUILDER_VERSION }}
 
             -   name: Upload artifacts
                 uses: actions/upload-artifact@v3
@@ -60,7 +63,7 @@ jobs:
                         artifacts/report.json
                     retention-days: 7
 
-            -   name: Upload algolia-indexes
+            -   name: Upload search indexes
                 uses: actions/upload-artifact@v3
                 with:
                     name: algolia-indexes
@@ -69,10 +72,11 @@ jobs:
 
     test:
         needs: build
+        name: Testing
         runs-on: ubuntu-latest
 
         steps:
-            -   name: Download artifacts
+            -   name: Download docs artifact
                 uses: actions/download-artifact@v3
                 with:
                     name: docs
