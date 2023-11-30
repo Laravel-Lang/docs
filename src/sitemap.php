@@ -36,11 +36,9 @@ foreach ($map as $item) {
     $url->appendChild($dom->makeItem('loc', $host . $value));
     $url->appendChild($dom->makeItem('lastmod', date('c')));
     $url->appendChild($dom->makeItem('changefreq', 'daily'));
-    $url->appendChild($dom->makeItem('priority', 0.8));
+    $url->appendChild($dom->makeItem('priority', 0.5));
 
-    $urlset->appendChild($url);
+    $dom->appendToRoot($url);
 }
-
-$dom->appendToRoot($urlset);
 
 file_put_contents(__DIR__ . '/../sitemap.xml', $dom->get());
