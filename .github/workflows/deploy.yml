@@ -22,6 +22,7 @@ env:
     CONFIG_JSON_PRODUCT: LARAVEL-LANG
     CONFIG_JSON_VERSION: 5.x
     INSTANCE: docs/laravel-lang
+    BUILDER_VERSION: 232.10275
 
 jobs:
     build:
@@ -64,6 +65,7 @@ jobs:
                 with:
                     instance: ${{ env.INSTANCE }}
                     artifact: ${{ env.ARTIFACT }}
+                    docker-version: ${{ env.BUILDER_VERSION }}
 
             -   name: Upload artifacts
                 uses: actions/upload-artifact@v3
