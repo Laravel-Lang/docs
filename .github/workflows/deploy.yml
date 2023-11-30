@@ -172,6 +172,14 @@ jobs:
             -   name: Move sitemap
                 run: sudo mv sitemap.xml dir/sitemap.xml
 
+            -   name: Create robots.txt
+                run: |
+                    touch dir/robots.txt
+                    echo "User-Agent: *" >> dir/robots.txt
+                    echo "Disallow: " >> dir/robots.txt
+                    echo "Host: https://laravel-lang.com" >> dir/robots.txt
+                    echo "Sitemap: https://laravel-lang.com/sitemap.xml" >> dir/robots.txt
+
             -   name: Setup Pages
                 uses: actions/configure-pages@v3
 
