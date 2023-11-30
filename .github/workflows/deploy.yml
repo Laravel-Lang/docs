@@ -14,7 +14,7 @@ permissions:
     pages: write
 
 env:
-    ALGOLIA_APP_NAME: TFI39P0622
+    ALGOLIA_APP_NAME: ${{ secrets.ALGOLIA_APPLICATION_ID }}
     ALGOLIA_ARTIFACT: algolia-indexes-LARAVEL-LANG.zip
     ALGOLIA_INDEX_NAME: laravel-lang
     ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
