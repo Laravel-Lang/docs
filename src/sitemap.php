@@ -19,19 +19,26 @@ $dom = Xml::init('urlset', ['xmlns' => 'http://www.sitemaps.org/schemas/sitemap/
 
 $urlset = $dom->makeItem('urlset', '');
 
+$registry = [];
+
 foreach ($map as $item) {
-    foreach ($item->attributes() as $key => $value) {
-        if ($key === 'url') {
-            $url = $dom->makeItem('url', '');
+    $value = (string) $item->attributes()['url'];
 
-            $url->appendChild($dom->makeItem('loc', $host . $value));
-            $url->appendChild($dom->makeItem('lastmod', date('c')));
-            $url->appendChild($dom->makeItem('changefreq', 'daily'));
-            $url->appendChild($dom->makeItem('priority', 0.8));
-
-            $urlset->appendChild($url);
-        }
+    if (in_array($value, $registry, true)) {
+        continue;
     }
+    else {
+        $registry[] = $value;
+    }
+
+    $url = $dom->makeItem('url', '');
+
+    $url->appendChild($dom->makeItem('loc', $host . $value));
+    $url->appendChild($dom->makeItem('lastmod', date('c')));
+    $url->appendChild($dom->makeItem('changefreq', 'daily'));
+    $url->appendChild($dom->makeItem('priority', 0.8));
+
+    $urlset->appendChild($url);
 }
 
 $dom->appendToRoot($urlset);
