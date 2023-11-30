@@ -15,7 +15,7 @@ permissions:
 
 env:
     ALGOLIA_APP_NAME: TFI39P0622
-    ALGOLIA_ARTIFACT: search-indexes-LARAVEL-LANG.zip
+    ALGOLIA_ARTIFACT: algolia-indexes-LARAVEL-LANG.zip
     ALGOLIA_INDEX_NAME: laravel-lang
     ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
     ARTIFACT: webHelpLARAVEL-LANG2-all.zip
@@ -74,13 +74,12 @@ jobs:
                     path: |
                         artifacts/${{ env.ARTIFACT }}
                         artifacts/report.json
-                        deploy.php
                     retention-days: 7
 
-            -   name: Upload search-indexes
+            -   name: Upload search indexes
                 uses: actions/upload-artifact@v3
                 with:
-                    name: search-indexes
+                    name: algolia-indexes
                     path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
                     retention-days: 7
 
@@ -200,6 +199,7 @@ jobs:
                 uses: actions/download-artifact@v3
                 with:
                     name: docs
+                    path: artifacts
 
             -   name: Download sitemap artifact
                 uses: actions/download-artifact@v3
@@ -241,12 +241,12 @@ jobs:
 #            -   name: Download search artifact
 #                uses: actions/download-artifact@v3
 #                with:
-#                    name: search-indexes
+#                    name: algolia-indexes
 #
 #            -   name: Unzip artifact
 #                uses: montudor/action-zip@v1
 #                with:
-#                    args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d search-indexes
+#                    args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
 #
 #            -   name: Deploy to Algolia
 #                run: |
@@ -256,5 +256,5 @@ jobs:
 #                    --index-name ${{ env.ALGOLIA_INDEX_NAME }} \
 #                    --product ${{ env.CONFIG_JSON_PRODUCT }} \
 #                    --version ${{ env.CONFIG_JSON_VERSION }} \
-#                    --index-directory search-indexes/ \
+#                    --index-directory algolia-indexes/ \
 #                    2>&1 | tee algolia-update-index-log.txt
