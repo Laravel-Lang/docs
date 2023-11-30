@@ -12,6 +12,7 @@ on:
 permissions:
     id-token: write
     pages: write
+    contents: write
 
 env:
     ALGOLIA_APP_NAME: ${{ secrets.ALGOLIA_APPLICATION_ID }}
@@ -22,6 +23,7 @@ env:
     CONFIG_JSON_PRODUCT: LARAVEL-LANG
     CONFIG_JSON_VERSION: 5.x
     INSTANCE: docs/laravel-lang
+    DOMAIN_NAME: laravel-lang.com
     BUILDER_VERSION: 232.10275
 
 jobs:
@@ -140,6 +142,27 @@ jobs:
                     name: sitemap
                     path: sitemap.xml
                     retention-days: 7
+    
+    robots:
+        needs: build
+        name: Generate robots.txt
+        runs-on: ubuntu-latest
+
+        steps:
+            -   name: Create robots.txt
+                run: |
+                    touch robots.txt
+                    echo "User-Agent: *" >> robots.txt
+                    echo "Disallow: " >> robots.txt
+                    echo "Host: https://${{ env.DOMAIN_NAME }}.com" >> robots.txt
+                    echo "Sitemap: https://${{ env.DOMAIN_NAME }}/sitemap.xml" >> robots.txt
+
+            -   name: Upload artifacts
+                uses: actions/upload-artifact@v3
+                with:
+                    name: robots
+                    path: robots.txt
+                    retention-days: 7
 
     deploy-pages:
         environment:
@@ -149,6 +172,7 @@ jobs:
         needs:
             - test
             - sitemap
+            - robots
 
         name: Deploy to Pages
         runs-on: ubuntu-latest
@@ -164,21 +188,20 @@ jobs:
                 with:
                     name: sitemap
 
+            -   name: Download robots artifact
+                uses: actions/download-artifact@v3
+                with:
+                    name: robots
+
             -   name: Unzip artifact
                 uses: montudor/action-zip@v1
                 with:
                     args: unzip -qq ${{ env.ARTIFACT }} -d dir
 
-            -   name: Move sitemap
-                run: sudo mv sitemap.xml dir/sitemap.xml
-
-            -   name: Create robots.txt
+            -   name: Move sitemap and robots
                 run: |
-                    sudo touch dir/robots.txt
-                    sudo echo "User-Agent: *" >> dir/robots.txt
-                    sudo echo "Disallow: " >> dir/robots.txt
-                    sudo echo "Host: https://laravel-lang.com" >> dir/robots.txt
-                    sudo echo "Sitemap: https://laravel-lang.com/sitemap.xml" >> dir/robots.txt
+                    sudo mv sitemap.xml dir/sitemap.xml
+                    sudo mv robots.txt dir/robots.txt
 
             -   name: Setup Pages
                 uses: actions/configure-pages@v3
