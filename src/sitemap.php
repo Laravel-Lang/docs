@@ -36,4 +36,4 @@ foreach ($map as $item) {
 
 $dom->appendToRoot($urlset);
 
-file_put_contents(__DIR__ . '/sitemap.xml', $dom->get());
+file_put_contents(__DIR__ . '/../sitemap.xml', $dom->get());
