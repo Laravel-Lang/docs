@@ -174,11 +174,11 @@ jobs:
 
             -   name: Create robots.txt
                 run: |
-                    touch dir/robots.txt
-                    echo "User-Agent: *" >> dir/robots.txt
-                    echo "Disallow: " >> dir/robots.txt
-                    echo "Host: https://laravel-lang.com" >> dir/robots.txt
-                    echo "Sitemap: https://laravel-lang.com/sitemap.xml" >> dir/robots.txt
+                    sudo touch dir/robots.txt
+                    sudo echo "User-Agent: *" >> dir/robots.txt
+                    sudo echo "Disallow: " >> dir/robots.txt
+                    sudo echo "Host: https://laravel-lang.com" >> dir/robots.txt
+                    sudo echo "Sitemap: https://laravel-lang.com/sitemap.xml" >> dir/robots.txt
 
             -   name: Setup Pages
                 uses: actions/configure-pages@v3
