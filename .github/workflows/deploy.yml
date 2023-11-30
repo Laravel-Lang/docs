@@ -184,49 +184,6 @@ jobs:
                 id: deployment
                 uses: actions/deploy-pages@v2
 
-    deploy-server:
-        environment: deploy
-
-        needs:
-            - test
-            - sitemap
-
-        name: Deploy to Web-Server
-        runs-on: ubuntu-latest
-
-        steps:
-            -   uses: actions/checkout@v4
-
-            -   name: Download docs artifact
-                uses: actions/download-artifact@v3
-                with:
-                    name: docs
-
-            -   name: Download sitemap artifact
-                uses: actions/download-artifact@v3
-                with:
-                    name: sitemap
-
-            -   name: Unzip artifact
-                uses: montudor/action-zip@v1
-                with:
-                    args: unzip -qq ${{ env.ARTIFACT }} -d dir
-
-            -   name: Move sitemap
-                run: sudo mv sitemap.xml dir/sitemap.xml
-
-            -   name: Deploy
-                uses: deployphp/action@v1
-                env:
-                    DEPLOY_IP: ${{ secrets.DEPLOY_IP }}
-                    DEPLOY_USERNAME: ${{ secrets.DEPLOY_USERNAME }}
-                    DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
-                with:
-                    private-key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
-                    known-hosts: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
-                    dep: deploy production --revision=${{ github.sha }}
-                    deployer-version: 7.3.0
-
 #    deploy-indexes:
 #        environment: deploy
 #
