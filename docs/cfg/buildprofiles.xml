@@ -15,7 +15,7 @@
             https://github.com/Laravel-Lang/docs/edit/main/docs/
         </browser-edits-url>
         <custom-favicons>
-            favicon.svg
+            favicon.svg,favicon.svg,favicon.svg,favicon.svg
         </custom-favicons>
         <versions-switcher>
             https://raw.githubusercontent.com/Laravel-Lang/docs/main/help-versions.json
