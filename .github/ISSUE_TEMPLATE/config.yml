@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+    -   name: Bug Report
+        url: https://github.com/Laravel-Lang/common/issues/new?assignees=andrey-helldar&labels=bug%2Cdocs&projects=&template=feature_request.yml&title=%5BBug%5D%3A+
+        about: Report a bug or other issue
     -   name: Feature Request
         url: https://github.com/Laravel-Lang/common/issues/new?labels=feature%2Cdocs&projects=&template=feature_request.yml
         about: Propose a new feature
