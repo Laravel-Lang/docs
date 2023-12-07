@@ -3,6 +3,7 @@
 ![laravel-lang localize your app](https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark)
 
 ## Introduction
+{id="Introduction"}
 
 **%instance%** projects allow you to easily connect translation packages to your project that serve different tasks.
 
