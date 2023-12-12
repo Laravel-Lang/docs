@@ -12,14 +12,14 @@ our organization.
   or [HTTP Statuses](https://github.com/Laravel-Lang/http-statuses));
 * Make sure you have [PHP 8.1](https://www.php.net) or higher installed on your computer;
 * Install dependencies by running console command:
-  ```
+  ```bash
   composer update
   ```
 * Call the console command, passing in the argument the name of the localization to be added. Localization code must
   comply
   with [ISO-15897](https://laravel.com/docs/localization)
   and [ISO-639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) (ex: `fr` for French):
-  ```
+  ```bash
   vendor/bin/lang create fr
   ```
 * This command will create all the necessary files and fill them with initial data. The files will be located in
@@ -29,9 +29,9 @@ our organization.
   but a generic name for the validation attributes. Therefore in the translations of this file the
   placeholder `:attribute` **should not** appear.
 * Add a pull request with the name of the language. For example:
-  ::: tip
-  [fr]: Added new localization
-  :::
+
+  > [fr]: Added new localization
+
 
 ## How can I fix the file?
 
@@ -39,20 +39,20 @@ our organization.
   repository ([Lang](https://github.com/Laravel-Lang/lang), [Attributes](https://github.com/Laravel-Lang/attributes)
   or [HTTP Statuses](https://github.com/Laravel-Lang/http-statuses));
 * Update the files;
-  ::: tip
-  Note that in inline files (`json-inline.json` and `php-inline.json`), keys are the "non-inline" option.
+  
+  > Note that in inline files (`json-inline.json` and `php-inline.json`), keys are the "non-inline" option.
+  >
+  > For example:
+  > ```json
+  > {
+  >   "The :attribute must be at least :length characters.": "This field must be at least :length characters."
+  > }
+  > ```
 
-  For example:
-  ```json
-  {
-    "The :attribute must be at least :length characters.": "This field must be at least :length characters."
-  }
-  ```
-  :::
 * Add a pull request with the name of the language
-  ::: tip
-  ex: [fr]: Updated translations
-  :::
+
+  > ex: [fr]: Updated translations
+
 
 ## What is the difference between "inline" files and "non-inline" files?
 
@@ -63,8 +63,8 @@ our organization.
 
 At the same time, the Laravel Framework itself also contains JSON keys:
 
-* https://github.com/laravel/framework/blob/9.x/src/Illuminate/Auth/Notifications/VerifyEmail.php#L65-L68
-* https://github.com/Laravel-Lang/lang/blob/main/source/framework/9.x/framework.json
+* https://github.com/laravel/framework/blob/082345d76fc6a55b649572efe10b11b03e279d24/src/Illuminate/Auth/Notifications/VerifyEmail.php#L65-L68
+* https://github.com/Laravel-Lang/lang/blob/979db1554ad5708e5d4fc8a48d6312fbd6cfa03e/source/framework/10.x/framework.json
 
 At the same time, the project structure is not tied to specific packages or files. For example,
 the [Laravel-Lang/http-statuses](https://github.com/Laravel-Lang/http-statuses)
@@ -91,22 +91,21 @@ We can avoid this situation in the following way:
 * Fork this repository if you haven't already;
 * Create a `_excludes.json` file in the localization folder if it doesn't already exist;
 * This file contains an array of values for each exception.
-  ::: tip
-  For example, we need to exclude Micronesia from the status check for Italian:
 
-  _locales/it/json.json_:
-  ```json
-  {
-      "Micronesia, Federated States Of": "Micronesia"
-  }
-  ```
+  > For example, we need to exclude Micronesia from the status check for Italian:
+  > 
+  > _locales/it/json.json_:
+  > ```json
+  > {
+  >     "Micronesia, Federated States Of": "Micronesia"
+  > }
+  > ```
 
-  _locales/it/\_excludes.json_:
-  ```json
-  [
-      "Micronesia"
-  ]
-  ```
-  :::
+  > _locales/it/\_excludes.json_:
+  > ```json
+  > [
+  >     "Micronesia"
+  > ]
+  > ```
 
 * Add these changes to the pull request you will send.
