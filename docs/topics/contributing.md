@@ -63,8 +63,8 @@ our organization.
 
 At the same time, the Laravel Framework itself also contains JSON keys:
 
-* https://github.com/laravel/framework/blob/082345d76fc6a55b649572efe10b11b03e279d24/src/Illuminate/Auth/Notifications/VerifyEmail.php#L65-L68
-* https://github.com/Laravel-Lang/lang/blob/979db1554ad5708e5d4fc8a48d6312fbd6cfa03e/source/framework/10.x/framework.json
+* [laravel/framework/src/Illuminate/Auth/Notifications/VerifyEmail.php](https://github.com/laravel/framework/blob/082345d76fc6a55b649572efe10b11b03e279d24/src/Illuminate/Auth/Notifications/VerifyEmail.php#L65-L68)
+* [Laravel-Lang/lang/source/framework/10.x/framework.json](https://github.com/Laravel-Lang/lang/blob/979db1554ad5708e5d4fc8a48d6312fbd6cfa03e/source/framework/10.x/framework.json)
 
 At the same time, the project structure is not tied to specific packages or files. For example,
 the [Laravel-Lang/http-statuses](https://github.com/Laravel-Lang/http-statuses)
