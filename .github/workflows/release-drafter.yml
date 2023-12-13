@@ -7,5 +7,5 @@ on:
   workflow_dispatch:
 
 jobs:
-    draft:
+    Update:
         uses: Laravel-Lang/.github/.github/workflows/release-drafter.yml@main
