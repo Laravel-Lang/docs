@@ -1,8 +1,8 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
-        <algolia-api-key>16d8712bbb850e6bcb517f1436824afc</algolia-api-key>
-        <algolia-id>TFI39P0622</algolia-id>
+        <algolia-api-key>1830e628456a000ddfeb32941f42a78c</algolia-api-key>
+        <algolia-id>K2N865FUBK</algolia-id>
         <algolia-index>laravel-lang</algolia-index>
         <generate-canonicals>true</generate-canonicals>
         <header-logo>logo.svg</header-logo>
