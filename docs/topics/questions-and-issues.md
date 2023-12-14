@@ -9,6 +9,7 @@ publish this information publicly.
 
 <tabs>
     <tab title="Bug report">
+        <tip>Submit bug information</tip>
         <p><b>Main packages</b></p>
         <list>
             <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-common%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-common%">%repository-title-common%</a></li>
@@ -34,6 +35,7 @@ publish this information publicly.
         </list>
     </tab>
     <tab title="Feature request">
+        <tip>Submit information for improvement</tip>
         <p><b>Main packages</b></p>
         <list>
             <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-common%&amp;projects=&amp;template=feature_request.yml">%repository-title-common%</a></li>
