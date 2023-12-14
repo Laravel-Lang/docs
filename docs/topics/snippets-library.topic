@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Snippets library"
-    is-library="true"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+        title="Snippets library"
+        is-library="true"
 >
     <snippet id="json-fallback-doesnt-allow">
         Out of the box, Laravel
         <a
-            href="https://github.com/laravel/framework/issues/41565#issuecomment-1073572954"
-            target="_blank">doesn't allow</a>
+                href="https://github.com/laravel/framework/issues/41565#issuecomment-1073572954"
+                target="_blank">doesn't allow</a>
         fallback translations for JSON keys.
         For example, when you call <code>__('Remember Me')</code>, you get <code>Remember Me</code> instead of
         <code>Se souvenir de moi</code> for French fallback language.
@@ -28,8 +28,8 @@
         <a href="https://github.com/laravel/fortify">Fortify</a>,
         <a href="https://laravel.com/docs/billing">Cashier</a>,
         <a href="https://github.com/laravel/breeze">Breeze</a>,
-        <a href="https://nova.laravel.com/">Nova</a>,
-        <a href="https://spark.laravel.com/">Spark</a>
+        <a href="https://nova.laravel.com/">Nova (also Dusk Suite and Log Viewer)</a>,
+        <a href="https://spark.laravel.com/">Spark (Stripe, Paddle, Aurelius, Aurelius Mollie)</a>
         and <a href="https://github.com/laravel/ui">UI</a>
     </snippet>
 
@@ -40,9 +40,12 @@
             <li><a href="https://laravel.com/docs/fortify#main-content">Laravel Fortify</a></li>
             <li><a href="https://laravel.com/docs/starter-kits#laravel-breeze">Laravel Breeze</a></li>
             <li><a href="https://laravel.com/docs/billing#main-content">Laravel Cashier</a></li>
-            <li><a href="https://nova.laravel.com">Laravel Nova</a></li>
-            <li><a href="https://github.com/laravel/nova-dusk-suite">Laravel Nova Dusk Suite</a></li>
-            <li><a href="https://github.com/laravel/nova-log-viewer">Laravel Nova Log Viewer</a></li>
+            <li><a href="https://nova.laravel.com">Laravel Nova</a>
+                (also
+                <a href="https://github.com/laravel/nova-dusk-suite">Dusk Suite</a>,
+                <a href="https://github.com/laravel/nova-log-viewer">Log Viewer</a>
+                )
+            </li>
             <li><a href="https://spark.laravel.com">Laravel Spark (Stripe, Paddle, Aurelius, Aurelius Mollie)</a></li>
             <li><a href="https://github.com/laravel/ui/">Laravel UI</a></li>
             <li>and other</li>
