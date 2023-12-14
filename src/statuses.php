@@ -26,8 +26,8 @@ function moveMain(string $package, string $title): void
                 sprintf('[%s&nbsp;❗](statuses/%s.md)', $locale, $locale),
             ],
             [
-                sprintf('<a href="statuses-%s-af.md" summary="%s">%s ✔</a>', $package, $title, $locale),
-                sprintf('<a href="statuses-%s-af.md" summary="%s">%s ❗</a>', $package, $title, $locale),
+                sprintf('<a href="statuses-%s-%s.md" summary="%s">%s ✔</a>', $package, $locale, $title, $locale),
+                sprintf('<a href="statuses-%s-%s.md" summary="%s">%s ❗</a>', $package, $locale, $title, $locale),
             ],
             $content
         );
