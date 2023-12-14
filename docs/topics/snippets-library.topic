@@ -29,6 +29,9 @@
         <a href="https://laravel.com/docs/billing">Cashier</a>,
         <a href="https://github.com/laravel/breeze">Breeze</a>,
         <a href="https://nova.laravel.com/">Nova (also Dusk Suite and Log Viewer)</a>,
+        <a href="https://nova.laravel.com/">Nova</a> (also
+        <a href="https://github.com/laravel/nova-dusk-suite">Dusk Suite</a>,
+        <a href="https://github.com/laravel/nova-log-viewer">Log Viewer</a> ),
         <a href="https://spark.laravel.com/">Spark (Stripe, Paddle, Aurelius, Aurelius Mollie)</a>
         and <a href="https://github.com/laravel/ui">UI</a>
     </snippet>
