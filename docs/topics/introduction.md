@@ -12,3 +12,9 @@
 <include from="snippets-library.topic" element-id="lists-laravel-projects"/>
 
 And these are not all the projects that the **%team-name%** supports 😎!
+
+## Quick Links
+
+- [Installation](installation.md)
+- [Adding locales](usage-add-locales.md)
+- [Updating locales](usage-update-locales.md)
