@@ -17,6 +17,7 @@ Or you can install only the packages you need using the required console command
 %install-publisher%
 
 %install-lang%
+%install-actions%
 %install-attributes%
 %install-http-statuses%
 

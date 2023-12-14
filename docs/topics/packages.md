@@ -5,6 +5,7 @@
 - [Packages Common](packages-common.md)
 - [Packages Publisher](packages-publisher.md)
 - [Packages Lang](packages-lang.md)
+- [Packages Actions](packages-actions.md)
 - [Packages Attributes](packages-attributes.md)
 - [Packages Http Statuses](packages-http-statuses.md)
 - [Packages Locales](packages-locales.md)

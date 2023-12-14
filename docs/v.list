@@ -13,6 +13,7 @@
     <var name="command-reset" value="php artisan lang:reset" />
     <var name="command-update" value="php artisan lang:update" />
     <var name="config-filename" value="config/localization.php" />
+    <var name="install-actions" value="composer require --dev laravel-lang/actions" />
     <var name="install-attributes" value="composer require --dev laravel-lang/attributes" />
     <var name="install-common" value="composer require --dev laravel-lang/common" />
     <var name="install-http-statuses" value="composer require --dev laravel-lang/http-statuses" />
@@ -26,6 +27,7 @@
     <var name="install-publisher" value="composer require --dev laravel-lang/publisher" />
     <var name="locale-many" value="fr de de_CH vi zh_CN" />
     <var name="locale-one" value="fr" />
+    <var name="package-actions" value="laravel-lang/actions" />
     <var name="package-attributes" value="laravel-lang/attributes" />
     <var name="package-common" value="laravel-lang/common" />
     <var name="package-docs" value="laravel-lang/docs" />
@@ -43,6 +45,7 @@
     <var name="package-status-generator" value="laravel-lang/status-generator" />
     <var name="repository-assign-bugs" value="andrey-helldar" />
     <var name="repository-bugs" value="common" />
+    <var name="repository-label-actions" value="actions" />
     <var name="repository-label-attributes" value="attributes" />
     <var name="repository-label-common" value="common" />
     <var name="repository-label-docs" value="docs" />
@@ -57,6 +60,7 @@
     <var name="repository-label-publisher" value="publisher" />
     <var name="repository-label-status-generator" value="status-generator" />
     <var name="repository-label-translations-template" value="translations-template" />
+    <var name="repository-title-actions" value="Actions" />
     <var name="repository-title-attributes" value="Attributes" />
     <var name="repository-title-common" value="Common" />
     <var name="repository-title-docs" value="Documentation" />

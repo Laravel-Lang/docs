@@ -7,6 +7,8 @@
     - <a anchor="common" summary="">Common</a>
     - <a anchor="publisher" summary="">Publisher</a>
     - <a anchor="lang" summary="">Lang</a>
+    - <a anchor="actions" summary="">Actions</a>
+    - <a anchor="attributes" summary="">Attributes</a>
     - <a anchor="http-statuses" summary="">HTTP Statuses</a>
     - <a anchor="locales" summary="">Locales</a>
     - <a anchor="locale-list" summary="">Locale List</a>
@@ -59,6 +61,12 @@ for Laravel projects and minor versions of [PHP](https://www.php.net).
 | 9, 10          | 8.1, 8.2      | 14        | `^12.0` | Breeze 1<br/>Cashier Stripe 12, 13, 14<br/>Fortify 1<br/>Jetstream 1, 2, 3<br/>Nova 3, 4<br/>Spark Aurelius 11, 12<br/>Spark Aurelius Mollie 2<br/>Spark Paddle *<br/>Stripe Stripe *<br/>UI 3, 4 | ![Not Supported](%badge-not-supported%) |
 | 6, 7, 8, 9, 10 | 8.1, 8.2      |           | `^11.0` | Breeze 1<br/>Cashier Stripe 12, 13<br/>Fortify 1<br/>Jetstream 1, 2<br/>Nova 3, 4<br/>Spark Paddle *<br/>Stripe Stripe *<br/>UI 1, 2, 3, 4                                                        | ![Not Supported](%badge-not-supported%) |
 | 7, 8, 9        | 8.1, 8.2      |           | `^10.0` | Breeze 1<br/>Cashier Stripe 12, 13<br/>Fortify 1<br/>Jetstream 1<br/>Nova 3<br/>Spark Paddle *<br/>Stripe Stripe *<br/>UI 1, 2, 3                                                                 | ![Not Supported](%badge-not-supported%) |
+
+### Actions
+
+| Laravel | PHP           | Publisher | Package |             Status              |
+|---------|---------------|-----------|---------|:-------------------------------:|
+| 10      | 8.1, 8.2, 8.3 | 15        | `^1.0`  | ![Supported](%badge-supported%) |
 
 ### Attributes
 

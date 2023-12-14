@@ -68,6 +68,7 @@ function moveStatus(string $package, Locale $locale): void
     file_put_contents($targetPath . "statuses-$package-$locale->value.md", $content);
 }
 
+moveMain('actions', 'Actions');
 moveMain('attributes', 'Attributes');
 moveMain('http-statuses', 'HTTP Statuses');
 moveMain('lang', 'Lang');
@@ -77,6 +78,7 @@ foreach (Locale::cases() as $locale) {
         continue;
     }
 
+    moveStatus('actions', $locale);
     moveStatus('attributes', $locale);
     moveStatus('http-statuses', $locale);
     moveStatus('lang', $locale);
