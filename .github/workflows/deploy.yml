@@ -93,7 +93,7 @@ jobs:
 
         steps:
             -   name: Download docs artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: docs
                     path: artifacts
@@ -125,7 +125,7 @@ jobs:
                 run: composer update --no-progress --no-interaction
 
             -   name: Download docs artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: docs
 
@@ -180,17 +180,17 @@ jobs:
 
         steps:
             -   name: Download docs artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: docs
 
             -   name: Download sitemap artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: sitemap
 
             -   name: Download robots artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: robots
 
@@ -229,7 +229,7 @@ jobs:
 
         steps:
             -   name: Download search artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: algolia-indexes
 
