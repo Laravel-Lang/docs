@@ -8,19 +8,19 @@
 
     <tldr>
 
-        - [Managing locales](manage-locales.topic)
-        - [Add locales](usage-add-locales.topic)
-        - [Update locales](usage-update-locales.topic)
-        - [Reset locales](usage-reset-locales.topic)
-        - [Remove locales](usage-remove-locales.topic)
-        - [Available list](available-locales-list.topic)
-        - [Facade](usage-facade.topic)
-        - [Aliases](usage-aliases.topic)
-        - [Locales List](usage-list-of-locales.topic)
-        - [Native Names](usage-native-locales.topic)
-        - [Locale Names](packages-native-locale-names.topic)
-        - [Country Names](packages-native-country-names.topic)
-        - [Currency Names](packages-native-currency-names.topic)
+        - <a href="manage-locales.topic">Managing locales</a>
+        - <a href="usage-add-locales.topic">Add locales</a>
+        - <a href="usage-update-locales.topic">Update locales</a>
+        - <a href="usage-reset-locales.topic">Reset locales</a>
+        - <a href="usage-remove-locales.topic">Remove locales</a>
+        - <a href="available-locales-list.topic">Available list</a>
+        - <a href="usage-facade.topic">Facade</a>
+        - <a href="usage-aliases.topic">Aliases</a>
+        - <a href="usage-list-of-locales.topic">Locales List</a>
+        - <a href="usage-native-locales.topic">Native Names</a>
+        - <a href="packages-native-locale-names.topic">Locale Names</a>
+        - <a href="packages-native-country-names.topic">Country Names</a>
+        - <a href="packages-native-currency-names.topic">Currency Names</a>
 
     </tldr>
 

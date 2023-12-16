@@ -7,7 +7,7 @@
 
 <note>
     If you want to get a localized list of currencies, then simply call the `Native::get()` method from
-    the [`%package-native-currency-names%`](packages-native-currency-names.topic) package.
+    the <a href="packages-native-currency-names.topic">`%package-native-currency-names%`</a> package.
 </note>
     <chapter title="Localized Names" id="localized_names">
         <code-block lang="php">

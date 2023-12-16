@@ -6,7 +6,7 @@
     title="From laravel-lang/*" id="upgrade-from-laravel-lang">
 
 <note>
-    Check the version of the framework and PHP against the [compatibility](release-notes.topic#support-policy) table.
+    Check the version of the framework and PHP against the <a href="release-notes.topic#support-policy">compatibility</a> table.
 </note>
     <p>
 
@@ -23,7 +23,7 @@
     </code-block>
     <p>
 
-        If you want to use the list of [locales](packages-locales.topic) in production, then install the dependency separately:
+        If you want to use the list of <a href="packages-locales.topic">locales</a> in production, then install the dependency separately:
     </p>
     <code-block lang="bash">
         %install-locales%

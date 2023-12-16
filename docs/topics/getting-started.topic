@@ -7,11 +7,11 @@
 
     <tldr>
 
-        - [Installation](installation.topic)
-        - [Configuration](configuration.topic)
-        - [Aliases](configuration.topic#aliases)
-        - [Alignment](configuration.topic#alignment)
-        - [Smart Punctuation](configuration.topic#smart-punctuation)
+        - <a href="installation.topic">Installation</a>
+        - <a href="configuration.topic">Configuration</a>
+        - <a href="configuration.topic#aliases">Aliases</a>
+        - <a href="configuration.topic#alignment">Alignment</a>
+        - <a href="configuration.topic#smart-punctuation">Smart Punctuation</a>
 
     </tldr>
 </topic>

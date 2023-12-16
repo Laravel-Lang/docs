@@ -26,7 +26,7 @@
         </p>
         <p>
             The localization update command only adds new or updates existing translation phrases.
-            To remove unused phrases, use the console command [`%command-reset%`](usage-reset-locales.topic).
+            To remove unused phrases, use the console command <a href="usage-reset-locales.topic">`%command-reset%`</a>.
         </p>
     </tip>
 </topic>

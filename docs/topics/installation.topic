@@ -7,13 +7,13 @@
 
     <chapter title="Common Package" id="common_package">
         <p>
-            You can install the package via [Composer](https://getcomposer.org):
+            You can install the package via <a href="https://getcomposer.org">Composer</a>:
         </p>
         <code-block lang="bash">
             %install-common%
         </code-block>
         <p>
-            The [Common](packages-common.topic) package will install all the necessary versions of packages at once and you will not
+            The <a href="packages-common.topic">Common</a> package will install all the necessary versions of packages at once and you will not
             need to maintain each one.
         </p>
         <p>

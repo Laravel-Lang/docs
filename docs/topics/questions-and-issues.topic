@@ -12,7 +12,7 @@
 </p>
     <p>
 
-        If you find a bug that regarding **security**, please read the [`security policy`](security-policy.topic) and do not
+        If you find a bug that regarding **security**, please read the <a href="security-policy.topic">`security policy`</a> and do not
         publish this information publicly.
     </p>
     <tabs>

@@ -7,10 +7,10 @@
 
 <p>
 
-  - [Updating Dependencies](#updating-dependencies)
-  - [New constants namespace](#new-constants-namespace)
-  - [New facade helper](#new-facade-helper)
-  - [Using in production](#using-in-production)
+  - <a href="#updating-dependencies">Updating Dependencies</a>
+  - <a href="#new-constants-namespace">New constants namespace</a>
+  - <a href="#new-facade-helper">New facade helper</a>
+  - <a href="#using-in-production">Using in production</a>
 </p>
   <chapter title="Updating Dependencies" id="updating_dependencies">
     <p>
@@ -57,12 +57,12 @@ LaravelLang\Publisher\Constants\Locales::AFRIKAANS; // af
 LaravelLang\Locales\Enums\Locale::Afrikaans; // af
     </code-block>
     <p>
-      The name of the cases is aligned with the [PER standard](https://www.php-fig.org/per/coding-style)
+      The name of the cases is aligned with the <a href="https://www.php-fig.org/per/coding-style">PER standard</a>
       (see `enumerations` section).
     </p>
     <p>
 
-      Also [changed](configuration.topic#aliases) `aliases` section in the configuration file.
+      Also <a href="configuration.topic#aliases">changed</a> `aliases` section in the configuration file.
     </p>
   </chapter>
   <chapter title="New facade helper" id="new_facade_helper">

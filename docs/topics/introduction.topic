@@ -6,7 +6,7 @@
     title="%instance%" id="introduction123">
 
     <p>
-        ![laravel-lang localize your app](https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark)
+        !<a href="https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark">laravel-lang localize your app</a>
     </p>
     <chapter title="Introduction" id="introduction">
         <p>
@@ -22,9 +22,9 @@
     </chapter>
     <chapter title="Quick Links" id="quick_links">
 
-        - [Installation](installation.topic)
-        - [Adding locales](usage-add-locales.topic)
-        - [Updating locales](usage-update-locales.topic)
+        - <a href="installation.topic">Installation</a>
+        - <a href="usage-add-locales.topic">Adding locales</a>
+        - <a href="usage-update-locales.topic">Updating locales</a>
 
     </chapter>
 </topic>

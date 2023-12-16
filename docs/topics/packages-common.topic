@@ -6,7 +6,7 @@
     title="Common" id="packages-common">
 
    <tip>
-       The compatibility table can be viewed [here](release-notes.topic#common).
+       The compatibility table can be viewed <a href="release-notes.topic#common">here</a>.
    </tip>
     <p>
         This package is needed for quick installation and updating of all our projects.
@@ -30,10 +30,10 @@
     </p>
     <p>
 
-        - [`%package-lang%`](packages-lang.topic)
-        - [`%package-attributes%`](packages-attributes.topic)
-        - [`%package-http-statuses%`](packages-http-statuses.topic)
-        - [`%package-locales%`](packages-locales.topic)
-        - [`%package-publisher%`](packages-publisher.topic)
+        - <a href="packages-lang.topic">`%package-lang%`</a>
+        - <a href="packages-attributes.topic">`%package-attributes%`</a>
+        - <a href="packages-http-statuses.topic">`%package-http-statuses%`</a>
+        - <a href="packages-locales.topic">`%package-locales%`</a>
+        - <a href="packages-publisher.topic">`%package-publisher%`</a>
     </p>
 </topic>

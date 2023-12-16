@@ -7,9 +7,9 @@
 
 <p>
 
-    - [Updating dependencies](#updating-dependencies)
-    - [Upgrade publisher](#upgrade-publisher)
-    - [Using in production](#using-in-production)
+    - <a href="#updating-dependencies">Updating dependencies</a>
+    - <a href="#upgrade-publisher">Upgrade publisher</a>
+    - <a href="#using-in-production">Using in production</a>
 </p>
     <chapter title="Updating dependencies" id="updating_dependencies">
         <p>
@@ -34,7 +34,7 @@
     <chapter title="Upgrade publisher" id="upgrade_publisher">
         <p>
             If you use access to locales or a locale helper in production, then also follow the necessary steps described in
-            the [publisher upgrade section](upgrade-publisher-to-15-from-14.topic#new-constants-namespace).
+            the <a href="upgrade-publisher-to-15-from-14.topic#new-constants-namespace">publisher upgrade section</a>.
         </p>
     </chapter>
     <chapter title="Using in production" id="using_in_production">

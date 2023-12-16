@@ -6,7 +6,7 @@
     title="HTTP Statuses" id="packages-http-statuses">
 
     <tip>
-        The compatibility table can be viewed [here](release-notes.topic#http-statuses).
+        The compatibility table can be viewed <a href="release-notes.topic#http-statuses">here</a>.
     </tip>
     <p>
         This package contains a translation of the names of all common HTTP code statuses and is linked to its numerical value.

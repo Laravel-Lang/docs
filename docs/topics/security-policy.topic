@@ -7,11 +7,11 @@
     title="Security Policy" id="security-policy">
 
     <p>
-        **PLEASE DON'T DISCLOSE SECURITY-RELATED ISSUES PUBLICLY, [SEE BELOW](#reporting-a-vulnerability).**
+        **PLEASE DON'T DISCLOSE SECURITY-RELATED ISSUES PUBLICLY, <a href="#reporting-a-vulnerability">SEE BELOW</a>.**
     </p>
     <chapter title="Supported Versions" id="supported_versions">
         <p>
-            Please see our [**support policy**](release-notes.topic#support-policy) for information on supported versions for security
+            Please see our <a href="release-notes.topic#support-policy">**support policy**</a> for information on supported versions for security
             releases.
         </p>
     </chapter>

@@ -6,10 +6,10 @@
     title="Lang" id="packages-lang">
 
    <tip>
-       The compatibility table can be viewed [here](release-notes.topic#lang).
+       The compatibility table can be viewed <a href="release-notes.topic#lang">here</a>.
    </tip>
     <p>
-        This package contains translations of all official keys from [Laravel projects](https://laravel-lang.com):
+        This package contains translations of all official keys from <a href="https://laravel-lang.com">Laravel projects</a>:
     </p>
     <include from="snippets-library.topic" element-id="lists-laravel-projects"/>
     <p>

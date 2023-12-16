@@ -12,9 +12,9 @@
 
         | Package                                                               | Description                                                                  |
         |:----------------------------------------------------------------------|:-----------------------------------------------------------------------------|
-        | [laravel&#x2011;lang/lang](packages-lang.topic)                          | Laravel Framework, Jetstream , Fortify, Breeze, Cashier, Nova, Spark and UI. |
-        | [laravel&#x2011;lang/attributes](packages-attributes.topic)              | Translation of custom fields for the validator.                              |
-        | [laravel&#x2011;lang/http&#x2011;statuses](packages-http-statuses.topic) | Translation of HTTP statuses.                                                |
+        | <a href="packages-lang.topic">laravel&#x2011;lang/lang</a>                          | Laravel Framework, Jetstream , Fortify, Breeze, Cashier, Nova, Spark and UI. |
+        | <a href="packages-attributes.topic">laravel&#x2011;lang/attributes</a>              | Translation of custom fields for the validator.                              |
+        | <a href="packages-http-statuses.topic">laravel&#x2011;lang/http&#x2011;statuses</a> | Translation of HTTP statuses.                                                |
 
     </p>
     <seealso style="cards">

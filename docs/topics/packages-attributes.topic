@@ -6,7 +6,7 @@
     title="Attributes" id="packages-attributes">
 
     <note>
-        The compatibility table can be viewed [here](release-notes.topic#attributes).
+        The compatibility table can be viewed <a href="release-notes.topic#attributes">here</a>.
     </note>
     <p>
         This package contains a custom set of attribute names that are most commonly found in various forms of the application.
