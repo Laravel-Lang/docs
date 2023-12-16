@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Locale List" id="locale-list">
+
+<note>
+    If you need to connect only a list of available locales to your project, you can use
+    the [`package-locales-list`](packages-locale-list.md) package.
+</note>
+    <chapter title="As enum" id="as_enum">
+        <code-block lang="php">
+            use LaravelLang\LocaleList\Locale;
+
+return Locale::Bengali;
+        </code-block>
+        <p>
+            Result:
+        </p>
+        <code-block lang="php">
+            LaravelLang\LocaleList\Locale {
+  +name: "Bengali"
+  +value: "bn"
+}
+        </code-block>
+    </chapter>
+    <chapter title="List of codes" id="list_of_codes">
+        <tip>
+            This list is not sorted during output.
+        </tip>
+        <code-block lang="php">
+            use LaravelLang\LocaleList\Locale;
+
+return Locale::values();
+        </code-block>
+        <p>
+            Result:
+        </p>
+        <code-block lang="php">
+            array:79 [
+  0 => "af"
+  1 => "sq"
+  2 => "ar"
+  3 => "hy"
+  4 => "az"
+  5 => "eu"
+  6 => "be"
+  7 => "bn"
+  8 => "bs"
+  9 => "bg"
+  ...
+]
+        </code-block>
+    </chapter>
+    <chapter title="List of titles" id="list_of_titles">
+        <tip>
+            This list is sorted alphabetically because the names are used as the keys of the enum class.
+        </tip>
+        <code-block lang="php">
+            use LaravelLang\LocaleList\Locale;
+
+return Locale::names();
+        </code-block>
+        <p>
+            Result:
+        </p>
+        <code-block lang="php">
+
+    
+array:79 [
+  0 => "Afrikaans"
+  1 => "Albanian"
+  2 => "Arabic"
+  3 => "Armenian"
+  4 => "Azerbaijani"
+  5 => "Basque"
+  6 => "Belarusian"
+  7 => "Bengali"
+  8 => "Bosnian"
+  9 => "Bulgarian"
+  ...
+]
+        </code-block>
+    </chapter>
+    <chapter title="List of codes with names" id="list_of_codes_with_names">
+        <code-block lang="php">
+
+    
+use LaravelLang\LocaleList\Locale;
+
+return Locale::options();
+        </code-block>
+        <p>
+            Result:
+        </p>
+        <code-block lang="php">
+
+    
+array:79 [
+  "Afrikaans"   => "af"
+  "Albanian"    => "sq"
+  "Arabic"      => "ar"
+  "Armenian"    => "hy"
+  "Azerbaijani" => "az"
+  "Basque"      => "eu"
+  "Belarusian"  => "be"
+  "Bengali"     => "bn"
+  "Bosnian"     => "bs"
+  "Bulgarian"   => "bg"
+  ...
+]
+        </code-block>
+    </chapter>
+</topic>
