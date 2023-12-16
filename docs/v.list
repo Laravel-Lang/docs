@@ -77,8 +77,8 @@
     <var name="repository-title-translations-template" value="Translations Template" />
     <var name="security-caouecs-email" value="caouecs@caouecs.net" />
     <var name="security-caouecs-name" value="Fred Delrieu" />
-    <var name="security-email" value="helldar@dragon-code.pro" />
-    <var name="security-name" value="Andrey Helldar" />
+    <var name="security-helldar-email" value="helldar@dragon-code.pro" />
+    <var name="security-helldar-name" value="Andrey Helldar" />
     <var name="security-subject" value="Security%20error%20detected" />
     <var name="team-name" value="Laravel-Lang Team" />
     <var name="year" value="2023" />

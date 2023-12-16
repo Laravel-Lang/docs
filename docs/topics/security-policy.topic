@@ -18,7 +18,7 @@
     <chapter title="Reporting a Vulnerability" id="reporting_a_vulnerability">
         <p>
             If you discover a security vulnerability within **%instance%** products, please email
-            <a href="mailto:%security-email%;%security-caouecs-email%">%security-name%, %security-caouecs-name%</a>.
+            <a href="mailto:%security-helldar-email%;%security-caouecs-email%">%security-helldar-name%, %security-caouecs-name%</a>.
             All security vulnerabilities will be promptly addressed.
         </p>
         <p>
