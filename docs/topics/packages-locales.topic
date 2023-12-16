@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Locales" id="packages-locales">
+
+    <tip>
+        The compatibility table can be viewed [here](release-notes.md#locales).
+    </tip>
+    <p>
+        This package contains the core mechanics for working with locales.
+    </p>
+    <p>
+        It can display the following lists of locales:
+    </p>
+    <p>
+
+        - available for installation
+        - installed locales
+        - not installed locales
+        - protected localizations
+    </p>
+    <p>
+        It can also check that the locale:
+    </p>
+    <p>
+
+        - available for installation
+        - installed in the application
+        - is protected
+        - In addition, the package can receive the main and backup locales and check them for validity.
+    </p>
+    <p>
+
+        It can also work with locale aliases.
+    </p>
+    <p>
+        To install, run the console command:
+    </p>
+    <code-block lang="bash">
+        %install-locales%
+    </code-block>
+</topic>
