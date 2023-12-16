@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Add" id="usage-add-locales">
+
+<note>
+    A list of available locale codes can be found [here](available-locales-list.md).
+</note>
+    <p>
+        You can install the required locales by calling the console command `%command-add-empty%`,
+        passing it one or more locale codes, separated by a space:
+    </p>
+    <code-block lang="bash">
+        %command-add% %locale-many%
+%command-add% %locale-one%
+    </code-block>
+    <p>
+
+        If the target files exist, you will be asked what to do in this case - skip installing the files or replace them.
+    </p>
+    <p>
+
+        If these files contain keys that you added, it is recommended to skip them, since the `%command-update%` command will be
+        able to update the files without deleting your code.
+    </p>
+</topic>
