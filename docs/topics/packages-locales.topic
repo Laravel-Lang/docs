@@ -7,7 +7,7 @@
     title="Locales" id="packages-locales">
 
     <tip>
-        The compatibility table can be viewed [here](release-notes.md#locales).
+        The compatibility table can be viewed [here](release-notes.topic#locales).
     </tip>
     <p>
         This package contains the core mechanics for working with locales.

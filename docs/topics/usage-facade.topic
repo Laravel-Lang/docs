@@ -6,7 +6,7 @@
     title="Facade" id="usage-facade">
 
 <note>
-  To use this functionality, make sure you have the [`%package-locales%`](packages-locales.md) package installed.
+  To use this functionality, make sure you have the [`%package-locales%`](packages-locales.topic) package installed.
 </note>
   <p>
 

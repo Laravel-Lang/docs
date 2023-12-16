@@ -6,7 +6,7 @@
     title="Native Country Names" id="packages-native-country-names">
 
   <tip>
-      The compatibility table can be viewed [here](release-notes.md#native-country-names).
+      The compatibility table can be viewed [here](release-notes.topic#native-country-names).
   </tip>
     <p>
         This package contains a list of localized country names.

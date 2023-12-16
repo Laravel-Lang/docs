@@ -7,7 +7,7 @@
     title="JSON Fallback" id="packages-json-fallback">
 
     <tip>
-        The compatibility table can be viewed [here](release-notes.md#json-fallback).
+        The compatibility table can be viewed [here](release-notes.topic#json-fallback).
     </tip>
     <p>
         This package solves the problem of using JSON translations in applications where the fallback locale is not English.
@@ -18,7 +18,7 @@
     </p>
     <tip>
         Read more about installation and configuration
-        [**here**](installation.md#json-fallback)
+        [**here**](installation.topic#json-fallback)
         .
     </tip>
 </topic>

@@ -6,7 +6,7 @@
     title="Lang" id="packages-lang">
 
    <tip>
-       The compatibility table can be viewed [here](release-notes.md#lang).
+       The compatibility table can be viewed [here](release-notes.topic#lang).
    </tip>
     <p>
         This package contains translations of all official keys from [Laravel projects](https://laravel-lang.com):

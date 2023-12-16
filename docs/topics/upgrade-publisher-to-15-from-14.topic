@@ -62,7 +62,7 @@ LaravelLang\Locales\Enums\Locale::Afrikaans; // af
     </p>
     <p>
 
-      Also [changed](configuration.md#aliases) `aliases` section in the configuration file.
+      Also [changed](configuration.topic#aliases) `aliases` section in the configuration file.
     </p>
   </chapter>
   <chapter title="New facade helper" id="new_facade_helper">
@@ -142,4 +142,3 @@ composer require %package-locales%
     </code-block>
   </chapter>
 </topic>
-   

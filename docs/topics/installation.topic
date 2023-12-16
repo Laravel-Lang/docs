@@ -13,7 +13,7 @@
             %install-common%
         </code-block>
         <p>
-            The [Common](packages-common.md) package will install all the necessary versions of packages at once and you will not
+            The [Common](packages-common.topic) package will install all the necessary versions of packages at once and you will not
             need to maintain each one.
         </p>
         <p>

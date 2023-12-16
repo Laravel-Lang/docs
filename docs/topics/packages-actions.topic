@@ -6,7 +6,7 @@
     title="Actions" id="packages-actions">
 
     <note>
-        The compatibility table can be viewed [here](release-notes.md#actions).
+        The compatibility table can be viewed [here](release-notes.topic#actions).
     </note>
     <p>
         The package includes translation of buttons and interface elements.

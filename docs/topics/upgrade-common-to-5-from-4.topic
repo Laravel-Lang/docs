@@ -34,7 +34,7 @@
     <chapter title="Upgrade publisher" id="upgrade_publisher">
         <p>
             If you use access to locales or a locale helper in production, then also follow the necessary steps described in
-            the [publisher upgrade section](upgrade-publisher-to-15-from-14.md#new-constants-namespace).
+            the [publisher upgrade section](upgrade-publisher-to-15-from-14.topic#new-constants-namespace).
         </p>
     </chapter>
     <chapter title="Using in production" id="using_in_production">

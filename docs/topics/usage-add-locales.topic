@@ -6,7 +6,7 @@
     title="Add" id="usage-add-locales">
 
 <note>
-    A list of available locale codes can be found [here](available-locales-list.md).
+    A list of available locale codes can be found [here](available-locales-list.topic).
 </note>
     <p>
         You can install the required locales by calling the console command `%command-add-empty%`,

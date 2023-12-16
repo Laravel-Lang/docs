@@ -8,19 +8,19 @@
 
     <tldr>
 
-        - [Managing locales](manage-locales.md)
-        - [Add locales](usage-add-locales.md)
-        - [Update locales](usage-update-locales.md)
-        - [Reset locales](usage-reset-locales.md)
-        - [Remove locales](usage-remove-locales.md)
-        - [Available list](available-locales-list.md)
-        - [Facade](usage-facade.md)
-        - [Aliases](usage-aliases.md)
-        - [Locales List](usage-list-of-locales.md)
-        - [Native Names](usage-native-locales.md)
-        - [Locale Names](packages-native-locale-names.md)
-        - [Country Names](packages-native-country-names.md)
-        - [Currency Names](packages-native-currency-names.md)
+        - [Managing locales](manage-locales.topic)
+        - [Add locales](usage-add-locales.topic)
+        - [Update locales](usage-update-locales.topic)
+        - [Reset locales](usage-reset-locales.topic)
+        - [Remove locales](usage-remove-locales.topic)
+        - [Available list](available-locales-list.topic)
+        - [Facade](usage-facade.topic)
+        - [Aliases](usage-aliases.topic)
+        - [Locales List](usage-list-of-locales.topic)
+        - [Native Names](usage-native-locales.topic)
+        - [Locale Names](packages-native-locale-names.topic)
+        - [Country Names](packages-native-country-names.topic)
+        - [Currency Names](packages-native-currency-names.topic)
 
     </tldr>
 

@@ -93,7 +93,7 @@
     <chapter title="What should I do if there is a tag whose translation is the same as in English?" id="what_should_i_do_if_there_is_a_tag_whose_translation_is_the_same_as_in_english_">
         <p>
             In some languages there are some strings whose translation is the same as in English. In this case, the script that
-            generates the [status](statuses.md) adds them by default to the
+            generates the [status](statuses.topic) adds them by default to the
             list of pending translations. This affects the *completion status* for this language which would never be marked in
             *status list* with (
             ) but with () even if all other strings were translated.

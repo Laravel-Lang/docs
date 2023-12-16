@@ -7,7 +7,7 @@
 
 <note>
     If you need to connect only a list of available locales to your project, you can use
-    the [`package-locales-list`](packages-locale-list.md) package.
+    the [`package-locales-list`](packages-locale-list.topic) package.
 </note>
     <chapter title="As enum" id="as_enum">
         <code-block lang="php">

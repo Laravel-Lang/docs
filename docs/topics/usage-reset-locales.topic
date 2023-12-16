@@ -15,6 +15,6 @@
     <p>
 
         As a result, all target files will be cleared of those keys that are not defined by **%instance%** packages or
-        installed [third-party plugins](plugins-community.md).
+        installed [third-party plugins](plugins-community.topic).
     </p>
 </topic>

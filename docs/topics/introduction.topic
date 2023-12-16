@@ -22,10 +22,9 @@
     </chapter>
     <chapter title="Quick Links" id="quick_links">
 
-        - [Installation](installation.md)
-        - [Adding locales](usage-add-locales.md)
-        - [Updating locales](usage-update-locales.md)
+        - [Installation](installation.topic)
+        - [Adding locales](usage-add-locales.topic)
+        - [Updating locales](usage-update-locales.topic)
 
     </chapter>
 </topic>
- 

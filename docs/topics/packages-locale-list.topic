@@ -6,7 +6,7 @@
     title="Locale List" id="packages-locale-list">
 
     <tip>
-        The compatibility table can be viewed [here](release-notes.md#locale-list).
+        The compatibility table can be viewed [here](release-notes.topic#locale-list).
     </tip>
     <p>
         This package contains a list of available locales that all **%team-name%** packages work with.

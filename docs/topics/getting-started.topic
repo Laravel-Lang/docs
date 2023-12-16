@@ -7,11 +7,11 @@
 
     <tldr>
 
-        - [Installation](installation.md)
-        - [Configuration](configuration.md)
-        - [Aliases](configuration.md#aliases)
-        - [Alignment](configuration.md#alignment)
-        - [Smart Punctuation](configuration.md#smart-punctuation)
+        - [Installation](installation.topic)
+        - [Configuration](configuration.topic)
+        - [Aliases](configuration.topic#aliases)
+        - [Alignment](configuration.topic#alignment)
+        - [Smart Punctuation](configuration.topic#smart-punctuation)
 
     </tldr>
 </topic>
