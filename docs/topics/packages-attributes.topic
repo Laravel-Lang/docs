@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Attributes" id="packages-attributes">
+
+    <note>
+        The compatibility table can be viewed [here](release-notes.md#attributes).
+    </note>
+    <p>
+        This package contains a custom set of attribute names that are most commonly found in various forms of the application.
+    </p>
+    <p>
+        To install, run the console command:
+    </p>
+    <code-block lang="bash">
+        %install-attributes%
+    </code-block>
+</topic>
