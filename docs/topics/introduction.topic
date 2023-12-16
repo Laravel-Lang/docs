@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
     SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="%instance%" id="introduction123">
+    title="%instance%">
 
     <p>
-        !<a href="https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark">laravel-lang localize your app</a>
+        <img
+            src="https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&amp;preposition=with&amp;mode=dark"
+            alt="localize your app"
+        />
     </p>
-    <chapter title="Introduction" id="introduction">
-        <p>
-            **%instance%** projects allow you to easily connect translation packages to your project that serve different tasks.
-        </p>
-    </chapter>
+    <p>
+        <format style="bold">%instance%</format>
+        projects allow you to easily connect translation packages to your
+        project that serve different tasks.
+    </p>
     <chapter title="Support Projects" id="support_projects">
-        <include from="snippets-library.topic" element-id="lists-laravel-projects"/>
-        
+        <include from="snippets-library.topic" element-id="lists-laravel-projects" />
+
         <p>
-            And these are not all the projects that the **%team-name%** supports 😎!
+            And these are not all the projects that the
+            <format style="bold">%team-name%</format>
+            supports 😎!
         </p>
     </chapter>
     <chapter title="Quick Links" id="quick_links">
-
-        - <a href="installation.topic">Installation</a>
-        - <a href="usage-add-locales.topic">Adding locales</a>
-        - <a href="usage-update-locales.topic">Updating locales</a>
-
+        <list>
+            <li><a href="installation.topic" /></li>
+            <li><a href="usage-add-locales.topic" /></li>
+            <li><a href="usage-update-locales.topic" /></li>
+        </list>
     </chapter>
 </topic>
