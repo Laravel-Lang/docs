@@ -5,7 +5,8 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Update" id="usage-update-locales">
 
-<p>
+    <title instance="laravel-lang">Update Locales</title>
+    <p>
 
     To update files, call the console command:
 </p>

@@ -5,7 +5,8 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Add" id="usage-add-locales">
 
-<note>
+    <title instance="laravel-lang">Add Locales</title>
+    <note>
     A list of available locale codes can be found <a href="available-locales-list.topic">here</a>.
 </note>
     <p>
