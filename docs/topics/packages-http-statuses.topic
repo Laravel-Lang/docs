@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="HTTP Statuses" id="packages-http-statuses">
+
+    <tip>
+        The compatibility table can be viewed [here](release-notes.md#http-statuses).
+    </tip>
+    <p>
+        This package contains a translation of the names of all common HTTP code statuses and is linked to its numerical value.
+        So, you can easily localize the translation of them too!
+    </p>
+    <p>
+        To install, run the console command:
+    </p>
+    <code-block lang="bash">
+        %install-http-statuses%
+    </code-block>
+</topic>
