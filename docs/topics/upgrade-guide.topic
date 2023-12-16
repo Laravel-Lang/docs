@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+title="Upgrade Guide" id="upgrade-guide">
+
+
+    <tldr>
+
+        - [Publisher](upgrade-publisher.md)
+        - [To 15 from 14](upgrade-publisher-to-15-from-14.md)
+        - [From `laravel-lang/*`](upgrade-from-laravel-lang.md)
+        - [From `caouecs/laravel-lang`](upgrade-from-caouecs-laravel-lang.md)
+
+    </tldr>
+</topic>
