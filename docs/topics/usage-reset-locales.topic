@@ -15,7 +15,7 @@
     </code-block>
     <p>
 
-        As a result, all target files will be cleared of those keys that are not defined by **%instance%** packages or
+        As a result, all target files will be cleared of those keys that are not defined by <format style="bold">%instance%</format> packages or
         installed <a href="plugins-community.topic">third-party plugins</a>.
     </p>
 </topic>

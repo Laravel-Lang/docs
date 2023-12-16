@@ -7,12 +7,12 @@
 
 <p>
     Find yourself stuck using the package? Found a bug?
-    Do you have general questions or suggestions for improving **%instance%** projects?
+    Do you have general questions or suggestions for improving <format style="bold">%instance%</format> projects?
     Feel free to create an issue on GitHub, we'll try to address it as soon as possible.
 </p>
     <p>
 
-        If you find a bug that regarding **security**, please read the <a href="security-policy.topic">`security policy`</a> and do not
+        If you find a bug that regarding <format style="bold">security</format>, please read the <a href="security-policy.topic">`security policy`</a> and do not
         publish this information publicly.
     </p>
     <tabs>

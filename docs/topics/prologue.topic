@@ -9,7 +9,7 @@
     !<a href="https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark">laravel-lang localize your app</a>
 </p>
     <p>
-        **%team-name%** is a team of opensource developers building products for application localization.
+        <format style="bold">%team-name%</format> is a team of opensource developers building products for application localization.
     </p>
     <p>
         Open source software is used in all projects we deliver.

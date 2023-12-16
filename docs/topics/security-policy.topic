@@ -7,17 +7,17 @@
     title="Security Policy" id="security-policy">
 
     <p>
-        **PLEASE DON'T DISCLOSE SECURITY-RELATED ISSUES PUBLICLY, <a href="#reporting-a-vulnerability">SEE BELOW</a>.**
+        <format style="bold">PLEASE DON'T DISCLOSE SECURITY-RELATED ISSUES PUBLICLY, <a href="#reporting-a-vulnerability">SEE BELOW</a>.</format>
     </p>
     <chapter title="Supported Versions" id="supported_versions">
         <p>
-            Please see our <a href="release-notes.topic#support-policy">**support policy**</a> for information on supported versions for security
+            Please see our <a href="release-notes.topic#support-policy"><format style="bold">support policy</format></a> for information on supported versions for security
             releases.
         </p>
     </chapter>
     <chapter title="Reporting a Vulnerability" id="reporting_a_vulnerability">
         <p>
-            If you discover a security vulnerability within **%instance%** products, please email
+            If you discover a security vulnerability within <format style="bold">%instance%</format> products, please email
             <a href="mailto:%security-helldar-email%;%security-caouecs-email%">%security-helldar-name%, %security-caouecs-name%</a>.
             All security vulnerabilities will be promptly addressed.
         </p>

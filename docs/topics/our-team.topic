@@ -6,7 +6,7 @@
     title="Our Team" id="our-team">
 
 <p>
-    Here is a list of **%team-name%** team members responsible for translations.
+    Here is a list of <format style="bold">%team-name%</format> team members responsible for translations.
 </p>
     <p>
 
@@ -46,7 +46,7 @@
     </p>
     <note>
         <p>
-            If you want to join **%team-name%**, then all you need to do is send a PR to any of our projects.
+            If you want to join <format style="bold">%team-name%</format>, then all you need to do is send a PR to any of our projects.
         </p>
         <p>
             For translation projects, we look at the volume of translated material, as well as the number of errors made.
