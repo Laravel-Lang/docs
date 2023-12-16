@@ -1,24 +1,31 @@
-# Locale Names
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Locale Names" id="usage-native-locale-names">
 
-> If you want to get a localized list of languages, then simply call the `Native::get()` method from
-> the [`%package-native-locale-names%`](packages-native-locale-names.md) package.
->
-{style="note"}
+<note>
+    If you want to get a localized list of languages, then simply call the `Native::get()` method from
+    the [`%package-native-locale-names%`](packages-native-locale-names.md) package.
+</note>
+    <chapter title="Localized Names" id="localized_names">
+        <code-block lang="php">
 
-## Localized Names
-
-```php
+    
 use LaravelLang\NativeLocaleNames\Native;
 use LaravelLang\Locales\Enums\Locale;
 
 return Native::get('bn');
 // or
 return Native::get(Locale::Bengali)
-```
+        </code-block>
+        <p>
+            Result:
+        </p>
+        <code-block lang="php">
 
-Result:
-
-```php
+    
 array:79 [
   "af" => "আফ্রিকান"
   "ar" => "আরবি"
@@ -28,14 +35,17 @@ array:79 [
   "bn" => "বাংলা"
   // ...
 ]
-```
+        </code-block>
+    </chapter>
+    <chapter title="Native Names" id="native_names">
+        <p>
 
-## Native Names
+            You can also get a list of localized names if you call the `get` method without passing parameters.
+            The same thing will happen if you pass an incorrect or empty value to the parameter.
+        </p>
+        <code-block lang="php">
 
-You can also get a list of localized names if you call the `get` method without passing parameters.
-The same thing will happen if you pass an incorrect or empty value to the parameter.
-
-```php
+    
 use LaravelLang\NativeLocaleNames\Native;
 
 return Native::get();
@@ -45,11 +55,13 @@ return Native::get('');
 return Native::get(null);
 // or
 return Native::get('foo');
-```
+        </code-block>
+        <p>
+            Result:
+        </p>
+        <code-block lang="php">
 
-Result:
-
-```php
+    
 array:79 [
   "af" => "Afrikaans"
   "az" => "Azərbaycan (Latın)"
@@ -131,26 +143,32 @@ array:79 [
   "zh_CN" => "简体中文）"
   "ko" => "한국인"
 ]
-```
+        </code-block>
+    </chapter>
+    <chapter title="Sorting" id="sorting">
+        <p>
 
-## Sorting
+            To get the result sorted by key or value, pass `SortBy` to the enum parameter.
+        </p>
+        <p>
 
-To get the result sorted by key or value, pass `SortBy` to the enum parameter.
+            By default, sorting by values is applied.
+        </p>
+        <chapter title="Sort by keys" id="sort_by_keys">
+            <code-block lang="php">
 
-By default, sorting by values is applied.
-
-### Sort by keys
-
-```php
+    
 use LaravelLang\NativeLocaleNames\Native;
 use LaravelLang\NativeLocaleNames\Enums\SortBy;
 
 return Native::get('en', SortBy::Key);
-```
+            </code-block>
+            <p>
+                Result:
+            </p>
+            <code-block lang="php">
 
-Result:
-
-```php
+    
 array:79 [
   "af" => "Afrikaans"
   "ar" => "Arabic"
@@ -163,22 +181,25 @@ array:79 [
   "cs" => "Czech"
   // ...
 ]
-```
+            </code-block>
+        </chapter>
+        <chapter title="Sort by values" id="sort_by_values">
+            <code-block lang="php">
 
-### Sort by values
-
-```php
+    
 use LaravelLang\NativeLocaleNames\Native;
 use LaravelLang\NativeLocaleNames\Enums\SortBy;
 
 return Native::get('en', SortBy::Value);
 // or
 return Native::get('en');
-```
+            </code-block>
+            <p>
+                Result:
+            </p>
+            <code-block lang="php">
 
-Result:
-
-```php
+    
 array:79 [
   "af" => "Afrikaans"
   "sq" => "Albanian"
@@ -191,4 +212,7 @@ array:79 [
   "bs" => "Bosnian"
   // ...
 ]
-```
+            </code-block>
+        </chapter>
+    </chapter>
+</topic>
