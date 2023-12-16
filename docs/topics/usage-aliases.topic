@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Aliases" id="usage-aliases">
+
+<p>
+    If you want to name codes differently, such as `de-DE` instead of `de` or `de-CH` instead of `de_CH`, you can define
+    `aliases` in the [configuration file](configuration.md#aliases).
+</p>
+    <p>
+        After that, all adding, updating, and deleting actions will automatically use the specified aliases in
+        the `%config-filename%` config file:
+    </p>
+    <code-block lang="php">
+        use LaravelLang\Locales\Enums\Locale;
+
+return [
+    'aliases' => [
+        Locale::German->value => 'de-DE',
+
+        Locale::GermanSwitzerland->value => 'de-CH',
+    ],
+];
+    </code-block>
+    <p>
+        If the `%config-filename%` file already exists, then you can add the aliases key in it and specify the desired `aliases`
+        using a data array.
+    </p>
+    <p>
+
+        After this, you can, for example, add new localizations by specifying both the main code and its alias:
+    </p>
+    <code-block lang="bash">
+        %command-add% de de_CH
+    </code-block>
+    <p>
+
+        Installed locales will use the specified aliases as folder names for PHP translations and file names for JSON translations:
+    </p>
+    <code-block lang="plain text">
+        lang
+    de-CH
+    de-DE
+    </code-block>
+</topic>
