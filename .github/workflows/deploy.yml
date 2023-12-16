@@ -20,7 +20,7 @@ env:
     ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
     ARTIFACT: webHelpLARAVEL-LANG2-all.zip
     CONFIG_JSON_PRODUCT: LARAVEL-LANG
-    CONFIG_JSON_VERSION: 5.x
+    CONFIG_JSON_VERSION: main
     INSTANCE: docs/laravel-lang
     DOMAIN_NAME: laravel-lang.com
     BUILDER_VERSION: 232.10275
