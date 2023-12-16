@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Community Plugins" id="plugins-community">
+
+<p>
+    List of plugins developed and maintained by the community.
+</p>
+    <p>
+        | Package                                                                                                         | Description                         |
+        |:----------------------------------------------------------------------------------------------------------------|:------------------------------------|
+        | [forxer/generic-term-translations-for-laravel](https://github.com/forxer/generic-term-translations-for-laravel) | A set of generic term translations. |
+
+    </p>
+    <seealso style="cards">
+        <category ref="plugins-lists">
+            <a href="plugins-official.md">Official Plugins</a>
+        </category>
+    </seealso>
+</topic>
