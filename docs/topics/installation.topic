@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Installation" id="installation">
+
+    <chapter title="Common Package" id="common_package">
+        <p>
+            You can install the package via [Composer](https://getcomposer.org):
+        </p>
+        <code-block lang="bash">
+            %install-common%
+        </code-block>
+        <p>
+            The [Common](packages-common.md) package will install all the necessary versions of packages at once and you will not
+            need to maintain each one.
+        </p>
+        <p>
+            Or you can install only the packages you need using the required console commands:
+        </p>
+        <code-block lang="bash">
+            %install-publisher%
+
+%install-lang%
+%install-actions%
+%install-attributes%
+%install-http-statuses%
+
+%install-locales%
+%install-locale-list%
+
+%install-native-country-names%
+%install-native-currency-names%
+%install-native-locale-names%
+        </code-block>
+        <note>
+            > We recommend installing packages useful for production into the main dependencies of the project.
+            > The `require` section in the `composer.json` file is responsible for this.
+            >
+            > We recommend installing packages needed only during development in the development section - `require-dev`,
+            > since these projects will not be used directly in production.
+            >
+        </note>
+        <p>
+            You can also combine dependencies. For example, if in production you need to manage locales, then to install,
+            run the following console commands:
+        </p>
+        <code-block lang="bash">
+            %install-common%
+%install-locales%
+        </code-block>
+    </chapter>
+    <chapter title="JSON Fallback" id="json_fallback">
+        <include from="snippets-library.topic" element-id="json-fallback-doesnt-need"/>
+
+        <include from="snippets-library.topic" element-id="json-fallback-doesnt-allow"/>
+        
+        <p>
+            To install, run the console command:
+        </p>
+        <code-block lang="bash">
+            %install-json-fallback-hotfix%
+        </code-block>
+        <p>
+            After this, you need to add a link to the service provider in the `providers` section of the `config/app.php`
+            settings file:
+        </p>
+        <tabs>
+            <tab title="Laravel 10+">
+                <code-block src="json-fallback-install-laravel-10.php" lang="php"/>
+            </tab>
+            <tab title="Laravel 6-9">
+                <code-block src="json-fallback-install-laravel-9.php" lang="php"/>
+            </tab>
+        </tabs>
+        <p>
+            Now JSON keys will correctly output the value based on the selected localization.
+        </p>
+    </chapter>
+</topic>
