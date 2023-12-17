@@ -43,8 +43,8 @@
 
     <seealso style="cards">
         <category ref="plugins-lists">
-            <a href="plugins-official.topic">Official Plugins</a>
-            <a href="plugins-community.topic">Community Plugins</a>
+            <a href="plugins-official.topic" />
+            <a href="plugins-community.topic" />
         </category>
     </seealso>
 </topic>

@@ -27,7 +27,7 @@
 
     <seealso style="cards">
         <category ref="plugins-lists">
-            <a href="plugins-official.topic">Official Plugins</a>
+            <a href="plugins-official.topic" />
         </category>
     </seealso>
 </topic>

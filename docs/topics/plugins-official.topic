@@ -17,7 +17,7 @@
         </tr>
         <tr>
             <td>
-                <a href="packages-lang.topic">laravel-lang/lang</a>
+                <a href="packages-lang.topic">%package-lang%</a>
             </td>
             <td>
                 Laravel Framework, Jetstream , Fortify, Breeze, Cashier, Nova, Spark and UI
@@ -25,7 +25,7 @@
         </tr>
         <tr>
             <td>
-                <a href="packages-actions.topic">laravel-lang/actions</a>
+                <a href="packages-actions.topic">%package-actions%</a>
             </td>
             <td>
                 Translation of buttons and other action elements.
@@ -33,7 +33,7 @@
         </tr>
         <tr>
             <td>
-                <a href="packages-attributes.topic">laravel-lang/attributes</a>
+                <a href="packages-attributes.topic">%package-attributes%</a>
             </td>
             <td>
                 Translation of custom fields for the validator.
@@ -41,7 +41,7 @@
         </tr>
         <tr>
             <td>
-                <a href="packages-http-statuses.topic">laravel-lang/http-statuses</a>
+                <a href="packages-http-statuses.topic">%package-http-statuses%</a>
             </td>
             <td>
                 Translation of HTTP statuses.
@@ -51,7 +51,7 @@
 
     <seealso style="cards">
         <category ref="plugins-lists">
-            <a href="plugins-community.topic">Community Plugins</a>
+            <a href="plugins-community.topic" />
         </category>
     </seealso>
 
