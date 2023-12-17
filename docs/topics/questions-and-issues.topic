@@ -37,7 +37,7 @@
                     <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-locale-list%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-locale-list%">%repository-title-locale-list%</a>
                 </li>
                 <li>
-                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-json-fallback-hotfix%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-json-fallback-hotfix%">%repository-title-json-fallback-hotfix%</a>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-json-fallback%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-json-fallback%">%repository-title-json-fallback%</a>
                 </li>
             </list>
             <p><b>Localization packages</b></p>
@@ -91,7 +91,7 @@
                     <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-locale-list%&amp;projects=&amp;template=feature_request.yml">%repository-title-locale-list%</a>
                 </li>
                 <li>
-                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-json-fallback-hotfix%&amp;projects=&amp;template=feature_request.yml">%repository-title-json-fallback-hotfix%</a>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-json-fallback%&amp;projects=&amp;template=feature_request.yml">%repository-title-json-fallback%</a>
                 </li>
             </list>
             <p><b>Localization packages</b></p>

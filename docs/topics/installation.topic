@@ -64,7 +64,7 @@
             To install, run the console command:
         </p>
         <code-block lang="bash">
-            %install-json-fallback-hotfix%
+            %install-json-fallback%
         </code-block>
         <p>
             After this, you need to add a link to the service provider in the <code>providers</code> section of the
