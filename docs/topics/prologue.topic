@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
     SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Prologue" id="prologue">
 
-<p>
-    !<a href="https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark">laravel-lang localize your app</a>
-</p>
     <p>
-        <format style="bold">%team-name%</format> is a team of opensource developers building products for application localization.
+        <img
+            src="https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&amp;preposition=with&amp;mode=dark"
+            alt="localize your app"
+        />
+    </p>
+    <p>
+        <format style="bold">%team-name%</format>
+        is a team of opensource developers building products for application localization.
     </p>
     <p>
         Open source software is used in all projects we deliver.
@@ -17,5 +22,6 @@
         For this, we are very grateful. When we feel we have solved a problem in a way that can help other developers, we
         release our code as open source software on GitHub.
     </p>
-    <include from="snippets-library.topic" element-id="lists-laravel-projects"/>
+    
+    <include from="snippets-library.topic" element-id="lists-laravel-projects" />
 </topic>
