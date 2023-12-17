@@ -15,7 +15,7 @@
         <a href="https://laravel-lang.com">Laravel projects</a>:
     </p>
 
-    <include from="snippets-library.topic" element-id="lists-laravel-projects" />
+    <include from="library-lists.topic" element-id="lists-laravel-projects" />
 
     <p>
         To install, run the console command:

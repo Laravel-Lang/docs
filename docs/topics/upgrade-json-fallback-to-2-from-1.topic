@@ -23,7 +23,7 @@
             Next, run the update dependency console command:
         </p>
 
-        <include from="snippets-library-commands.topic" element-id="composer_update" />
+        <include from="library-commands.topic" element-id="composer_update" />
     </chapter>
 
     <chapter title="Change namespace" id="change_namespace">

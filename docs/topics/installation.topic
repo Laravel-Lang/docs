@@ -44,8 +44,8 @@
     </chapter>
 
     <chapter title="JSON Fallback" id="json_fallback">
-        <include from="snippets-library.topic" element-id="json-fallback-doesnt-need" />
-        <include from="snippets-library.topic" element-id="json-fallback-doesnt-allow" />
+        <include from="library-lists.topic" element-id="json-fallback-doesnt-need" />
+        <include from="library-lists.topic" element-id="json-fallback-doesnt-allow" />
 
         <p>
             To install, run the console command:

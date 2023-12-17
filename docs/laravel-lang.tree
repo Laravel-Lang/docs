@@ -7,7 +7,7 @@
         name="Laravel Lang"
         start-page="installation.topic"
 >
-    <toc-element topic="prologue.topic" >
+    <toc-element topic="prologue.topic">
         <toc-element topic="release-notes.topic" />
         <toc-element topic="upgrade-guide.topic">
             <toc-element topic="upgrade-common.topic">
@@ -30,7 +30,7 @@
         <toc-element toc-title="License" topic="license.topic" />
     </toc-element>
     <toc-element topic="getting-started.topic" id="toc-getting-started">
-        <toc-element topic="installation.topic" accepts-web-file-names-ref="2be426b9" >
+        <toc-element topic="installation.topic" accepts-web-file-names-ref="2be426b9">
             <toc-element topic="packages-common.topic" />
             <toc-element topic="packages-publisher.topic" />
             <toc-element topic="packages-lang.topic" />

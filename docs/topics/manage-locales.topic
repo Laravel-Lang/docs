@@ -7,7 +7,7 @@
     title="Management" id="manage-locales">
 
     <warning>
-        <include from="snippets-library.topic" element-id="json-fallback-doesnt-allow" />
+        <include from="library-lists.topic" element-id="json-fallback-doesnt-allow" />
     </warning>
     <p>
         Almost all console commands accept an array of localizations as a parameter.
@@ -46,7 +46,7 @@
     <note>
         When performing any work with files (<code>install</code>, <code>uninstall</code>, <code>reset</code> and
         <code>update</code>), in addition to php files, work with json files, including translation for
-        <include from="snippets-library.topic" element-id="lists-laravel-projects-inline" />
+        <include from="library-lists.topic" element-id="lists-laravel-projects-inline" />
         , will also be automatically performed.
     </note>
 </topic>

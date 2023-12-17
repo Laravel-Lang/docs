@@ -19,7 +19,7 @@
     </p>
 
     <chapter title="Support Projects" id="support_projects">
-        <include from="snippets-library.topic" element-id="lists-laravel-projects" />
+        <include from="library-lists.topic" element-id="lists-laravel-projects" />
 
         <p>
             And these are not all the projects that the

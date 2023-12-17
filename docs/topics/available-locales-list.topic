@@ -10,5 +10,5 @@
         <format style="bold">%team-name%</format>
         projects.
     </p>
-    <include from="snippets-library-locales.topic" element-id="available-locales" />
+    <include from="library-available-locales.topic" element-id="available-locales" />
 </topic>

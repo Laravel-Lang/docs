@@ -7,7 +7,7 @@
     title="To 15 from 14" id="upgrade-publisher-to-15-from-14">
 
     <chapter title="Updating Dependencies" id="updating_dependencies">
-        <include from="snippets-library.topic" element-id="notify-usage-common" />
+        <include from="library-lists.topic" element-id="notify-usage-common" />
 
         <p>
             You should update the following dependency in your application's <code>composer.json</code> file:
@@ -21,7 +21,7 @@
             Run the update dependency console command:
         </p>
 
-        <include from="snippets-library-commands.topic" element-id="composer_update" />
+        <include from="library-commands.topic" element-id="composer_update" />
     </chapter>
 
     <chapter title="Rename config file" id="rename_config_file">
