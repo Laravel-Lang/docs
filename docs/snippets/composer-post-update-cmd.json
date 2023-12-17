@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "post-update-cmd": [
+            "php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "php artisan lang:update"
+        ]
+    }
+}

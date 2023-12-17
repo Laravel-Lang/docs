@@ -19,9 +19,11 @@
     <p>
         To install, run the console command:
     </p>
+
     <code-block lang="bash">
         %install-publisher%
     </code-block>
+
     <note>
         You can also easily create your own plugin using a
         ready-made

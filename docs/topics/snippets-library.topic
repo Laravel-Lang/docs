@@ -18,7 +18,7 @@
 
     <snippet id="json-fallback-doesnt-need">
         <warning>
-            If you use English as a fallback localization, then you do not need to install this package.
+            If you use English as a fallback localization, then you do not need to use this package.
         </warning>
     </snippet>
 

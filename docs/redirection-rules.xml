@@ -30,4 +30,8 @@
         <description>Created after removal of "Development" from Laravel Lang</description>
         <accepts>development.html</accepts>
     </rule>
+    <rule id="78da27c3">
+        <description>Created after removal of "Packages" from Laravel Lang</description>
+        <accepts>packages.html</accepts>
+    </rule>
 </rules>

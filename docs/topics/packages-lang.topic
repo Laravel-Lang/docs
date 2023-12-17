@@ -9,6 +9,7 @@
     <tip>
         The compatibility table can be viewed <a href="release-notes.topic#lang">here</a>.
     </tip>
+
     <p>
         This package contains translations of all official keys from
         <a href="https://laravel-lang.com">Laravel projects</a>:

@@ -6,24 +6,47 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Installation" id="installation">
 
-    <chapter title="Common Package" id="common_package">
+    <chapter title="Recommended" id="recommended">
         <p>
             You can install the package via <a href="https://getcomposer.org">Composer</a>:
         </p>
+
         <code-block lang="bash">
             %install-common%
         </code-block>
-        <p>
-            The
-            <a href="packages-common.topic" /> package will install all the necessary versions of packages at once and
-            you will not need to maintain each one.
-        </p>
-        <p>
-            Or you can install only the packages you need using the required console commands:
-        </p>
-        <code-block lang="bash">
-            %install-publisher%
 
+        <p>
+            The <code>%repository-title-common%</code> package will install all the required dependency versions.
+            It is also easy to update between minor and major versions.
+        </p>
+
+        <p>
+            If in production you need to use a list of localizations through facades, you need to additionally install a dependency:
+        </p>
+
+        <code-block lang="bash">
+            %install-locales%
+        </code-block>
+
+        <p>
+            We also recommend adding the call code to the <code>post-update-cmd</code> section of the
+            <code>scripts</code> block in the <code>composer.json</code> file:
+        </p>
+
+        <code-block lang="json" validate="true" src="composer-post-update-cmd.json" />
+
+        <p>
+            This will allow localization files to be automatically updated after dependency updates, rather than manually calling the
+            <code>%command-update%</code> console command.
+        </p>
+    </chapter>
+
+    <chapter title="Alternative" id="alternative">
+        <p>
+            If you do not want to install all the dependencies for some reason, you can install each one separately:
+        </p>
+
+        <code-block lang="bash">
             %install-lang%
             %install-actions%
             %install-attributes%
@@ -36,26 +59,8 @@
             %install-native-currency-names%
             %install-native-locale-names%
         </code-block>
-        <note>
-            <p>
-                We recommend installing packages useful for production into the main dependencies of the project.
-                The <code>require</code> section in the <code>composer.json</code> file is responsible for this.
-            </p>
-            <p>
-                We recommend installing packages needed only during development in the development section -
-                <code>require-dev</code>,
-                since these projects will not be used directly in production.
-            </p>
-        </note>
-        <p>
-            You can also combine dependencies. For example, if in production you need to manage locales, then to install,
-            run the following console commands:
-        </p>
-        <code-block lang="bash">
-            %install-common%
-            %install-locales%
-        </code-block>
     </chapter>
+
     <chapter title="JSON Fallback" id="json_fallback">
         <include from="snippets-library.topic" element-id="json-fallback-doesnt-need" />
         <include from="snippets-library.topic" element-id="json-fallback-doesnt-allow" />
