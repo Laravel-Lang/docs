@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
     SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Completion Status" id="statuses">
 
-<tip>
-    Here you can see the completion status of translations for all our projects.
-</tip>
+    <tip>
+        Here you can see the completion status of translations for all our projects.
+    </tip>
 
-    <tldr>
-
-        - <a href="statuses-lang.topic">Lang</a>
-        - <a href="statuses-attributes.topic">Attributes</a>
-        - <a href="statuses-http-statuses.topic">HTTP Statuses</a>
-
-    </tldr>
+    <list>
+        <li><a href="statuses-lang.topic" /></li>
+        <li><a href="statuses-attributes.topic" /></li>
+        <li><a href="statuses-http-statuses.topic" /></li>
+    </list>
 
 </topic>
