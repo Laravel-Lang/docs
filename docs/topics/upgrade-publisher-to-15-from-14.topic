@@ -115,7 +115,7 @@
             <code>&lt;object&gt;</code> is a DTO class of <code>LocaleData</code>:
         </tip>
 
-        <code-block lang="php" src="upgrade-publisher-15.php" include-lines="3-" />
+        <code-block lang="php" src="upgrade-publisher-15.txt" include-lines="3-" />
     </chapter>
 
     <chapter title="Using in production" id="using_in_production">
