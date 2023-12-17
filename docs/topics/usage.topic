@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Usage" id="usage">
+
+
+    <list>
+        <li><a href="manage-locales.topic" /></li>
+        <li><a href="usage-add-locales.topic" /></li>
+        <li><a href="usage-update-locales.topic" /></li>
+        <li><a href="usage-reset-locales.topic" /></li>
+        <li><a href="usage-remove-locales.topic" /></li>
+        <li><a href="available-locales-list.topic" /></li>
+        <li><a href="usage-facade.topic" /></li>
+        <li><a href="usage-aliases.topic" /></li>
+        <li><a href="usage-list-of-locales.topic" /></li>
+        <li><a href="usage-native-locales.topic" /></li>
+        <li><a href="packages-native-locale-names.topic" /></li>
+        <li><a href="packages-native-country-names.topic" /></li>
+        <li><a href="packages-native-currency-names.topic" /></li>
+    </list>
+
+</topic>

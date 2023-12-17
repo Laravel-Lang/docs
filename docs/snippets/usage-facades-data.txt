@@ -1,0 +1,35 @@
+use LaravelLang\Locales\Facades\Locales;
+
+// List of available localizations.
+Locales::available(): array // array<LocaleData>
+
+// List of installed localizations.
+Locales::installed(bool $withProtects = true): array // array<LocaleData>
+
+// List of uninstalled localizations.
+Locales::notInstalled(): array // array<LocaleData>
+
+// Retrieving a list of protected locales.
+Locales::protects(): array // array<LocaleData>
+
+// Check if language packs are available in requested locale.
+Locales::isAvailable(Locale|string|null $locale): bool
+
+// Check if a language pack is installed.
+Locales::isInstalled(Locale|string|null $locale): bool
+
+// The checked locale protecting.
+Locales::isProtected(Locale|string|null $locale): bool
+
+// Validate and returns the correct localization.
+// If an uninstalled localization is requested, then it will return the currently active one in the application.
+Locales::get(mixed $locale): LocaleData
+
+// Getting the default localization name.
+Locales::getDefault(): LocaleData
+
+// Getting the fallback localization name.
+Locales::getFallback(): LocaleData
+
+// Receives information about any available localization, otherwise it will return the currently active one in the application.
+Locales::info(mixed $locale): LocaleData

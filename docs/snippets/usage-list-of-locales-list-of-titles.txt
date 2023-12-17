@@ -1,0 +1,13 @@
+array:79 [
+  0 => "Afrikaans"
+  1 => "Albanian"
+  2 => "Arabic"
+  3 => "Armenian"
+  4 => "Azerbaijani"
+  5 => "Basque"
+  6 => "Belarusian"
+  7 => "Bengali"
+  8 => "Bosnian"
+  9 => "Bulgarian"
+  ...
+]

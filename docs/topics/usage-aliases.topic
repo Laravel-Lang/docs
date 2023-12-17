@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Aliases" id="usage-aliases">
+
+    <p>
+        If you want to name codes differently, such as <code>de-DE</code> instead of <code>de</code> or
+        <code>de-CH</code> instead of <code>de_CH</code>, you can define
+        <code>aliases</code> in the <a href="configuration.topic#aliases">configuration file</a>.
+    </p>
+    <p>
+        After that, all adding, updating, and deleting actions will automatically use the specified aliases in
+        the <code>%config-filename%</code> config file:
+    </p>
+
+    <code-block lang="php" src="usage-aliases.php" include-lines="3-" />
+
+    <p>
+        If the
+        <code>%config-filename%</code> file already exists, then you can add the aliases key in it and specify the desired
+        <code>aliases</code> using a data array.
+    </p>
+    <p>
+        After this, you can, for example, add new localizations by specifying both the main code and its alias:
+    </p>
+
+    <code-block lang="bash">
+        %command-add% de de_CH
+    </code-block>
+
+    <p>
+        Installed locales will use the specified aliases as folder names for PHP translations and file names for JSON translations:
+    </p>
+
+    <code-block lang="plain text">
+        lang
+        de-CH
+        de-DE
+    </code-block>
+</topic>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Official Plugins" id="plugins-official">
+
+    <p>
+        List of plugins developed and maintained by the %team-name%.
+    </p>
+
+    <table>
+        <tr>
+            <td>Package</td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="packages-lang.topic">laravel-lang/lang</a>
+            </td>
+            <td>
+                Laravel Framework, Jetstream , Fortify, Breeze, Cashier, Nova, Spark and UI
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="packages-actions.topic">laravel-lang/actions</a>
+            </td>
+            <td>
+                Translation of buttons and other action elements.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="packages-attributes.topic">laravel-lang/attributes</a>
+            </td>
+            <td>
+                Translation of custom fields for the validator.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="packages-http-statuses.topic">laravel-lang/http-statuses</a>
+            </td>
+            <td>
+                Translation of HTTP statuses.
+            </td>
+        </tr>
+    </table>
+
+    <seealso style="cards">
+        <category ref="plugins-lists">
+            <a href="plugins-community.topic">Community Plugins</a>
+        </category>
+    </seealso>
+
+</topic>

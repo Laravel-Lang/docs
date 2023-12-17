@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="From caouecs/laravel-lang" id="upgrade-from-caouecs-laravel-lang">
+
+    <p>
+        If you are using the old version of the <code>laravel-lang/lang</code> package when it was called
+        <code>caouecs/laravel-lang</code>,
+        then you need to follow the steps below to upgrade.
+    </p>
+    <p>
+        You also need to remove all package managers responsible for installing localizations in the project.
+        You can do all this with one command:
+    </p>
+
+    <code-block lang="bash">
+        composer remove caouecs/laravel-lang overtrue/laravel-lang arcanedev/laravel-lang andrey-helldar/laravel-lang-publisher %package-publisher%
+    </code-block>
+
+    <p>
+        Next, you need to delete the <code>config/lang-publisher.php</code> file if it exists:
+    </p>
+
+    <code-block lang="bash">
+        rm -f config/lang-publisher.php
+    </code-block>
+
+    <p>
+        After that, you can install the latest version of <code>%instance%</code>:
+    </p>
+
+    <code-block lang="bash">
+        %install-common%
+    </code-block>
+</topic>

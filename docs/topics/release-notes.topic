@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Release Notes" id="release-notes">
+
+    <list>
+        <li><a anchor="versioning_scheme" summary="" /></li>
+        <li><a anchor="support_policy" summary="" /></li>
+        <li><a anchor="common" summary="" /></li>
+        <li><a anchor="publisher" summary="" /></li>
+        <li><a anchor="lang" summary="" /></li>
+        <li><a anchor="actions" summary="" /></li>
+        <li><a anchor="attributes" summary="" /></li>
+        <li><a anchor="http_statuses" summary="" /></li>
+        <li><a anchor="locales" summary="" /></li>
+        <li><a anchor="locale_list" summary="" /></li>
+        <li><a anchor="native_locale_names" summary="" /></li>
+        <li><a anchor="native_country_names" summary="" /></li>
+        <li><a anchor="native_currency_names" summary="" /></li>
+        <li><a anchor="json_fallback" summary="" /></li>
+    </list>
+
+    <chapter title="Versioning Scheme" id="versioning_scheme">
+        <p>
+            All our packages follow <a href="https://semver.org">Semantic Versioning</a>.
+            Major project releases occur when adding some functionality that breaks backward compatibility or
+            when removing support for
+            <a href="https://laravel.com/docs/releases">deprecated versions</a> of Laravel or its other first-party packages.
+            Minor and patch releases should never contain breaking changes.
+        </p>
+    </chapter>
+
+    <chapter title="Support Policy" id="support_policy">
+        <p>
+            For all Lang projects, we follow the <a href="https://laravel.com/docs/releases">Laravel support policy</a>.
+        </p>
+        <p>
+
+            Since <code>Lang</code> project packages are not expected to have code that affects the security of the project, we are
+            basing this on the
+            <a href="https://laravel.com/docs/releases#support-policy">scheduled maintenance completion dates</a>
+            for Laravel projects and minor versions of <a href="https://www.php.net">PHP</a>.
+        </p>
+
+        <chapter title="Common" id="common">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Dependencies</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^5.0</code></td>
+                    <td>Publisher 15, Lang 13, Attributes 2, HTTP Statuses 3, Locales 1</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2</td>
+                    <td><code>^4.0</code></td>
+                    <td>Publisher 14, Lang 13, Attributes 2, HTTP Statuses 3, Locales 1</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>8, 9, 10</td>
+                    <td>8.1, 8.2</td>
+                    <td><code>^3.0</code></td>
+                    <td>Publisher 14, Lang 12, Attributes 2, HTTP Statuses 3</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>8.0, 8.1</td>
+                    <td><code>^2.0</code></td>
+                    <td>Publisher 13, Lang 10, Attributes 1, HTTP Statuses 2</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>7.3, 7.4, 8.0, 8.1</td>
+                    <td><code>^1.0</code></td>
+                    <td>Publisher 12, Lang 10, Attributes 1, HTTP Statuses 2</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Publisher" id="publisher">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^15.0</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>8, 9, 10</td>
+                    <td>8.1, 8.2</td>
+                    <td><code>^14.0</code></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>8.0, 8.1</td>
+                    <td><code>^13.0</code></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>7.3, 7.4, 8.0, 8.1</td>
+                    <td><code>^12.0</code></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Lang" id="lang">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Publisher</td>
+                    <td>Package</td>
+                    <td>Dependencies</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>14, 15</td>
+                    <td><code>^13.0</code></td>
+                    <td>Breeze 1, Cashier Stripe 13, 14, Fortify 1, Jetstream 2, 3, 4, Nova 4, Spark Aurelius 11, 12, Spark Aurelius Mollie 2, Spark Paddle *, Stripe Stripe *, UI 4</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>9, 10</td>
+                    <td>8.1, 8.2</td>
+                    <td>14</td>
+                    <td><code>^12.0</code></td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, 14, Fortify 1, Jetstream 1, 2, 3, Nova 3, 4, Spark Aurelius 11, 12, Spark Aurelius Mollie 2, Spark Paddle *, Stripe Stripe *, UI 3, 4</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>6, 7, 8, 9, 10</td>
+                    <td>8.1, 8.2</td>
+                    <td>---</td>
+                    <td><code>^11.0</code></td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, 2, Nova 3, 4, Spark Paddle *, Stripe Stripe *, UI 1, 2, 3, 4</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>8.1, 8.2</td>
+                    <td>---</td>
+                    <td><code>^10.0</code></td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, Nova 3, Spark Paddle *, Stripe Stripe *, UI 1, 2, 3</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Actions" id="actions">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Publisher</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>15</td>
+                    <td><code>^1.0</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Attributes" id="attributes">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Publisher</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>15</td>
+                    <td><code>^2.5</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>8, 9, 10, 11</td>
+                    <td>8.1, 8.2</td>
+                    <td>14</td>
+                    <td><code>^2.0</code></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>7.3, 7.4, 8.0, 8.1</td>
+                    <td>12, 13</td>
+                    <td><code>^1.0</code></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="HTTP Statuses" id="http_statuses">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Publisher</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>15</td>
+                    <td><code>^3.5</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>8, 9, 10</td>
+                    <td>8.1, 8.2</td>
+                    <td>14</td>
+                    <td><code>^3.0</code></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>8.0, 8.1</td>
+                    <td>13</td>
+                    <td><code>^2.0</code></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8</td>
+                    <td>7.3, 7.4, 8.0, 8.1</td>
+                    <td>10</td>
+                    <td><code>^1.0</code></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Locales" id="locales">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^2.0</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^1.0</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Locale List" id="locale_list">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^1.0</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Native Locale Names" id="native_locale_names">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^2.0</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^1.0</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Native Country Names" id="native_country_names">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^1.0</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Native Currency Names" id="native_currency_names">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^1.0</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="JSON Fallback" id="json_fallback">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^2.0</code></td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3</td>
+                    <td><code>^1.0</code></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
+    </chapter>
+</topic>

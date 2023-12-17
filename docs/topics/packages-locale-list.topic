@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Locale List" id="packages-locale-list">
+
+    <tip>
+        The compatibility table can be viewed <a href="release-notes.topic#locale_list">here</a>.
+    </tip>
+
+    <p>
+        This package contains a list of available locales that all
+        <format style="bold">%team-name%</format>
+        packages work with.
+    </p>
+    <p>
+        All it contains is a single enum class that you can also use for your own purposes.
+    </p>
+    <p>
+        To install, run the console command:
+    </p>
+
+    <code-block lang="bash">
+        %install-locale-list%
+    </code-block>
+</topic>

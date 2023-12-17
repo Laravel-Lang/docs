@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Remove" id="usage-remove-locales">
+
+    <title instance="laravel-lang">Remove Locales</title>
+
+    <warning>
+        When this command is executed, the entire locale folder with all files is deleted except default and fallback locales.
+    </warning>
+
+    <p>
+        To delete localizations, you must use
+        <code>%command-remove-empty%</code> command, passing the letter abbreviations into it:
+    </p>
+
+    <code-block lang="bash">
+        %command-remove-many%
+    </code-block>
+
+    <p>
+        If you do not specify arguments when passing parameters, then an interactive question will be displayed in the console
+        with a choice of localizations from among the available ones.
+    </p>
+
+    <code-block lang="bash">
+        %command-remove%
+    </code-block>
+
+    <p>
+        By default, the command will return an error message when trying to remove a protected locale.
+    </p>
+    <p>
+        Protected locales are the set codes in the <code>locale</code> and
+        <code>fallback_locale</code> parameters of the <code>config/app.php</code> file.
+    </p>
+    <p>
+        To force the deletion of a protected localization, use the <code>force</code> option:
+    </p>
+
+    <code-block lang="bash">
+        %command-remove-force%
+    </code-block>
+</topic>

@@ -1,0 +1,17 @@
+use LaravelLang\Locales\Data\LocaleData;
+use LaravelLang\Locales\Facades\Locales;
+
+// config('app.locale') // de
+
+return Locales::get('foo');
+
+// Will return the default locale
+LocaleData {
+  +code: "de"
+  +type: "Latn"
+  +name: "German"
+  +native: "Deutsch"
+  +localized: "Deutsch"
+  +regional: "de_DE"
+  +orientation: "left-to-right"
+}

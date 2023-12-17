@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Common" id="packages-common">
+
+    <tip>
+        The compatibility table can be viewed <a href="release-notes.topic#common">here</a>.
+    </tip>
+    <p>
+        This package is needed for quick installation and updating of all our projects.
+    </p>
+    <p>
+        When installing it, all the main packages necessary for working with localizations and translations will be installed in
+        the application.
+    </p>
+    <p>
+        To install, run the console command:
+    </p>
+
+    <code-block lang="bash">
+        %install-common%
+    </code-block>
+
+    <note>
+        It is recommended to use this particular package as it will allow you to very quickly update all the necessary
+        dependencies that ensure application localization.
+    </note>
+
+    <p>
+        This package will install the following dependencies:
+    </p>
+    <list>
+        <li><a href="packages-lang.topic"><code>%package-lang%</code></a></li>
+        <li><a href="packages-attributes.topic"><code>%package-attributes%</code></a></li>
+        <li><a href="packages-http-statuses.topic"><code>%package-http-statuses%</code></a></li>
+        <li><a href="packages-locales.topic"><code>%package-locales%</code></a></li>
+        <li><a href="packages-publisher.topic"><code>%package-publisher%</code></a></li>
+    </list>
+</topic>

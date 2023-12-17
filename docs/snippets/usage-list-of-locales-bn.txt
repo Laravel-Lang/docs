@@ -1,0 +1,4 @@
+ LaravelLang\LocaleList\Locale {
+  +name: "Bengali"
+  +value: "bn"
+}

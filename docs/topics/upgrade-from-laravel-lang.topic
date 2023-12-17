@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="From laravel-lang/*" id="upgrade-from-laravel-lang">
+
+    <note>
+        Check the version of the framework and PHP against the
+        <a href="release-notes.topic#support_policy">compatibility</a> table.
+    </note>
+
+    <p>
+
+        First you need to remove all old dependencies:
+    </p>
+
+    <code-block lang="bash">
+        composer remove %package-publisher% %package-lang% %package-attributes% %package-http-statuses%
+    </code-block>
+
+    <p>
+        After that, install the <code>%package-common%</code> version of the desired version:
+    </p>
+
+    <code-block lang="bash">
+        %install-common%
+    </code-block>
+
+    <p>
+        If you want to use the list of
+        <a href="packages-locales.topic">locales</a> in production, then install the dependency separately:
+    </p>
+
+    <code-block lang="bash">
+        %install-locales%
+    </code-block>
+
+    <p>
+        Enjoy! 🙂
+    </p>
+</topic>

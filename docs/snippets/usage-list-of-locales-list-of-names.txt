@@ -1,0 +1,13 @@
+array:79 [
+  "Afrikaans"   => "af"
+  "Albanian"    => "sq"
+  "Arabic"      => "ar"
+  "Armenian"    => "hy"
+  "Azerbaijani" => "az"
+  "Basque"      => "eu"
+  "Belarusian"  => "be"
+  "Bengali"     => "bn"
+  "Bosnian"     => "bs"
+  "Bulgarian"   => "bg"
+  ...
+]

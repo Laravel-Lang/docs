@@ -1,0 +1,36 @@
+use LaravelLang\Locales\Enums\Locale;
+use LaravelLang\Locales\Facades\Locales;
+
+// List of available localizations.
+Locales::raw()->available(): array // array<string>
+
+// List of installed localizations.
+Locales::raw()->installed(bool $withProtects = true): array // array<string>
+
+// List of uninstalled localizations.
+Locales::raw()->notInstalled(): array // array<string>
+
+// Retrieving a list of protected locales.
+Locales::raw()->protects(): array // array<string>
+
+// Check if language packs are available in requested locale.
+Locales::raw()->isAvailable(Locale|string|null $locale): bool
+
+// Check if a language pack is installed.
+Locales::raw()->isInstalled(Locale|string|null $locale): bool
+
+// The checked locale protecting.
+Locales::raw()->isProtected(Locale|string|null $locale): bool
+
+// Validate and returns the correct localization.
+// If an uninstalled localization is requested, then it will return the currently active one in the application.
+Locales::raw()->get(mixed $locale): string
+
+// Getting the default localization name.
+Locales::raw()->getDefault(): string
+
+// Getting the fallback localization name.
+Locales::raw()->getFallback(): string
+
+// Receives locale code for any available localization, otherwise it will return the currently active one in the application.
+Locales::raw()->info(mixed $locale): string

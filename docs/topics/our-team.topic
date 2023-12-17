@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Our Team" id="our-team">
+
+    <p>
+        Here is a list of
+        <format style="bold">%team-name%</format>
+        team members responsible for translations.
+    </p>
+
+    <table>
+        <tr>
+            <td>Locale</td>
+            <td>Translation Statuses</td>
+            <td>Referents</td>
+        </tr>
+        <tr>
+            <td>ar</td>
+            <td>
+                <a href="statuses-lang-ar.md">Lang</a>,
+                <a href="statuses-actions-ar.md">Actions</a>,
+                <a href="statuses-attributes-ar.md">Attributes</a>,
+                <a href="statuses-http-statuses-ar.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/Khuthaily">@Khuthaily</a>,
+                <a href="https://github.com/mohamedsabil83">@mohamedsabil83</a>
+            </td>
+        </tr>
+        <tr>
+            <td>az</td>
+            <td>
+                <a href="statuses-lang-az.md">Lang</a>,
+                <a href="statuses-actions-az.md">Actions</a>,
+                <a href="statuses-attributes-az.md">Attributes</a>,
+                <a href="statuses-http-statuses-az.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/slvler">@slvler</a>
+            </td>
+        </tr>
+        <tr>
+            <td>bn</td>
+            <td>
+                <a href="statuses-lang-bn.md">Lang</a>,
+                <a href="statuses-actions-bn.md">Actions</a>,
+                <a href="statuses-attributes-bn.md">Attributes</a>,
+                <a href="statuses-http-statuses-bn.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/arman-arif">@arman-arif</a>
+            </td>
+        </tr>
+        <tr>
+            <td>bs</td>
+            <td>
+                <a href="statuses-lang-bs.md">Lang</a>,
+                <a href="statuses-actions-bs.md">Actions</a>,
+                <a href="statuses-attributes-bs.md">Attributes</a>,
+                <a href="statuses-http-statuses-bs.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/jure-knezovic">@jure-knezovic</a>
+            </td>
+        </tr>
+        <tr>
+            <td>da</td>
+            <td>
+                <a href="statuses-lang-da.md">Lang</a>,
+                <a href="statuses-actions-da.md">Actions</a>,
+                <a href="statuses-attributes-da.md">Attributes</a>,
+                <a href="statuses-http-statuses-da.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/jensstigaard">@jensstigaard</a>
+            </td>
+        </tr>
+        <tr>
+            <td>de</td>
+            <td>
+                <a href="statuses-lang-de.md">Lang</a>,
+                <a href="statuses-actions-de.md">Actions</a>,
+                <a href="statuses-attributes-de.md">Attributes</a>,
+                <a href="statuses-http-statuses-de.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/sotten">@sotten</a>,
+                <a href="https://github.com/WhereIsLucas">@WhereIsLucas</a>
+            </td>
+        </tr>
+        <tr>
+            <td>de_CH</td>
+            <td>
+                <a href="statuses-lang-de_CH.md">Lang</a>,
+                <a href="statuses-actions-de_CH.md">Actions</a>,
+                <a href="statuses-attributes-de_CH.md">Attributes</a>,
+                <a href="statuses-http-statuses-de_CH.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/sotten">@sotten</a>
+            </td>
+        </tr>
+        <tr>
+            <td>es</td>
+            <td>
+                <a href="statuses-lang-es.md">Lang</a>,
+                <a href="statuses-actions-es.md">Actions</a>,
+                <a href="statuses-attributes-es.md">Attributes</a>,
+                <a href="statuses-http-statuses-es.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/luisprmat">@luisprmat</a>
+            </td>
+        </tr>
+        <tr>
+            <td>fa</td>
+            <td>
+                <a href="statuses-lang-fa.md">Lang</a>,
+                <a href="statuses-actions-fa.md">Actions</a>,
+                <a href="statuses-attributes-fa.md">Attributes</a>,
+                <a href="statuses-http-statuses-fa.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/ariaieboy">@ariaieboy</a>
+            </td>
+        </tr>
+        <tr>
+            <td>fr</td>
+            <td>
+                <a href="statuses-lang-fr.md">Lang</a>,
+                <a href="statuses-actions-fr.md">Actions</a>,
+                <a href="statuses-attributes-fr.md">Attributes</a>,
+                <a href="statuses-http-statuses-fr.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/caouecs">@caouecs</a>,
+                <a href="https://github.com/WhereIsLucas">@WhereIsLucas</a>
+            </td>
+        </tr>
+        <tr>
+            <td>hr</td>
+            <td>
+                <a href="statuses-lang-hr.md">Lang</a>,
+                <a href="statuses-actions-hr.md">Actions</a>,
+                <a href="statuses-attributes-hr.md">Attributes</a>,
+                <a href="statuses-http-statuses-hr.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/jure-knezovic">@jure-knezovic</a>
+            </td>
+        </tr>
+        <tr>
+            <td>it</td>
+            <td>
+                <a href="statuses-lang-it.md">Lang</a>,
+                <a href="statuses-actions-it.md">Actions</a>,
+                <a href="statuses-attributes-it.md">Attributes</a>,
+                <a href="statuses-http-statuses-it.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/masterix21">@masterix21</a>
+            </td>
+        </tr>
+        <tr>
+            <td>ja</td>
+            <td>
+                <a href="statuses-lang-ja.md">Lang</a>,
+                <a href="statuses-actions-ja.md">Actions</a>,
+                <a href="statuses-attributes-ja.md">Attributes</a>,
+                <a href="statuses-http-statuses-ja.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/wadakatu">@wadakatu</a>
+            </td>
+        </tr>
+        <tr>
+            <td>mk</td>
+            <td>
+                <a href="statuses-lang-mk.md">Lang</a>,
+                <a href="statuses-actions-mk.md">Actions</a>,
+                <a href="statuses-attributes-mk.md">Attributes</a>,
+                <a href="statuses-http-statuses-mk.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/keljtanoski">@keljtanoski</a>
+            </td>
+        </tr>
+        <tr>
+            <td>nl</td>
+            <td>
+                <a href="statuses-lang-nl.md">Lang</a>,
+                <a href="statuses-actions-nl.md">Actions</a>,
+                <a href="statuses-attributes-nl.md">Attributes</a>,
+                <a href="statuses-http-statuses-nl.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/WhereIsLucas">@WhereIsLucas</a>,
+                <a href="https://github.com/chillbram">@chillbram</a>
+            </td>
+        </tr>
+        <tr>
+            <td>pl</td>
+            <td>
+                <a href="statuses-lang-pl.md">Lang</a>,
+                <a href="statuses-actions-pl.md">Actions</a>,
+                <a href="statuses-attributes-pl.md">Attributes</a>,
+                <a href="statuses-http-statuses-pl.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/makowskid">@makowskid</a>
+            </td>
+        </tr>
+        <tr>
+            <td>pt</td>
+            <td>
+                <a href="statuses-lang-pt.md">Lang</a>,
+                <a href="statuses-actions-pt.md">Actions</a>,
+                <a href="statuses-attributes-pt.md">Attributes</a>,
+                <a href="statuses-http-statuses-pt.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/jorgercosta">@jorgercosta</a>
+            </td>
+        </tr>
+        <tr>
+            <td>pt_BR</td>
+            <td>
+                <a href="statuses-lang-pt_BR.md">Lang</a>,
+                <a href="statuses-actions-pt_BR.md">Actions</a>,
+                <a href="statuses-attributes-pt_BR.md">Attributes</a>,
+                <a href="statuses-http-statuses-pt_BR.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/EuCarlos">@EuCarlos</a>
+            </td>
+        </tr>
+        <tr>
+            <td>ro</td>
+            <td>
+                <a href="statuses-lang-ro.md">Lang</a>,
+                <a href="statuses-actions-ro.md">Actions</a>,
+                <a href="statuses-attributes-ro.md">Attributes</a>,
+                <a href="statuses-http-statuses-ro.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/Van4kk">@Van4kk</a>
+            </td>
+        </tr>
+        <tr>
+            <td>ru</td>
+            <td>
+                <a href="statuses-lang-ru.md">Lang</a>,
+                <a href="statuses-actions-ru.md">Actions</a>,
+                <a href="statuses-attributes-ru.md">Attributes</a>,
+                <a href="statuses-http-statuses-ru.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/andrey-helldar">@andrey-helldar</a>
+            </td>
+        </tr>
+        <tr>
+            <td>sr_Cyrl</td>
+            <td>
+                <a href="statuses-lang-sr_Cyrl.md">Lang</a>,
+                <a href="statuses-actions-sr_Cyrl.md">Actions</a>,
+                <a href="statuses-attributes-sr_Cyrl.md">Attributes</a>,
+                <a href="statuses-http-statuses-sr_Cyrl.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/LukaLatkovic">@LukaLatkovic</a>
+            </td>
+        </tr>
+        <tr>
+            <td>sr_Latn</td>
+            <td>
+                <a href="statuses-lang-sr_Latn.md">Lang</a>,
+                <a href="statuses-actions-sr_Latn.md">Actions</a>,
+                <a href="statuses-attributes-sr_Latn.md">Attributes</a>,
+                <a href="statuses-http-statuses-sr_Latn.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/LukaLatkovic">@LukaLatkovic</a>,
+                <a href="https://github.com/jure-knezovic">@jure-knezovic</a>
+            </td>
+        </tr>
+        <tr>
+            <td>sr_Latn_ME</td>
+            <td>
+                <a href="statuses-lang-sr_Latn_ME.md">Lang</a>,
+                <a href="statuses-actions-sr_Latn_ME.md">Actions</a>,
+                <a href="statuses-attributes-sr_Latn_ME.md">Attributes</a>,
+                <a href="statuses-http-statuses-sr_Latn_ME.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/LukaLatkovic">@LukaLatkovic</a>,
+                <a href="https://github.com/jure-knezovic">@jure-knezovic</a>
+            </td>
+        </tr>
+        <tr>
+            <td>sw</td>
+            <td>
+                <a href="statuses-lang-sw.md">Lang</a>,
+                <a href="statuses-actions-sw.md">Actions</a>,
+                <a href="statuses-attributes-sw.md">Attributes</a>,
+                <a href="statuses-http-statuses-sw.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/Pheogrammer">@Pheogrammer</a>
+            </td>
+        </tr>
+        <tr>
+            <td>tr</td>
+            <td>
+                <a href="statuses-lang-tr.md">Lang</a>,
+                <a href="statuses-actions-tr.md">Actions</a>,
+                <a href="statuses-attributes-tr.md">Attributes</a>,
+                <a href="statuses-http-statuses-tr.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/slvler">@slvler</a>
+            </td>
+        </tr>
+        <tr>
+            <td>uk</td>
+            <td>
+                <a href="statuses-lang-uk.md">Lang</a>,
+                <a href="statuses-actions-uk.md">Actions</a>,
+                <a href="statuses-attributes-uk.md">Attributes</a>,
+                <a href="statuses-http-statuses-uk.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/Oleksandr-Moik">@Oleksandr-Moik</a>,
+                <a href="https://github.com/MrAlKuz">@MrAlKuz</a>
+            </td>
+        </tr>
+        <tr>
+            <td>vi</td>
+            <td>
+                <a href="statuses-lang-vi.md">Lang</a>,
+                <a href="statuses-actions-vi.md">Actions</a>,
+                <a href="statuses-attributes-vi.md">Attributes</a>,
+                <a href="statuses-http-statuses-vi.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/dinhquochan">@dinhquochan</a>
+            </td>
+        </tr>
+        <tr>
+            <td>zh_CN</td>
+            <td>
+                <a href="statuses-lang-zh_CN.md">Lang</a>,
+                <a href="statuses-actions-zh_CN.md">Actions</a>,
+                <a href="statuses-attributes-zh_CN.md">Attributes</a>,
+                <a href="statuses-http-statuses-zh_CN.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/overtrue">@overtrue</a>
+            </td>
+        </tr>
+        <tr>
+            <td>zh_HK</td>
+            <td>
+                <a href="statuses-lang-zh_HK.md">Lang</a>,
+                <a href="statuses-actions-zh_HK.md">Actions</a>,
+                <a href="statuses-attributes-zh_HK.md">Attributes</a>,
+                <a href="statuses-http-statuses-zh_HK.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/overtrue">@overtrue</a>
+            </td>
+        </tr>
+        <tr>
+            <td>zh_TW</td>
+            <td>
+                <a href="statuses-lang-zh_TW.md">Lang</a>,
+                <a href="statuses-actions-zh_TW.md">Actions</a>,
+                <a href="statuses-attributes-zh_TW.md">Attributes</a>,
+                <a href="statuses-http-statuses-zh_TW.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/overtrue">@overtrue</a>
+            </td>
+        </tr>
+    </table>
+
+    <note>
+        <p>
+            If you want to join
+            <format style="bold">%team-name%</format>
+            , then all you need to do is send a PR to any of our projects.
+        </p>
+        <p>
+            For translation projects, we look at the volume of translated material, as well as the number of errors made.
+        </p>
+        <p>
+            For service projects, we look at the proposed ideas, as well as the implementation of functionality.
+        </p>
+    </note>
+</topic>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Security Policy" id="security-policy">
+
+    <p>
+        <format style="bold">PLEASE DON'T DISCLOSE SECURITY-RELATED ISSUES PUBLICLY,
+            <a href="#reporting_a_vulnerability">SEE BELOW</a>.
+        </format>
+    </p>
+
+    <chapter title="Supported Versions" id="supported_versions">
+        <p>
+            Please see our
+            <a href="release-notes.topic#support_policy">
+                <format style="bold">support policy</format>
+            </a>
+            for information on supported versions for security releases.
+        </p>
+    </chapter>
+
+    <chapter title="Reporting a Vulnerability" id="reporting_a_vulnerability">
+        <p>
+            If you discover a security vulnerability within
+            <format style="bold">%instance%</format>
+            products, please email
+            <a href="mailto:%security-helldar-email%;%security-caouecs-email%">
+                %security-helldar-name%, %security-caouecs-name%
+            </a>.
+            All security vulnerabilities will be promptly addressed.
+        </p>
+        <p>
+            Please email us.
+        </p>
+    </chapter>
+
+    <chapter title="Public PGP Key" id="public_pgp_key">
+        <code-block lang="text" src="https://raw.githubusercontent.com/Laravel-Lang/.github/main/security/gpg-key" />
+    </chapter>
+</topic>

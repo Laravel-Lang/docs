@@ -1,0 +1,12 @@
+array:79 [
+  "af" => "South Africa"
+  "ar" => "Egypt"
+  "az" => "Azerbaijan"
+  "be" => "Belarus"
+  "bg" => "Bulgaria"
+  "bn" => "Bangladesh"
+  "bs" => "Bosnia & Herzegovina"
+  "ca" => "Spain"
+  "cs" => "Czechia"
+  // ...
+]

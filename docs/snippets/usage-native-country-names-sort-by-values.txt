@@ -1,0 +1,11 @@
+array:79 [
+  "ps" => "Afghanistan"
+  "sq" => "Albania"
+  "hy" => "Armenia"
+  "az" => "Azerbaijan"
+  "bn" => "Bangladesh"
+  "be" => "Belarus"
+  "bs" => "Bosnia & Herzegovina"
+  "pt" => "Brazil"
+  // ...
+]

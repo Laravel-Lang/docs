@@ -1,0 +1,12 @@
+array:79 [
+  "af" => "Afrikaans"
+  "ar" => "Arabic"
+  "az" => "Azerbaijani (Latin)"
+  "be" => "Belarusian"
+  "bg" => "Bulgarian"
+  "bn" => "Bengali"
+  "bs" => "Bosnian"
+  "ca" => "Catalan"
+  "cs" => "Czech"
+  // ...
+]
