@@ -21,10 +21,10 @@
         <tr>
             <td>ar</td>
             <td>
-                <a href="statuses-lang-ar.topic">Lang</a>,
-                <a href="statuses-actions-ar.topic">Actions</a>,
-                <a href="statuses-attributes-ar.topic">Attributes</a>,
-                <a href="statuses-http-statuses-ar.topic">HTTP Statuses</a>
+                <a href="statuses-lang-ar.md">Lang</a>,
+                <a href="statuses-actions-ar.md">Actions</a>,
+                <a href="statuses-attributes-ar.md">Attributes</a>,
+                <a href="statuses-http-statuses-ar.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/Khuthaily">@Khuthaily</a>,
@@ -34,10 +34,10 @@
         <tr>
             <td>az</td>
             <td>
-                <a href="statuses-lang-az.topic">Lang</a>,
-                <a href="statuses-actions-az.topic">Actions</a>,
-                <a href="statuses-attributes-az.topic">Attributes</a>,
-                <a href="statuses-http-statuses-az.topic">HTTP Statuses</a>
+                <a href="statuses-lang-az.md">Lang</a>,
+                <a href="statuses-actions-az.md">Actions</a>,
+                <a href="statuses-attributes-az.md">Attributes</a>,
+                <a href="statuses-http-statuses-az.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/slvler">@slvler</a>
@@ -46,10 +46,10 @@
         <tr>
             <td>bn</td>
             <td>
-                <a href="statuses-lang-bn.topic">Lang</a>,
-                <a href="statuses-actions-bn.topic">Actions</a>,
-                <a href="statuses-attributes-bn.topic">Attributes</a>,
-                <a href="statuses-http-statuses-bn.topic">HTTP Statuses</a>
+                <a href="statuses-lang-bn.md">Lang</a>,
+                <a href="statuses-actions-bn.md">Actions</a>,
+                <a href="statuses-attributes-bn.md">Attributes</a>,
+                <a href="statuses-http-statuses-bn.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/arman-arif">@arman-arif</a>
@@ -58,10 +58,10 @@
         <tr>
             <td>bs</td>
             <td>
-                <a href="statuses-lang-bs.topic">Lang</a>,
-                <a href="statuses-actions-bs.topic">Actions</a>,
-                <a href="statuses-attributes-bs.topic">Attributes</a>,
-                <a href="statuses-http-statuses-bs.topic">HTTP Statuses</a>
+                <a href="statuses-lang-bs.md">Lang</a>,
+                <a href="statuses-actions-bs.md">Actions</a>,
+                <a href="statuses-attributes-bs.md">Attributes</a>,
+                <a href="statuses-http-statuses-bs.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/jure-knezovic">@jure-knezovic</a>
@@ -70,10 +70,10 @@
         <tr>
             <td>da</td>
             <td>
-                <a href="statuses-lang-da.topic">Lang</a>,
-                <a href="statuses-actions-da.topic">Actions</a>,
-                <a href="statuses-attributes-da.topic">Attributes</a>,
-                <a href="statuses-http-statuses-da.topic">HTTP Statuses</a>
+                <a href="statuses-lang-da.md">Lang</a>,
+                <a href="statuses-actions-da.md">Actions</a>,
+                <a href="statuses-attributes-da.md">Attributes</a>,
+                <a href="statuses-http-statuses-da.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/jensstigaard">@jensstigaard</a>
@@ -82,10 +82,10 @@
         <tr>
             <td>de</td>
             <td>
-                <a href="statuses-lang-de.topic">Lang</a>,
-                <a href="statuses-actions-de.topic">Actions</a>,
-                <a href="statuses-attributes-de.topic">Attributes</a>,
-                <a href="statuses-http-statuses-de.topic">HTTP Statuses</a>
+                <a href="statuses-lang-de.md">Lang</a>,
+                <a href="statuses-actions-de.md">Actions</a>,
+                <a href="statuses-attributes-de.md">Attributes</a>,
+                <a href="statuses-http-statuses-de.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/sotten">@sotten</a>,
@@ -95,10 +95,10 @@
         <tr>
             <td>de_CH</td>
             <td>
-                <a href="statuses-lang-de_CH.topic">Lang</a>,
-                <a href="statuses-actions-de_CH.topic">Actions</a>,
-                <a href="statuses-attributes-de_CH.topic">Attributes</a>,
-                <a href="statuses-http-statuses-de_CH.topic">HTTP Statuses</a>
+                <a href="statuses-lang-de_CH.md">Lang</a>,
+                <a href="statuses-actions-de_CH.md">Actions</a>,
+                <a href="statuses-attributes-de_CH.md">Attributes</a>,
+                <a href="statuses-http-statuses-de_CH.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/sotten">@sotten</a>
@@ -107,10 +107,10 @@
         <tr>
             <td>es</td>
             <td>
-                <a href="statuses-lang-es.topic">Lang</a>,
-                <a href="statuses-actions-es.topic">Actions</a>,
-                <a href="statuses-attributes-es.topic">Attributes</a>,
-                <a href="statuses-http-statuses-es.topic">HTTP Statuses</a>
+                <a href="statuses-lang-es.md">Lang</a>,
+                <a href="statuses-actions-es.md">Actions</a>,
+                <a href="statuses-attributes-es.md">Attributes</a>,
+                <a href="statuses-http-statuses-es.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/luisprmat">@luisprmat</a>
@@ -119,10 +119,10 @@
         <tr>
             <td>fa</td>
             <td>
-                <a href="statuses-lang-fa.topic">Lang</a>,
-                <a href="statuses-actions-fa.topic">Actions</a>,
-                <a href="statuses-attributes-fa.topic">Attributes</a>,
-                <a href="statuses-http-statuses-fa.topic">HTTP Statuses</a>
+                <a href="statuses-lang-fa.md">Lang</a>,
+                <a href="statuses-actions-fa.md">Actions</a>,
+                <a href="statuses-attributes-fa.md">Attributes</a>,
+                <a href="statuses-http-statuses-fa.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/ariaieboy">@ariaieboy</a>
@@ -131,10 +131,10 @@
         <tr>
             <td>fr</td>
             <td>
-                <a href="statuses-lang-fr.topic">Lang</a>,
-                <a href="statuses-actions-fr.topic">Actions</a>,
-                <a href="statuses-attributes-fr.topic">Attributes</a>,
-                <a href="statuses-http-statuses-fr.topic">HTTP Statuses</a>
+                <a href="statuses-lang-fr.md">Lang</a>,
+                <a href="statuses-actions-fr.md">Actions</a>,
+                <a href="statuses-attributes-fr.md">Attributes</a>,
+                <a href="statuses-http-statuses-fr.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/caouecs">@caouecs</a>,
@@ -144,10 +144,10 @@
         <tr>
             <td>hr</td>
             <td>
-                <a href="statuses-lang-hr.topic">Lang</a>,
-                <a href="statuses-actions-hr.topic">Actions</a>,
-                <a href="statuses-attributes-hr.topic">Attributes</a>,
-                <a href="statuses-http-statuses-hr.topic">HTTP Statuses</a>
+                <a href="statuses-lang-hr.md">Lang</a>,
+                <a href="statuses-actions-hr.md">Actions</a>,
+                <a href="statuses-attributes-hr.md">Attributes</a>,
+                <a href="statuses-http-statuses-hr.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/jure-knezovic">@jure-knezovic</a>
@@ -156,10 +156,10 @@
         <tr>
             <td>it</td>
             <td>
-                <a href="statuses-lang-it.topic">Lang</a>,
-                <a href="statuses-actions-it.topic">Actions</a>,
-                <a href="statuses-attributes-it.topic">Attributes</a>,
-                <a href="statuses-http-statuses-it.topic">HTTP Statuses</a>
+                <a href="statuses-lang-it.md">Lang</a>,
+                <a href="statuses-actions-it.md">Actions</a>,
+                <a href="statuses-attributes-it.md">Attributes</a>,
+                <a href="statuses-http-statuses-it.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/masterix21">@masterix21</a>
@@ -168,10 +168,10 @@
         <tr>
             <td>ja</td>
             <td>
-                <a href="statuses-lang-ja.topic">Lang</a>,
-                <a href="statuses-actions-ja.topic">Actions</a>,
-                <a href="statuses-attributes-ja.topic">Attributes</a>,
-                <a href="statuses-http-statuses-ja.topic">HTTP Statuses</a>
+                <a href="statuses-lang-ja.md">Lang</a>,
+                <a href="statuses-actions-ja.md">Actions</a>,
+                <a href="statuses-attributes-ja.md">Attributes</a>,
+                <a href="statuses-http-statuses-ja.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/wadakatu">@wadakatu</a>
@@ -180,10 +180,10 @@
         <tr>
             <td>mk</td>
             <td>
-                <a href="statuses-lang-mk.topic">Lang</a>,
-                <a href="statuses-actions-mk.topic">Actions</a>,
-                <a href="statuses-attributes-mk.topic">Attributes</a>,
-                <a href="statuses-http-statuses-mk.topic">HTTP Statuses</a>
+                <a href="statuses-lang-mk.md">Lang</a>,
+                <a href="statuses-actions-mk.md">Actions</a>,
+                <a href="statuses-attributes-mk.md">Attributes</a>,
+                <a href="statuses-http-statuses-mk.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/keljtanoski">@keljtanoski</a>
@@ -192,10 +192,10 @@
         <tr>
             <td>nl</td>
             <td>
-                <a href="statuses-lang-nl.topic">Lang</a>,
-                <a href="statuses-actions-nl.topic">Actions</a>,
-                <a href="statuses-attributes-nl.topic">Attributes</a>,
-                <a href="statuses-http-statuses-nl.topic">HTTP Statuses</a>
+                <a href="statuses-lang-nl.md">Lang</a>,
+                <a href="statuses-actions-nl.md">Actions</a>,
+                <a href="statuses-attributes-nl.md">Attributes</a>,
+                <a href="statuses-http-statuses-nl.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/WhereIsLucas">@WhereIsLucas</a>,
@@ -205,10 +205,10 @@
         <tr>
             <td>pl</td>
             <td>
-                <a href="statuses-lang-pl.topic">Lang</a>,
-                <a href="statuses-actions-pl.topic">Actions</a>,
-                <a href="statuses-attributes-pl.topic">Attributes</a>,
-                <a href="statuses-http-statuses-pl.topic">HTTP Statuses</a>
+                <a href="statuses-lang-pl.md">Lang</a>,
+                <a href="statuses-actions-pl.md">Actions</a>,
+                <a href="statuses-attributes-pl.md">Attributes</a>,
+                <a href="statuses-http-statuses-pl.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/makowskid">@makowskid</a>
@@ -217,10 +217,10 @@
         <tr>
             <td>pt</td>
             <td>
-                <a href="statuses-lang-pt.topic">Lang</a>,
-                <a href="statuses-actions-pt.topic">Actions</a>,
-                <a href="statuses-attributes-pt.topic">Attributes</a>,
-                <a href="statuses-http-statuses-pt.topic">HTTP Statuses</a>
+                <a href="statuses-lang-pt.md">Lang</a>,
+                <a href="statuses-actions-pt.md">Actions</a>,
+                <a href="statuses-attributes-pt.md">Attributes</a>,
+                <a href="statuses-http-statuses-pt.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/jorgercosta">@jorgercosta</a>
@@ -229,10 +229,10 @@
         <tr>
             <td>pt_BR</td>
             <td>
-                <a href="statuses-lang-pt_BR.topic">Lang</a>,
-                <a href="statuses-actions-pt_BR.topic">Actions</a>,
-                <a href="statuses-attributes-pt_BR.topic">Attributes</a>,
-                <a href="statuses-http-statuses-pt_BR.topic">HTTP Statuses</a>
+                <a href="statuses-lang-pt_BR.md">Lang</a>,
+                <a href="statuses-actions-pt_BR.md">Actions</a>,
+                <a href="statuses-attributes-pt_BR.md">Attributes</a>,
+                <a href="statuses-http-statuses-pt_BR.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/EuCarlos">@EuCarlos</a>
@@ -241,10 +241,10 @@
         <tr>
             <td>ro</td>
             <td>
-                <a href="statuses-lang-ro.topic">Lang</a>,
-                <a href="statuses-actions-ro.topic">Actions</a>,
-                <a href="statuses-attributes-ro.topic">Attributes</a>,
-                <a href="statuses-http-statuses-ro.topic">HTTP Statuses</a>
+                <a href="statuses-lang-ro.md">Lang</a>,
+                <a href="statuses-actions-ro.md">Actions</a>,
+                <a href="statuses-attributes-ro.md">Attributes</a>,
+                <a href="statuses-http-statuses-ro.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/Van4kk">@Van4kk</a>
@@ -253,10 +253,10 @@
         <tr>
             <td>ru</td>
             <td>
-                <a href="statuses-lang-ru.topic">Lang</a>,
-                <a href="statuses-actions-ru.topic">Actions</a>,
-                <a href="statuses-attributes-ru.topic">Attributes</a>,
-                <a href="statuses-http-statuses-ru.topic">HTTP Statuses</a>
+                <a href="statuses-lang-ru.md">Lang</a>,
+                <a href="statuses-actions-ru.md">Actions</a>,
+                <a href="statuses-attributes-ru.md">Attributes</a>,
+                <a href="statuses-http-statuses-ru.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/andrey-helldar">@andrey-helldar</a>
@@ -265,10 +265,10 @@
         <tr>
             <td>sr_Cyrl</td>
             <td>
-                <a href="statuses-lang-sr_Cyrl.topic">Lang</a>,
-                <a href="statuses-actions-sr_Cyrl.topic">Actions</a>,
-                <a href="statuses-attributes-sr_Cyrl.topic">Attributes</a>,
-                <a href="statuses-http-statuses-sr_Cyrl.topic">HTTP Statuses</a>
+                <a href="statuses-lang-sr_Cyrl.md">Lang</a>,
+                <a href="statuses-actions-sr_Cyrl.md">Actions</a>,
+                <a href="statuses-attributes-sr_Cyrl.md">Attributes</a>,
+                <a href="statuses-http-statuses-sr_Cyrl.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/LukaLatkovic">@LukaLatkovic</a>
@@ -277,10 +277,10 @@
         <tr>
             <td>sr_Latn</td>
             <td>
-                <a href="statuses-lang-sr_Latn.topic">Lang</a>,
-                <a href="statuses-actions-sr_Latn.topic">Actions</a>,
-                <a href="statuses-attributes-sr_Latn.topic">Attributes</a>,
-                <a href="statuses-http-statuses-sr_Latn.topic">HTTP Statuses</a>
+                <a href="statuses-lang-sr_Latn.md">Lang</a>,
+                <a href="statuses-actions-sr_Latn.md">Actions</a>,
+                <a href="statuses-attributes-sr_Latn.md">Attributes</a>,
+                <a href="statuses-http-statuses-sr_Latn.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/LukaLatkovic">@LukaLatkovic</a>,
@@ -290,10 +290,10 @@
         <tr>
             <td>sr_Latn_ME</td>
             <td>
-                <a href="statuses-lang-sr_Latn_ME.topic">Lang</a>,
-                <a href="statuses-actions-sr_Latn_ME.topic">Actions</a>,
-                <a href="statuses-attributes-sr_Latn_ME.topic">Attributes</a>,
-                <a href="statuses-http-statuses-sr_Latn_ME.topic">HTTP Statuses</a>
+                <a href="statuses-lang-sr_Latn_ME.md">Lang</a>,
+                <a href="statuses-actions-sr_Latn_ME.md">Actions</a>,
+                <a href="statuses-attributes-sr_Latn_ME.md">Attributes</a>,
+                <a href="statuses-http-statuses-sr_Latn_ME.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/LukaLatkovic">@LukaLatkovic</a>,
@@ -303,10 +303,10 @@
         <tr>
             <td>sw</td>
             <td>
-                <a href="statuses-lang-sw.topic">Lang</a>,
-                <a href="statuses-actions-sw.topic">Actions</a>,
-                <a href="statuses-attributes-sw.topic">Attributes</a>,
-                <a href="statuses-http-statuses-sw.topic">HTTP Statuses</a>
+                <a href="statuses-lang-sw.md">Lang</a>,
+                <a href="statuses-actions-sw.md">Actions</a>,
+                <a href="statuses-attributes-sw.md">Attributes</a>,
+                <a href="statuses-http-statuses-sw.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/Pheogrammer">@Pheogrammer</a>
@@ -315,10 +315,10 @@
         <tr>
             <td>tr</td>
             <td>
-                <a href="statuses-lang-tr.topic">Lang</a>,
-                <a href="statuses-actions-tr.topic">Actions</a>,
-                <a href="statuses-attributes-tr.topic">Attributes</a>,
-                <a href="statuses-http-statuses-tr.topic">HTTP Statuses</a>
+                <a href="statuses-lang-tr.md">Lang</a>,
+                <a href="statuses-actions-tr.md">Actions</a>,
+                <a href="statuses-attributes-tr.md">Attributes</a>,
+                <a href="statuses-http-statuses-tr.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/slvler">@slvler</a>
@@ -327,10 +327,10 @@
         <tr>
             <td>uk</td>
             <td>
-                <a href="statuses-lang-uk.topic">Lang</a>,
-                <a href="statuses-actions-uk.topic">Actions</a>,
-                <a href="statuses-attributes-uk.topic">Attributes</a>,
-                <a href="statuses-http-statuses-uk.topic">HTTP Statuses</a>
+                <a href="statuses-lang-uk.md">Lang</a>,
+                <a href="statuses-actions-uk.md">Actions</a>,
+                <a href="statuses-attributes-uk.md">Attributes</a>,
+                <a href="statuses-http-statuses-uk.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/Oleksandr-Moik">@Oleksandr-Moik</a>,
@@ -340,10 +340,10 @@
         <tr>
             <td>vi</td>
             <td>
-                <a href="statuses-lang-vi.topic">Lang</a>,
-                <a href="statuses-actions-vi.topic">Actions</a>,
-                <a href="statuses-attributes-vi.topic">Attributes</a>,
-                <a href="statuses-http-statuses-vi.topic">HTTP Statuses</a>
+                <a href="statuses-lang-vi.md">Lang</a>,
+                <a href="statuses-actions-vi.md">Actions</a>,
+                <a href="statuses-attributes-vi.md">Attributes</a>,
+                <a href="statuses-http-statuses-vi.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/dinhquochan">@dinhquochan</a>
@@ -352,10 +352,10 @@
         <tr>
             <td>zh_CN</td>
             <td>
-                <a href="statuses-lang-zh_CN.topic">Lang</a>,
-                <a href="statuses-actions-zh_CN.topic">Actions</a>,
-                <a href="statuses-attributes-zh_CN.topic">Attributes</a>,
-                <a href="statuses-http-statuses-zh_CN.topic">HTTP Statuses</a>
+                <a href="statuses-lang-zh_CN.md">Lang</a>,
+                <a href="statuses-actions-zh_CN.md">Actions</a>,
+                <a href="statuses-attributes-zh_CN.md">Attributes</a>,
+                <a href="statuses-http-statuses-zh_CN.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/overtrue">@overtrue</a>
@@ -364,10 +364,10 @@
         <tr>
             <td>zh_HK</td>
             <td>
-                <a href="statuses-lang-zh_HK.topic">Lang</a>,
-                <a href="statuses-actions-zh_HK.topic">Actions</a>,
-                <a href="statuses-attributes-zh_HK.topic">Attributes</a>,
-                <a href="statuses-http-statuses-zh_HK.topic">HTTP Statuses</a>
+                <a href="statuses-lang-zh_HK.md">Lang</a>,
+                <a href="statuses-actions-zh_HK.md">Actions</a>,
+                <a href="statuses-attributes-zh_HK.md">Attributes</a>,
+                <a href="statuses-http-statuses-zh_HK.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/overtrue">@overtrue</a>
@@ -376,10 +376,10 @@
         <tr>
             <td>zh_TW</td>
             <td>
-                <a href="statuses-lang-zh_TW.topic">Lang</a>,
-                <a href="statuses-actions-zh_TW.topic">Actions</a>,
-                <a href="statuses-attributes-zh_TW.topic">Attributes</a>,
-                <a href="statuses-http-statuses-zh_TW.topic">HTTP Statuses</a>
+                <a href="statuses-lang-zh_TW.md">Lang</a>,
+                <a href="statuses-actions-zh_TW.md">Actions</a>,
+                <a href="statuses-attributes-zh_TW.md">Attributes</a>,
+                <a href="statuses-http-statuses-zh_TW.md">HTTP Statuses</a>
             </td>
             <td>
                 <a href="https://github.com/overtrue">@overtrue</a>
