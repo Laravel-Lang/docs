@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
     SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Release Notes" id="release-notes">
 
+    <list>
+        <li><a anchor="versioning_scheme" summary="" /></li>
+        <li><a anchor="support_policy" summary="" /></li>
+        <li><a anchor="common" summary="" /></li>
+        <li><a anchor="publisher" summary="" /></li>
+        <li><a anchor="lang" summary="" /></li>
+        <li><a anchor="actions" summary="" /></li>
+        <li><a anchor="attributes" summary="" /></li>
+        <li><a anchor="http_statuses" summary="" /></li>
+        <li><a anchor="locales" summary="" /></li>
+        <li><a anchor="locale_list" summary="" /></li>
+        <li><a anchor="native_locale_names" summary="" /></li>
+        <li><a anchor="native_country_names" summary="" /></li>
+        <li><a anchor="native_currency_names" summary="" /></li>
+        <li><a anchor="json_fallback" summary="" /></li>
+    </list>
 
-    <tldr>
-
-        - <a anchor="versioning-scheme" summary="">Versioning Scheme</a>
-        - <a anchor="support-policy" summary="">Support Policy</a>
-        - <a anchor="common" summary="">Common</a>
-        - <a anchor="publisher" summary="">Publisher</a>
-        - <a anchor="lang" summary="">Lang</a>
-        - <a anchor="actions" summary="">Actions</a>
-        - <a anchor="attributes" summary="">Attributes</a>
-        - <a anchor="http-statuses" summary="">HTTP Statuses</a>
-        - <a anchor="locales" summary="">Locales</a>
-        - <a anchor="locale-list" summary="">Locale List</a>
-        - <a anchor="native-locale-names" summary="">Native Locale Names</a>
-        - <a anchor="native-country-names" summary="">Native Country Names</a>
-        - <a anchor="native-currency-names" summary="">Native Currency Names</a>
-        - <a anchor="json-fallback" summary="">JSON Fallback</a>
-
-    </tldr>
     <chapter title="Versioning Scheme" id="versioning_scheme">
         <p>
             All our packages follow <a href="https://semver.org">Semantic Versioning</a>.
-            Major project releases occur when adding some functionality that breaks backward compatibility or when removing support
-            for <a href="https://laravel.com/docs/releases">deprecated versions</a> of Laravel or its other first-party packages.
+            Major project releases occur when adding some functionality that breaks backward compatibility or
+            when removing support for
+            <a href="https://laravel.com/docs/releases">deprecated versions</a> of Laravel or its other first-party packages.
             Minor and patch releases should never contain breaking changes.
         </p>
     </chapter>
+
     <chapter title="Support Policy" id="support_policy">
         <p>
             For all Lang projects, we follow the <a href="https://laravel.com/docs/releases">Laravel support policy</a>.
@@ -39,133 +40,333 @@
         <p>
 
             Since `Lang` project packages are not expected to have code that affects the security of the project, we are
-            basing this on the <a href="https://laravel.com/docs/releases#support-policy">scheduled maintenance completion dates</a>
+            basing this on the
+            <a href="https://laravel.com/docs/releases#support-policy">scheduled maintenance completion dates</a>
             for Laravel projects and minor versions of <a href="https://www.php.net">PHP</a>.
         </p>
-        <section>
 
-            ### Common
+        <chapter title="Common" id="common">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Dependencies</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>`^5.0`</td>
+                    <td>Publisher 15, Lang 13, Attributes 2, HTTP Statuses 3, Locales 1</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2</td>
+                    <td>`^4.0`</td>
+                    <td>Publisher 14, Lang 13, Attributes 2, HTTP Statuses 3, Locales 1</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>8, 9, 10</td>
+                    <td>8.1, 8.2</td>
+                    <td>`^3.0`</td>
+                    <td>Publisher 14, Lang 12, Attributes 2, HTTP Statuses 3</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>8.0, 8.1</td>
+                    <td>`^2.0`</td>
+                    <td>Publisher 13, Lang 10, Attributes 1, HTTP Statuses 2</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>7.3, 7.4, 8.0, 8.1</td>
+                    <td>`^1.0`</td>
+                    <td>Publisher 12, Lang 10, Attributes 1, HTTP Statuses 2</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
 
-            | Laravel  | PHP                | Package | Dependencies                                                                |                 Status                  |
-            |----------|--------------------|---------|-----------------------------------------------------------------------------|:---------------------------------------:|
-            | 10       | 8.1, 8.2, 8.3      | `^5.0`  | Publisher 15<br/>Lang 13<br/>Attributes 2<br/>HTTP Statuses 3<br/>Locales 1 |     !<a href="%badge-supported%">Supported</a>     |
-            | 10       | 8.1, 8.2           | `^4.0`  | Publisher 14<br/>Lang 13<br/>Attributes 2<br/>HTTP Statuses 3<br/>Locales 1 | !<a href="%badge-not-supported%">Not Supported</a> |
-            | 8, 9, 10 | 8.1, 8.2           | `^3.0`  | Publisher 14<br/>Lang 12<br/>Attributes 2<br/>HTTP Statuses 3               | !<a href="%badge-not-supported%">Not Supported</a> |
-            | 7, 8, 9  | 8.0, 8.1           | `^2.0`  | Publisher 13<br/>Lang 10<br/>Attributes 1<br/>HTTP Statuses 2               | !<a href="%badge-not-supported%">Not Supported</a> |
-            | 7, 8, 9  | 7.3, 7.4, 8.0, 8.1 | `^1.0`  | Publisher 12<br/>Lang 10<br/>Attributes 1<br/>HTTP Statuses 2               | !<a href="%badge-not-supported%">Not Supported</a> |
+        <chapter title="Publisher" id="publisher">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>`^15.0`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>8, 9, 10</td>
+                    <td>8.1, 8.2</td>
+                    <td>`^14.0`</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>8.0, 8.1</td>
+                    <td>`^13.0`</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>7.3, 7.4, 8.0, 8.1</td>
+                    <td>`^12.0`</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
 
-        </section>
-        <section>
+        <chapter title="Lang" id="lang">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Publisher</td>
+                    <td>Package</td>
+                    <td>Dependencies</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>14, 15</td>
+                    <td>`^13.0`</td>
+                    <td>Breeze 1, Cashier Stripe 13, 14, Fortify 1, Jetstream 2, 3, 4, Nova 4, Spark Aurelius 11, 12, Spark Aurelius Mollie 2, Spark Paddle *, Stripe Stripe *, UI 4</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>9, 10</td>
+                    <td>8.1, 8.2</td>
+                    <td>14</td>
+                    <td>`^12.0`</td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, 14, Fortify 1, Jetstream 1, 2, 3, Nova 3, 4, Spark Aurelius 11, 12, Spark Aurelius Mollie 2, Spark Paddle *, Stripe Stripe *, UI 3, 4</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>6, 7, 8, 9, 10</td>
+                    <td>8.1, 8.2</td>
+                    <td>---</td>
+                    <td>`^11.0`</td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, 2, Nova 3, 4, Spark Paddle *, Stripe Stripe *, UI 1, 2, 3, 4</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>8.1, 8.2</td>
+                    <td>---</td>
+                    <td>`^10.0`</td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, Nova 3, Spark Paddle *, Stripe Stripe *, UI 1, 2, 3</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
 
-            ### Publisher
+        <chapter title="Actions" id="actions">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Publisher</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>15</td>
+                    <td>`^1.0`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
 
-            | Laravel  | PHP                | Package |                 Status                  |
-            |----------|--------------------|---------|:---------------------------------------:|
-            | 10       | 8.1, 8.2, 8.3      | `^15.0` |     !<a href="%badge-supported%">Supported</a>     |
-            | 8, 9, 10 | 8.1, 8.2           | `^14.0` | !<a href="%badge-not-supported%">Not Supported</a> |
-            | 7, 8, 9  | 8.0, 8.1           | `^13.0` | !<a href="%badge-not-supported%">Not Supported</a> |
-            | 7, 8, 9  | 7.3, 7.4, 8.0, 8.1 | `^12.0` | !<a href="%badge-not-supported%">Not Supported</a> |
+        <chapter title="Attributes" id="attributes">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Publisher</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>15</td>
+                    <td>`^2.5`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>8, 9, 10, 11</td>
+                    <td>8.1, 8.2</td>
+                    <td>14</td>
+                    <td>`^2.0`</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>7.3, 7.4, 8.0, 8.1</td>
+                    <td>12, 13</td>
+                    <td>`^1.0`</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
 
-        </section>
-        <section>
+        <chapter title="HTTP Statuses" id="http_statuses">
+            <table>
+                <tr>
+                    <td>Laravel</td>
+                    <td>PHP</td>
+                    <td>Publisher</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>15</td>
+                    <td>`^3.5`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>8, 9, 10</td>
+                    <td>8.1, 8.2</td>
+                    <td>14</td>
+                    <td>`^3.0`</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8, 9</td>
+                    <td>8.0, 8.1</td>
+                    <td>13</td>
+                    <td>`^2.0`</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+                <tr>
+                    <td>7, 8</td>
+                    <td>7.3, 7.4, 8.0, 8.1</td>
+                    <td>10</td>
+                    <td>`^1.0`</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
 
-            ### Lang
+        <chapter title="Locales" id="locales">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>`^2.0`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>`^1.0`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
 
-            | Laravel        | PHP           | Publisher | Package | Dependencies                                                                                                                                                                                      |                 Status                  |
-            |----------------|---------------|-----------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------:|
-            | 10             | 8.1, 8.2, 8.3 | 14, 15    | `^13.0` | Breeze 1<br/>Cashier Stripe 13, 14<br/>Fortify 1<br/>Jetstream 2, 3, 4<br/>Nova 4<br/>Spark Aurelius 11, 12<br/>Spark Aurelius Mollie 2<br/>Spark Paddle *<br/>Stripe Stripe *<br/>UI 4           |     !<a href="%badge-supported%">Supported</a>     |
-            | 9, 10          | 8.1, 8.2      | 14        | `^12.0` | Breeze 1<br/>Cashier Stripe 12, 13, 14<br/>Fortify 1<br/>Jetstream 1, 2, 3<br/>Nova 3, 4<br/>Spark Aurelius 11, 12<br/>Spark Aurelius Mollie 2<br/>Spark Paddle *<br/>Stripe Stripe *<br/>UI 3, 4 | !<a href="%badge-not-supported%">Not Supported</a> |
-            | 6, 7, 8, 9, 10 | 8.1, 8.2      |           | `^11.0` | Breeze 1<br/>Cashier Stripe 12, 13<br/>Fortify 1<br/>Jetstream 1, 2<br/>Nova 3, 4<br/>Spark Paddle *<br/>Stripe Stripe *<br/>UI 1, 2, 3, 4                                                        | !<a href="%badge-not-supported%">Not Supported</a> |
-            | 7, 8, 9        | 8.1, 8.2      |           | `^10.0` | Breeze 1<br/>Cashier Stripe 12, 13<br/>Fortify 1<br/>Jetstream 1<br/>Nova 3<br/>Spark Paddle *<br/>Stripe Stripe *<br/>UI 1, 2, 3                                                                 | !<a href="%badge-not-supported%">Not Supported</a> |
+        <chapter title="Locale List" id="locale_list">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>`^1.0`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
 
-        </section>
-        <section>
+        <chapter title="Native Locale Names" id="native_locale_names">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>`^2.0`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>`^1.0`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
 
-            ### Actions
+        <chapter title="Native Country Names" id="native_country_names">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>`^1.0`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
 
-            | Laravel | PHP           | Publisher | Package |             Status              |
-            |---------|---------------|-----------|---------|:-------------------------------:|
-            | 10      | 8.1, 8.2, 8.3 | 15        | `^1.0`  | !<a href="%badge-supported%">Supported</a> |
+        <chapter title="Native Currency Names" id="native_currency_names">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>`^1.0`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+            </table>
+        </chapter>
 
-        </section>
-        <section>
-
-            ### Attributes
-
-            | Laravel      | PHP                | Publisher | Package |                 Status                  |
-            |--------------|--------------------|-----------|---------|:---------------------------------------:|
-            | 10           | 8.1, 8.2, 8.3      | 15        | `^2.5`  |     !<a href="%badge-supported%">Supported</a>     |
-            | 8, 9, 10, 11 | 8.1, 8.2           | 14        | `^2.0`  | !<a href="%badge-not-supported%">Not Supported</a> |
-            | 7, 8, 9      | 7.3, 7.4, 8.0, 8.1 | 12, 13    | `^1.0`  | !<a href="%badge-not-supported%">Not Supported</a> |
-
-        </section>
-        <section>
-
-            ### HTTP Statuses
-
-            | Laravel  | PHP                | Publisher | Package |                 Status                  |
-            |----------|--------------------|-----------|---------|:---------------------------------------:|
-            | 10       | 8.1, 8.2, 8.3      | 15        | `^3.5`  |     !<a href="%badge-supported%">Supported</a>     |
-            | 8, 9, 10 | 8.1, 8.2           | 14        | `^3.0`  | !<a href="%badge-not-supported%">Not Supported</a> |
-            | 7, 8, 9  | 8.0, 8.1           | 13        | `^2.0`  | !<a href="%badge-not-supported%">Not Supported</a> |
-            | 7, 8     | 7.3, 7.4, 8.0, 8.1 | 10        | `^1.0`  | !<a href="%badge-not-supported%">Not Supported</a> |
-
-        </section>
-        <section>
-
-            ### Locales
-
-            | PHP           | Package |             Status              |
-            |---------------|---------|:-------------------------------:|
-            | 8.1, 8.2, 8.3 | `^2.0`  | !<a href="%badge-supported%">Supported</a> |
-            | 8.1, 8.2, 8.3 | `^1.0`  | !<a href="%badge-supported%">Supported</a> |
-
-        </section>
-        <section>
-
-            ### Locale List
-
-            | PHP           | Package |             Status              |
-            |---------------|---------|:-------------------------------:|
-            | 8.1, 8.2, 8.3 | `^1.0`  | !<a href="%badge-supported%">Supported</a> |
-
-        </section>
-        <section>
-
-            ### Native Locale Names
-
-            | PHP           | Package |             Status              |
-            |---------------|---------|:-------------------------------:|
-            | 8.1, 8.2, 8.3 | `^2.0`  | !<a href="%badge-supported%">Supported</a> |
-            | 8.1, 8.2, 8.3 | `^1.0`  | !<a href="%badge-supported%">Supported</a> |
-
-        </section>
-        <section>
-
-            ### Native Country Names
-
-            | PHP           | Package |             Status              |
-            |---------------|---------|:-------------------------------:|
-            | 8.1, 8.2, 8.3 | `^1.0`  | !<a href="%badge-supported%">Supported</a> |
-
-        </section>
-        <section>
-
-            ### Native Currency Names
-
-            | PHP           | Package |             Status              |
-            |---------------|---------|:-------------------------------:|
-            | 8.1, 8.2, 8.3 | `^1.0`  | !<a href="%badge-supported%">Supported</a> |
-
-        </section>
-        <section>
-
-            ### JSON Fallback
-
-            | PHP                               | Package |             Status              |
-            |-----------------------------------|---------|:-------------------------------:|
-            | 7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3 | `^1.0`  | !<a href="%badge-supported%">Supported</a> |
-
-        </section>
+        <chapter title="JSON Fallback" id="json_fallback">
+            <table>
+                <tr>
+                    <td>PHP</td>
+                    <td>Package</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>`^2.0`</td>
+                    <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3</td>
+                    <td>`^1.0`</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                </tr>
+            </table>
+        </chapter>
     </chapter>
 </topic>
