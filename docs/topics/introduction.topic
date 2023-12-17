@@ -17,6 +17,7 @@
         projects allow you to easily connect translation packages to your
         project that serve different tasks.
     </p>
+
     <chapter title="Support Projects" id="support_projects">
         <include from="snippets-library.topic" element-id="lists-laravel-projects" />
 
@@ -26,11 +27,19 @@
             supports 😎!
         </p>
     </chapter>
-    <chapter title="Quick Links" id="quick_links">
-        <list>
-            <li><a href="installation.topic" /></li>
-            <li><a href="usage-add-locales.topic" /></li>
-            <li><a href="usage-update-locales.topic" /></li>
-        </list>
-    </chapter>
+
+    <p>
+        Open source software is used in all projects we deliver.
+        Laravel, Nginx, Ubuntu are just a few of the free pieces of software we use every single day.
+        For this, we are very grateful. When we feel we have solved a problem in a way that can help other developers, we
+        release our code as open source software on GitHub.
+    </p>
+
+    <seealso style="cards">
+        <category ref="getting-started">
+            <a href="installation.topic" />
+            <a href="usage-add-locales.topic" />
+            <a href="usage-update-locales.topic" />
+        </category>
+    </seealso>
 </topic>
