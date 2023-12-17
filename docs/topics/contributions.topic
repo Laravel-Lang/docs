@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Contribution Guide" id="contributions">
+
+    <p>
+        Contributions are
+        <format style="bold">welcome</format>
+        and will be fully
+        <format style="bold">credited</format>
+        .
+    </p>
+    <p>
+        We accept contributions through Pull Requests on
+        <a href="https://github.com/orgs/Laravel-Lang/repositories">all projects</a>
+        of our organization.
+    </p>
+
+    <chapter title="What do the files mean?" id="what_do_the_files_mean">
+        <list>
+            <li>
+                <format style="bold">php.json</format>
+                - contains translations of values for PHP localization files.
+            </li>
+            <li>
+                <format style="bold">php-inline.json</format>
+                - contains inline translations of values for PHP localization files.
+            </li>
+            <li>
+                <format style="bold">json.json</format>
+                - contains translations of values for JSON localization files.
+            </li>
+            <li>
+                <format style="bold">json-inline.json</format>
+                - contains inline translations of values for JSON localization files.
+            </li>
+            <li>
+                <format style="bold">_excludes.json</format>
+                - contains those values whose translation is the same as in English.
+                Please note that this file contains a list of values, not keys.
+            </li>
+        </list>
+    </chapter>
+
+    <chapter title="How to change files?" id="how_to_edit_files">
+        <p>
+            All files available for translation have a json extension and are located in the
+            <code>locales</code> folder.
+            Open the desired file and make changes.
+        </p>
+
+        <tip>
+            <p>
+                Even if you see an error in the key, do not change it, otherwise Laravel will not be able to read it.
+            </p>
+            <p>
+                All you can do is send a <a href="https://github.com/orgs/laravel/repositories">Pull Request</a>
+                to the appropriate product from the Laravel team to correct the spelling.
+            </p>
+            <p>
+                After this, our products will automatically update the keys.
+                This happens automatically once a day.
+            </p>
+        </tip>
+
+        <procedure>
+            <step>Open the localization file</step>
+            <step>Change key values.</step>
+            <step>Create a commit and push it</step>
+            <step>
+                <p>
+                    Create a Pull Request specifying the locale code for which you are making changes. For example:
+                </p>
+                <tip>
+                    [fr]: Added new localization
+                </tip>
+            </step>
+        </procedure>
+
+        <tip>
+            <p>
+                Pay attention to files with the <code>inline</code> suffix -
+                they should not contain references to the current attribute (<code>:attribute</code>).
+            </p>
+            <p>
+                The difference between inline translations is different in the form of address:
+            </p>
+
+            <code-block lang="text">
+                // It's a normal
+                The :attribute must contain at least one letter.
+
+                // It's a inline
+                This field must contain at least one letter.
+            </code-block>
+        </tip>
+    </chapter>
+
+    <chapter title="How to add a new locale?" id="how_to_add_a_new_locale">
+        <chapter title="For %instance% projects" id="for_laravel_lang_projects">
+            <p>
+                As a rule, all our projects already contain available localizations,
+                but if you want to suggest a new one,
+                <a href="https://github.com/Laravel-Lang/common/discussions/new?category=ideas&amp;title=I%20want%20to%20add%20a%20new%20localization">
+                    write to us
+                </a>
+                about it.
+            </p>
+        </chapter>
+
+        <chapter title="For third-party projects" id="for_third_party_projects">
+            <tip>
+                To add a locale that is not in <code>%package-locale-list%</code>,
+                <a href="https://github.com/Laravel-Lang/common/discussions/new?category=ideas&amp;title=I%20want%20to%20add%20a%20new%20localization">
+                    write to us
+                </a>.
+            </tip>
+            <p>
+                Make sure you have the
+                <code>%package-status-generator%</code> package installed and run the console command:
+            </p>
+
+            <code-block lang="bash">
+                vendor/bin/lang create &lt;locale&gt;
+                # vendor/bin/lang create %locale-one%
+            </code-block>
+
+            <p>
+                If you want to install all the missing locales, then run the command without specifying the localization code:
+            </p>
+
+            <code-block lang="bash">
+                vendor/bin/lang create
+            </code-block>
+        </chapter>
+    </chapter>
+
+    <chapter title="Coding style" id="coding_style">
+        <p>
+            %team-name% follows the
+            <a href="https://www.php-fig.org/per/coding-style/">PER 2.0</a> coding standard and the
+            <a href="https://www.php-fig.org/psr/psr-4/">PSR-4</a> autoloading standard.
+        </p>
+        <p>
+            The easiest way to maintain style code is to use the
+            <a href="https://github.com/TheDragonCode/codestyler"><code>dragon-code/codestyler</code></a>
+            package.
+        </p>
+    </chapter>
+
+    <chapter title="Code of Conduct" id="code_of_conduct">
+        <p>
+            The Laravel code of conduct is derived from the
+            <a href="https://www.contributor-covenant.org/version/2/1/code_of_conduct/">Contributor Covenant</a>
+            code of conduct.
+            Any violations of the code of conduct may be reported to
+            <a href="mailto:%abuse-helldar-email%;%abuse-caouecs-email%">
+                %abuse-helldar-name%, %abuse-caouecs-name%
+            </a>:
+        </p>
+
+        <list>
+            <li>Participants will be tolerant of opposing views.</li>
+            <li>Participants must ensure that their language and actions are free of personal attacks and disparaging personal remarks.</li>
+            <li>When interpreting the words and actions of others, participants should always assume good intentions.</li>
+            <li>Behavior that can be reasonably considered harassment will not be tolerated.</li>
+        </list>
+    </chapter>
+</topic>

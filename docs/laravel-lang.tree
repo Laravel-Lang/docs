@@ -25,6 +25,7 @@
         </toc-element>
         <toc-element topic="security-policy.topic" />
         <toc-element topic="questions-and-issues.topic" />
+        <toc-element topic="contributions.topic" />
         <toc-element topic="our-team.topic" toc-title="Our Team" />
         <toc-element toc-title="License" topic="license.topic" />
     </toc-element>
@@ -389,9 +390,5 @@
             <toc-element topic="statuses-http-statuses-zh_HK.md" />
             <toc-element topic="statuses-http-statuses-zh_TW.md" />
         </toc-element>
-    </toc-element>
-    <toc-element topic="development.topic">
-        <toc-element topic="contributing.topic" />
-        <toc-element topic="code-of-conduct.topic" />
     </toc-element>
 </instance-profile>

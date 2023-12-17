@@ -18,4 +18,16 @@
         <description>Created after removal of "From laravel-lang/*" from Laravel Lang</description>
         <accepts>upgrade-from-laravel-lang.html</accepts>
     </rule>
+    <rule id="5abaca93">
+        <description>Created after removal of "Contributing" from Laravel Lang</description>
+        <accepts>contributing.html</accepts>
+    </rule>
+    <rule id="104c46e0">
+        <description>Created after removal of "Contributor Covenant Code of Conduct" from Laravel Lang</description>
+        <accepts>code-of-conduct.html</accepts>
+    </rule>
+    <rule id="18c3867b">
+        <description>Created after removal of "Development" from Laravel Lang</description>
+        <accepts>development.html</accepts>
+    </rule>
 </rules>
