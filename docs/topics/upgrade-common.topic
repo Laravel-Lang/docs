@@ -6,9 +6,7 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Common" id="upgrade-common">
 
-    <tldr>
-
-        - <a href="upgrade-common-to-5-from-4.topic">To 5 from 4</a>
-
-    </tldr>
+    <list>
+        <li><a href="upgrade-common-to-5-from-4.topic" /></li>
+    </list>
 </topic>
