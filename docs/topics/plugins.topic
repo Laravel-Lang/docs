@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
     SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Plugins" id="plugins">
 
 
-    <tldr>
-
-        - <a href="plugins-installation.topic">Install Plugins</a>
-        - <a href="plugins-official.topic">Official Plugins</a>
-        - <a href="plugins-community.topic">Community Plugins</a>
-
-    </tldr>
+    <list>
+        <li><a href="plugins-installation.topic" /></li>
+        <li><a href="plugins-official.topic" /></li>
+        <li><a href="plugins-community.topic" /></li>
+    </list>
 
 </topic>
