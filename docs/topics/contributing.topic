@@ -89,7 +89,7 @@
                     <p>
                         For example:
                     </p>
-                    <code-block lang="json">
+                    <code-block lang="json" validate="true">
                         {
                         "The :attribute must be at least :length characters.": "This field must be at least :length characters."
                         }
@@ -192,11 +192,11 @@
                     <p>
                         <format style="italic">locales/it/json.json</format>
                     </p>
-                    <code-block lang="json" src="translation-json.json" />
+                    <code-block lang="json" validate="true" src="translation-json.json" />
                     <p>
                         <format style="italic">locales/it/_excludes.json</format>
                     </p>
-                    <code-block lang="json" src="translation-excludes.json" />
+                    <code-block lang="json" validate="true" src="translation-excludes.json" />
                 </tip>
             </li>
             <li>

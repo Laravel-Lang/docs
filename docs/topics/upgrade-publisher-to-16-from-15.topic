@@ -36,7 +36,7 @@
             Replace the locales namespace:
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             LaravelLang\Locales\Enums\Locale
         </code-block>
 
@@ -44,7 +44,7 @@
             with
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             LaravelLang\LocaleList\Locale
         </code-block>
 
@@ -52,7 +52,7 @@
             For example:
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             // Before
             LaravelLang\Locales\Enums\Locale::Afrikaans; // af
 

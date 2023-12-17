@@ -12,7 +12,7 @@
     </note>
 
     <chapter title="As enum" id="as_enum">
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             use LaravelLang\LocaleList\Locale;
 
             return Locale::Bengali;
@@ -22,7 +22,7 @@
             Result:
         </p>
 
-        <code-block lang="php" src="usage-list-of-locales-bn.txt" />
+        <code-block lang="php" validate="true" src="usage-list-of-locales-bn.txt" />
     </chapter>
 
     <chapter title="List of codes" id="list_of_codes">
@@ -30,7 +30,7 @@
             This list is not sorted during output.
         </tip>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             use LaravelLang\LocaleList\Locale;
 
             return Locale::values();
@@ -40,7 +40,7 @@
             Result:
         </p>
 
-        <code-block lang="php" src="usage-list-of-locales-list-of-codes.txt" />
+        <code-block lang="php" validate="true" src="usage-list-of-locales-list-of-codes.txt" />
     </chapter>
 
     <chapter title="List of titles" id="list_of_titles">
@@ -48,7 +48,7 @@
             This list is sorted alphabetically because the names are used as the keys of the enum class.
         </tip>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             use LaravelLang\LocaleList\Locale;
 
             return Locale::names();
@@ -58,11 +58,11 @@
             Result:
         </p>
 
-        <code-block lang="php" src="usage-list-of-locales-list-of-titles.txt" />
+        <code-block lang="php" validate="true" src="usage-list-of-locales-list-of-titles.txt" />
     </chapter>
 
     <chapter title="List of codes with names" id="list_of_codes_with_names">
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             use LaravelLang\LocaleList\Locale;
 
             return Locale::options();
@@ -72,6 +72,6 @@
             Result:
         </p>
 
-        <code-block lang="php" src="usage-list-of-locales-list-of-names.txt" />
+        <code-block lang="php" validate="true" src="usage-list-of-locales-list-of-names.txt" />
     </chapter>
 </topic>

@@ -12,7 +12,7 @@
     </note>
 
     <chapter title="Localized Names" id="localized_names">
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             use LaravelLang\NativeCountryNames\Native;
             use LaravelLang\LocaleList\Locale;
 
@@ -24,7 +24,7 @@
         <p>
             Result:
         </p>
-        <code-block lang="php" src="usage-native-country-names-localized-names.txt" />
+        <code-block lang="php" validate="true" src="usage-native-country-names-localized-names.txt" />
     </chapter>
 
     <chapter title="Native Names" id="native_names">
@@ -34,7 +34,7 @@
             The same thing will happen if you pass an incorrect or empty value to the parameter.
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             use LaravelLang\NativeCountryNames\Native;
 
             return Native::get();
@@ -50,7 +50,7 @@
             Result:
         </p>
 
-        <code-block lang="php" src="usage-native-country-names-native-names.txt" />
+        <code-block lang="php" validate="true" src="usage-native-country-names-native-names.txt" />
     </chapter>
 
     <chapter title="Sorting" id="sorting">
@@ -73,11 +73,11 @@
                 Result:
             </p>
 
-            <code-block lang="php" src="usage-native-country-names-sort-by-keys.txt" />
+            <code-block lang="php" validate="true" src="usage-native-country-names-sort-by-keys.txt" />
 
         </chapter>
         <chapter title="Sort by values" id="sort_by_values">
-            <code-block lang="php">
+            <code-block lang="php" validate="true">
                 use LaravelLang\NativeCountryNames\Native;
                 use LaravelLang\NativeCountryNames\Enums\SortBy;
 
@@ -89,7 +89,7 @@
             <p>
                 Result:
             </p>
-            <code-block lang="php" src="usage-native-country-names-sort-by-values.txt" />
+            <code-block lang="php" validate="true" src="usage-native-country-names-sort-by-values.txt" />
         </chapter>
     </chapter>
 </topic>

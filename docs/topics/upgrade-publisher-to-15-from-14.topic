@@ -42,7 +42,7 @@
             Replace the locales namespace:
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             LaravelLang\Publisher\Constants\Locales
         </code-block>
 
@@ -50,7 +50,7 @@
             with
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             LaravelLang\Locales\Enums\Locale
         </code-block>
 
@@ -58,7 +58,7 @@
             For example:
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             // Before
             LaravelLang\Publisher\Constants\Locales::AFRIKAANS; // af
 
@@ -82,7 +82,7 @@
             Before
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             use LaravelLang\Publisher\Facades\Helpers\Locales;
 
             return Locales::available(); // array&lt;string&gt;
@@ -96,7 +96,7 @@
             After:
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             use LaravelLang\Publisher\Facades\Helpers\Locales;
 
             return Locales::available(); // array&lt;LocaleData&gt;
@@ -116,7 +116,7 @@
             <code>&lt;object&gt;</code> is a DTO class of <code>LocaleData</code>:
         </tip>
 
-        <code-block lang="php" src="upgrade-publisher-15.txt" include-lines="3-" />
+        <code-block lang="php" validate="true" src="upgrade-publisher-15.txt" include-lines="3-" />
     </chapter>
 
     <chapter title="Using in production" id="using_in_production">

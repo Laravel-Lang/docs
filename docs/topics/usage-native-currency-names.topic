@@ -12,7 +12,7 @@
     </note>
 
     <chapter title="Localized Names" id="localized_names">
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             use LaravelLang\NativeCurrencyNames\Native;
             use LaravelLang\LocaleList\Locale;
 
@@ -25,7 +25,7 @@
             Result:
         </p>
 
-        <code-block lang="php" src="usage-native-currency-names-localized-names.txt" />
+        <code-block lang="php" validate="true" src="usage-native-currency-names-localized-names.txt" />
     </chapter>
 
     <chapter title="Native Names" id="native_names">
@@ -35,7 +35,7 @@
             The same thing will happen if you pass an incorrect or empty value to the parameter.
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             use LaravelLang\NativeCurrencyNames\Native;
 
             return Native::get();
@@ -51,7 +51,7 @@
             Result:
         </p>
 
-        <code-block lang="php" src="usage-native-currency-names-native-names.txt" />
+        <code-block lang="php" validate="true" src="usage-native-currency-names-native-names.txt" />
     </chapter>
 
     <chapter title="Sorting" id="sorting">
@@ -63,7 +63,7 @@
         </p>
 
         <chapter title="Sort by keys" id="sort_by_keys">
-            <code-block lang="php">
+            <code-block lang="php" validate="true">
                 use LaravelLang\NativeCurrencyNames\Native;
                 use LaravelLang\NativeCurrencyNames\Enums\SortByy;
 
@@ -74,11 +74,11 @@
                 Result:
             </p>
 
-            <code-block lang="php" src="usage-native-currency-names-sort-by-keys.txt" />
+            <code-block lang="php" validate="true" src="usage-native-currency-names-sort-by-keys.txt" />
         </chapter>
 
         <chapter title="Sort by values" id="sort_by_values">
-            <code-block lang="php">
+            <code-block lang="php" validate="true">
                 use LaravelLang\NativeCurrencyNames\Native;
                 use LaravelLang\NativeCurrencyNames\Enums\SortByy;
 
@@ -91,7 +91,7 @@
                 Result:
             </p>
 
-            <code-block lang="php" src="usage-native-currency-names-sort-by-values.txt" />
+            <code-block lang="php" validate="true" src="usage-native-currency-names-sort-by-values.txt" />
         </chapter>
     </chapter>
 </topic>

@@ -32,7 +32,7 @@
             Replace the locales namespace:
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             LaravelLang\JsonFallbackHotfix\TranslationServiceProvider
         </code-block>
 
@@ -40,7 +40,7 @@
             with
         </p>
 
-        <code-block lang="php">
+        <code-block lang="php" validate="true">
             LaravelLang\JsonFallback\TranslationServiceProvider
         </code-block>
     </chapter>
