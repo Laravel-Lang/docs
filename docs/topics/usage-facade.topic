@@ -1,190 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
     SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Facade" id="usage-facade">
 
-<note>
-  To use this functionality, make sure you have the <a href="packages-locales.topic">`%package-locales%`</a> package installed.
-</note>
-  <p>
+    <note>
+        To use this functionality, make sure you have the
+        <a href="packages-locales.topic">`%package-locales%`</a> package installed.
+    </note>
+    <p>
 
-    To work with locales, you can use the facade `LaravelLang\Locales\Facades\Locales`.
-    It allows you to receive information in two ways: a list of locale codes or an array of DTO objects.
-  </p>
-  <chapter title="Data objects" id="data_objects">
-    <code-block lang="php">
-      use LaravelLang\Locales\Facades\Locales;
+        To work with locales, you can use the facade `LaravelLang\Locales\Facades\Locales`.
+        It allows you to receive information in two ways: a list of locale codes or an array of DTO objects.
+    </p>
 
-// List of available localizations.
-Locales::available(): array // array<LocaleData>
+    <chapter title="Data objects" id="data_objects">
+        <code-block lang="php">
 
-// List of installed localizations.
-Locales::installed(bool $withProtects = true): array // array<LocaleData>
+        </code-block>
+    </chapter>
 
-// List of uninstalled localizations.
-Locales::notInstalled(): array // array<LocaleData>
+    <chapter title="Raw data" id="raw_data">
+        <code-block lang="php" src="usage-facades-dto.txt" />
+    </chapter>
 
-// Retrieving a list of protected locales.
-Locales::protects(): array // array<LocaleData>
+    <chapter title="Examples" id="examples">
+        <code-block lang="php" src="usage-facades-examples-1.txt" />
+        <code-block lang="php" src="usage-facades-examples-2.txt" />
+        <code-block lang="php" src="usage-facades-examples-3.txt" />
 
-// Check if language packs are available in requested locale.
-Locales::isAvailable(Locale|string|null $locale): bool
+        <code-block lang="php">
+            return Locales::raw()->getDefault();
+            // Non aliased
+            // de
 
-// Check if a language pack is installed.
-Locales::isInstalled(Locale|string|null $locale): bool
+            // Aliased
+            // de-DE
+        </code-block>
 
-// The checked locale protecting.
-Locales::isProtected(Locale|string|null $locale): bool
+        <code-block lang="php">
+            return Locales::raw()->get('de');
+            // de
 
-// Validate and returns the correct localization.
-// If an uninstalled localization is requested, then it will return the currently active one in the application.
-Locales::get(mixed $locale): LocaleData
-
-// Getting the default localization name.
-Locales::getDefault(): LocaleData
-
-// Getting the fallback localization name.
-Locales::getFallback(): LocaleData
-
-// Receives information about any available localization, otherwise it will return the currently active one in the application.
-Locales::info(mixed $locale): LocaleData
-    </code-block>
-  </chapter>
-  <chapter title="Raw data" id="raw_data">
-    <code-block lang="php">
-      use LaravelLang\Locales\Enums\Locale;
-use LaravelLang\Locales\Facades\Locales;
-
-// List of available localizations.
-Locales::raw()->available(): array // array<string>
-
-// List of installed localizations.
-Locales::raw()->installed(bool $withProtects = true): array // array<string>
-
-// List of uninstalled localizations.
-Locales::raw()->notInstalled(): array // array<string>
-
-// Retrieving a list of protected locales.
-Locales::raw()->protects(): array // array<string>
-
-// Check if language packs are available in requested locale.
-Locales::raw()->isAvailable(Locale|string|null $locale): bool
-
-// Check if a language pack is installed.
-Locales::raw()->isInstalled(Locale|string|null $locale): bool
-
-// The checked locale protecting.
-Locales::raw()->isProtected(Locale|string|null $locale): bool
-
-// Validate and returns the correct localization.
-// If an uninstalled localization is requested, then it will return the currently active one in the application.
-Locales::raw()->get(mixed $locale): string
-
-// Getting the default localization name.
-Locales::raw()->getDefault(): string
-
-// Getting the fallback localization name.
-Locales::raw()->getFallback(): string
-
-// Receives locale code for any available localization, otherwise it will return the currently active one in the application.
-Locales::raw()->info(mixed $locale): string
-    </code-block>
-  </chapter>
-  <chapter title="Examples" id="examples">
-    <code-block lang="php">
-      use LaravelLang\Locales\Data\LocaleData;
-use LaravelLang\Locales\Facades\Locales;
-
-// config('app.locale') // de
-
-return Locales::getDefault();
-
-// Non aliased
-LocaleData {
-  +code: "de"
-  +type: "Latn"
-  +name: "German"
-  +native: "Deutsch"
-  +localized: "Deutsch"
-  +regional: "de_DE"
-  +orientation: "left-to-right"
-}
-
-// Aliased
-LocaleData {
-  +code: "de-DE"
-  +type: "Latn"
-  +name: "German"
-  +native: "Deutsch"
-  +localized: "Deutsch"
-  +regional: "de_DE"
-  +orientation: "left-to-right"
-}
-    </code-block>
-    <code-block lang="php">
-      use LaravelLang\Locales\Data\LocaleData;
-use LaravelLang\Locales\Facades\Locales;
-
-// config('app.locale') // vi
-
-return Locales::get('de');
-
-LocaleData {
-  +code: "de"
-  +type: "Latn"
-  +name: "German"
-  +native: "Deutsch"
-  +localized: "Tiếng Đức"
-  +regional: "de_DE"
-  +orientation: "left-to-right"
-}
-
-LocaleData {
-  +code: "ar"
-  +type: "Arab"
-  +name: "Arabic"
-  +native: "العربية"
-  +localized: "Tiếng Ả Rập"
-  +regional: "ar_AE"
-  +orientation: "right-to-left"
-}
-    </code-block>
-    <code-block lang="php">
-      use LaravelLang\Locales\Data\LocaleData;
-use LaravelLang\Locales\Facades\Locales;
-
-// config('app.locale') // de
-
-return Locales::get('foo');
-
-// Will return the default locale
-LocaleData {
-  +code: "de"
-  +type: "Latn"
-  +name: "German"
-  +native: "Deutsch"
-  +localized: "Deutsch"
-  +regional: "de_DE"
-  +orientation: "left-to-right"
-}
-    </code-block>
-    <code-block lang="php">
-      return Locales::raw()->getDefault();
-// Non aliased
-// de
-
-// Aliased
-// de-DE
-    </code-block>
-    <code-block lang="php">
-      return Locales::raw()->get('de');
-// de
-
-return Locales::raw()->get('foo');
-// Will return the default locale
-// de
-    </code-block>
-  </chapter>
+            return Locales::raw()->get('foo');
+            // Will return the default locale
+            // de
+        </code-block>
+    </chapter>
 </topic>
