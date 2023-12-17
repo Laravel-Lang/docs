@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE vars SYSTEM "https://resources.jetbrains.com/writerside/1.0/vars.dtd">
 <vars>
+    <var name="abuse-caouecs-email" value="caouecs@caouecs.net" />
+    <var name="abuse-caouecs-name" value="Fred Delrieu" />
+    <var name="abuse-helldar-email" value="helldar@dragon-code.pro" />
+    <var name="abuse-helldar-name" value="Andrey Helldar" />
     <var name="badge-not-supported" value="badge-not-supported.svg" />
     <var name="badge-supported" value="badge-supported.svg" />
     <var name="command-add" value="php artisan lang:add" />
@@ -17,7 +21,7 @@
     <var name="install-attributes" value="composer require --dev laravel-lang/attributes" />
     <var name="install-common" value="composer require --dev laravel-lang/common" />
     <var name="install-http-statuses" value="composer require --dev laravel-lang/http-statuses" />
-    <var name="install-json-fallback-hotfix" value="composer require laravel-lang/json-fallback-hotfix" />
+    <var name="install-json-fallback" value="composer require laravel-lang/json-fallback" />
     <var name="install-lang" value="composer require --dev laravel-lang/lang" />
     <var name="install-locale-list" value="composer require laravel-lang/locale-list" />
     <var name="install-locales" value="composer require laravel-lang/locales" />
@@ -33,7 +37,6 @@
     <var name="package-docs" value="laravel-lang/docs" />
     <var name="package-http-statuses" value="laravel-lang/http-statuses" />
     <var name="package-json-fallback" value="laravel-lang/json-fallback" />
-    <var name="package-json-fallback-hotfix" value="laravel-lang/json-fallback-hotfix" />
     <var name="package-lang" value="laravel-lang/lang" />
     <var name="package-locale-list" value="laravel-lang/locale-list" />
     <var name="package-locales" value="laravel-lang/locales" />
@@ -51,7 +54,7 @@
     <var name="repository-label-common" value="common" />
     <var name="repository-label-docs" value="docs" />
     <var name="repository-label-http-statuses" value="http-statuses" />
-    <var name="repository-label-json-fallback-hotfix" value="json-fallback" />
+    <var name="repository-label-json-fallback" value="json-fallback" />
     <var name="repository-label-lang" value="lang" />
     <var name="repository-label-locale-list" value="locale-list" />
     <var name="repository-label-locales" value="locales" />
@@ -66,7 +69,7 @@
     <var name="repository-title-common" value="Common" />
     <var name="repository-title-docs" value="Documentation" />
     <var name="repository-title-http-statuses" value="HTTP Statuses" />
-    <var name="repository-title-json-fallback-hotfix" value="JSON Fallback Hotfix" />
+    <var name="repository-title-json-fallback" value="JSON Fallback" />
     <var name="repository-title-lang" value="Lang" />
     <var name="repository-title-locale-list" value="Locale List" />
     <var name="repository-title-locales" value="Locales" />
@@ -80,10 +83,6 @@
     <var name="security-caouecs-name" value="Fred Delrieu" />
     <var name="security-helldar-email" value="helldar@dragon-code.pro" />
     <var name="security-helldar-name" value="Andrey Helldar" />
-    <var name="abuse-caouecs-email" value="caouecs@caouecs.net" />
-    <var name="abuse-caouecs-name" value="Fred Delrieu" />
-    <var name="abuse-helldar-email" value="helldar@dragon-code.pro" />
-    <var name="abuse-helldar-name" value="Andrey Helldar" />
     <var name="security-subject" value="Security%20error%20detected" />
     <var name="team-name" value="Laravel-Lang Team" />
     <var name="year" value="2023" />
