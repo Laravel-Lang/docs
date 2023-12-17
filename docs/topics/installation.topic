@@ -71,14 +71,9 @@
             <code>config/app.php</code>
             settings file:
         </p>
-        <tabs>
-            <tab title="Laravel 10+">
-                <code-block src="json-fallback-install-laravel-10.php" lang="php" />
-            </tab>
-            <tab title="Laravel 6-9">
-                <code-block src="json-fallback-install-laravel-9.php" lang="php" />
-            </tab>
-        </tabs>
+
+        <code-block src="json-fallback-install-laravel-10.php" lang="php" />
+
         <p>
             Now JSON keys will correctly output the value based on the selected localization.
         </p>

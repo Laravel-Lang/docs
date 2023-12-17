@@ -7,14 +7,18 @@
         name="Laravel Lang"
         start-page="introduction.topic"
 >
-    <toc-element topic="prologue.topic">
-        <toc-element toc-title="Introduction" topic="introduction.topic" accepts-web-file-names-ref="21475ca0" />
+    <toc-element topic="introduction.topic" toc-title="Introduction">
         <toc-element topic="upgrade-guide.topic">
             <toc-element topic="upgrade-common.topic">
+                <toc-element topic="upgrade-common-to-6-from-5.topic" />
                 <toc-element topic="upgrade-common-to-5-from-4.topic" />
             </toc-element>
             <toc-element topic="upgrade-publisher.topic">
+                <toc-element topic="upgrade-publisher-to-16-from-15.topic" />
                 <toc-element topic="upgrade-publisher-to-15-from-14.topic" />
+            </toc-element>
+            <toc-element topic="upgrade-json-fallback.topic" >
+                <toc-element topic="upgrade-json-fallback-to-2-from-1.topic" />
             </toc-element>
             <toc-element topic="upgrade-from-laravel-lang.topic" />
             <toc-element topic="upgrade-from-caouecs-laravel-lang.topic" />

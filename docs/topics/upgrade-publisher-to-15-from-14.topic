@@ -76,6 +76,7 @@
             <code>aliases</code> section in the configuration file.
         </p>
     </chapter>
+    
     <chapter title="New facade helper" id="new_facade_helper">
         <p>
             Before

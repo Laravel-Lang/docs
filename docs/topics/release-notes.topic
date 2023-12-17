@@ -57,9 +57,16 @@
                 <tr>
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
-                    <td><code>^5.0</code></td>
-                    <td>Publisher 15, Lang 13, Attributes 2, HTTP Statuses 3, Locales 1</td>
+                    <td><code>^6.0</code></td>
+                    <td>Publisher 16, Lang 13, Actions 1, Attributes 2, HTTP Statuses 3, Locales 1</td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^5.0</code></td>
+                    <td>Publisher 15, Lang 13, Actions 1, Attributes 2, HTTP Statuses 3, Locales 1</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
                 </tr>
                 <tr>
                     <td>10</td>
@@ -103,8 +110,14 @@
                 <tr>
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
-                    <td><code>^15.0</code></td>
+                    <td><code>^16.0</code></td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td><code>^15.0</code></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
                 </tr>
                 <tr>
                     <td>8, 9, 10</td>
@@ -140,7 +153,7 @@
                 <tr>
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
-                    <td>14, 15</td>
+                    <td>14, 15, 16</td>
                     <td><code>^13.0</code></td>
                     <td>Breeze 1, Cashier Stripe 13, 14, Fortify 1, Jetstream 2, 3, 4, Nova 4, Spark Aurelius 11, 12, Spark Aurelius Mollie 2, Spark Paddle *, Stripe Stripe *, UI 4</td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
@@ -184,7 +197,7 @@
                 <tr>
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
-                    <td>15</td>
+                    <td>15, 16</td>
                     <td><code>^1.0</code></td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
                 </tr>
@@ -203,7 +216,7 @@
                 <tr>
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
-                    <td>15</td>
+                    <td>15, 16</td>
                     <td><code>^2.5</code></td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
                 </tr>
@@ -236,7 +249,7 @@
                 <tr>
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
-                    <td>15</td>
+                    <td>15, 16</td>
                     <td><code>^3.5</code></td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
                 </tr>
@@ -279,7 +292,7 @@
                 <tr>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^1.0</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
                 </tr>
             </table>
         </chapter>
@@ -314,7 +327,7 @@
                 <tr>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^1.0</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
                 </tr>
             </table>
         </chapter>

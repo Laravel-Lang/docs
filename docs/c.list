@@ -4,4 +4,5 @@
 <categories>
     <category id="plugins-lists" name="Plugins" order="1" />
     <category id="laravel-projects-list" name="Plugins" order="2" />
+    <category id="getting-started" name="Getting Started" order="3" />
 </categories>
