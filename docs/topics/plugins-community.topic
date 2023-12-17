@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
     SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Community Plugins" id="plugins-community">
 
-<p>
-    List of plugins developed and maintained by the community.
-</p>
     <p>
-        | Package                                                                                                         | Description                         |
-        |:----------------------------------------------------------------------------------------------------------------|:------------------------------------|
-        | <a href="https://github.com/forxer/generic-term-translations-for-laravel">forxer/generic-term-translations-for-laravel</a> | A set of generic term translations. |
-
+        List of plugins developed and maintained by the community.
     </p>
+
+    <table>
+        <tr>
+            <td>Package</td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/forxer/generic-term-translations-for-laravel">forxer/generic-term-translations-for-laravel</a>
+            </td>
+            <td>
+                A set of generic term translations.
+            </td>
+        </tr>
+    </table>
+
     <seealso style="cards">
         <category ref="plugins-lists">
             <a href="plugins-official.topic">Official Plugins</a>
