@@ -1,71 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
     SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Questions and Issues" id="questions-and-issues">
 
-<p>
-    Find yourself stuck using the package? Found a bug?
-    Do you have general questions or suggestions for improving <format style="bold">%instance%</format> projects?
-    Feel free to create an issue on GitHub, we'll try to address it as soon as possible.
-</p>
+    <p>
+        Find yourself stuck using the package? Found a bug?
+        Do you have general questions or suggestions for improving
+        <format style="bold">%instance%</format>
+        projects?
+        Feel free to create an issue on GitHub, we'll try to address it as soon as possible.
+    </p>
     <p>
 
-        If you find a bug that regarding <format style="bold">security</format>, please read the <a href="security-policy.topic">`security policy`</a> and do not
-        publish this information publicly.
+        If you find a bug that regarding
+        <format style="bold">security</format>
+        , please read the <a href="security-policy.topic" /> and do not publish this information publicly.
     </p>
     <tabs>
         <tab title="Bug report">
             <tip>Submit bug information</tip>
             <p><b>Main packages</b></p>
             <list>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-common%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-common%">%repository-title-common%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-publisher%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-publisher%">%repository-title-publisher%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-locales%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-locales%">%repository-title-locales%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-locale-list%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-locale-list%">%repository-title-locale-list%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-json-fallback-hotfix%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-json-fallback-hotfix%">%repository-title-json-fallback-hotfix%</a></li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-common%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-common%">%repository-title-common%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-publisher%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-publisher%">%repository-title-publisher%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-locales%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-locales%">%repository-title-locales%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-locale-list%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-locale-list%">%repository-title-locale-list%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-json-fallback-hotfix%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-json-fallback-hotfix%">%repository-title-json-fallback-hotfix%</a>
+                </li>
             </list>
             <p><b>Localization packages</b></p>
             <list>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-lang%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-lang%">%repository-title-lang%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-attributes%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-attributes%">%repository-title-attributes%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-http-statuses%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-http-statuses%">%repository-title-http-statuses%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-native-country-names%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-native-country-names%">%repository-title-native-country-names%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-native-currency-names%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-native-currency-names%">%repository-title-native-currency-names%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-native-locale-names%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-native-locale-names%">%repository-title-native-locale-names%</a></li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-lang%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-lang%">%repository-title-lang%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-attributes%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-attributes%">%repository-title-attributes%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-http-statuses%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-http-statuses%">%repository-title-http-statuses%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-native-country-names%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-native-country-names%">%repository-title-native-country-names%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-native-currency-names%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-native-currency-names%">%repository-title-native-currency-names%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-native-locale-names%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-native-locale-names%">%repository-title-native-locale-names%</a>
+                </li>
             </list>
             <p><b>Service packages</b></p>
             <list>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-docs%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-docs%">%repository-title-docs%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-status-generator%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-status-generator%">%repository-title-status-generator%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-translations-template%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%repository-title-translations-template%">%repository-title-translations-template%</a></li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-docs%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-docs%">%repository-title-docs%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-status-generator%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-status-generator%">%repository-title-status-generator%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-translations-template%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%repository-title-translations-template%">%repository-title-translations-template%</a>
+                </li>
             </list>
         </tab>
         <tab title="Feature request">
             <tip>Submit information for improvement</tip>
             <p><b>Main packages</b></p>
             <list>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-common%&amp;projects=&amp;template=feature_request.yml">%repository-title-common%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-publisher%&amp;projects=&amp;template=feature_request.yml">%repository-title-publisher%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-locales%&amp;projects=&amp;template=feature_request.yml">%repository-title-locales%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-locale-list%&amp;projects=&amp;template=feature_request.yml">%repository-title-locale-list%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-json-fallback-hotfix%&amp;projects=&amp;template=feature_request.yml">%repository-title-json-fallback-hotfix%</a></li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-common%&amp;projects=&amp;template=feature_request.yml">%repository-title-common%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-publisher%&amp;projects=&amp;template=feature_request.yml">%repository-title-publisher%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-locales%&amp;projects=&amp;template=feature_request.yml">%repository-title-locales%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-locale-list%&amp;projects=&amp;template=feature_request.yml">%repository-title-locale-list%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-json-fallback-hotfix%&amp;projects=&amp;template=feature_request.yml">%repository-title-json-fallback-hotfix%</a>
+                </li>
             </list>
             <p><b>Localization packages</b></p>
             <list>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-lang%&amp;projects=&amp;template=feature_request.yml">%repository-title-lang%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-attributes%&amp;projects=&amp;template=feature_request.yml">%repository-title-attributes%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-http-statuses%&amp;projects=&amp;template=feature_request.yml">%repository-title-http-statuses%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-native-country-names%&amp;projects=&amp;template=feature_request.yml">%repository-title-native-country-names%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-native-currency-names%&amp;projects=&amp;template=feature_request.yml">%repository-title-native-currency-names%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-native-locale-names%&amp;projects=&amp;template=feature_request.yml">%repository-title-native-locale-names%</a></li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-lang%&amp;projects=&amp;template=feature_request.yml">%repository-title-lang%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-attributes%&amp;projects=&amp;template=feature_request.yml">%repository-title-attributes%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-http-statuses%&amp;projects=&amp;template=feature_request.yml">%repository-title-http-statuses%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-native-country-names%&amp;projects=&amp;template=feature_request.yml">%repository-title-native-country-names%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-native-currency-names%&amp;projects=&amp;template=feature_request.yml">%repository-title-native-currency-names%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-native-locale-names%&amp;projects=&amp;template=feature_request.yml">%repository-title-native-locale-names%</a>
+                </li>
             </list>
             <p><b>Service packages</b></p>
             <list>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-docs%&amp;projects=&amp;template=feature_request.yml">%repository-title-docs%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-status-generator%&amp;projects=&amp;template=feature_request.yml">%repository-title-status-generator%</a></li>
-                <li><a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-translations-template%&amp;projects=&amp;template=feature_request.yml">%repository-title-translations-template%</a></li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-docs%&amp;projects=&amp;template=feature_request.yml">%repository-title-docs%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-status-generator%&amp;projects=&amp;template=feature_request.yml">%repository-title-status-generator%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-translations-template%&amp;projects=&amp;template=feature_request.yml">%repository-title-translations-template%</a>
+                </li>
             </list>
         </tab>
         <tab title="Other">
