@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
     SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Native Currency Names" id="packages-native-currency-names">
 
     <tip>
         The compatibility table can be viewed <a href="release-notes.topic#native-currency-names">here</a>.
     </tip>
+
     <p>
         This package contains a list of localized currency names.
     </p>
@@ -17,6 +19,7 @@
     <p>
         To install, run the console command:
     </p>
+
     <code-block lang="bash">
         %install-native-currency-names%
     </code-block>
