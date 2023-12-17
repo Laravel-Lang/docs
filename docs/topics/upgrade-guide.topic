@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-title="Upgrade Guide" id="upgrade-guide">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Upgrade Guide" id="upgrade-guide">
 
 
-    <tldr>
-
-        - <a href="upgrade-publisher.topic">Publisher</a>
-        - <a href="upgrade-publisher-to-15-from-14.topic">To 15 from 14</a>
-        - <a href="upgrade-from-laravel-lang.topic">From `laravel-lang/*`</a>
-        - <a href="upgrade-from-caouecs-laravel-lang.topic">From `caouecs/laravel-lang`</a>
-
-    </tldr>
+    <list>
+        <li><a href="upgrade-publisher.topic" /></li>
+        <li><a href="upgrade-publisher-to-15-from-14.topic" /></li>
+        <li><a href="upgrade-from-laravel-lang.topic" /></li>
+        <li><a href="upgrade-from-caouecs-laravel-lang.topic" /></li>
+    </list>
 </topic>

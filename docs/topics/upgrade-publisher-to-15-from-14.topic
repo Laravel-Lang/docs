@@ -1,144 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
     SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="To 15 from 14" id="upgrade-publisher-to-15-from-14">
 
-<p>
+    <list>
+        <li><a href="#updating_dependencies" /></li>
+        <li><a href="#new_constants_namespace" /></li>
+        <li><a href="#new_facade_helper" /></li>
+        <li><a href="#using_in_production" /></li>
+    </list>
 
-  - <a href="#updating-dependencies">Updating Dependencies</a>
-  - <a href="#new-constants-namespace">New constants namespace</a>
-  - <a href="#new-facade-helper">New facade helper</a>
-  - <a href="#using-in-production">Using in production</a>
-</p>
-  <chapter title="Updating Dependencies" id="updating_dependencies">
-    <p>
-      You should update the following dependency in your application's `composer.json` file:
-    </p>
-    <p>
+    <chapter title="Updating Dependencies" id="updating_dependencies">
+        <p>
+            You should update the following dependency in your application's <code>composer.json</code> file:
+        </p>
 
-      - `%package-publisher%` to `^15.0`
-    </p>
-    <p>
-      Rename the configuration file:
-    </p>
-    <code-block lang="bash">
-      mv config/lang-publisher.php %config-filename%
-    </code-block>
-    <p>
-      Run the update dependency console command:
-    </p>
-    <code-block lang="bash">
-      composer update
-    </code-block>
-  </chapter>
-  <chapter title="New constants namespace" id="new_constants_namespace">
-    <p>
-      Replace the locales namespace:
-    </p>
-    <code-block lang="php">
-      LaravelLang\Publisher\Constants\Locales
-    </code-block>
-    <p>
-      with
-    </p>
-    <code-block lang="php">
-      LaravelLang\Locales\Enums\Locale
-    </code-block>
-    <p>
-      For example:
-    </p>
-    <code-block lang="php">
-      // Before
-LaravelLang\Publisher\Constants\Locales::AFRIKAANS; // af
+        <list>
+            <li><code>%package-publisher%</code> to <code>^15.0</code></li>
+        </list>
 
-// After
-LaravelLang\Locales\Enums\Locale::Afrikaans; // af
-    </code-block>
-    <p>
-      The name of the cases is aligned with the <a href="https://www.php-fig.org/per/coding-style">PER standard</a>
-      (see `enumerations` section).
-    </p>
-    <p>
+        <p>
+            Rename the configuration file:
+        </p>
 
-      Also <a href="configuration.topic#aliases">changed</a> `aliases` section in the configuration file.
-    </p>
-  </chapter>
-  <chapter title="New facade helper" id="new_facade_helper">
-    <p>
-      Before
-    </p>
-    <code-block lang="php">
-      use LaravelLang\Publisher\Facades\Helpers\Locales;
+        <code-block lang="bash">
+            mv config/lang-publisher.php %config-filename%
+        </code-block>
 
-return Locales::available(); // array<string>
-// ['en', 'fr', 'de', ...]
+        <p>
+            Run the update dependency console command:
+        </p>
 
-return Locales::getDefault(); // string
-// de-DE
-    </code-block>
-    <p>
-      After:
-    </p>
-    <code-block lang="php">
-      use LaravelLang\Publisher\Facades\Helpers\Locales;
+        <include from="snippets-library-commands.topic" element-id="composer_update" />
+    </chapter>
 
-return Locales::available(); // array<LocaleData>
-// [<object>, <object>, ...]
+    <chapter title="New constants namespace" id="new_constants_namespace">
+        <p>
+            Replace the locales namespace:
+        </p>
 
-return Locales::getDefault(); // LocaleData
-// <object>
+        <code-block lang="php">
+            LaravelLang\Publisher\Constants\Locales
+        </code-block>
 
-return Locales::raw()->available(); // array<string>
-// ['en', 'fr', 'de', ...]
+        <p>
+            with
+        </p>
 
-return Locales::raw()->getDefault(); // string
-// de-DE
-    </code-block>
-    <tip>
-      `<object>` is a DTO class of `LocaleData`:
-    </tip>
-    <code-block lang="php">
-      use LaravelLang\Locales\Data\LocaleData;
+        <code-block lang="php">
+            LaravelLang\Locales\Enums\Locale
+        </code-block>
 
-app()->setLocale('vi');
+        <p>
+            For example:
+        </p>
 
-// Non aliased
-LocaleData {
-  +code: "de"
-  +type: "Latn"
-  +name: "German"
-  +native: "Deutsch"
-  +localized: "Tiếng Đức"
-  +regional: "de_DE"
-}
+        <code-block lang="php">
+            // Before
+            LaravelLang\Publisher\Constants\Locales::AFRIKAANS; // af
 
-// Aliased
-LocaleData {
-  +code: "de-DE"
-  +type: "Latn"
-  +name: "German"
-  +native: "Deutsch"
-  +localized: "Tiếng Đức"
-  +regional: "de_DE"
-}
-    </code-block>
-  </chapter>
-  <chapter title="Using in production" id="using_in_production">
-    <p>
-      If you use access to facades and locales in production, then you also need to perform the following steps:
-    </p>
-    <code-block lang="bash">
-      composer require %package-publisher% --dev --quiet
-composer require %package-locales%
-    </code-block>
-    <p>
-      If you do not use locales in production, then just move `%package-publisher%` to the `require-dev` section and run
-      the `composer update` command, or simply run the following console command:
-    </p>
-    <code-block lang="bash">
-      composer require %package-publisher% --dev --quiet
-    </code-block>
-  </chapter>
+            // After
+            LaravelLang\Locales\Enums\Locale::Afrikaans; // af
+        </code-block>
+
+        <p>
+            The name of the cases is aligned with the
+            <a href="https://www.php-fig.org/per/coding-style">PER standard</a>
+            (see <code>enumerations</code> section).
+        </p>
+        <p>
+            Also <a href="configuration.topic#aliases">changed</a>
+            <code>aliases</code> section in the configuration file.
+        </p>
+    </chapter>
+    <chapter title="New facade helper" id="new_facade_helper">
+        <p>
+            Before
+        </p>
+
+        <code-block lang="php">
+            use LaravelLang\Publisher\Facades\Helpers\Locales;
+
+            return Locales::available(); // array&lt;string&gt;
+            // ['en', 'fr', 'de', ...]
+
+            return Locales::getDefault(); // string
+            // de-DE
+        </code-block>
+
+        <p>
+            After:
+        </p>
+
+        <code-block lang="php">
+            use LaravelLang\Publisher\Facades\Helpers\Locales;
+
+            return Locales::available(); // array&lt;LocaleData&gt;
+            // [&lt;object&gt;, &lt;object&gt;, ...]
+
+            return Locales::getDefault(); // LocaleData
+            // &lt;object&gt;
+
+            return Locales::raw()->available(); // array&lt;string&gt;
+            // ['en', 'fr', 'de', ...]
+
+            return Locales::raw()->getDefault(); // string
+            // de-DE
+        </code-block>
+
+        <tip>
+            <code>&lt;object&gt;</code> is a DTO class of <code>LocaleData</code>:
+        </tip>
+
+        <code-block lang="php" src="upgrade-publisher-15.php" include-lines="3-" />
+    </chapter>
+
+    <chapter title="Using in production" id="using_in_production">
+        <p>
+            If you use access to facades and locales in production, then you also need to perform the following steps:
+        </p>
+
+        <code-block lang="bash">
+            composer require %package-publisher% --dev --quiet
+            composer require %package-locales%
+        </code-block>
+
+        <p>
+            If you do not use locales in production, then just move
+            <code>%package-publisher%</code> to the <code>require-dev</code> section and run
+            the <code>composer update</code> command, or simply run the following console command:
+        </p>
+
+        <code-block lang="bash">
+            composer require %package-publisher% --dev --quiet
+        </code-block>
+    </chapter>
 </topic>
