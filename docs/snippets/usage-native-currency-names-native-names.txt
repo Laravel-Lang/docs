@@ -1,0 +1,30 @@
+array:79 [
+  "af" => LaravelLang\NativeCurrencyNames\Data\CurrencyData {
+    +locale: "af"
+    +country: "ZA"
+    +code: "ZAR"
+    +numeric: 710
+    +name: "South African Rand"
+    +native: "Suid-Afrikaanse rand"
+    +localized: "Suid-Afrikaanse rand"
+  }
+  "sq" => LaravelLang\NativeCurrencyNames\Data\CurrencyData {
+    +locale: "sq"
+    +country: "AL"
+    +code: "ALL"
+    +numeric: 8
+    +name: "Albanian Lek"
+    +native: "Leku shqiptar"
+    +localized: "Leku shqiptar"
+  }
+  "ar" => LaravelLang\NativeCurrencyNames\Data\CurrencyData {
+    +locale: "ar"
+    +country: "EG"
+    +code: "EGP"
+    +numeric: 818
+    +name: "Egyptian Pound"
+    +native: "جنيه مصري"
+    +localized: "جنيه مصري"
+  }
+  // ...
+]
