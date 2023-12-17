@@ -7,6 +7,7 @@
     title="Common" id="upgrade-common">
 
     <list>
+        <li><a href="upgrade-common-to-6-from-5.topic" /></li>
         <li><a href="upgrade-common-to-5-from-4.topic" /></li>
     </list>
 </topic>

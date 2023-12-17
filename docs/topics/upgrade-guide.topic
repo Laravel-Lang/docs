@@ -6,7 +6,6 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Upgrade Guide" id="upgrade-guide">
 
-
     <list>
         <li>
             <a href="upgrade-publisher.topic" />
@@ -15,7 +14,8 @@
                 <li><a href="upgrade-publisher-to-15-from-14.topic" /></li>
             </list>
         </li>
-        <li><a href="upgrade-from-laravel-lang.topic" /></li>
-        <li><a href="upgrade-from-caouecs-laravel-lang.topic" /></li>
+        <li><a href="upgrade-from-laravel-lang.topic" instance="!laravel-lang" />
+            <if instance="laravel-lang">From laravel-lang/*</if>
+        </li>
     </list>
 </topic>

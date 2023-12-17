@@ -21,14 +21,13 @@
             <toc-element topic="upgrade-json-fallback.topic">
                 <toc-element topic="upgrade-json-fallback-to-2-from-1.topic" />
             </toc-element>
-            <toc-element topic="upgrade-from-laravel-lang.topic" />
-            <toc-element topic="upgrade-from-caouecs-laravel-lang.topic" />
+            <toc-element topic="upgrade-third-party.topic" />
         </toc-element>
+        <toc-element topic="security-policy.topic" />
+        <toc-element topic="questions-and-issues.topic" />
+        <toc-element topic="our-team.topic" toc-title="Our Team" />
+        <toc-element toc-title="License" topic="license.topic" />
     </toc-element>
-    <toc-element topic="security-policy.topic" />
-    <toc-element topic="questions-and-issues.topic" />
-    <toc-element topic="our-team.topic" />
-    <toc-element toc-title="License" topic="license.topic" />
     <toc-element topic="getting-started.topic" id="toc-getting-started">
         <toc-element topic="installation.topic" accepts-web-file-names-ref="2be426b9" />
         <toc-element topic="configuration.topic" />

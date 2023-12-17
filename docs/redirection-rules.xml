@@ -10,4 +10,12 @@
         <description>Created after removal of "Introduction" from Laravel Lang</description>
         <accepts>introduction.html</accepts>
     </rule>
+    <rule id="6b62e623">
+        <description>Created after removal of "From caouecs/laravel-lang" from Laravel Lang</description>
+        <accepts>upgrade-from-caouecs-laravel-lang.html</accepts>
+    </rule>
+    <rule id="3f7c7e5c">
+        <description>Created after removal of "From laravel-lang/*" from Laravel Lang</description>
+        <accepts>upgrade-from-laravel-lang.html</accepts>
+    </rule>
 </rules>

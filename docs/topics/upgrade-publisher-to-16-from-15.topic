@@ -6,15 +6,8 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="To 16 from 15" id="upgrade-publisher-to-16-from-15">
 
-    <list>
-        <li><a href="#updating_dependencies" /></li>
-        <li><a href="#change_namespace" /></li>
-    </list>
-
     <chapter title="Updating Dependencies" id="updating_dependencies">
-        <note>
-            If you are using the <code>%package-common%</code> package, skip this step.
-        </note>
+        <include from="snippets-library.topic" element-id="notify-usage-common" />
 
         <p>
             You should update the following dependency in your application's <code>composer.json</code> file:
@@ -31,7 +24,7 @@
         <include from="snippets-library-commands.topic" element-id="composer_update" />
     </chapter>
 
-    <chapter title="Change namespace" id="change_namespace">
+    <chapter title="Change locale namespace" id="change_namespace">
         <p>
             Replace the locales namespace:
         </p>

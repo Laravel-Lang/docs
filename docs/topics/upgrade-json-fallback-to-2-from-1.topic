@@ -6,18 +6,17 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="To 2 from 1" id="upgrade-json-fallback-to-2-from-1">
 
-    <list>
-        <li><a href="#updating_dependencies" /></li>
-        <li><a href="#change_namespace" /></li>
-    </list>
-
     <chapter title="Updating Dependencies" id="updating_dependencies">
         <p>
             You should update the following dependency in your application's <code>composer.json</code> file:
         </p>
 
         <list>
-            <li><code>%package-json-fallback%</code> to <code>^2.0</code></li>
+            <li>
+                <code>"laravel-lang/json-fallback-hotfix": "^1.0"</code>
+                with
+                <code>"laravel-lang/json-fallback": "^2.0"</code>
+            </li>
         </list>
 
         <p>
@@ -29,7 +28,7 @@
 
     <chapter title="Change namespace" id="change_namespace">
         <p>
-            Replace the locales namespace:
+            You need to change the namespace in the <code>config/app.php</code> file:
         </p>
 
         <code-block lang="php" validate="true">

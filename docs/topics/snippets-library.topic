@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-        title="Snippets library"
-        is-library="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Snippets library"
+    is-library="true"
 >
     <snippet id="json-fallback-doesnt-allow">
         Out of the box, Laravel
         <a
-                href="https://github.com/laravel/framework/issues/41565#issuecomment-1073572954"
-                target="_blank">doesn't allow</a>
+            href="https://github.com/laravel/framework/issues/41565#issuecomment-1073572954"
+            target="_blank">doesn't allow</a>
         fallback translations for JSON keys.
         For example, when you call <code>__('Remember Me')</code>, you get <code>Remember Me</code> instead of
         <code>Se souvenir de moi</code> for French fallback language.
@@ -53,5 +53,11 @@
             <li><a href="https://github.com/laravel/ui/">Laravel UI</a></li>
             <li>and other</li>
         </list>
+    </snippet>
+
+    <snippet id="notify-usage-common">
+        <note>
+            If you are using the <code>%package-common%</code> package, skip this step.
+        </note>
     </snippet>
 </topic>
