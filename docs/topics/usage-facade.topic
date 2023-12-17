@@ -17,9 +17,7 @@
     </p>
 
     <chapter title="Data objects" id="data_objects">
-        <code-block lang="php">
-
-        </code-block>
+        <code-block lang="php" src="usage-facades-dto.txt" />
     </chapter>
 
     <chapter title="Raw data" id="raw_data">

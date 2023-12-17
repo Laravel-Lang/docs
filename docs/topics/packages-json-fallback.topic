@@ -7,7 +7,7 @@
     title="JSON Fallback" id="packages-json-fallback">
 
     <tip>
-        The compatibility table can be viewed <a href="release-notes.topic#json-fallback">here</a>.
+        The compatibility table can be viewed <a href="release-notes.topic#json_fallback">here</a>.
     </tip>
 
     <p>
@@ -22,7 +22,7 @@
 
     <tip>
         Read more about installation and configuration
-        <a href="installation.topic#json-fallback">
+        <a href="installation.topic#json_fallback">
             <format style="bold">here</format>
         </a>
         .
