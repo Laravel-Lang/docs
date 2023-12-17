@@ -8,8 +8,12 @@
 
 
     <list>
-        <li><a href="upgrade-publisher.topic" /></li>
-        <li><a href="upgrade-publisher-to-15-from-14.topic" /></li>
+        <li>
+            <a href="upgrade-publisher.topic" />
+            <list>
+                <li><a href="upgrade-publisher-to-15-from-14.topic" /></li>
+            </list>
+        </li>
         <li><a href="upgrade-from-laravel-lang.topic" /></li>
         <li><a href="upgrade-from-caouecs-laravel-lang.topic" /></li>
     </list>

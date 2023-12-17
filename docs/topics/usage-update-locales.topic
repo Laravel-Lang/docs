@@ -7,6 +7,7 @@
     title="Update" id="usage-update-locales">
 
     <title instance="laravel-lang">Update Locales</title>
+
     <p>
         To update files, call the console command:
     </p>

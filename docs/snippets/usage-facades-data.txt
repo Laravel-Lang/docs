@@ -7,21 +7,19 @@ Locales::available(): array // array<LocaleData>
 Locales::installed(bool $withProtects = true): array // array<LocaleData>
 
 // List of uninstalled localizations.
-Locales::notInstalled(): array
-// array<LocaleData>
+Locales::notInstalled(): array // array<LocaleData>
 
 // Retrieving a list of protected locales.
-Locales::protects(): array
-// array<LocaleData>
+Locales::protects(): array // array<LocaleData>
 
 // Check if language packs are available in requested locale.
-Locales::isAvailable(Locale | string | null $locale): bool
+Locales::isAvailable(Locale|string|null $locale): bool
 
 // Check if a language pack is installed.
-Locales::isInstalled(Locale | string | null $locale): bool
+Locales::isInstalled(Locale|string|null $locale): bool
 
 // The checked locale protecting.
-Locales::isProtected(Locale | string | null $locale): bool
+Locales::isProtected(Locale|string|null $locale): bool
 
 // Validate and returns the correct localization.
 // If an uninstalled localization is requested, then it will return the currently active one in the application.

@@ -17,11 +17,11 @@
     </p>
 
     <chapter title="Data objects" id="data_objects">
-        <code-block lang="php" src="usage-facades-dto.txt" />
+        <code-block lang="php" src="usage-facades-data.txt" />
     </chapter>
 
     <chapter title="Raw data" id="raw_data">
-        <code-block lang="php" src="usage-facades-dto.txt" />
+        <code-block lang="php" src="usage-facades-raw-data.txt" />
     </chapter>
 
     <chapter title="Examples" id="examples">

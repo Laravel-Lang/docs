@@ -6,6 +6,8 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Remove" id="usage-remove-locales">
 
+    <title instance="laravel-lang">Remove Locales</title>
+
     <warning>
         When this command is executed, the entire locale folder with all files is deleted except default and fallback locales.
     </warning>
