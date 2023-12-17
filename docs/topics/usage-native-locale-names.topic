@@ -6,19 +6,22 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Locale Names" id="usage-native-locale-names">
 
+    <show-structure depth="2" />
+
     <note>
-        If you want to get a localized list of languages, then simply call the <code>Native::get()</code> method from
+        If you want to get a localized list of languages, then simply call the
+        <code>LocaleNames::get()</code> method from
         the <a href="packages-native-locale-names.topic"><code>%package-native-locale-names%</code></a> package.
     </note>
 
     <chapter title="Localized Names" id="localized_names">
         <code-block lang="php" validate="true">
-            use LaravelLang\NativeLocaleNames\Native;
-            use LaravelLang\Locales\Enums\Locale;
+            use LaravelLang\NativeLocaleNames\LocaleNames;
+            use LaravelLang\LocaleList\Locale;
 
-            return Native::get('bn');
+            return LocaleNames::get('bn');
             // or
-            return Native::get(Locale::Bengali)
+            return LocaleNames::get(Locale::Bengali)
         </code-block>
 
         <p>
@@ -36,15 +39,15 @@
         </p>
 
         <code-block lang="php" validate="true">
-            use LaravelLang\NativeLocaleNames\Native;
+            use LaravelLang\NativeLocaleNames\LocaleNames;
 
-            return Native::get();
+            return LocaleNames::get();
             // or
-            return Native::get('');
+            return LocaleNames::get('');
             // or
-            return Native::get(null);
+            return LocaleNames::get(null);
             // or
-            return Native::get('foo');
+            return LocaleNames::get('foo');
         </code-block>
 
         <p>
@@ -64,10 +67,10 @@
 
         <chapter title="Sort by keys" id="sort_by_keys">
             <code-block lang="php" validate="true">
-                use LaravelLang\NativeLocaleNames\Native;
+                use LaravelLang\NativeLocaleNames\LocaleNames;
                 use LaravelLang\NativeLocaleNames\Enums\SortBy;
 
-                return Native::get('en', SortBy::Key);
+                return LocaleNames::get('en', SortBy::Key);
             </code-block>
 
             <p>
@@ -79,12 +82,12 @@
 
         <chapter title="Sort by values" id="sort_by_values">
             <code-block lang="php" validate="true">
-                use LaravelLang\NativeLocaleNames\Native;
+                use LaravelLang\NativeLocaleNames\LocaleNames;
                 use LaravelLang\NativeLocaleNames\Enums\SortBy;
 
-                return Native::get('en', SortBy::Value);
+                return LocaleNames::get('en', SortBy::Value);
                 // or
-                return Native::get('en');
+                return LocaleNames::get('en');
             </code-block>
 
             <p>

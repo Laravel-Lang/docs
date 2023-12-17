@@ -6,21 +6,27 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Usage" id="usage">
 
-
     <list>
-        <li><a href="manage-locales.topic" /></li>
-        <li><a href="usage-add-locales.topic" /></li>
-        <li><a href="usage-update-locales.topic" /></li>
-        <li><a href="usage-reset-locales.topic" /></li>
-        <li><a href="usage-remove-locales.topic" /></li>
-        <li><a href="available-locales-list.topic" /></li>
+        <li>
+            <a href="manage-locales.topic" />
+            <list>
+                <li><a href="usage-add-locales.topic" /></li>
+                <li><a href="usage-update-locales.topic" /></li>
+                <li><a href="usage-reset-locales.topic" /></li>
+                <li><a href="usage-remove-locales.topic" /></li>
+            </list>
+        </li>
         <li><a href="usage-facade.topic" /></li>
         <li><a href="usage-aliases.topic" /></li>
         <li><a href="usage-list-of-locales.topic" /></li>
-        <li><a href="usage-native-locales.topic" /></li>
-        <li><a href="packages-native-locale-names.topic" /></li>
-        <li><a href="packages-native-country-names.topic" /></li>
-        <li><a href="packages-native-currency-names.topic" /></li>
+        <li>
+            <a href="usage-native-locales.topic" />
+            <list>
+                <li><a href="packages-native-locale-names.topic" /></li>
+                <li><a href="packages-native-country-names.topic" /></li>
+                <li><a href="packages-native-currency-names.topic" /></li>
+            </list>
+        </li>
     </list>
 
 </topic>

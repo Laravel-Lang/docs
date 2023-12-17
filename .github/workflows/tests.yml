@@ -49,6 +49,10 @@ jobs:
                     php src/statuses.php
                     php src/available.php
 
+            -   name: Update examples
+                run: |
+                    php src/native_names.php
+
             -   name: Build documentation
                 uses: JetBrains/writerside-github-action@v4
                 with:

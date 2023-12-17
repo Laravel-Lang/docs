@@ -6,6 +6,8 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Locale List" id="usage-list-of-locales">
 
+    <show-structure depth="2" />
+
     <note>
         If you need to connect only a list of available locales to your project, you can use
         the <a href="packages-locale-list.topic"><code>package-locales-list</code></a> package.

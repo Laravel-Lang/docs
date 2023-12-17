@@ -33,10 +33,12 @@
         If files with the same names exist in different packages, for example, <code>custom.php</code>,
         then during their processing all keys from all files will be combined.
     </p>
+
     <tip>
         For ease of development, use a ready-made
         <a href="https://github.com/Laravel-Lang/translations-template">Translations Template</a>.
     </tip>
+
     <p>
         Enjoy! 😊
     </p>

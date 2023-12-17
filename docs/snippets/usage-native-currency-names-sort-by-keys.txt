@@ -1,30 +1,81 @@
-array:79 [
-  "af" => LaravelLang\NativeCurrencyNames\Data\CurrencyData {
-    +locale: "af"
-    +country: "ZA"
-    +code: "ZAR"
-    +numeric: 710
-    +name: "South African Rand"
-    +native: "Suid-Afrikaanse rand"
-    +localized: "South African Rand"
-  }
-  "sq" => LaravelLang\NativeCurrencyNames\Data\CurrencyData {
-    +locale: "sq"
-    +country: "AL"
-    +code: "ALL"
-    +numeric: 8
-    +name: "Albanian Lek"
-    +native: "Leku shqiptar"
-    +localized: "Albanian Lek"
-  }
-  "ar" => LaravelLang\NativeCurrencyNames\Data\CurrencyData {
-    +locale: "ar"
-    +country: "EG"
-    +code: "EGP"
-    +numeric: 818
-    +name: "Egyptian Pound"
-    +native: "جنيه مصري"
-    +localized: "Egyptian Pound"
-  }
-  // ...
+[
+    'af' => 'South African Rand',
+    'ar' => 'Egyptian Pound',
+    'az' => 'Azerbaijani Manat',
+    'be' => 'Belarusian Ruble',
+    'bg' => 'Bulgarian Lev',
+    'bn' => 'Bangladeshi Taka',
+    'bs' => 'Bosnia-Herzegovina Convertible Mark',
+    'ca' => 'Euro',
+    'cs' => 'Czech Koruna',
+    'cy' => 'British Pound',
+    'da' => 'Danish Krone',
+    'de' => 'Euro',
+    'de_CH' => 'Swiss Franc',
+    'el' => 'Euro',
+    'en' => 'US Dollar',
+    'es' => 'Euro',
+    'et' => 'Euro',
+    'eu' => 'Euro',
+    'fa' => 'Iranian Rial',
+    'fi' => 'Euro',
+    'fil' => 'Philippine Peso',
+    'fr' => 'Euro',
+    'gl' => 'Euro',
+    'gu' => 'Indian Rupee',
+    'he' => 'Israeli New Shekel',
+    'hi' => 'Indian Rupee',
+    'hr' => 'Euro',
+    'hu' => 'Hungarian Forint',
+    'hy' => 'Armenian Dram',
+    'id' => 'Indonesian Rupiah',
+    'is' => 'Icelandic Króna',
+    'it' => 'Euro',
+    'ja' => 'Japanese Yen',
+    'ka' => 'Georgian Lari',
+    'kk' => 'Kazakhstani Tenge',
+    'km' => 'Cambodian Riel',
+    'kn' => 'Indian Rupee',
+    'ko' => 'South Korean Won',
+    'lt' => 'Euro',
+    'lv' => 'Euro',
+    'mk' => 'Macedonian Denar',
+    'mn' => 'Mongolian Tugrik',
+    'mr' => 'Indian Rupee',
+    'ms' => 'Malaysian Ringgit',
+    'nb' => 'Norwegian Krone',
+    'ne' => 'Nepalese Rupee',
+    'nl' => 'Euro',
+    'nn' => 'Norwegian Krone',
+    'oc' => 'Euro',
+    'pl' => 'Polish Zloty',
+    'ps' => 'Afghan Afghani',
+    'pt' => 'Brazilian Real',
+    'pt_BR' => 'Brazilian Real',
+    'ro' => 'Romanian Leu',
+    'ru' => 'Russian Ruble',
+    'sc' => 'Euro',
+    'si' => 'Sri Lankan Rupee',
+    'sk' => 'Euro',
+    'sl' => 'Euro',
+    'sq' => 'Albanian Lek',
+    'sr_Cyrl' => 'Serbian Dinar',
+    'sr_Latn' => 'Serbian Dinar',
+    'sr_Latn_ME' => 'Euro',
+    'sv' => 'Swedish Krona',
+    'sw' => 'Tanzanian Shilling',
+    'tg' => 'Tajikistani Somoni',
+    'th' => 'Thai Baht',
+    'tk' => 'Turkmenistani Manat',
+    'tl' => 'Philippine Peso',
+    'tr' => 'Turkish Lira',
+    'ug' => 'Chinese Yuan',
+    'uk' => 'Ukrainian Hryvnia',
+    'ur' => 'Pakistani Rupee',
+    'uz_Cyrl' => 'Uzbekistani Som',
+    'uz_Latn' => 'Uzbekistani Som',
+    'vi' => 'Vietnamese Dong',
+    'zh_CN' => 'Chinese Yuan',
+    'zh_HK' => 'Hong Kong Dollar',
+    'zh_TW' => 'New Taiwan Dollar',
 ]

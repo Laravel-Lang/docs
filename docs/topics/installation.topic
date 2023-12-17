@@ -6,6 +6,8 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Installation" id="installation">
 
+    <show-structure depth="2" />
+
     <chapter title="Recommended" id="recommended">
         <p>
             You can install the package via <a href="https://getcomposer.org">Composer</a>:

@@ -6,6 +6,8 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Configuration" id="configuration">
 
+    <show-structure depth="2" />
+
     <p>
         Optionally, you can publish the config file with:
     </p>

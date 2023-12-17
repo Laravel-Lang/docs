@@ -6,6 +6,8 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Contribution Guide" id="contributions">
 
+    <show-structure depth="2" />
+
     <p>
         Contributions are
         <format style="bold">welcome</format>

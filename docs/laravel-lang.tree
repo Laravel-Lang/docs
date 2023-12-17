@@ -27,7 +27,7 @@
         <toc-element topic="questions-and-issues.topic" />
         <toc-element topic="contributions.topic" />
         <toc-element topic="our-team.topic" toc-title="Our Team" />
-        <toc-element toc-title="License" topic="license.topic" />
+        <toc-element topic="license.topic" toc-title="License" />
     </toc-element>
     <toc-element topic="getting-started.topic" id="toc-getting-started">
         <toc-element topic="installation.topic" accepts-web-file-names-ref="2be426b9">
