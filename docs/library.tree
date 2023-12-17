@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile
+        id="library"
+        name="library"
+        start-page="library-needs.topic"
+        is-library="true"
+>
+
+    <toc-element topic="library-needs.topic" />
+</instance-profile>

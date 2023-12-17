@@ -20,25 +20,7 @@
             It is also easy to update between minor and major versions.
         </p>
 
-        <p>
-            If in production you need to use a list of localizations through facades, you need to additionally install a dependency:
-        </p>
-
-        <code-block lang="bash">
-            %install-locales%
-        </code-block>
-
-        <p>
-            We also recommend adding the call code to the <code>post-update-cmd</code> section of the
-            <code>scripts</code> block in the <code>composer.json</code> file:
-        </p>
-
-        <code-block lang="json" validate="true" src="composer-post-update-cmd.json" />
-
-        <p>
-            This will allow localization files to be automatically updated after dependency updates, rather than manually calling the
-            <code>%command-update%</code> console command.
-        </p>
+        <include from="library-needs.topic" element-id="library-needs-locales-facade" />
     </chapter>
 
     <chapter title="Alternative" id="alternative">

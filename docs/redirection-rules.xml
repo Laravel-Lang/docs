@@ -34,4 +34,8 @@
         <description>Created after removal of "Packages" from Laravel Lang</description>
         <accepts>packages.html</accepts>
     </rule>
+    <rule id="7ac5d752">
+        <description>Created after removal of "About library" from library</description>
+        <accepts>library.html</accepts>
+    </rule>
 </rules>

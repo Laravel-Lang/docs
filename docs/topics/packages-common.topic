@@ -26,4 +26,6 @@
         It is recommended to use this particular package as it will allow you to very quickly update all the necessary
         dependencies that ensure application localization.
     </note>
+
+    <include from="library-needs.topic" element-id="library-needs-locales-facade" />
 </topic>
