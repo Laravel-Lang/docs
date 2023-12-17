@@ -11,6 +11,7 @@
         <li>
             <a href="upgrade-publisher.topic" />
             <list>
+                <li><a href="upgrade-publisher-to-16-from-15.topic" /></li>
                 <li><a href="upgrade-publisher-to-15-from-14.topic" /></li>
             </list>
         </li>

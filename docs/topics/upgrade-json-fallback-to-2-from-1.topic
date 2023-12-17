@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="To 2 from 1" id="upgrade-json-fallback-to-2-from-1">
+
+    <list>
+        <li><a href="#updating_dependencies" /></li>
+        <li><a href="#change_namespace" /></li>
+    </list>
+
+    <chapter title="Updating Dependencies" id="updating_dependencies">
+        <p>
+            You should update the following dependency in your application's <code>composer.json</code> file:
+        </p>
+
+        <list>
+            <li><code>%package-json-fallback%</code> to <code>^2.0</code></li>
+        </list>
+
+        <p>
+            Next, run the update dependency console command:
+        </p>
+
+        <include from="snippets-library-commands.topic" element-id="composer_update" />
+    </chapter>
+
+    <chapter title="Change namespace" id="change_namespace">
+        <p>
+            Replace the locales namespace:
+        </p>
+
+        <code-block lang="php">
+            LaravelLang\JsonFallbackHotfix\TranslationServiceProvider
+        </code-block>
+
+        <p>
+            with
+        </p>
+
+        <code-block lang="php">
+            LaravelLang\JsonFallback\TranslationServiceProvider
+        </code-block>
+    </chapter>
+</topic>

@@ -32,6 +32,7 @@
     <var name="package-common" value="laravel-lang/common" />
     <var name="package-docs" value="laravel-lang/docs" />
     <var name="package-http-statuses" value="laravel-lang/http-statuses" />
+    <var name="package-json-fallback" value="laravel-lang/json-fallback" />
     <var name="package-json-fallback-hotfix" value="laravel-lang/json-fallback-hotfix" />
     <var name="package-lang" value="laravel-lang/lang" />
     <var name="package-locale-list" value="laravel-lang/locale-list" />
