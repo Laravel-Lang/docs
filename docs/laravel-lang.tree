@@ -5,9 +5,10 @@
 <instance-profile
         id="laravel-lang"
         name="Laravel Lang"
-        start-page="introduction.topic"
+        start-page="installation.topic"
 >
-    <toc-element topic="introduction.topic" toc-title="Introduction">
+    <toc-element topic="prologue.topic" >
+        <toc-element topic="release-notes.topic" />
         <toc-element topic="upgrade-guide.topic">
             <toc-element topic="upgrade-common.topic">
                 <toc-element topic="upgrade-common-to-6-from-5.topic" />
@@ -17,20 +18,19 @@
                 <toc-element topic="upgrade-publisher-to-16-from-15.topic" />
                 <toc-element topic="upgrade-publisher-to-15-from-14.topic" />
             </toc-element>
-            <toc-element topic="upgrade-json-fallback.topic" >
+            <toc-element topic="upgrade-json-fallback.topic">
                 <toc-element topic="upgrade-json-fallback-to-2-from-1.topic" />
             </toc-element>
             <toc-element topic="upgrade-from-laravel-lang.topic" />
             <toc-element topic="upgrade-from-caouecs-laravel-lang.topic" />
         </toc-element>
-        <toc-element topic="release-notes.topic" />
-        <toc-element topic="security-policy.topic" />
-        <toc-element topic="questions-and-issues.topic" />
-        <toc-element topic="our-team.topic" />
-        <toc-element topic="license.topic" toc-title="License" />
     </toc-element>
+    <toc-element topic="security-policy.topic" />
+    <toc-element topic="questions-and-issues.topic" />
+    <toc-element topic="our-team.topic" />
+    <toc-element toc-title="License" topic="license.topic" />
     <toc-element topic="getting-started.topic" id="toc-getting-started">
-        <toc-element topic="installation.topic" />
+        <toc-element topic="installation.topic" accepts-web-file-names-ref="2be426b9" />
         <toc-element topic="configuration.topic" />
         <toc-element topic="available-locales-list.topic" />
     </toc-element>
