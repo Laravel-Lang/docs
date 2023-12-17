@@ -8,7 +8,7 @@
         start-page="introduction.topic"
 >
     <toc-element topic="prologue.topic">
-        <toc-element toc-title="Introduction" topic="introduction.topic" accepts-web-file-names-ref="21475ca0" />
+        <toc-element toc-title="Introduction" topic="introduction.topic" />
         <toc-element topic="upgrade-guide.topic">
             <toc-element topic="upgrade-common.topic">
                 <toc-element topic="upgrade-common-to-5-from-4.topic" />
