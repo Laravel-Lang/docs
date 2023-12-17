@@ -9,16 +9,22 @@
     <tip>
         The compatibility table can be viewed <a href="release-notes.topic#json-fallback">here</a>.
     </tip>
+
     <p>
         This package solves the problem of using JSON translations in applications where the fallback locale is not English.
     </p>
+
     <include from="snippets-library.topic" element-id="json-fallback-doesnt-allow" />
+
     <p>
         This package solves this problem.
     </p>
+
     <tip>
         Read more about installation and configuration
-        <a href="installation.topic#json-fallback"><format style="bold">here</format></a>
+        <a href="installation.topic#json-fallback">
+            <format style="bold">here</format>
+        </a>
         .
     </tip>
 </topic>
