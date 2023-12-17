@@ -7,7 +7,7 @@
         name="Laravel Lang"
         start-page="introduction.topic"
 >
-    <toc-element topic="introduction.topic">
+    <toc-element topic="introduction.topic" toc-title="Introduction">
         <toc-element topic="upgrade-guide.topic">
             <toc-element topic="upgrade-common.topic">
                 <toc-element topic="upgrade-common-to-5-from-4.topic" />
