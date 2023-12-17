@@ -12,6 +12,7 @@
 
     <list>
         <li><a href="statuses-lang.md" /></li>
+        <li><a href="statuses-actions.md" /></li>
         <li><a href="statuses-attributes.md" /></li>
         <li><a href="statuses-http-statuses.md" /></li>
     </list>
