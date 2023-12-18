@@ -146,7 +146,7 @@ jobs:
                     sudo php src/clean_algolia.php ${{ env.ARTIFACT_INDEXES }}
 
             -   name: Zip artifact
-                run: zip -qq -r ${{ env.ALGOLIA_ARTIFACT }} ${{ env.ARTIFACT_INDEXES }}
+                run: zip -qq -r ${{ env.ALGOLIA_ARTIFACT }} -D ${{ env.ARTIFACT_INDEXES }}
 
             -   name: Update search indexes
                 uses: actions/upload-artifact@v4
