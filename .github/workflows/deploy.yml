@@ -11,7 +11,6 @@ on:
 
 permissions:
     id-token: write
-    pages: write
 
 env:
     ALGOLIA_APP_NAME: ${{ secrets.ALGOLIA_APPLICATION_ID }}
@@ -109,8 +108,12 @@ jobs:
     
     cleanup_algolia:
         needs: build
+        
         name: Cleaning up search indexes
         runs-on: ubuntu-latest
+        
+        permissions:
+            contents: write
 
         steps:
             -   uses: actions/checkout@v4
@@ -216,6 +219,9 @@ jobs:
                     retention-days: 7
 
     deploy-pages:
+        permissions:
+            pages: write
+        
         environment:
             name: deploy
             url: ${{ steps.deployment.outputs.page_url }}
