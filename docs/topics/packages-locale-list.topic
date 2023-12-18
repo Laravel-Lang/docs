@@ -6,6 +6,10 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Locale List" id="packages-locale-list">
 
+    <link-summary>Installing the %repository-title-locale-list% package</link-summary>
+    <card-summary>Installing the %repository-title-locale-list% package</card-summary>
+    <web-summary>Installing the %repository-title-locale-list% package</web-summary>
+
     <tip>
         The compatibility table can be viewed <a href="release-notes.topic#locale_list">here</a>.
     </tip>

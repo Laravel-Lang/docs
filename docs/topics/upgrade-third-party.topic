@@ -6,6 +6,10 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="From third-party packages" id="upgrade-third-party">
 
+    <link-summary>Information on migrating from third party packages to %repository-title-common%</link-summary>
+    <card-summary>Information on migrating from third party packages to %repository-title-common%</card-summary>
+    <web-summary>Information on migrating from third party packages to %repository-title-common%</web-summary>
+
     <p>
         If you used installation managers from other developers,
         then to migrate to <code>%package-common%</code>, run the following console commands:

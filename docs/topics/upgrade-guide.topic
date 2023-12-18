@@ -14,7 +14,7 @@
                 <li><a href="upgrade-publisher-to-15-from-14.topic" /></li>
             </list>
         </li>
-        <li><a href="upgrade-from-laravel-lang.topic" instance="!laravel-lang" />
+        <li>
             <if instance="laravel-lang">From laravel-lang/*</if>
         </li>
     </list>

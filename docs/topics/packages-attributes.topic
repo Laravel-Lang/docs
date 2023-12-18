@@ -6,15 +6,21 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Attributes" id="packages-attributes">
 
+    <link-summary>Installing the %repository-title-attributes% package</link-summary>
+    <card-summary>Installing the %repository-title-attributes% package</card-summary>
+    <web-summary>Installing the %repository-title-attributes% package</web-summary>
+
     <note>
         The compatibility table can be viewed <a href="release-notes.topic#attributes">here</a>.
     </note>
+
     <p>
         This package contains a custom set of attribute names that are most commonly found in various forms of the application.
     </p>
     <p>
         To install, run the console command:
     </p>
+
     <code-block lang="bash">
         %install-attributes%
     </code-block>

@@ -8,28 +8,6 @@
 
     <show-structure depth="2" />
 
-    <list>
-        <li><a anchor="versioning_scheme" summary="" /></li>
-        <li><a anchor="support_policy" summary="" /></li>
-        <li>
-            <a anchor="version_support" summary="" />
-            <list>
-                <li><a anchor="common" summary="" /></li>
-                <li><a anchor="publisher" summary="" /></li>
-                <li><a anchor="lang" summary="" /></li>
-                <li><a anchor="actions" summary="" /></li>
-                <li><a anchor="attributes" summary="" /></li>
-                <li><a anchor="http_statuses" summary="" /></li>
-                <li><a anchor="locales" summary="" /></li>
-                <li><a anchor="locale_list" summary="" /></li>
-                <li><a anchor="native_locale_names" summary="" /></li>
-                <li><a anchor="native_country_names" summary="" /></li>
-                <li><a anchor="native_currency_names" summary="" /></li>
-                <li><a anchor="json_fallback" summary="" /></li>
-            </list>
-        </li>
-    </list>
-
     <chapter title="Versioning Scheme" id="versioning_scheme">
         <p>
             All our packages follow <a href="https://semver.org">Semantic Versioning</a>.

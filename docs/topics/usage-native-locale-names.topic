@@ -6,6 +6,10 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Locale Names" id="usage-native-locale-names">
 
+    <link-summary>Information on working with the list of localized locale names</link-summary>
+    <card-summary>Information on working with the list of localized locale names</card-summary>
+    <web-summary>Information on working with the list of localized locale names</web-summary>
+
     <show-structure depth="2" />
 
     <note>

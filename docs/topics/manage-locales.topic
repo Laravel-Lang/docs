@@ -6,20 +6,27 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Management" id="manage-locales">
 
+<link-summary>General information on localization management</link-summary>
+<card-summary>General information on localization management</card-summary>
+<web-summary>General information on localization management</web-summary>
+
     <warning>
         <include from="library-lists.topic" element-id="json-fallback-doesnt-allow" />
     </warning>
+
     <p>
         Almost all console commands accept an array of localizations as a parameter.
     </p>
     <p>
         For example:
     </p>
+
     <code-block lang="bash">
         %command-base% %locale-many%
         %command-base% %locale-one%
         %command-base%
     </code-block>
+
     <p>
         Where:
     </p>
@@ -43,6 +50,7 @@
             <code>Select localizations to add (specify the necessary localizations separated by commas)</code>.
         </li>
     </list>
+
     <note>
         When performing any work with files (<code>install</code>, <code>uninstall</code>, <code>reset</code> and
         <code>update</code>), in addition to php files, work with json files, including translation for

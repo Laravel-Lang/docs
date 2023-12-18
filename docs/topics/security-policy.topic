@@ -6,6 +6,10 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Security Policy" id="security-policy">
 
+    <link-summary>Contact information if security issues are discovered</link-summary>
+    <card-summary>Contact information if security issues are discovered</card-summary>
+    <web-summary>Contact information if security issues are discovered</web-summary>
+
     <p>
         <format style="bold">PLEASE DON'T DISCLOSE SECURITY-RELATED ISSUES PUBLICLY,
             <a href="#reporting_a_vulnerability">SEE BELOW</a>.

@@ -6,6 +6,10 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Installation" id="installation">
 
+    <link-summary>Information on installing and configuring packages</link-summary>
+    <card-summary>Information on installing and configuring packages</card-summary>
+    <web-summary>Information on installing and configuring packages</web-summary>
+
     <show-structure depth="2" />
 
     <chapter title="Recommended" id="recommended">

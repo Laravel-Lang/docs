@@ -6,6 +6,10 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Lang" id="packages-lang">
 
+    <link-summary>Installing the %repository-title-lang% package</link-summary>
+    <card-summary>Installing the %repository-title-lang% package</card-summary>
+    <web-summary>Installing the %repository-title-lang% package</web-summary>
+
     <tip>
         The compatibility table can be viewed <a href="release-notes.topic#lang">here</a>.
     </tip>

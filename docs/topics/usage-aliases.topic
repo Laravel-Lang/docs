@@ -6,6 +6,10 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Aliases" id="usage-aliases">
 
+    <link-summary>Information on using localization aliases</link-summary>
+    <card-summary>Information on using localization aliases</card-summary>
+    <web-summary>Information on using localization aliases</web-summary>
+
     <p>
         If you want to name codes differently, such as <code>de-DE</code> instead of <code>de</code> or
         <code>de-CH</code> instead of <code>de_CH</code>, you can define
