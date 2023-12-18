@@ -14,10 +14,18 @@ $packages = array_map(fn (string $name) => 'statuses_' . $name . '_', [
     'lang',
 ]);
 
-$path = __DIR__ . '/../algolia-indexes';
+$path = __DIR__ . '/../algolia-indexes/';
 
 foreach (File::names($path) as $name) {
+    $filename = $path . $name;
+
+    if (! file_exists($filename)) {
+        dump('File doesnt exist: ' . $filename);
+
+        continue;
+    }
+
     if (Str::startsWith($name, $packages)) {
-        File::ensureDelete($path . '/' . $name);
+        File::ensureDelete($filename);
     }
 }
