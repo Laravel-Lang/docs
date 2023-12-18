@@ -1,13 +1,9 @@
-name: Documentation
+name: Build documentation
 
 on:
     push:
         branches:
-            - main
-    workflow_dispatch:
-    repository_dispatch:
-        types:
-            - docs
+            - "for-jetbrains"
 
 permissions:
     id-token: write
@@ -18,291 +14,56 @@ env:
     ALGOLIA_ARTIFACT: algolia-indexes-LARAVEL-LANG.zip
     ALGOLIA_INDEX_NAME: laravel-lang
     ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
-    ARTIFACT_DOCS: webHelpLARAVEL-LANG2-all.zip
-    ARTIFACT_INDEXES: search-indexes
-    ARTIFACT_INDEXES_CLEARED: search-indexes-cleared
+    ARTIFACT: webHelpLARAVEL-LANG2-all.zip
     CONFIG_JSON_PRODUCT: LARAVEL-LANG
-    CONFIG_JSON_VERSION: main
+    CONFIG_JSON_VERSION: test
+    DOCKER_VERSION: 232.10275
     INSTANCE: docs/laravel-lang
-    DOMAIN_NAME: laravel-lang.com
-    BUILDER_VERSION: 232.10275
 
 jobs:
     build:
-        name: Build application
         runs-on: ubuntu-latest
 
         steps:
-            -   uses: actions/checkout@v4
+            -   name: Checkout repository
+                uses: actions/checkout@v4
 
-            -   name: Setup PHP
-                uses: shivammathur/setup-php@v2
-                with:
-                    php-version: ${{ matrix.php }}
-                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
-                    coverage: xdebug
-
-            -   name: Configure git
-                run: git config --global --add safe.directory /github/workspace
-
-            -   name: Install dependencies
-                run: composer update --no-progress --no-interaction
-
-            -   name: Clone projects
-                run: |
-                    rm -rf tmp/actions
-                    rm -rf tmp/attributes
-                    rm -rf tmp/http-statuses
-                    rm -rf tmp/lang
-                    
-                    git clone --no-tags --single-branch https://github.com/Laravel-Lang/actions.git tmp/actions
-                    git clone --no-tags --single-branch https://github.com/Laravel-Lang/attributes.git tmp/attributes
-                    git clone --no-tags --single-branch https://github.com/Laravel-Lang/http-statuses.git tmp/http-statuses
-                    git clone --no-tags --single-branch https://github.com/Laravel-Lang/lang.git tmp/lang
-
-            -   name: Move completion statuses
-                run: |
-                    php src/statuses.php
-                    php src/available.php
-
-            -   name: Update examples
-                run: |
-                    php src/native_names.php
-
-            -   name: Build documentation
+            -   name: Build Writerside docs using Docker
                 uses: JetBrains/writerside-github-action@v4
                 with:
                     instance: ${{ env.INSTANCE }}
-                    artifact: ${{ env.ARTIFACT_DOCS }}
-                    docker-version: ${{ env.BUILDER_VERSION }}
+                    artifact: ${{ env.ARTIFACT }}
+                    docker-version: ${{ env.DOCKER_VERSION }}
 
-            -   name: Upload artifacts
-                uses: actions/upload-artifact@v3
+            -   name: Upload algolia-indexes
+                uses: actions/upload-artifact@v4
                 with:
-                    name: docs
-                    path: |
-                        artifacts/${{ env.ARTIFACT_DOCS }}
-                        artifacts/report.json
-                    retention-days: 7
-
-            -   name: Upload search indexes
-                uses: actions/upload-artifact@v3
-                with:
-                    name: ${{ env.ARTIFACT_INDEXES }}
+                    name: algolia-indexes
                     path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
                     retention-days: 7
-
-    test:
-        needs: build
-        name: Testing
-        runs-on: ubuntu-latest
-
-        steps:
-            -   name: Download docs artifact
-                uses: actions/download-artifact@v3
-                with:
-                    name: docs
-                    path: artifacts
-
-            -   name: Test documentation
-                uses: JetBrains/writerside-checker-action@v1
-                with:
-                    instance: ${{ env.INSTANCE }}
     
-    cleanup_algolia:
+    publish-indexes:
         needs: build
-        
-        name: Cleaning up search indexes
-        runs-on: ubuntu-latest
-
-        steps:
-            -   uses: actions/checkout@v4
-            -   uses: montudor/action-zip@v1
-
-            -   name: Setup PHP
-                uses: shivammathur/setup-php@v2
-                with:
-                    php-version: ${{ matrix.php }}
-                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
-                    coverage: xdebug
-
-            -   name: Configure git
-                run: git config --global --add safe.directory /github/workspace
-
-            -   name: Install dependencies
-                run: composer update --no-progress --no-interaction
-
-            -   name: Download search artifact
-                uses: actions/download-artifact@v3
-                with:
-                    name: ${{ env.ARTIFACT_INDEXES }}
-
-            -   name: Unzip artifact
-                run: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d ${{ env.ARTIFACT_INDEXES }}
-
-            -   name: Clean up
-                run: sudo php src/clean_algolia.php ${{ env.ARTIFACT_INDEXES }}
-
-            -   name: Zip artifact
-                run: |
-                    rm -f ${{ env.ALGOLIA_ARTIFACT }}
-
-                    cd ${{ env.ARTIFACT_INDEXES }}
-                    zip -qq -r ${{ env.ALGOLIA_ARTIFACT }} *
-                    cd ..
-
-            -   name: Update search indexes
-                uses: actions/upload-artifact@v3
-                with:
-                    name: ${{ env.ARTIFACT_INDEXES_CLEARED }}
-                    path: ${{ env.ARTIFACT_INDEXES }}/${{ env.ALGOLIA_ARTIFACT }}
-                    retention-days: 7
-    
-    sitemap:
-        needs: build
-        name: Generate sitemap
-        runs-on: ubuntu-latest
-
-        steps:
-            -   uses: actions/checkout@v4
-
-            -   name: Setup PHP
-                uses: shivammathur/setup-php@v2
-                with:
-                    php-version: ${{ matrix.php }}
-                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
-                    coverage: xdebug
-
-            -   name: Configure git
-                run: git config --global --add safe.directory /github/workspace
-
-            -   name: Install dependencies
-                run: composer update --no-progress --no-interaction
-
-            -   name: Download docs artifact
-                uses: actions/download-artifact@v3
-                with:
-                    name: docs
-
-            -   name: Unzip artifact
-                uses: montudor/action-zip@v1
-                with:
-                    args: unzip -qq ${{ env.ARTIFACT_DOCS }} -d dir
-
-            -   name: Generate sitemap
-                run: php src/sitemap.php
-
-            -   name: Upload artifacts
-                uses: actions/upload-artifact@v3
-                with:
-                    name: sitemap
-                    path: sitemap.xml
-                    retention-days: 7
-    
-    robots:
-        needs: build
-        name: Generate robots.txt
-        runs-on: ubuntu-latest
-
-        steps:
-            -   name: Create robots.txt
-                run: |
-                    touch robots.txt
-                    echo "User-Agent: *" >> robots.txt
-                    echo "Disallow: " >> robots.txt
-                    echo "Host: https://${{ env.DOMAIN_NAME }}" >> robots.txt
-                    echo "Sitemap: https://${{ env.DOMAIN_NAME }}/sitemap.xml" >> robots.txt
-
-            -   name: Upload artifacts
-                uses: actions/upload-artifact@v3
-                with:
-                    name: robots
-                    path: robots.txt
-                    retention-days: 7
-
-    deploy-pages:
-        environment:
-            name: deploy
-            url: ${{ steps.deployment.outputs.page_url }}
-
-        needs:
-            - test
-            - sitemap
-            - robots
-
-        name: Deploy to pages
-        runs-on: ubuntu-latest
-
-        steps:
-            -   name: Download docs artifact
-                uses: actions/download-artifact@v3
-                with:
-                    name: docs
-
-            -   name: Download sitemap artifact
-                uses: actions/download-artifact@v3
-                with:
-                    name: sitemap
-
-            -   name: Download robots artifact
-                uses: actions/download-artifact@v3
-                with:
-                    name: robots
-
-            -   name: Unzip artifact
-                uses: montudor/action-zip@v1
-                with:
-                    args: unzip -qq ${{ env.ARTIFACT_DOCS }} -d dir
-
-            -   name: Move sitemap and robots
-                run: |
-                    sudo mv sitemap.xml dir/sitemap.xml
-                    sudo mv robots.txt dir/robots.txt
-
-            -   name: Setup Pages
-                uses: actions/configure-pages@v4
-
-            -   name: Upload artifact
-                uses: actions/upload-pages-artifact@v2
-                with:
-                    path: dir
-
-            -   name: Deploy to GitHub Pages
-                id: deployment
-                uses: actions/deploy-pages@v3
-
-    deploy-indexes:
-        environment: deploy
-
-        needs:
-            - test
-            - cleanup_algolia
-        
-        name: Deploy to Algolia
         runs-on: ubuntu-latest
         timeout-minutes: 3
-
+        
         container:
             image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-2
-
+        
         steps:
-            -   name: Download search artifact
-                uses: actions/download-artifact@v3
+            -   name: Download artifact
+                uses: actions/download-artifact@v4
                 with:
-                    name: ${{ env.ARTIFACT_INDEXES_CLEARED }}
+                    name: algolia-indexes
 
             -   name: Unzip artifact
-                uses: montudor/action-zip@v1
-                with:
-                    args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d ${{ env.ARTIFACT_INDEXES }}
-
-            -   name: Deploy to Algolia
                 run: |
-                    env "algolia-key=${{ env.ALGOLIA_KEY }}" java -jar /opt/builder/help-publication-agent.jar \
+                    unzip -O UTF-8 -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
+                    env "algolia-key=${{env.ALGOLIA_KEY}}" java -jar /opt/builder/help-publication-agent.jar \
                     update-index \
-                    --application-name ${{ env.ALGOLIA_APP_NAME }} \
-                    --index-name ${{ env.ALGOLIA_INDEX_NAME }} \
-                    --product ${{ env.CONFIG_JSON_PRODUCT }} \
-                    --version ${{ env.CONFIG_JSON_VERSION }} \
-                    --index-directory ${{ env.ARTIFACT_INDEXES }}/ \
+                    --application-name ${{env.ALGOLIA_APP_NAME}} \
+                    --index-name ${{env.ALGOLIA_INDEX_NAME}} \
+                    --product ${{env.CONFIG_JSON_PRODUCT}} \
+                    --version ${{env.CONFIG_JSON_VERSION}} \
+                    --index-directory algolia-indexes/ \
                     2>&1 | tee algolia-update-index-log.txt
