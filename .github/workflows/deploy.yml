@@ -143,6 +143,10 @@ jobs:
                     ls -l
                     rm -f ${{ env.ALGOLIA_ARTIFACT }}
                     sudo php src/clean_algolia.php
+                    echo "current dir"
+                    ls -l
+                    echo "algolia-indexes dir"
+                    ls -l algolia-indexes
 
             -   name: Zip artifact
                 run: zip -qq -r ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
