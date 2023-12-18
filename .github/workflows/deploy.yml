@@ -248,7 +248,7 @@ jobs:
                 run: composer update --no-progress --no-interaction
 
             -   name: Download search artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: algolia-indexes
 
