@@ -141,18 +141,21 @@ jobs:
                 run: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d ${{ env.ARTIFACT_INDEXES }}
 
             -   name: Clean up
-                run: |
-                    rm -f ${{ env.ALGOLIA_ARTIFACT }}
-                    sudo php src/clean_algolia.php ${{ env.ARTIFACT_INDEXES }}
+                run: sudo php src/clean_algolia.php ${{ env.ARTIFACT_INDEXES }}
 
             -   name: Zip artifact
-                run: zip -qq -r ${{ env.ALGOLIA_ARTIFACT }} -D ${{ env.ARTIFACT_INDEXES }}
+                run: |
+                    rm -f ${{ env.ALGOLIA_ARTIFACT }}
+
+                    cd ${{ env.ARTIFACT_INDEXES }}
+                    zip -qq -r ${{ env.ALGOLIA_ARTIFACT }} *
+                    cd ..
 
             -   name: Update search indexes
                 uses: actions/upload-artifact@v4
                 with:
                     name: ${{ env.ARTIFACT_INDEXES_CLEARED }}
-                    path: ${{ env.ALGOLIA_ARTIFACT }}
+                    path: ${{ env.ARTIFACT_INDEXES }}/${{ env.ALGOLIA_ARTIFACT }}
                     retention-days: 7
     
     sitemap:
