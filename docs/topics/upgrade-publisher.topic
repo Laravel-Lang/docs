@@ -6,8 +6,8 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Publisher" id="upgrade-publisher">
 
-
     <list>
+        <li><a href="upgrade-publisher-to-16-from-15.topic" /></li>
         <li><a href="upgrade-publisher-to-15-from-14.topic" /></li>
     </list>
 

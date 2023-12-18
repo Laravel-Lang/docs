@@ -21,7 +21,7 @@
     </p>
     <tabs>
         <tab title="Bug report">
-            <tip>Submit bug information</tip>
+            <warning>Submit bug information</warning>
             <p><b>Main packages</b></p>
             <list>
                 <li>
@@ -75,7 +75,7 @@
             </list>
         </tab>
         <tab title="Feature request">
-            <tip>Submit information for improvement</tip>
+            <note>Submit information for improvement</note>
             <p><b>Main packages</b></p>
             <list>
                 <li>

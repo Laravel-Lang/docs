@@ -6,35 +6,36 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="To 15 from 14" id="upgrade-publisher-to-15-from-14">
 
-    <list>
-        <li><a href="#updating_dependencies" /></li>
-        <li><a href="#new_constants_namespace" /></li>
-        <li><a href="#new_facade_helper" /></li>
-        <li><a href="#using_in_production" /></li>
-    </list>
+    <link-summary>Information on upgrading %repository-title-publisher% to version 15 from 14</link-summary>
+    <card-summary>Information on upgrading %repository-title-publisher% to version 15 from 14</card-summary>
+    <web-summary>Information on upgrading %repository-title-publisher% to version 15 from 14</web-summary>
 
     <chapter title="Updating Dependencies" id="updating_dependencies">
+        <include from="library-lists.topic" element-id="notify-usage-common" />
+
         <p>
             You should update the following dependency in your application's <code>composer.json</code> file:
         </p>
 
         <list>
-            <li><code>%package-publisher%</code> to <code>^15.0</code></li>
+            <li><code>laravel-lang/publisher</code> to <code>^15.0</code></li>
         </list>
-
-        <p>
-            Rename the configuration file:
-        </p>
-
-        <code-block lang="bash">
-            mv config/lang-publisher.php %config-filename%
-        </code-block>
 
         <p>
             Run the update dependency console command:
         </p>
 
-        <include from="snippets-library-commands.topic" element-id="composer_update" />
+        <include from="library-commands.topic" element-id="composer_update" />
+    </chapter>
+
+    <chapter title="Rename config file" id="rename_config_file">
+        <p>
+            Rename the configuration file:
+        </p>
+
+        <code-block lang="bash">
+            mv config/lang-publisher.php config/localization.php
+        </code-block>
     </chapter>
 
     <chapter title="New constants namespace" id="new_constants_namespace">
@@ -76,7 +77,7 @@
             <code>aliases</code> section in the configuration file.
         </p>
     </chapter>
-    
+
     <chapter title="New facade helper" id="new_facade_helper">
         <p>
             Before
@@ -116,7 +117,7 @@
             <code>&lt;object&gt;</code> is a DTO class of <code>LocaleData</code>:
         </tip>
 
-        <code-block lang="php" src="upgrade-publisher-15.txt" include-lines="3-" />
+        <code-block lang="php" src="upgrade-publisher-15.txt" />
     </chapter>
 
     <chapter title="Using in production" id="using_in_production">
@@ -125,18 +126,18 @@
         </p>
 
         <code-block lang="bash">
-            composer require %package-publisher% --dev --quiet
-            composer require %package-locales%
+            composer require laravel-lang/publisher --dev --quiet
+            composer require laravel-lang/locales
         </code-block>
 
         <p>
             If you do not use locales in production, then just move
-            <code>%package-publisher%</code> to the <code>require-dev</code> section and run
+            <code>laravel-lang/publisher</code> to the <code>require-dev</code> section and run
             the <code>composer update</code> command, or simply run the following console command:
         </p>
 
         <code-block lang="bash">
-            composer require %package-publisher% --dev --quiet
+            composer require laravel-lang/publisher --dev --quiet
         </code-block>
     </chapter>
 </topic>

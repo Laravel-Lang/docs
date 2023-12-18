@@ -4,7 +4,7 @@
 <topic
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="%instance%" id="introduction">
+    title="Prologue" id="prologue">
 
     <p>
         <img
@@ -19,7 +19,7 @@
     </p>
 
     <chapter title="Support Projects" id="support_projects">
-        <include from="snippets-library.topic" element-id="lists-laravel-projects" />
+        <include from="library-lists.topic" element-id="lists-laravel-projects" />
 
         <p>
             And these are not all the projects that the

@@ -6,11 +6,9 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="To 6 from 5" id="upgrade-common-to-6-from-5">
 
-    <list>
-        <li><a href="#updating_dependencies" /></li>
-        <li><a href="#upgrade_publisher" /></li>
-        <li><a href="#using_in_production" /></li>
-    </list>
+    <link-summary>Information on upgrading %repository-title-common% to version 6 from 5</link-summary>
+    <card-summary>Information on upgrading %repository-title-common% to version 6 from 5</card-summary>
+    <web-summary>Information on upgrading %repository-title-common% to version 6 from 5</web-summary>
 
     <chapter title="Updating dependencies" id="updating_dependencies">
         <p>
@@ -19,7 +17,7 @@
 
         <list>
             <li>
-                <code>%package-common%</code> to <code>^6.0</code>
+                <code>laravel-lang/common</code> to <code>^6.0</code>
             </li>
         </list>
 
@@ -27,13 +25,14 @@
             Run the update dependency console command:
         </p>
 
-        <include from="snippets-library-commands.topic" element-id="composer_update" />
+        <include from="library-commands.topic" element-id="composer_update" />
     </chapter>
 
     <chapter title="Upgrade publisher" id="upgrade_publisher">
         <p>
-            If you use access to locales or a locale helper in production, then also follow the necessary steps described in
-            the <a href="upgrade-publisher-to-16-from-15.topic#change_namespace">publisher upgrade section</a>.
+            Complete all upgrade steps except updating dependencies from the
+            <a href="upgrade-publisher-to-16-from-15.topic">publisher's upgrade guide</a>
+            .
         </p>
     </chapter>
 
@@ -43,26 +42,5 @@
             then you will need to <a href="upgrade-json-fallback-to-2-from-1.topic">make corrections</a>
             to and for the project.
         </p>
-    </chapter>
-
-    <chapter title="Using in production" id="using_in_production">
-        <p>
-            If you use access to facades and locales in production, then you also need to perform the following steps:
-        </p>
-
-        <code-block lang="bash">
-            composer require %package-common% --dev --quiet
-            composer require %package-locales%
-        </code-block>
-
-        <p>
-            If you do not use locales in production, then just move <code>%package-common%</code> to the
-            <code>require-dev</code> section and run the
-            <code>composer update</code> command, or simply run the following console command:
-        </p>
-
-        <code-block lang="bash">
-            composer require %package-common% --dev --quiet
-        </code-block>
     </chapter>
 </topic>

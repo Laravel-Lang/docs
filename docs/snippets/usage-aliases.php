@@ -1,6 +1,6 @@
 <?php
 
-use LaravelLang\Locales\Enums\Locale;
+use LaravelLang\LocaleList\Locale;
 
 return [
     'aliases' => [

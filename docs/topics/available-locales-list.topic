@@ -5,10 +5,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Available Locales" id="available-locales-list">
+
     <p>
         Here you will find a complete list of localizations available for installation by
         <format style="bold">%team-name%</format>
         projects.
     </p>
-    <include from="snippets-library-locales.topic" element-id="available-locales" />
+
+    <include from="library-available-locales.topic" element-id="available-locales" />
 </topic>

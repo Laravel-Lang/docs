@@ -1,4 +1,4 @@
-use LaravelLang\Locales\Enums\Locale;
+use LaravelLang\LocaleList\Locale;
 use LaravelLang\Locales\Facades\Locales;
 
 // List of available localizations.

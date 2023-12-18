@@ -6,15 +6,20 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Lang" id="packages-lang">
 
+    <link-summary>Installing the %repository-title-lang% package</link-summary>
+    <card-summary>Installing the %repository-title-lang% package</card-summary>
+    <web-summary>Installing the %repository-title-lang% package</web-summary>
+
     <tip>
         The compatibility table can be viewed <a href="release-notes.topic#lang">here</a>.
     </tip>
+
     <p>
         This package contains translations of all official keys from
         <a href="https://laravel-lang.com">Laravel projects</a>:
     </p>
 
-    <include from="snippets-library.topic" element-id="lists-laravel-projects" />
+    <include from="library-lists.topic" element-id="lists-laravel-projects" />
 
     <p>
         To install, run the console command:

@@ -6,10 +6,9 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="To 2 from 1" id="upgrade-json-fallback-to-2-from-1">
 
-    <list>
-        <li><a href="#updating_dependencies" /></li>
-        <li><a href="#change_namespace" /></li>
-    </list>
+    <link-summary>Information on upgrading %repository-title-json-fallback% to version 2 from 1</link-summary>
+    <card-summary>Information on upgrading %repository-title-json-fallback% to version 2 from 1</card-summary>
+    <web-summary>Information on upgrading %repository-title-json-fallback% to version 2 from 1</web-summary>
 
     <chapter title="Updating Dependencies" id="updating_dependencies">
         <p>
@@ -17,19 +16,23 @@
         </p>
 
         <list>
-            <li><code>%package-json-fallback%</code> to <code>^2.0</code></li>
+            <li>
+                <code>"laravel-lang/json-fallback-hotfix": "^1.0"</code>
+                with
+                <code>"laravel-lang/json-fallback": "^2.0"</code>
+            </li>
         </list>
 
         <p>
             Next, run the update dependency console command:
         </p>
 
-        <include from="snippets-library-commands.topic" element-id="composer_update" />
+        <include from="library-commands.topic" element-id="composer_update" />
     </chapter>
 
     <chapter title="Change namespace" id="change_namespace">
         <p>
-            Replace the locales namespace:
+            You need to change the namespace in the <code>config/app.php</code> file:
         </p>
 
         <code-block lang="php">

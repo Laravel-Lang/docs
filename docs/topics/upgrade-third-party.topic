@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="From third-party packages" id="upgrade-third-party">
+
+    <link-summary>Information on migrating from third party packages to %repository-title-common%</link-summary>
+    <card-summary>Information on migrating from third party packages to %repository-title-common%</card-summary>
+    <web-summary>Information on migrating from third party packages to %repository-title-common%</web-summary>
+
+    <p>
+        If you used installation managers from other developers,
+        then to migrate to <code>%package-common%</code>, run the following console commands:
+    </p>
+
+    <code-block lang="bash">
+        composer remove caouecs/laravel-lang overtrue/laravel-lang arcanedev/laravel-lang andrey-helldar/laravel-lang-publisher
+        composer remove %package-publisher% %package-lang% %package-attributes% %package-http-statuses%
+    </code-block>
+
+    <p>
+        After that, check the
+        <a href="release-notes.topic#common">compatibility table</a>
+        for the version you need and install it:
+    </p>
+
+    <code-block lang="bash">
+        %install-common%:^%version-common-latest%
+    </code-block>
+
+    <p>
+        You also need to delete old configuration files:
+    </p>
+
+    <code-block lang="bash">
+        rm -f config/laravel-lang.php
+        rm -f config/lang-publisher.php
+    </code-block>
+
+    <p>
+        Then publish a new
+        <a href="configuration.topic">configuration file</a>
+        if you need it.
+    </p>
+</topic>

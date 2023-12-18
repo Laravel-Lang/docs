@@ -6,22 +6,7 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Release Notes" id="release-notes">
 
-    <list>
-        <li><a anchor="versioning_scheme" summary="" /></li>
-        <li><a anchor="support_policy" summary="" /></li>
-        <li><a anchor="common" summary="" /></li>
-        <li><a anchor="publisher" summary="" /></li>
-        <li><a anchor="lang" summary="" /></li>
-        <li><a anchor="actions" summary="" /></li>
-        <li><a anchor="attributes" summary="" /></li>
-        <li><a anchor="http_statuses" summary="" /></li>
-        <li><a anchor="locales" summary="" /></li>
-        <li><a anchor="locale_list" summary="" /></li>
-        <li><a anchor="native_locale_names" summary="" /></li>
-        <li><a anchor="native_country_names" summary="" /></li>
-        <li><a anchor="native_currency_names" summary="" /></li>
-        <li><a anchor="json_fallback" summary="" /></li>
-    </list>
+    <show-structure depth="2" />
 
     <chapter title="Versioning Scheme" id="versioning_scheme">
         <p>
@@ -35,16 +20,19 @@
 
     <chapter title="Support Policy" id="support_policy">
         <p>
-            For all Lang projects, we follow the <a href="https://laravel.com/docs/releases">Laravel support policy</a>.
+            For all Lang projects, we follow the
+            <a href="https://laravel.com/docs/releases#support-policy">Laravel support policy</a>.
         </p>
         <p>
-
-            Since <code>Lang</code> project packages are not expected to have code that affects the security of the project, we are
+            Since
+            <code>Lang</code> project packages are not expected to have code that affects the security of the project, we are
             basing this on the
             <a href="https://laravel.com/docs/releases#support-policy">scheduled maintenance completion dates</a>
             for Laravel projects and minor versions of <a href="https://www.php.net">PHP</a>.
         </p>
+    </chapter>
 
+    <chapter title="Version support" id="version_support">
         <chapter title="Common" id="common">
             <table>
                 <tr>
@@ -58,7 +46,7 @@
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^6.0</code></td>
-                    <td>Publisher 16, Lang 13, Actions 1, Attributes 2, HTTP Statuses 3, Locales 1</td>
+                    <td>Publisher 16, Lang 13, Actions 1, Attributes 2, HTTP Statuses 3, Locales 2, JSON Fallback 2</td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
                 </tr>
                 <tr>

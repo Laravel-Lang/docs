@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="2be426b9">
+        <description>Created after removal of "Introduction" from Laravel Lang</description>
+        <accepts>introduction.html</accepts>
+    </rule>
+    <rule id="6b62e623">
+        <description>Created after removal of "From caouecs/laravel-lang" from Laravel Lang</description>
+        <accepts>upgrade-from-caouecs-laravel-lang.html</accepts>
+    </rule>
+    <rule id="3f7c7e5c">
+        <description>Created after removal of "From laravel-lang/*" from Laravel Lang</description>
+        <accepts>upgrade-from-laravel-lang.html</accepts>
+    </rule>
+    <rule id="5abaca93">
+        <description>Created after removal of "Contributing" from Laravel Lang</description>
+        <accepts>contributing.html</accepts>
+    </rule>
+    <rule id="104c46e0">
+        <description>Created after removal of "Contributor Covenant Code of Conduct" from Laravel Lang</description>
+        <accepts>code-of-conduct.html</accepts>
+    </rule>
+    <rule id="18c3867b">
+        <description>Created after removal of "Development" from Laravel Lang</description>
+        <accepts>development.html</accepts>
+    </rule>
+    <rule id="78da27c3">
+        <description>Created after removal of "Packages" from Laravel Lang</description>
+        <accepts>packages.html</accepts>
+    </rule>
+    <rule id="7ac5d752">
+        <description>Created after removal of "About library" from library</description>
+        <accepts>library.html</accepts>
+    </rule>
+</rules>

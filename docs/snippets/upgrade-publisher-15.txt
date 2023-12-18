@@ -1,5 +1,3 @@
-<?php
-
 use LaravelLang\Locales\Data\LocaleData;
 
 app()->setLocale('vi');

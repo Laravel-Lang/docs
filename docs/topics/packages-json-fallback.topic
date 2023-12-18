@@ -6,6 +6,10 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="JSON Fallback" id="packages-json-fallback">
 
+    <link-summary>Installing the %repository-title-json-fallback% package</link-summary>
+    <card-summary>Installing the %repository-title-json-fallback% package</card-summary>
+    <web-summary>Installing the %repository-title-json-fallback% package</web-summary>
+
     <tip>
         The compatibility table can be viewed <a href="release-notes.topic#json_fallback">here</a>.
     </tip>
@@ -14,7 +18,7 @@
         This package solves the problem of using JSON translations in applications where the fallback locale is not English.
     </p>
 
-    <include from="snippets-library.topic" element-id="json-fallback-doesnt-allow" />
+    <include from="library-lists.topic" element-id="json-fallback-doesnt-allow" />
 
     <p>
         This package solves this problem.

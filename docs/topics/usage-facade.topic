@@ -6,13 +6,18 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Facade" id="usage-facade">
 
+    <link-summary>Information on using the Locales facade</link-summary>
+    <card-summary>Information on using the Locales facade</card-summary>
+    <web-summary>Information on using the Locales facade</web-summary>
+
     <note>
         To use this functionality, make sure you have the
-        <a href="packages-locales.topic">`%package-locales%`</a> package installed.
+        <a href="packages-locales.topic"><code>%package-locales%</code></a> package installed.
     </note>
+
     <p>
 
-        To work with locales, you can use the facade `LaravelLang\Locales\Facades\Locales`.
+        To work with locales, you can use the facade <code>LaravelLang\Locales\Facades\Locales</code>.
         It allows you to receive information in two ways: a list of locale codes or an array of DTO objects.
     </p>
 
