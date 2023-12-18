@@ -115,6 +115,7 @@ jobs:
 
         steps:
             -   uses: actions/checkout@v4
+            -   uses: montudor/action-zip@v1
 
             -   name: Setup PHP
                 uses: shivammathur/setup-php@v2
@@ -135,9 +136,7 @@ jobs:
                     name: algolia-indexes
 
             -   name: Unzip artifact
-                uses: montudor/action-zip@v1
-                with:
-                    args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
+                run: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
 
             -   name: Clean up
                 run: |
@@ -146,15 +145,13 @@ jobs:
                     sudo php src/clean_algolia.php
 
             -   name: Zip artifact
-                uses: montudor/action-zip@v1
-                with:
-                    args: zip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
+                run: zip -qq -r ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
 
             -   name: Update search indexes
                 uses: actions/upload-artifact@v4
                 with:
                     name: algolia-indexes
-                    path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
+                    path: ${{ env.ALGOLIA_ARTIFACT }}
                     retention-days: 7
     
     sitemap:
