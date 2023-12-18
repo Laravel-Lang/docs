@@ -80,19 +80,19 @@
         <p>
             Your file example:
         </p>
-        <code-block lang="php" validate="true" src="configuration-alignment-auth-before.php" />
+        <code-block lang="php" src="configuration-alignment-auth-before.php" />
         <p>
             An updated file like this:
         </p>
-        <code-block lang="php" validate="true" src="configuration-alignment-auth-after.php" />
+        <code-block lang="php" src="configuration-alignment-auth-after.php" />
         <p>
             and example of <code>validation.php</code> file:
         </p>
-        <code-block lang="php" validate="true" src="configuration-alignment-validation-before.php" />
+        <code-block lang="php" src="configuration-alignment-validation-before.php" />
         <p>
             This is what it will look like after the update:
         </p>
-        <code-block lang="php" validate="true" src="configuration-alignment-validation-after.php" />
+        <code-block lang="php" src="configuration-alignment-validation-after.php" />
     </chapter>
     <chapter title="Smart Punctuation" id="smart_punctuation">
         <p>
@@ -102,11 +102,11 @@
         <p>
             For example:
         </p>
-        <code-block lang="json" validate="true" src="smart-punctuation-before.json" />
+        <code-block lang="json" src="smart-punctuation-before.json" />
         <p>
             Will result in files:
         </p>
-        <code-block lang="json" validate="true" src="smart-punctuation-after.json" />
+        <code-block lang="json" src="smart-punctuation-after.json" />
         <p>
             This option is enabled in the <code>%config-filename%</code> file:
         </p>

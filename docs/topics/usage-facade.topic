@@ -22,19 +22,19 @@
     </p>
 
     <chapter title="Data objects" id="data_objects">
-        <code-block lang="php" validate="true" src="usage-facades-data.txt" />
+        <code-block lang="php" src="usage-facades-data.txt" />
     </chapter>
 
     <chapter title="Raw data" id="raw_data">
-        <code-block lang="php" validate="true" src="usage-facades-raw-data.txt" />
+        <code-block lang="php" src="usage-facades-raw-data.txt" />
     </chapter>
 
     <chapter title="Examples" id="examples">
-        <code-block lang="php" validate="true" src="usage-facades-examples-1.txt" />
-        <code-block lang="php" validate="true" src="usage-facades-examples-2.txt" />
-        <code-block lang="php" validate="true" src="usage-facades-examples-3.txt" />
+        <code-block lang="php" src="usage-facades-examples-1.txt" />
+        <code-block lang="php" src="usage-facades-examples-2.txt" />
+        <code-block lang="php" src="usage-facades-examples-3.txt" />
 
-        <code-block lang="php" validate="true">
+        <code-block lang="php">
             return Locales::raw()->getDefault();
             // Non aliased
             // de
@@ -43,7 +43,7 @@
             // de-DE
         </code-block>
 
-        <code-block lang="php" validate="true">
+        <code-block lang="php">
             return Locales::raw()->get('de');
             // de
 

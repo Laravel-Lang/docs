@@ -35,7 +35,7 @@
             You need to change the namespace in the <code>config/app.php</code> file:
         </p>
 
-        <code-block lang="php" validate="true">
+        <code-block lang="php">
             LaravelLang\JsonFallbackHotfix\TranslationServiceProvider
         </code-block>
 
@@ -43,7 +43,7 @@
             with
         </p>
 
-        <code-block lang="php" validate="true">
+        <code-block lang="php">
             LaravelLang\JsonFallback\TranslationServiceProvider
         </code-block>
     </chapter>

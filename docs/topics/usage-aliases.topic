@@ -20,7 +20,7 @@
         the <code>%config-filename%</code> config file:
     </p>
 
-    <code-block lang="php" validate="true" src="usage-aliases.php" include-lines="3-" />
+    <code-block lang="php" src="usage-aliases.php" include-lines="3-" />
 
     <p>
         If the

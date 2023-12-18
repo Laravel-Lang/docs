@@ -20,7 +20,7 @@
             <code>scripts</code> block in the <code>composer.json</code> file:
         </p>
 
-        <code-block lang="json" validate="true" src="composer-post-update-cmd.json" />
+        <code-block lang="json" src="composer-post-update-cmd.json" />
 
         <p>
             This will allow localization files to be automatically updated after dependency updates, rather than manually calling the
