@@ -27,7 +27,7 @@ env:
 
 jobs:
     build:
-        name: Build Application
+        name: Build application
         runs-on: ubuntu-latest
 
         steps:
@@ -107,9 +107,55 @@ jobs:
                 with:
                     instance: ${{ env.INSTANCE }}
     
+    cleanup_algolia:
+        needs: build
+        name: Cleaning up search indexes
+        runs-on: ubuntu-latest
+
+        steps:
+            -   uses: actions/checkout@v4
+
+            -   name: Setup PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: ${{ matrix.php }}
+                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
+                    coverage: xdebug
+
+            -   name: Configure git
+                run: git config --global --add safe.directory /github/workspace
+
+            -   name: Install dependencies
+                run: composer update --no-progress --no-interaction
+
+            -   name: Download search artifact
+                uses: actions/download-artifact@v4
+                with:
+                    name: algolia-indexes
+
+            -   name: Unzip artifact
+                uses: montudor/action-zip@v1
+                with:
+                    args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
+
+            -   name: Clean up
+                run: php src/clean_algolia.php
+
+            -   name: Zip artifact
+                uses: montudor/action-zip@v1
+                with:
+                    args: zip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
+
+            -   name: Update search indexes
+                uses: actions/upload-artifact@v4
+                with:
+                    name: algolia-indexes
+                    path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
+                    retention-days: 7
+    
     sitemap:
         needs: build
-        name: Generate Sitemap
+        name: Generate sitemap
         runs-on: ubuntu-latest
 
         steps:
@@ -178,8 +224,9 @@ jobs:
             - test
             - sitemap
             - robots
+            - cleanup_algolia
 
-        name: Deploy to Pages
+        name: Deploy to pages
         runs-on: ubuntu-latest
 
         steps:
@@ -223,7 +270,10 @@ jobs:
     deploy-indexes:
         environment: deploy
 
-        needs: test
+        needs:
+            - test
+            - cleanup_algolia
+        
         name: Deploy to Algolia
         runs-on: ubuntu-latest
         timeout-minutes: 3
@@ -232,21 +282,6 @@ jobs:
             image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-2
 
         steps:
-            -   uses: actions/checkout@v4
-
-            -   name: Setup PHP
-                uses: shivammathur/setup-php@v2
-                with:
-                    php-version: ${{ matrix.php }}
-                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
-                    coverage: xdebug
-
-            -   name: Configure git
-                run: git config --global --add safe.directory /github/workspace
-
-            -   name: Install dependencies
-                run: composer update --no-progress --no-interaction
-
             -   name: Download search artifact
                 uses: actions/download-artifact@v4
                 with:
@@ -256,9 +291,6 @@ jobs:
                 uses: montudor/action-zip@v1
                 with:
                     args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
-
-            -   name: Removing unnecessary files
-                run: php clean_algolia.php
 
             -   name: Deploy to Algolia
                 run: |
