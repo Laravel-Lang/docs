@@ -140,7 +140,10 @@ jobs:
                     args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
 
             -   name: Clean up
-                run: sudo php src/clean_algolia.php
+                run: |
+                    ls -l
+                    rm -f ${{ env.ALGOLIA_ARTIFACT }}
+                    sudo php src/clean_algolia.php
 
             -   name: Zip artifact
                 uses: montudor/action-zip@v1

@@ -16,6 +16,11 @@ $packages = array_map(fn (string $name) => 'statuses_' . $name . '_', [
 
 $path = __DIR__ . '/../algolia-indexes/';
 
+dump([
+    'path' => realpath($path),
+    'files' => File::names($path)
+]);
+
 foreach (File::names($path) as $name) {
     $filename = $path . $name;
 
