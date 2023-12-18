@@ -7,6 +7,10 @@ use DragonCode\Support\Facades\Helpers\Str;
 
 require 'autoload.php';
 
+if (empty($argv[1])) {
+    throw new RuntimeException('Unknown directory at parameter #1');
+}
+
 $packages = array_map(fn (string $name) => 'statuses_' . $name . '_', [
     'actions',
     'attributes',
@@ -14,7 +18,7 @@ $packages = array_map(fn (string $name) => 'statuses_' . $name . '_', [
     'lang',
 ]);
 
-$path = __DIR__ . '/../algolia-indexes/';
+$path = __DIR__ . '/../' . $argv[1] . '/';
 
 foreach (File::names($path) as $name) {
     if (Str::startsWith($name, $packages)) {

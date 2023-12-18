@@ -15,10 +15,12 @@ permissions:
 
 env:
     ALGOLIA_APP_NAME: ${{ secrets.ALGOLIA_APPLICATION_ID }}
-    ALGOLIA_ARTIFACT: algolia-indexes-LARAVEL-LANG.zip
+    ALGOLIA_ARTIFACT: search-indexes.zip
     ALGOLIA_INDEX_NAME: laravel-lang
     ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
-    ARTIFACT: webHelpLARAVEL-LANG2-all.zip
+    ARTIFACT_DOCS: webHelpLARAVEL-LANG2-all.zip
+    ARTIFACT_INDEXES: search-indexes
+    ARTIFACT_INDEXES_CLEARED: search-indexes-cleared
     CONFIG_JSON_PRODUCT: LARAVEL-LANG
     CONFIG_JSON_VERSION: main
     INSTANCE: docs/laravel-lang
@@ -71,7 +73,7 @@ jobs:
                 uses: JetBrains/writerside-github-action@v4
                 with:
                     instance: ${{ env.INSTANCE }}
-                    artifact: ${{ env.ARTIFACT }}
+                    artifact: ${{ env.ARTIFACT_DOCS }}
                     docker-version: ${{ env.BUILDER_VERSION }}
 
             -   name: Upload artifacts
@@ -79,14 +81,14 @@ jobs:
                 with:
                     name: docs
                     path: |
-                        artifacts/${{ env.ARTIFACT }}
+                        artifacts/${{ env.ARTIFACT_DOCS }}
                         artifacts/report.json
                     retention-days: 7
 
             -   name: Upload search indexes
                 uses: actions/upload-artifact@v4
                 with:
-                    name: algolia-indexes
+                    name: ${{ env.ARTIFACT_INDEXES }}
                     path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
                     retention-days: 7
 
@@ -133,28 +135,23 @@ jobs:
             -   name: Download search artifact
                 uses: actions/download-artifact@v4
                 with:
-                    name: algolia-indexes
+                    name: ${{ env.ARTIFACT_INDEXES }}
 
             -   name: Unzip artifact
-                run: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
+                run: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d ${{ env.ARTIFACT_INDEXES }}
 
             -   name: Clean up
                 run: |
                     rm -f ${{ env.ALGOLIA_ARTIFACT }}
-                    sudo php src/clean_algolia.php
+                    sudo php src/clean_algolia.php ${{ env.ARTIFACT_INDEXES }}
 
             -   name: Zip artifact
-                run: zip -qq -r ${{ env.ALGOLIA_ARTIFACT }} algolia-indexes
-
-            -   name: Delete artifact
-                uses: geekyeggo/delete-artifact@v2
-                with:
-                    name: algolia-indexes
+                run: zip -qq -r ${{ env.ALGOLIA_ARTIFACT }} ${{ env.ARTIFACT_INDEXES }}
 
             -   name: Update search indexes
                 uses: actions/upload-artifact@v4
                 with:
-                    name: algolia-indexes
+                    name: ${{ env.ARTIFACT_INDEXES_CLEARED }}
                     path: ${{ env.ALGOLIA_ARTIFACT }}
                     retention-days: 7
     
@@ -187,7 +184,7 @@ jobs:
             -   name: Unzip artifact
                 uses: montudor/action-zip@v1
                 with:
-                    args: unzip -qq ${{ env.ARTIFACT }} -d dir
+                    args: unzip -qq ${{ env.ARTIFACT_DOCS }} -d dir
 
             -   name: Generate sitemap
                 run: php src/sitemap.php
@@ -229,7 +226,6 @@ jobs:
             - test
             - sitemap
             - robots
-            - cleanup_algolia
 
         name: Deploy to pages
         runs-on: ubuntu-latest
@@ -253,7 +249,7 @@ jobs:
             -   name: Unzip artifact
                 uses: montudor/action-zip@v1
                 with:
-                    args: unzip -qq ${{ env.ARTIFACT }} -d dir
+                    args: unzip -qq ${{ env.ARTIFACT_DOCS }} -d dir
 
             -   name: Move sitemap and robots
                 run: |
@@ -290,12 +286,12 @@ jobs:
             -   name: Download search artifact
                 uses: actions/download-artifact@v4
                 with:
-                    name: algolia-indexes
+                    name: ${{ env.ARTIFACT_INDEXES_CLEARED }}
 
             -   name: Unzip artifact
                 uses: montudor/action-zip@v1
                 with:
-                    args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
+                    args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d ${{ env.ARTIFACT_INDEXES }}
 
             -   name: Deploy to Algolia
                 run: |
@@ -305,5 +301,5 @@ jobs:
                     --index-name ${{ env.ALGOLIA_INDEX_NAME }} \
                     --product ${{ env.CONFIG_JSON_PRODUCT }} \
                     --version ${{ env.CONFIG_JSON_VERSION }} \
-                    --index-directory algolia-indexes/ \
+                    --index-directory ${{ env.ARTIFACT_INDEXES }}/ \
                     2>&1 | tee algolia-update-index-log.txt
