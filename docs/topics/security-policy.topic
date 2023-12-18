@@ -27,6 +27,17 @@
     </chapter>
 
     <chapter title="Reporting a Vulnerability" id="reporting_a_vulnerability">
+        <warning>
+            <p>
+                The website from which you got to this page is protected by Cloudflare.
+                Email addresses on that page have been hidden in order to keep them from being accessed by malicious bots.
+            </p>
+            <p>
+                If you see a message when you click on a link from the text below this block,
+                then you need to reload the page in your browser.
+            </p>
+        </warning>
+
         <p>
             If you discover a security vulnerability within
             <format style="bold">%instance%</format>
