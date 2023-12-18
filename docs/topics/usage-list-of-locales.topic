@@ -14,7 +14,7 @@
 
     <note>
         If you need to connect only a list of available locales to your project, you can use
-        the <a href="packages-locale-list.topic"><code>package-locales-list</code></a> package.
+        the <a href="packages-locale-list.topic"><code>%package-locale-list%</code></a> package.
     </note>
 
     <chapter title="As enum" id="as_enum">
