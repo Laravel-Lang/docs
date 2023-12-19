@@ -34,6 +34,8 @@
 
     <chapter title="Version support" id="version_support">
         <chapter title="Common" id="common">
+            <link-summary>Compatibility table for the %repository-title-common% package</link-summary>
+            
             <table>
                 <tr>
                     <td>Laravel</td>
@@ -88,6 +90,8 @@
         </chapter>
 
         <chapter title="Publisher" id="publisher">
+            <link-summary>Compatibility table for the %repository-title-publisher% package</link-summary>
+
             <table>
                 <tr>
                     <td>Laravel</td>
@@ -129,6 +133,8 @@
         </chapter>
 
         <chapter title="Lang" id="lang">
+            <link-summary>Compatibility table for the %repository-title-lang% package</link-summary>
+
             <table>
                 <tr>
                     <td>Laravel</td>
@@ -174,6 +180,8 @@
         </chapter>
 
         <chapter title="Actions" id="actions">
+            <link-summary>Compatibility table for the %repository-title-actions% package</link-summary>
+
             <table>
                 <tr>
                     <td>Laravel</td>
@@ -193,6 +201,8 @@
         </chapter>
 
         <chapter title="Attributes" id="attributes">
+            <link-summary>Compatibility table for the %repository-title-attributes% package</link-summary>
+
             <table>
                 <tr>
                     <td>Laravel</td>
@@ -226,6 +236,8 @@
         </chapter>
 
         <chapter title="HTTP Statuses" id="http_statuses">
+            <link-summary>Compatibility table for the %repository-title-http-statuses% package</link-summary>
+
             <table>
                 <tr>
                     <td>Laravel</td>
@@ -266,6 +278,8 @@
         </chapter>
 
         <chapter title="Locales" id="locales">
+            <link-summary>Compatibility table for the %repository-title-locales% package</link-summary>
+
             <table>
                 <tr>
                     <td>PHP</td>
@@ -286,6 +300,8 @@
         </chapter>
 
         <chapter title="Locale List" id="locale_list">
+            <link-summary>Compatibility table for the %repository-title-locale-list% package</link-summary>
+
             <table>
                 <tr>
                     <td>PHP</td>
@@ -301,6 +317,8 @@
         </chapter>
 
         <chapter title="Native Locale Names" id="native_locale_names">
+            <link-summary>Compatibility table for the %repository-title-native-locale-names% package</link-summary>
+
             <table>
                 <tr>
                     <td>PHP</td>
@@ -321,6 +339,8 @@
         </chapter>
 
         <chapter title="Native Country Names" id="native_country_names">
+            <link-summary>Compatibility table for the %repository-title-native-country-names% package</link-summary>
+
             <table>
                 <tr>
                     <td>PHP</td>
@@ -336,6 +356,8 @@
         </chapter>
 
         <chapter title="Native Currency Names" id="native_currency_names">
+            <link-summary>Compatibility table for the %repository-title-native-currency-names% package</link-summary>
+
             <table>
                 <tr>
                     <td>PHP</td>
@@ -351,6 +373,8 @@
         </chapter>
 
         <chapter title="JSON Fallback" id="json_fallback">
+            <link-summary>Compatibility table for the %repository-title-json-fallback% package</link-summary>
+
             <table>
                 <tr>
                     <td>PHP</td>
