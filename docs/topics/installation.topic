@@ -13,20 +13,7 @@
     <show-structure depth="2" />
 
     <chapter title="Recommended" id="recommended">
-        <p>
-            You can install the package via <a href="https://getcomposer.org">Composer</a>:
-        </p>
-
-        <code-block lang="bash">
-            %install-common%
-        </code-block>
-
-        <p>
-            The <code>%repository-title-common%</code> package will install all the required dependency versions.
-            It is also easy to update between minor and major versions.
-        </p>
-
-        <include from="library-needs.topic" element-id="library-needs-locales-facade" />
+        <include from="packages-common.topic" element-id="chapter-package-common" />
     </chapter>
 
     <chapter title="Alternative" id="alternative">
@@ -50,25 +37,6 @@
     </chapter>
 
     <chapter title="JSON Fallback" id="json_fallback">
-        <include from="library-lists.topic" element-id="json-fallback-doesnt-need" />
-        <include from="library-lists.topic" element-id="json-fallback-doesnt-allow" />
-
-        <p>
-            To install, run the console command:
-        </p>
-        <code-block lang="bash">
-            %install-json-fallback%
-        </code-block>
-        <p>
-            After this, you need to add a link to the service provider in the <code>providers</code> section of the
-            <code>config/app.php</code>
-            settings file:
-        </p>
-
-        <code-block src="json-fallback-install-laravel-10.php" lang="php" />
-
-        <p>
-            Now JSON keys will correctly output the value based on the selected localization.
-        </p>
+        <include from="packages-json-fallback.topic" element-id="chapter-package-json-fallback" />
     </chapter>
 </topic>

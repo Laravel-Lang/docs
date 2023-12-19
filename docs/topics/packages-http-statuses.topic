@@ -25,4 +25,6 @@
     <code-block lang="bash">
         %install-http-statuses%
     </code-block>
+
+    <include from="library-descriptions.topic" element-id="now-use-update-locales" />
 </topic>

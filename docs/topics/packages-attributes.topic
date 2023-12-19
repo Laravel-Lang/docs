@@ -10,9 +10,9 @@
     <card-summary>Installing the %repository-title-attributes% package</card-summary>
     <web-summary>Installing the %repository-title-attributes% package</web-summary>
 
-    <note>
+    <tip>
         The compatibility table can be viewed <a href="release-notes.topic#attributes">here</a>.
-    </note>
+    </tip>
 
     <p>
         This package contains a custom set of attribute names that are most commonly found in various forms of the application.
@@ -24,4 +24,6 @@
     <code-block lang="bash">
         %install-attributes%
     </code-block>
+
+    <include from="library-descriptions.topic" element-id="now-use-update-locales" />
 </topic>

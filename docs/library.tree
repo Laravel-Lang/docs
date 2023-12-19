@@ -13,4 +13,5 @@
     <toc-element topic="library-lists.topic" />
     <toc-element topic="library-available-locales.topic" />
     <toc-element topic="library-commands.topic" />
+    <toc-element topic="library-descriptions.topic" />
 </instance-profile>

@@ -10,26 +10,26 @@
     <card-summary>Installing the %repository-title-common% package</card-summary>
     <web-summary>Installing the %repository-title-common% package</web-summary>
 
-    <tip>
-        The compatibility table can be viewed <a href="release-notes.topic#common">here</a>.
-    </tip>
+    <snippet id="chapter-package-common">
+        <note>
+            <p>
+                It is recommended to use this particular package as it will allow you to very quickly update all the necessary
+                dependencies that ensure application localization.
+            </p>
+            <p>
+                The compatibility table can be viewed <a href="release-notes.topic#common">here</a>.
+            </p>
+        </note>
 
-    <p>
-        This package allows you to easily install and update all the necessary dependencies within the selected environment.
-    </p>
+        <p>
+            You can install the package via <a href="https://getcomposer.org">Composer</a>:
+        </p>
 
-    <p>
-        To install, run the console command:
-    </p>
+        <code-block lang="bash">
+            %install-common%
+        </code-block>
 
-    <code-block lang="bash">
-        %install-common%
-    </code-block>
-
-    <note>
-        It is recommended to use this particular package as it will allow you to very quickly update all the necessary
-        dependencies that ensure application localization.
-    </note>
-
-    <include from="library-needs.topic" element-id="library-needs-locales-facade" />
+        <include from="library-descriptions.topic" element-id="now-use-update-locales" />
+        <include from="library-needs.topic" element-id="library-needs-locales-facade" />
+    </snippet>
 </topic>

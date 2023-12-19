@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Library Descriptions" id="library-descriptions">
+
+    <snippet id="now-use-update-locales">
+        <p>
+            Now you can <a href="usage-update-locales.topic">update</a>
+            existing or <a href="usage-add-locales.topic">add</a> new localizations using the
+            <code>%command-update-simple%</code> console command:
+        </p>
+
+        <code-block lang="bash">
+            %command-update%
+        </code-block>
+    </snippet>
+</topic>

@@ -16,6 +16,7 @@
     <var name="command-remove-many" value="php artisan lang:rm fr de de_CH vi zh_CN" />
     <var name="command-reset" value="php artisan lang:reset" />
     <var name="command-update" value="php artisan lang:update" />
+    <var name="command-update-simple" value="lang:update" />
     <var name="config-filename" value="config/localization.php" />
     <var name="install-actions" value="composer require --dev laravel-lang/actions" />
     <var name="install-attributes" value="composer require --dev laravel-lang/attributes" />
