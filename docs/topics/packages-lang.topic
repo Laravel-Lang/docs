@@ -30,4 +30,25 @@
     </code-block>
 
     <include from="library-descriptions.topic" element-id="now-use-update-locales" />
+
+    <chapter title="Laravel Spark Aurelius + Mollie" id="spark_aurelius">
+        <p>
+            If you are still using the Spark Aurelius and
+            <a href="https://github.com/laravel/cashier-mollie">Aurelius Mollie</a>
+            packages, then you need to manually install the
+            <a href="release-notes.topic#lang" /> package version 13 or lower.
+        </p>
+        <p>
+            This can be done like this:
+        </p>
+
+        <code-block lang="bash">
+            %install-lang%:^13.0
+        </code-block>
+
+        <p>
+            You can select the desired version of the <a href="release-notes.topic#lang" /> package using the
+            <a href="release-notes.topic#lang">compatibility table</a>.
+        </p>
+    </chapter>
 </topic>

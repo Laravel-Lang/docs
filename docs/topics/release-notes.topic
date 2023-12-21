@@ -48,7 +48,7 @@
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^6.0</code></td>
-                    <td>Publisher 16, Lang 13, Actions 1, Attributes 2, HTTP Statuses 3, Locales 2, JSON Fallback 2</td>
+                    <td>Publisher 16, Lang 13, 14, Actions 1, Attributes 2, HTTP Statuses 3, Locales 2, JSON Fallback 2</td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
                 </tr>
                 <tr>
@@ -148,16 +148,24 @@
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td>14, 15, 16</td>
-                    <td><code>^13.0</code></td>
-                    <td>Breeze 1, Cashier Stripe 13, 14, Fortify 1, Jetstream 2, 3, 4, Nova 4, Spark Aurelius 11, 12, Spark Aurelius Mollie 2, Spark Paddle *, Stripe Stripe *, UI 4</td>
+                    <td><code>^14.0</code></td>
+                    <td>Breeze 1, Cashier Stripe 13, 14, Fortify 1, Jetstream 2, 3, 4, Nova 4, Spark Paddle, Spark Stripe, UI 4</td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>8.1, 8.2, 8.3</td>
+                    <td>14, 15, 16</td>
+                    <td><code>^13.0</code></td>
+                    <td>Breeze 1, Cashier Stripe 13, 14, Fortify 1, Jetstream 2, 3, 4, Nova 4, Spark Aurelius 11, 12, Spark Aurelius Mollie 2, Spark Paddle, Spark Stripe, UI 4</td>
+                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
                 </tr>
                 <tr>
                     <td>9, 10</td>
                     <td>8.1, 8.2</td>
                     <td>14</td>
                     <td><code>^12.0</code></td>
-                    <td>Breeze 1, Cashier Stripe 12, 13, 14, Fortify 1, Jetstream 1, 2, 3, Nova 3, 4, Spark Aurelius 11, 12, Spark Aurelius Mollie 2, Spark Paddle *, Stripe Stripe *, UI 3, 4</td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, 14, Fortify 1, Jetstream 1, 2, 3, Nova 3, 4, Spark Aurelius 11, 12, Spark Aurelius Mollie 2, Spark Paddle, Spark Stripe, UI 3, 4</td>
                     <td><img src="%badge-not-supported%" alt="not supported" /></td>
                 </tr>
                 <tr>
@@ -165,7 +173,7 @@
                     <td>8.1, 8.2</td>
                     <td>---</td>
                     <td><code>^11.0</code></td>
-                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, 2, Nova 3, 4, Spark Paddle *, Stripe Stripe *, UI 1, 2, 3, 4</td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, 2, Nova 3, 4, Spark Paddle, Spark Stripe, UI 1, 2, 3, 4</td>
                     <td><img src="%badge-not-supported%" alt="not supported" /></td>
                 </tr>
                 <tr>
@@ -173,7 +181,7 @@
                     <td>8.1, 8.2</td>
                     <td>---</td>
                     <td><code>^10.0</code></td>
-                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, Nova 3, Spark Paddle *, Stripe Stripe *, UI 1, 2, 3</td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, Nova 3, Spark Paddle, Spark Stripe, UI 1, 2, 3</td>
                     <td><img src="%badge-not-supported%" alt="not supported" /></td>
                 </tr>
             </table>
