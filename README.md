@@ -9,7 +9,7 @@ and [usage](https://laravel-lang.com/manage-locales.html) instructions.
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://laravel-lang.com/contributing.html) for details.
+Please see [CONTRIBUTING](https://laravel-lang.com/contributions.html) for details.
 
 ## License
 
