@@ -8,22 +8,6 @@ use LaravelLang\NativeLocaleNames\LocaleNames;
 
 require 'autoload.php';
 
-function getLocale(string $locale): string
-{
-    $localized = LocaleNames::get($locale)[$locale];
-    $english   = LocaleNames::get('en')[$locale];
-
-    return <<<HTML
-        ## $localized
-
-        The $english locale is added using the console command:
-
-        ```Bash
-        %command-add% $locale
-        ```
-        HTML;
-}
-
 $dom = Xml::init('topic', [
     'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
 
