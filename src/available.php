@@ -175,7 +175,7 @@ foreach (Locale::values() as $locale) {
         $dom,
         $chapter,
         $locale,
-        "How to add $english localization to a Laravel application? To do this, you need to call the console command below:"
+        "How to add $english localization to a Laravel application? To do this, you need to run the console command below:"
     );
 
     $codeBlock = $dom->makeItem('code-block', "%command-add% $locale", [
