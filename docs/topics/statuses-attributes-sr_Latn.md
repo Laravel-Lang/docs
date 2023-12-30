@@ -1,5 +1,6 @@
-# Srpski (sr_Latn)
+# Serbian (sr_Latn)
 {id="statuses-attributes-sr_Latn-title"}
+
 
 > All lines are translated 😊
 >
