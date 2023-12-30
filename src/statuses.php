@@ -56,11 +56,11 @@ function moveStatus(string $package, Locale $locale): void
 
     $content = str_replace(
         'All lines are translated 😊',
-        <<<HTML
-        > All lines are translated 😊
-        >
-        {style="note"}
-        HTML
+        <<<'HTML'
+            > All lines are translated 😊
+            >
+            {style="note"}
+            HTML
         ,
         $content
     );

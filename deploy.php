@@ -8,7 +8,7 @@ require 'contrib/rsync.php';
 require 'recipe/common.php';
 
 set('rsync', [
-    'exclude'       => [
+    'exclude' => [
         '.git',
         'deploy.php',
     ],

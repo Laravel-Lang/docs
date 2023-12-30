@@ -27,9 +27,8 @@ foreach ($map as $item) {
     if (in_array($value, $registry, true)) {
         continue;
     }
-    else {
-        $registry[] = $value;
-    }
+
+    $registry[] = $value;
 
     $url = $dom->makeItem('url', '');
 
