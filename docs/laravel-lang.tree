@@ -25,7 +25,7 @@
         </toc-element>
         <toc-element topic="security-policy.topic" />
         <toc-element topic="questions-and-issues.topic" />
-        <toc-element topic="contributions.topic" />
+        <toc-element topic="contributions.topic" accepts-web-file-names-ref="5abaca93" />
         <toc-element topic="our-team.topic" toc-title="Our Team" />
         <toc-element topic="license.topic" toc-title="License" />
     </toc-element>
