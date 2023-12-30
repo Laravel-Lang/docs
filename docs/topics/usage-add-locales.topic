@@ -13,7 +13,12 @@
     <title instance="laravel-lang">Add Locales</title>
 
     <note>
-        A list of available locale codes can be found <a href="available-locales-list.topic">here</a>.
+        <p>
+            A list of available locale codes can be found <a href="available-locales-list.topic">here</a>.
+        </p>
+        <p>
+            This list contains 126 locale codes.
+        </p>
     </note>
 
     <p>
