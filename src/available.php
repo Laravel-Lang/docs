@@ -29,7 +29,7 @@ $dom = Xml::init('topic', [
 
     'xsi:noNamespaceSchemaLocation' => 'https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd',
 
-    'title'      => 'Lists Available Locales',
+    'title'      => 'Library Available Locales',
     'id'         => 'lists-available-locales',
     'is-library' => 'true',
 ])->setSkipEmptyAttributes();
