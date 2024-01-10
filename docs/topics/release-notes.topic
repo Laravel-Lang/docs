@@ -149,7 +149,7 @@
                     <td>8.1, 8.2, 8.3</td>
                     <td>14, 15, 16</td>
                     <td><code>^14.0</code></td>
-                    <td>Breeze 1, Cashier Stripe 13, 14, Fortify 1, Jetstream 2, 3, 4, Nova 4, Spark Paddle, Spark Stripe, UI 4</td>
+                    <td>Breeze 1, Cashier Stripe 13, 14, 15, Fortify 1, Jetstream 2, 3, 4, Nova 4, Spark Paddle, Spark Stripe, UI 4</td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
                 </tr>
                 <tr>
