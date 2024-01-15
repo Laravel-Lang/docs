@@ -313,6 +313,18 @@
             </td>
         </tr>
         <tr>
+            <td>th</td>
+            <td>
+                <a href="statuses-lang-th.md">Lang</a>,
+                <a href="statuses-actions-th.md">Actions</a>,
+                <a href="statuses-attributes-th.md">Attributes</a>,
+                <a href="statuses-http-statuses-th.md">HTTP Statuses</a>
+            </td>
+            <td>
+                <a href="https://github.com/bact">@bact</a>
+            </td>
+        </tr>
+        <tr>
             <td>tr</td>
             <td>
                 <a href="statuses-lang-tr.md">Lang</a>,
