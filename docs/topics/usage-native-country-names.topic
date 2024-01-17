@@ -10,6 +10,8 @@
     <card-summary>Information on working with the list of localized country names</card-summary>
     <web-summary>Information on working with the list of localized country names</web-summary>
 
+    <show-structure depth="2" />
+
     <note>
         If you want to get a localized list of countries, then simply call the <code>CountryNames::get()</code> method from
         the <a href="packages-native-country-names.topic"><code>%package-native-country-names%</code></a> package.
