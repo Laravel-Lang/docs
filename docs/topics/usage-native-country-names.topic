@@ -67,12 +67,12 @@
         </p>
 
         <chapter title="Sort by keys" id="sort_by_keys">
-            <p>
+            <code-block lang="php">
                 use LaravelLang\NativeCountryNames\CountryNames;
                 use LaravelLang\NativeCountryNames\Enums\SortBy;
 
                 return CountryNames::get('en', SortBy::Key);
-            </p>
+            </code-block>
 
             <p>
                 Result:
@@ -81,6 +81,7 @@
             <code-block lang="php" src="usage-native-country-names-sort-by-keys.txt" />
 
         </chapter>
+
         <chapter title="Sort by values" id="sort_by_values">
             <code-block lang="php">
                 use LaravelLang\NativeCountryNames\CountryNames;
