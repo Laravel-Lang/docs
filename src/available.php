@@ -158,7 +158,7 @@ $dom = Xml::init('topic', [
 
 $dom->doctype('topic', '', 'https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd');
 
-$snippet = $snippet = $dom->makeItem('snippet', '', ['id' => 'available-locales']);
+$snippet = $dom->makeItem('snippet', '', ['id' => 'available-locales']);
 
 foreach (Locale::values() as $locale) {
     echo $locale . '...' . PHP_EOL;

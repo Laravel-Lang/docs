@@ -51,6 +51,10 @@ jobs:
             -   name: Clone projects
                 run: composer clone
 
+            -   name: Update Team
+                run: |
+                    php src/team.php
+
             -   name: Move completion statuses
                 run: |
                     php src/statuses.php

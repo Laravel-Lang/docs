@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Library Our Team" id="library-our-team" is-library="true">
+    <snippet id="our-team">
+        <table>
+            <tr>
+                <td>Locale</td>
+                <td>Packages</td>
+                <td>Referents</td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-ar" summary="ar">ar</a></p></td>
+                <td><p><a href="statuses-lang-ar.md">Lang</a></p>
+                    <p><a href="statuses-actions-ar.md">Actions</a></p>
+                    <p><a href="statuses-attributes-ar.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-ar.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@Khuthaily">@Khuthaily</a></p>
+                    <p><a href="https://github.com/@mohamedsabil83">@mohamedsabil83</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-az" summary="az">az</a></p></td>
+                <td><p><a href="statuses-lang-az.md">Lang</a></p>
+                    <p><a href="statuses-actions-az.md">Actions</a></p>
+                    <p><a href="statuses-attributes-az.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-az.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@slvler">@slvler</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-bn" summary="bn">bn</a></p></td>
+                <td><p><a href="statuses-lang-bn.md">Lang</a></p>
+                    <p><a href="statuses-actions-bn.md">Actions</a></p>
+                    <p><a href="statuses-attributes-bn.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-bn.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@arman-arif">@arman-arif</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-bs" summary="bs">bs</a></p></td>
+                <td><p><a href="statuses-lang-bs.md">Lang</a></p>
+                    <p><a href="statuses-actions-bs.md">Actions</a></p>
+                    <p><a href="statuses-attributes-bs.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-bs.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@jure-knezovic">@jure-knezovic</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-da" summary="da">da</a></p></td>
+                <td><p><a href="statuses-lang-da.md">Lang</a></p>
+                    <p><a href="statuses-actions-da.md">Actions</a></p>
+                    <p><a href="statuses-attributes-da.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-da.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@jensstigaard">@jensstigaard</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-de" summary="de">de</a></p></td>
+                <td><p><a href="statuses-lang-de.md">Lang</a></p>
+                    <p><a href="statuses-actions-de.md">Actions</a></p>
+                    <p><a href="statuses-attributes-de.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-de.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@WhereIsLucas">@WhereIsLucas</a></p>
+                    <p><a href="https://github.com/@sotten">@sotten</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-de_CH" summary="de_CH">de_CH</a>
+                </p></td>
+                <td><p><a href="statuses-lang-de_CH.md">Lang</a></p>
+                    <p><a href="statuses-actions-de_CH.md">Actions</a></p>
+                    <p><a href="statuses-attributes-de_CH.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-de_CH.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@sotten">@sotten</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-es" summary="es">es</a></p></td>
+                <td><p><a href="statuses-lang-es.md">Lang</a></p>
+                    <p><a href="statuses-actions-es.md">Actions</a></p>
+                    <p><a href="statuses-attributes-es.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-es.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@luisprmat">@luisprmat</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-fa" summary="fa">fa</a></p></td>
+                <td><p><a href="statuses-lang-fa.md">Lang</a></p>
+                    <p><a href="statuses-actions-fa.md">Actions</a></p>
+                    <p><a href="statuses-attributes-fa.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-fa.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@ariaieboy">@ariaieboy</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-fr" summary="fr">fr</a></p></td>
+                <td><p><a href="statuses-lang-fr.md">Lang</a></p>
+                    <p><a href="statuses-actions-fr.md">Actions</a></p>
+                    <p><a href="statuses-attributes-fr.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-fr.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@WhereIsLucas">@WhereIsLucas</a></p>
+                    <p><a href="https://github.com/@caouecs">@caouecs</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-hr" summary="hr">hr</a></p></td>
+                <td><p><a href="statuses-lang-hr.md">Lang</a></p>
+                    <p><a href="statuses-actions-hr.md">Actions</a></p>
+                    <p><a href="statuses-attributes-hr.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-hr.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@jure-knezovic">@jure-knezovic</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-it" summary="it">it</a></p></td>
+                <td><p><a href="statuses-lang-it.md">Lang</a></p>
+                    <p><a href="statuses-actions-it.md">Actions</a></p>
+                    <p><a href="statuses-attributes-it.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-it.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@masterix21">@masterix21</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-ja" summary="ja">ja</a></p></td>
+                <td><p><a href="statuses-lang-ja.md">Lang</a></p>
+                    <p><a href="statuses-actions-ja.md">Actions</a></p>
+                    <p><a href="statuses-attributes-ja.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-ja.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@wadakatu">@wadakatu</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-mk" summary="mk">mk</a></p></td>
+                <td><p><a href="statuses-lang-mk.md">Lang</a></p>
+                    <p><a href="statuses-actions-mk.md">Actions</a></p>
+                    <p><a href="statuses-attributes-mk.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-mk.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@keljtanoski">@keljtanoski</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-nl" summary="nl">nl</a></p></td>
+                <td><p><a href="statuses-lang-nl.md">Lang</a></p>
+                    <p><a href="statuses-actions-nl.md">Actions</a></p>
+                    <p><a href="statuses-attributes-nl.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-nl.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@WhereIsLucas">@WhereIsLucas</a></p>
+                    <p><a href="https://github.com/@chillbram">@chillbram</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-pl" summary="pl">pl</a></p></td>
+                <td><p><a href="statuses-lang-pl.md">Lang</a></p>
+                    <p><a href="statuses-actions-pl.md">Actions</a></p>
+                    <p><a href="statuses-attributes-pl.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-pl.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@makowskid">@makowskid</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-pt" summary="pt">pt</a></p></td>
+                <td><p><a href="statuses-lang-pt.md">Lang</a></p>
+                    <p><a href="statuses-actions-pt.md">Actions</a></p>
+                    <p><a href="statuses-attributes-pt.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-pt.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@jorgercosta">@jorgercosta</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-pt_BR" summary="pt_BR">pt_BR</a>
+                </p></td>
+                <td><p><a href="statuses-lang-pt_BR.md">Lang</a></p>
+                    <p><a href="statuses-actions-pt_BR.md">Actions</a></p>
+                    <p><a href="statuses-attributes-pt_BR.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-pt_BR.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@EuCarlos">@EuCarlos</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-ro" summary="ro">ro</a></p></td>
+                <td><p><a href="statuses-lang-ro.md">Lang</a></p>
+                    <p><a href="statuses-actions-ro.md">Actions</a></p>
+                    <p><a href="statuses-attributes-ro.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-ro.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@Van4kk">@Van4kk</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-ru" summary="ru">ru</a></p></td>
+                <td><p><a href="statuses-lang-ru.md">Lang</a></p>
+                    <p><a href="statuses-actions-ru.md">Actions</a></p>
+                    <p><a href="statuses-attributes-ru.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-ru.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@andrey-helldar">@andrey-helldar</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-sr_Cyrl"
+                          summary="sr_Cyrl">sr_Cyrl</a></p></td>
+                <td><p><a href="statuses-lang-sr_Cyrl.md">Lang</a></p>
+                    <p><a href="statuses-actions-sr_Cyrl.md">Actions</a></p>
+                    <p><a href="statuses-attributes-sr_Cyrl.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-sr_Cyrl.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@LukaLatkovic">@LukaLatkovic</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-sr_Latn"
+                          summary="sr_Latn">sr_Latn</a></p></td>
+                <td><p><a href="statuses-lang-sr_Latn.md">Lang</a></p>
+                    <p><a href="statuses-actions-sr_Latn.md">Actions</a></p>
+                    <p><a href="statuses-attributes-sr_Latn.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-sr_Latn.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@LukaLatkovic">@LukaLatkovic</a></p>
+                    <p><a href="https://github.com/@jure-knezovic">@jure-knezovic</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-sr_Latn_ME" summary="sr_Latn_ME">sr_Latn_ME</a>
+                </p></td>
+                <td><p><a href="statuses-lang-sr_Latn_ME.md">Lang</a></p>
+                    <p><a href="statuses-actions-sr_Latn_ME.md">Actions</a></p>
+                    <p><a href="statuses-attributes-sr_Latn_ME.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-sr_Latn_ME.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@LukaLatkovic">@LukaLatkovic</a></p>
+                    <p><a href="https://github.com/@jure-knezovic">@jure-knezovic</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-sw" summary="sw">sw</a></p></td>
+                <td><p><a href="statuses-lang-sw.md">Lang</a></p>
+                    <p><a href="statuses-actions-sw.md">Actions</a></p>
+                    <p><a href="statuses-attributes-sw.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-sw.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@Pheogrammer">@Pheogrammer</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-th" summary="th">th</a></p></td>
+                <td><p><a href="statuses-lang-th.md">Lang</a></p>
+                    <p><a href="statuses-actions-th.md">Actions</a></p>
+                    <p><a href="statuses-attributes-th.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-th.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@bact">@bact</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-tr" summary="tr">tr</a></p></td>
+                <td><p><a href="statuses-lang-tr.md">Lang</a></p>
+                    <p><a href="statuses-actions-tr.md">Actions</a></p>
+                    <p><a href="statuses-attributes-tr.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-tr.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@slvler">@slvler</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-uk" summary="uk">uk</a></p></td>
+                <td><p><a href="statuses-lang-uk.md">Lang</a></p>
+                    <p><a href="statuses-actions-uk.md">Actions</a></p>
+                    <p><a href="statuses-attributes-uk.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-uk.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@MrAlKuz">@MrAlKuz</a></p>
+                    <p><a href="https://github.com/@Oleksandr-Moik">@Oleksandr-Moik</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-vi" summary="vi">vi</a></p></td>
+                <td><p><a href="statuses-lang-vi.md">Lang</a></p>
+                    <p><a href="statuses-actions-vi.md">Actions</a></p>
+                    <p><a href="statuses-attributes-vi.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-vi.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@dinhquochan">@dinhquochan</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-zh_CN" summary="zh_CN">zh_CN</a>
+                </p></td>
+                <td><p><a href="statuses-lang-zh_CN.md">Lang</a></p>
+                    <p><a href="statuses-actions-zh_CN.md">Actions</a></p>
+                    <p><a href="statuses-attributes-zh_CN.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-zh_CN.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@overtrue">@overtrue</a></p></td>
+            </tr>
+            <tr>
+                <td><p><a href="available-locales-list.topic#lists-available-locales-zh_HK" summary="zh_HK">zh_HK</a>
+                </p></td>
+                <td><p><a href="statuses-lang-zh_HK.md">Lang</a></p>
+                    <p><a href="statuses-actions-zh_HK.md">Actions</a></p>
+                    <p><a href="statuses-attributes-zh_HK.md">Attributes</a></p>
+                    <p><a href="statuses-http-statuses-zh_HK.md">HTTP Statuses</a></p></td>
+                <td><p><a href="https://github.com/@overtrue">@overtrue</a></p></td>
+            </tr>
+        </table>
+    </snippet>
+</topic>

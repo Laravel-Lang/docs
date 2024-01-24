@@ -9,6 +9,7 @@
         is-library="true"
 >
 
+    <toc-element topic="library-our-team.topic" />
     <toc-element topic="library-needs.topic" />
     <toc-element topic="library-lists.topic" />
     <toc-element topic="library-available-locales.topic" />
