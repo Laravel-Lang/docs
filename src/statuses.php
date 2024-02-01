@@ -2,10 +2,16 @@
 
 declare(strict_types=1);
 
+use DragonCode\Support\Facades\Helpers\Str;
 use LaravelLang\LocaleList\Locale;
 use LaravelLang\NativeLocaleNames\LocaleNames;
 
 require 'autoload.php';
+
+function imageLink(string $status): string
+{
+    return "<a href=\"statuses-:package:-:locale:.md\" summary=\":title:\"><img src=\"\$PROJECT_DIR\$/docs/images/locales/_:locale:.svg\" alt=\":locale:\"> :locale: $status</a>";
+}
 
 function moveMain(string $package, string $title): void
 {
@@ -26,8 +32,8 @@ function moveMain(string $package, string $title): void
                 sprintf('[%s&nbsp;❗](statuses/%s.md)', $locale, $locale),
             ],
             [
-                sprintf('<a href="statuses-%s-%s.md" summary="%s">%s ✔</a>', $package, $locale, $title, $locale),
-                sprintf('<a href="statuses-%s-%s.md" summary="%s">%s ❗</a>', $package, $locale, $title, $locale),
+                Str::replace(imageLink('✔'), [':locale:', ':title:', ':package:'], [$locale, $title, $package]),
+                Str::replace(imageLink('❗'), [':locale:', ':title:', ':package:'], [$locale, $title, $package]),
             ],
             $content
         );
