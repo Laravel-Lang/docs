@@ -36,7 +36,7 @@
         </p>
 
         <code-block lang="php">
-            LaravelLang\JsonFallbackHotfix\TranslationServiceProvider
+            LaravelLang\JsonFallbackHotfix\TranslationServiceProvider::class
         </code-block>
 
         <p>
@@ -44,7 +44,7 @@
         </p>
 
         <code-block lang="php">
-            LaravelLang\JsonFallback\TranslationServiceProvider
+            LaravelLang\JsonFallback\TranslationServiceProvider::class
         </code-block>
     </chapter>
 </topic>
