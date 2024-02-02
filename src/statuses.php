@@ -10,7 +10,7 @@ require 'autoload.php';
 
 function imageLink(string $status): string
 {
-    return "<a href=\"statuses-:package:-:locale:.md\" summary=\":title:\"><img src=\"\$PROJECT_DIR\$/docs/images/locales/_:locale:.svg\" alt=\":locale:\"> :locale: $status</a>";
+    return "<a href=\"statuses-:package:-:locale:.md\" summary=\":title:\"><img src=\"\$PROJECT_DIR\$/docs/images/locales/:locale:.svg\" alt=\":locale:\"> :locale: $status</a>";
 }
 
 function moveMain(string $package, string $title): void
