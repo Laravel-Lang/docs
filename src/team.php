@@ -207,7 +207,7 @@ foreach ($team as $locale => $peoples) {
 
     foreach ($peoples as $people) {
         $peopleLink = $dom->makeItem('a', '@' . $people, [
-            'href' => 'https://github.com/@' . $people,
+            'href' => 'https://github.com/' . $people,
         ]);
 
         $tablePeoples->appendChild($block($peopleLink));
