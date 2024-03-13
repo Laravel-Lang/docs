@@ -45,7 +45,7 @@
                     <td>Status</td>
                 </tr>
                 <tr>
-                    <td>10</td>
+                    <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^6.0</code></td>
                     <td>Publisher 16, Lang 13, 14, Actions 1, Attributes 2, HTTP Statuses 3, Locales 2, JSON Fallback 2</td>
@@ -100,7 +100,7 @@
                     <td>Status</td>
                 </tr>
                 <tr>
-                    <td>10</td>
+                    <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^16.0</code></td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
@@ -145,7 +145,7 @@
                     <td>Status</td>
                 </tr>
                 <tr>
-                    <td>10</td>
+                    <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td>14, 15, 16</td>
                     <td><code>^14.0</code></td>
@@ -199,7 +199,7 @@
                     <td>Status</td>
                 </tr>
                 <tr>
-                    <td>10</td>
+                    <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td>15, 16</td>
                     <td><code>^1.0</code></td>
@@ -220,7 +220,7 @@
                     <td>Status</td>
                 </tr>
                 <tr>
-                    <td>10</td>
+                    <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td>15, 16</td>
                     <td><code>^2.5</code></td>
@@ -255,7 +255,7 @@
                     <td>Status</td>
                 </tr>
                 <tr>
-                    <td>10</td>
+                    <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td>15, 16</td>
                     <td><code>^3.5</code></td>
@@ -290,16 +290,19 @@
 
             <table>
                 <tr>
+                    <td>Laravel</td>
                     <td>PHP</td>
                     <td>Package</td>
                     <td>Status</td>
                 </tr>
                 <tr>
+                    <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^2.0</code></td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
                 </tr>
                 <tr>
+                    <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^1.0</code></td>
                     <td><img src="%badge-not-supported%" alt="not supported" /></td>
@@ -385,16 +388,19 @@
 
             <table>
                 <tr>
+                    <td>Laravel</td>
                     <td>PHP</td>
                     <td>Package</td>
                     <td>Status</td>
                 </tr>
                 <tr>
+                    <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^2.0</code></td>
                     <td><img src="%badge-supported%" alt="supported" /></td>
                 </tr>
                 <tr>
+                    <td>6, 7, 8, 9, 10</td>
                     <td>7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3</td>
                     <td><code>^1.0</code></td>
                     <td><img src="%badge-not-supported%" alt="not supported" /></td>
