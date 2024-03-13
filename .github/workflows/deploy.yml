@@ -153,26 +153,67 @@ jobs:
                     path: ${{ env.ARTIFACT_INDEXES }}/${{ env.ALGOLIA_ARTIFACT }}
                     retention-days: 7
     
-#    robots:
-#        needs: build
-#        name: Generate robots.txt
-#        runs-on: ubuntu-latest
-#
-#        steps:
-#            -   name: Create robots.txt
-#                run: |
-#                    touch robots.txt
-#                    echo "User-Agent: *" >> robots.txt
-#                    echo "Disallow: " >> robots.txt
-#                    echo "Host: https://${{ env.DOMAIN_NAME }}" >> robots.txt
-#                    echo "Sitemap: https://${{ env.DOMAIN_NAME }}/sitemap.xml" >> robots.txt
-#
-#            -   name: Upload artifacts
-#                uses: actions/upload-artifact@v3
-#                with:
-#                    name: robots
-#                    path: robots.txt
-#                    retention-days: 7
+    sitemap:
+        needs: build
+        name: Generate sitemap
+        runs-on: ubuntu-latest
+
+        steps:
+            -   uses: actions/checkout@v4
+
+            -   name: Setup PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: ${{ matrix.php }}
+                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
+                    coverage: xdebug
+
+            -   name: Configure git
+                run: git config --global --add safe.directory /github/workspace
+
+            -   name: Install dependencies
+                run: composer update --no-progress --no-interaction
+
+            -   name: Download docs artifact
+                uses: actions/download-artifact@v3
+                with:
+                    name: docs
+
+            -   name: Unzip artifact
+                uses: montudor/action-zip@v1
+                with:
+                    args: unzip -qq ${{ env.ARTIFACT_DOCS }} -d dir
+
+            -   name: Generate sitemap
+                run: php src/sitemap.php
+
+            -   name: Upload artifacts
+                uses: actions/upload-artifact@v3
+                with:
+                    name: sitemap
+                    path: sitemap.xml
+                    retention-days: 7
+    
+    robots:
+        needs: build
+        name: Generate robots.txt
+        runs-on: ubuntu-latest
+
+        steps:
+            -   name: Create robots.txt
+                run: |
+                    touch robots.txt
+                    echo "User-Agent: *" >> robots.txt
+                    echo "Disallow: " >> robots.txt
+                    echo "Host: https://${{ env.DOMAIN_NAME }}" >> robots.txt
+                    echo "Sitemap: https://${{ env.DOMAIN_NAME }}/sitemap.xml" >> robots.txt
+
+            -   name: Upload artifacts
+                uses: actions/upload-artifact@v3
+                with:
+                    name: robots
+                    path: robots.txt
+                    retention-days: 7
 
     deploy-pages:
         environment:
@@ -181,7 +222,8 @@ jobs:
 
         needs:
             - test
-#            - robots
+            - sitemap
+            - robots
 
         name: Deploy to pages
         runs-on: ubuntu-latest
@@ -192,18 +234,23 @@ jobs:
                 with:
                     name: docs
 
-#            -   name: Download robots artifact
-#                uses: actions/download-artifact@v3
-#                with:
-#                    name: robots
+            -   name: Download sitemap artifact
+                uses: actions/download-artifact@v3
+                with:
+                    name: sitemap
+
+            -   name: Download robots artifact
+                uses: actions/download-artifact@v3
+                with:
+                    name: robots
 
             -   name: Unzip artifact
                 run: unzip -O UTF-8 -qq '${{ env.ARTIFACT_DOCS }}' -d dir
 
-#            -   name: Move sitemap and robots
-#                run: |
-#                    sudo mv sitemap.xml dir/sitemap.xml
-#                    sudo mv robots.txt dir/robots.txt
+            -   name: Move sitemap and robots
+                run: |
+                    sudo mv sitemap.xml dir/sitemap.xml
+                    sudo mv robots.txt dir/robots.txt
 
             -   name: Setup Pages
                 uses: actions/configure-pages@v4
