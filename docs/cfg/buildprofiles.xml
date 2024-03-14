@@ -26,6 +26,7 @@
             <noindex-content>false</noindex-content>
         </variables>
     </build-profile>
+    <sitemap priority="0.5" change-frequency="weekly"/>
     <footer>
         <link href="https://github.com/Laravel-Lang/common">
             GitHub
