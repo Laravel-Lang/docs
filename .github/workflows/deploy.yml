@@ -72,7 +72,7 @@ jobs:
                     docker-version: ${{ env.BUILDER_VERSION }}
 
             -   name: Upload artifacts
-                uses: actions/upload-artifact@v3
+                uses: actions/upload-artifact@v4
                 with:
                     name: docs
                     path: |
@@ -81,7 +81,7 @@ jobs:
                     retention-days: 7
 
             -   name: Upload search indexes
-                uses: actions/upload-artifact@v3
+                uses: actions/upload-artifact@v4
                 with:
                     name: ${{ env.ARTIFACT_INDEXES }}
                     path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
@@ -94,7 +94,7 @@ jobs:
 
         steps:
             -   name: Download docs artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: docs
                     path: artifacts
@@ -128,7 +128,7 @@ jobs:
                 run: composer update --no-progress --no-interaction
 
             -   name: Download search artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: ${{ env.ARTIFACT_INDEXES }}
 
@@ -147,7 +147,7 @@ jobs:
                     cd ..
 
             -   name: Update search indexes
-                uses: actions/upload-artifact@v3
+                uses: actions/upload-artifact@v4
                 with:
                     name: ${{ env.ARTIFACT_INDEXES_CLEARED }}
                     path: ${{ env.ARTIFACT_INDEXES }}/${{ env.ALGOLIA_ARTIFACT }}
@@ -168,7 +168,7 @@ jobs:
                     echo "Sitemap: https://${{ env.DOMAIN_NAME }}/sitemap.xml" >> robots.txt
 
             -   name: Upload artifacts
-                uses: actions/upload-artifact@v3
+                uses: actions/upload-artifact@v4
                 with:
                     name: robots
                     path: robots.txt
@@ -188,12 +188,12 @@ jobs:
 
         steps:
             -   name: Download docs artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: docs
 
             -   name: Download robots artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: robots
 
@@ -232,7 +232,7 @@ jobs:
 
         steps:
             -   name: Download search artifact
-                uses: actions/download-artifact@v3
+                uses: actions/download-artifact@v4
                 with:
                     name: ${{ env.ARTIFACT_INDEXES_CLEARED }}
 
