@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Release Notes" id="release-notes">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+        title="Release Notes" id="release-notes">
 
-    <show-structure depth="2" />
+    <show-structure depth="2"/>
 
     <chapter title="Versioning Scheme" id="versioning_scheme">
         <p>
             All our packages follow <a href="https://semver.org">Semantic Versioning</a>.
             Major project releases occur when adding some functionality that breaks backward compatibility or
             when removing support for
-            <a href="https://laravel.com/docs/releases">deprecated versions</a> of Laravel or its other first-party packages.
+            <a href="https://laravel.com/docs/releases">deprecated versions</a> of Laravel or its other first-party
+            packages.
             Minor and patch releases should never contain breaking changes.
         </p>
     </chapter>
@@ -25,7 +26,8 @@
         </p>
         <p>
             Since
-            <code>Lang</code> project packages are not expected to have code that affects the security of the project, we are
+            <code>Lang</code> project packages are not expected to have code that affects the security of the project,
+            we are
             basing this on the
             <a href="https://laravel.com/docs/releases#support-policy">scheduled maintenance completion dates</a>
             for Laravel projects and minor versions of <a href="https://www.php.net">PHP</a>.
@@ -35,7 +37,7 @@
     <chapter title="Version support" id="version_support">
         <chapter title="Common" id="common">
             <link-summary>Compatibility table for the %repository-title-common% package</link-summary>
-            
+
             <table>
                 <tr>
                     <td>Laravel</td>
@@ -48,43 +50,45 @@
                     <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^6.0</code></td>
-                    <td>Publisher 16, Lang 13, 14, Actions 1, Attributes 2, HTTP Statuses 3, Locales 2, JSON Fallback 2</td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td>Publisher 16, Lang 13, 14, 15, Actions 1, Attributes 2, HTTP Statuses 3, Locales 2, JSON Fallback
+                        2
+                    </td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
                 </tr>
                 <tr>
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^5.0</code></td>
                     <td>Publisher 15, Lang 13, Actions 1, Attributes 2, HTTP Statuses 3, Locales 1</td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>10</td>
                     <td>8.1, 8.2</td>
                     <td><code>^4.0</code></td>
                     <td>Publisher 14, Lang 13, Attributes 2, HTTP Statuses 3, Locales 1</td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>8, 9, 10</td>
                     <td>8.1, 8.2</td>
                     <td><code>^3.0</code></td>
                     <td>Publisher 14, Lang 12, Attributes 2, HTTP Statuses 3</td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>7, 8, 9</td>
                     <td>8.0, 8.1</td>
                     <td><code>^2.0</code></td>
                     <td>Publisher 13, Lang 10, Attributes 1, HTTP Statuses 2</td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>7, 8, 9</td>
                     <td>7.3, 7.4, 8.0, 8.1</td>
                     <td><code>^1.0</code></td>
                     <td>Publisher 12, Lang 10, Attributes 1, HTTP Statuses 2</td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
             </table>
         </chapter>
@@ -103,31 +107,31 @@
                     <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^16.0</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
                 </tr>
                 <tr>
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^15.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>8, 9, 10</td>
                     <td>8.1, 8.2</td>
                     <td><code>^14.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>7, 8, 9</td>
                     <td>8.0, 8.1</td>
                     <td><code>^13.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>7, 8, 9</td>
                     <td>7.3, 7.4, 8.0, 8.1</td>
                     <td><code>^12.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
             </table>
         </chapter>
@@ -145,44 +149,66 @@
                     <td>Status</td>
                 </tr>
                 <tr>
-                    <td>10, 11</td>
+                    <td>11</td>
+                    <td>8.2, 8.3</td>
+                    <td>16</td>
+                    <td><code>^15.0</code></td>
+                    <td>Breeze 2, Cashier Stripe 15, Fortify 1, Jetstream 5, Nova 4, Spark Paddle, Spark Stripe, UI 4
+                    </td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
+                </tr>
+                <tr>
+                    <td>10, 11*</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td>14, 15, 16</td>
                     <td><code>^14.0</code></td>
-                    <td>Breeze 1, 2, Cashier Stripe 13, 14, 15, Fortify 1, Jetstream 2, 3, 4, 5, Nova 4, Spark Paddle, Spark Stripe, UI 4</td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td>Breeze 1, 2, Cashier Stripe 13, 14, 15, Fortify 1, Jetstream 2, 3, 4, 5, Nova 4, Spark Paddle,
+                        Spark Stripe, UI 4
+                    </td>
+                    <td>
+                        <img src="%badge-supported%" alt="supported"/>
+                        <p>* Updates for Laravel 11 are not supported in this version.</p>
+                    </td>
                 </tr>
                 <tr>
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td>14, 15, 16</td>
                     <td><code>^13.0</code></td>
-                    <td>Breeze 1, Cashier Stripe 13, 14, Fortify 1, Jetstream 2, 3, 4, Nova 4, Spark Aurelius 11, 12, Spark Aurelius Mollie 2, Spark Paddle, Spark Stripe, UI 4</td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td>Breeze 1, Cashier Stripe 13, 14, Fortify 1, Jetstream 2, 3, 4, Nova 4, Spark Aurelius 11, 12,
+                        Spark Aurelius Mollie 2, Spark Paddle, Spark Stripe, UI 4
+                    </td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>9, 10</td>
                     <td>8.1, 8.2</td>
                     <td>14</td>
                     <td><code>^12.0</code></td>
-                    <td>Breeze 1, Cashier Stripe 12, 13, 14, Fortify 1, Jetstream 1, 2, 3, Nova 3, 4, Spark Aurelius 11, 12, Spark Aurelius Mollie 2, Spark Paddle, Spark Stripe, UI 3, 4</td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, 14, Fortify 1, Jetstream 1, 2, 3, Nova 3, 4, Spark Aurelius 11,
+                        12, Spark Aurelius Mollie 2, Spark Paddle, Spark Stripe, UI 3, 4
+                    </td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>6, 7, 8, 9, 10</td>
                     <td>8.1, 8.2</td>
                     <td>---</td>
                     <td><code>^11.0</code></td>
-                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, 2, Nova 3, 4, Spark Paddle, Spark Stripe, UI 1, 2, 3, 4</td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, 2, Nova 3, 4, Spark Paddle, Spark
+                        Stripe, UI 1, 2, 3, 4
+                    </td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>7, 8, 9</td>
                     <td>8.1, 8.2</td>
                     <td>---</td>
                     <td><code>^10.0</code></td>
-                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, Nova 3, Spark Paddle, Spark Stripe, UI 1, 2, 3</td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, Nova 3, Spark Paddle, Spark Stripe, UI
+                        1, 2, 3
+                    </td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
             </table>
         </chapter>
@@ -203,7 +229,7 @@
                     <td>8.1, 8.2, 8.3</td>
                     <td>15, 16</td>
                     <td><code>^1.0</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
                 </tr>
             </table>
         </chapter>
@@ -224,21 +250,21 @@
                     <td>8.1, 8.2, 8.3</td>
                     <td>15, 16</td>
                     <td><code>^2.5</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
                 </tr>
                 <tr>
                     <td>8, 9, 10, 11</td>
                     <td>8.1, 8.2</td>
                     <td>14</td>
                     <td><code>^2.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>7, 8, 9</td>
                     <td>7.3, 7.4, 8.0, 8.1</td>
                     <td>12, 13</td>
                     <td><code>^1.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
             </table>
         </chapter>
@@ -259,28 +285,28 @@
                     <td>8.1, 8.2, 8.3</td>
                     <td>15, 16</td>
                     <td><code>^3.5</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
                 </tr>
                 <tr>
                     <td>8, 9, 10</td>
                     <td>8.1, 8.2</td>
                     <td>14</td>
                     <td><code>^3.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>7, 8, 9</td>
                     <td>8.0, 8.1</td>
                     <td>13</td>
                     <td><code>^2.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
                 <tr>
                     <td>7, 8</td>
                     <td>7.3, 7.4, 8.0, 8.1</td>
                     <td>10</td>
                     <td><code>^1.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
             </table>
         </chapter>
@@ -299,13 +325,13 @@
                     <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^2.0</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
                 </tr>
                 <tr>
                     <td>10</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^1.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
             </table>
         </chapter>
@@ -322,7 +348,7 @@
                 <tr>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^1.0</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
                 </tr>
             </table>
         </chapter>
@@ -339,12 +365,12 @@
                 <tr>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^2.0</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
                 </tr>
                 <tr>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^1.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
             </table>
         </chapter>
@@ -361,7 +387,7 @@
                 <tr>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^1.0</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
                 </tr>
             </table>
         </chapter>
@@ -378,7 +404,7 @@
                 <tr>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^1.0</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
                 </tr>
             </table>
         </chapter>
@@ -397,13 +423,13 @@
                     <td>10, 11</td>
                     <td>8.1, 8.2, 8.3</td>
                     <td><code>^2.0</code></td>
-                    <td><img src="%badge-supported%" alt="supported" /></td>
+                    <td><img src="%badge-supported%" alt="supported"/></td>
                 </tr>
                 <tr>
                     <td>6, 7, 8, 9, 10</td>
                     <td>7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3</td>
                     <td><code>^1.0</code></td>
-                    <td><img src="%badge-not-supported%" alt="not supported" /></td>
+                    <td><img src="%badge-not-supported%" alt="not supported"/></td>
                 </tr>
             </table>
         </chapter>
