@@ -56,7 +56,7 @@ jobs:
                     php src/native_names.php
 
             -   name: Build documentation
-                uses: JetBrains/writerside-github-action@v5
+                uses: JetBrains/writerside-github-action@v4
                 with:
                     instance: ${{ env.INSTANCE }}
                     artifact: ${{ env.ARTIFACT }}
