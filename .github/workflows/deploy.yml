@@ -30,7 +30,7 @@ env:
 jobs:
     build:
         name: Build application
-        runs-on: ${{ secrets.RUNNER_NAME }}
+        runs-on: ubuntu-latest
 
         steps:
             -   uses: actions/checkout@v4
@@ -90,7 +90,7 @@ jobs:
     test:
         needs: build
         name: Testing
-        runs-on: ${{ secrets.RUNNER_NAME }}
+        runs-on: ubuntu-latest
 
         steps:
             -   name: Download docs artifact
@@ -108,7 +108,7 @@ jobs:
         needs: build
         
         name: Cleaning up search indexes
-        runs-on: ${{ secrets.RUNNER_NAME }}
+        runs-on: ubuntu-latest
 
         steps:
             -   uses: actions/checkout@v4
@@ -156,7 +156,7 @@ jobs:
     robots:
         needs: build
         name: Generate robots.txt
-        runs-on: ${{ secrets.RUNNER_NAME }}
+        runs-on: ubuntu-latest
 
         steps:
             -   name: Create robots.txt
@@ -184,7 +184,7 @@ jobs:
             - robots
 
         name: Deploy to pages
-        runs-on: ${{ secrets.RUNNER_NAME }}
+        runs-on: ubuntu-latest
 
         steps:
             -   name: Download docs artifact
@@ -224,7 +224,7 @@ jobs:
             - cleanup_algolia
         
         name: Deploy to Algolia
-        runs-on: ${{ secrets.RUNNER_NAME }}
+        runs-on: ubuntu-latest
         timeout-minutes: 3
 
         container:
