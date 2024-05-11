@@ -28,6 +28,11 @@
         <code-block lang="bash">
             %install-common%
         </code-block>
+        
+        <warning>
+            <p>When used in Laravel 10, you must manually specify the Lang package version to install:</p>
+            <code-block lang="bash">%install-lang%:^14.0</code-block>
+        </warning>
 
         <include from="library-descriptions.topic" element-id="now-use-update-locales" />
         <include from="library-needs.topic" element-id="library-needs-locales-facade" />
