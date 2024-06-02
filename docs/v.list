@@ -41,13 +41,12 @@
     <var name="package-lang" value="laravel-lang/lang" />
     <var name="package-locale-list" value="laravel-lang/locale-list" />
     <var name="package-locales" value="laravel-lang/locales" />
-    <var name="package-locales-namespace" value="LaravelLang\Locales\ServiceProvider" />
     <var name="package-native-country-names" value="laravel-lang/native-country-names" />
     <var name="package-native-currency-names" value="laravel-lang/native-currency-name" />
     <var name="package-native-locale-names" value="laravel-lang/native-locale-names" />
     <var name="package-publisher" value="laravel-lang/publisher" />
-    <var name="package-publisher-namespace" value="LaravelLang\Publisher\ServiceProvider" />
     <var name="package-status-generator" value="laravel-lang/status-generator" />
+    <var name="package-vendor-tag" value="localization" />
     <var name="repository-assign-bugs" value="andrey-helldar" />
     <var name="repository-bugs" value="common" />
     <var name="repository-label-actions" value="actions" />
