@@ -1,75 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Configuration" id="configuration">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+        title="Configuration" id="configuration">
 
     <link-summary>Information on setting up %instance% packages</link-summary>
     <card-summary>Information on setting up %instance% packages</card-summary>
     <web-summary>Information on setting up %instance% packages</web-summary>
 
-    <show-structure depth="2" />
+    <show-structure depth="2"/>
 
     <p>
         Optionally, you can publish the config file with:
     </p>
     <code-block lang="bash">
-        php artisan vendor:publish --provider="%package-publisher-namespace%"
+        php artisan vendor:publish --tag="%package-vendor-tag%"
     </code-block>
     <p>
         This is the contents of the published <code>%config-filename%</code> file:
     </p>
     <code-block
-        lang="php"
-        src="https://raw.githubusercontent.com/Laravel-Lang/publisher/main/config/public.php"
-        include-lines="18-"
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
+            include-lines="7-"
     />
     <chapter title="Aliases" id="aliases">
-        <warning title="Note">
-            <p>
-                Please note that this is a different configuration file.
-            </p>
-            <p>
-                The
-                <a href="https://laravel.com">Laravel Framework </a>
-                does not allow configuration files to be merged on the fly when publishing, so this process must be
-                done manually.
-            </p>
-        </warning>
         <p>
-            If you need to use locale <a href="packages-locales.topic">aliases</a>, you can add the <code>aliases</code>
-            key to the previously published configuration file (<code>%config-filename%</code>).
-        </p>
-        <p>
-            Or you can publish if you haven’t done so before:
-        </p>
-        <code-block lang="bash">
-            php artisan vendor:publish --provider="%package-locales-namespace%"
-        </code-block>
-        <p>
-            This is the contents of the published <code>%config-filename%</code> file:
+            If you need to use locale <a href="packages-locales.topic">aliases</a>, you can change this setting.
         </p>
         <code-block
-            lang="php"
-            src="https://raw.githubusercontent.com/Laravel-Lang/locales/main/config/public.php"
-            include-lines="18-"
+                lang="php"
+                src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
+                include-lines="39-42"
         />
-        <tip>
-            <p>
-                Why such difficulties?
-            </p>
-            <p>
-                We don't want to turn the client's application into a garbage dump with many different files
-                like <code>config/publisher.php</code>, <code>config/locales.php</code>,
-                <code>config/laravel-lang.php</code>, etc.
-            </p>
-            <p>
-                Therefore, we decided to use one configuration file for all our packages - this is
-                <code>%config-filename%</code>.
-            </p>
-        </tip>
     </chapter>
     <chapter title="Alignment" id="alignment">
         <p>
@@ -80,19 +45,19 @@
         <p>
             Your file example:
         </p>
-        <code-block lang="php" src="configuration-alignment-auth-before.php" />
+        <code-block lang="php" src="configuration-alignment-auth-before.php"/>
         <p>
             An updated file like this:
         </p>
-        <code-block lang="php" src="configuration-alignment-auth-after.php" />
+        <code-block lang="php" src="configuration-alignment-auth-after.php"/>
         <p>
             and example of <code>validation.php</code> file:
         </p>
-        <code-block lang="php" src="configuration-alignment-validation-before.php" />
+        <code-block lang="php" src="configuration-alignment-validation-before.php"/>
         <p>
             This is what it will look like after the update:
         </p>
-        <code-block lang="php" src="configuration-alignment-validation-after.php" />
+        <code-block lang="php" src="configuration-alignment-validation-after.php"/>
     </chapter>
     <chapter title="Smart Punctuation" id="smart_punctuation">
         <p>
@@ -102,18 +67,18 @@
         <p>
             For example:
         </p>
-        <code-block lang="json" src="smart-punctuation-before.json" />
+        <code-block lang="json" src="smart-punctuation-before.json"/>
         <p>
             Will result in files:
         </p>
-        <code-block lang="json" src="smart-punctuation-after.json" />
+        <code-block lang="json" src="smart-punctuation-after.json"/>
         <p>
             This option is enabled in the <code>%config-filename%</code> file:
         </p>
         <code-block
-            lang="php"
-            src="https://raw.githubusercontent.com/Laravel-Lang/publisher/main/config/public.php"
-            include-lines="58-97"
+                lang="php"
+                src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
+                include-lines="55-94"
         />
         <p>
             You can also set different rules for any localization.
