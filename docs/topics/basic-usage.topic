@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Basic Usage" id="basic-usage">
+
+    <link-summary>Information on quick installation and use of packages</link-summary>
+    <card-summary>Information on quick installation and use of packages</card-summary>
+    <web-summary>Information on quick installation and use of packages</web-summary>
+
+    <chapter title="Installation" id="installation">
+        <p>
+            Install the package using the console command:
+        </p>
+        <code-block lang="bash">
+            %install-common%
+        </code-block>
+    </chapter>
+
+    <chapter title="Add locales" id="add_locales">
+        <include from="library-descriptions.topic" element-id="now-use-add-locales"/>
+    </chapter>
+
+    <chapter title="Update locales" id="update_locales">
+        <include from="library-descriptions.topic" element-id="now-use-update-locales"/>
+    </chapter>
+
+</topic>

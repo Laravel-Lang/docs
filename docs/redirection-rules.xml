@@ -14,4 +14,60 @@
         <description>Created after removal of "Contributing" from Laravel Lang</description>
         <accepts>contributing.html</accepts>
     </rule>
+    <rule id="6ade0ded">
+        <description>Created after removal of "Common" from Laravel Lang</description>
+        <accepts>packages-common.html</accepts>
+    </rule>
+    <rule id="7b3fa199">
+        <description>Created after removal of "Lang" from Laravel Lang</description>
+        <accepts>packages-lang.html</accepts>
+    </rule>
+    <rule id="3601df46">
+        <description>Created after removal of "Actions" from Laravel Lang</description>
+        <accepts>packages-actions.html</accepts>
+    </rule>
+    <rule id="78cc3eb6">
+        <description>Created after removal of "Attributes" from Laravel Lang</description>
+        <accepts>packages-attributes.html</accepts>
+    </rule>
+    <rule id="5dbe53ab">
+        <description>Created after removal of "HTTP Statuses" from Laravel Lang</description>
+        <accepts>packages-http-statuses.html</accepts>
+    </rule>
+    <rule id="5741bcb1">
+        <description>Created after removal of "Locales" from Laravel Lang</description>
+        <accepts>packages-locales.html</accepts>
+    </rule>
+    <rule id="369b1ad5">
+        <description>Created after removal of "Locale List" from Laravel Lang</description>
+        <accepts>packages-locale-list.html</accepts>
+    </rule>
+    <rule id="4347dbc0">
+        <description>Created after removal of "Native Locale Names" from Laravel Lang</description>
+        <accepts>packages-native-locale-names.html</accepts>
+    </rule>
+    <rule id="700aadd">
+        <description>Created after removal of "Native Country Names" from Laravel Lang</description>
+        <accepts>packages-native-country-names.html</accepts>
+    </rule>
+    <rule id="47773ac">
+        <description>Created after removal of "Native Currency Names" from Laravel Lang</description>
+        <accepts>packages-native-currency-names.html</accepts>
+    </rule>
+    <rule id="346feaa3">
+        <description>Created after removal of "JSON Fallback" from Laravel Lang</description>
+        <accepts>packages-json-fallback.html</accepts>
+    </rule>
+    <rule id="145c8d1b">
+        <description>Created after removal of "Publisher" from Laravel Lang</description>
+        <accepts>packages-publisher.html</accepts>
+    </rule>
+    <rule id="50e5ef4c">
+        <description>Created after removal of "Extras" from Laravel Lang</description>
+        <accepts>extras.html</accepts>
+    </rule>
+    <rule id="53f6ef0f">
+        <description>Created after removal of "delete-this-topic" from Laravel Lang</description>
+        <accepts>delete-this-topic.html</accepts>
+    </rule>
 </rules>

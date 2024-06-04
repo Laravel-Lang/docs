@@ -9,6 +9,7 @@
     <var name="badge-supported" value="badge-supported.svg" />
     <var name="command-add" value="php artisan lang:add" />
     <var name="command-add-empty" value="php artisan lang:add <locale>" />
+    <var name="command-add-simple" value="lang:add" />
     <var name="command-base" value="php artisan lang:<command>" />
     <var name="command-remove" value="php artisan lang:rm" />
     <var name="command-remove-empty" value="php artisan lang:rm <locale>" />

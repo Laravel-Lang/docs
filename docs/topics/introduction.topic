@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Introduction" id="introduction">
+
+    <title instance="laravel-lang">🗺️ %instance%</title>
+
+    <img src="https://preview.dragon-code.pro/laravel-lang/localization-app.svg?brand=laravel&amp;preposition=with&amp;mode=dark"
+         alt="%instance%"
+    />
+
+    <p>
+        <format style="bold">
+            Controlling the localization of an app is super easy 😎
+        </format>
+    </p>
+
+    <chapter title="Support Projects" id="support_projects">
+        <include from="library-lists.topic" element-id="lists-laravel-projects"/>
+
+        <p>
+            And these are not all the projects that the
+            <format style="bold">%team-name%</format>
+            supports 😎!
+        </p>
+    </chapter>
+
+    <seealso style="cards">
+        <category ref="getting-started">
+            <a href="installation.topic"/>
+            <a href="basic-usage.topic"/>
+        </category>
+    </seealso>
+</topic>

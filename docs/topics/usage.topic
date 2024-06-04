@@ -22,9 +22,15 @@
         <li>
             <a href="usage-native-locales.topic" />
             <list>
-                <li><a href="packages-native-locale-names.topic" /></li>
-                <li><a href="packages-native-country-names.topic" /></li>
-                <li><a href="packages-native-currency-names.topic" /></li>
+                <li><a href="packages-native-locale-names.topic" instance="!laravel-lang"/>
+                    <if instance="laravel-lang">Native Locale Names</if>
+                </li>
+                <li><a href="packages-native-country-names.topic" instance="!laravel-lang"/>
+                    <if instance="laravel-lang">Native Country Names</if>
+                </li>
+                <li><a href="packages-native-currency-names.topic" instance="!laravel-lang"/>
+                    <if instance="laravel-lang">Native Currency Names</if>
+                </li>
             </list>
         </li>
     </list>

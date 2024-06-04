@@ -28,7 +28,9 @@
     />
     <chapter title="Aliases" id="aliases">
         <p>
-            If you need to use locale <a href="packages-locales.topic">aliases</a>, you can change this setting.
+            If you need to use locale <a href="packages-locales.topic" instance="!laravel-lang">aliases</a>
+            <if instance="laravel-lang">aliases</if>
+            , you can change this setting.
         </p>
         <code-block
                 lang="php"

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Getting Started" id="getting-started">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+        title="Getting Started" id="getting-started">
 
     <list>
-        <li><a href="installation.topic" /></li>
-        <li><a href="configuration.topic" /></li>
-        <li><a href="configuration.topic#aliases" /></li>
-        <li><a href="configuration.topic#alignment" /></li>
-        <li><a href="configuration.topic#smart_punctuation" /></li>
+        <li><a href="introduction.topic"/></li>
+        <li><a href="installation.topic"/></li>
+        <li><a href="basic-usage.topic"/></li>
+        <li><a href="compatibility.topic"/></li>
     </list>
 </topic>
