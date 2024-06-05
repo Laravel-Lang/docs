@@ -6,10 +6,23 @@
         xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
         title="Getting Started" id="getting-started">
 
-    <list>
-        <li><a href="introduction.topic"/></li>
-        <li><a href="installation.topic"/></li>
-        <li><a href="basic-usage.topic"/></li>
-        <li><a href="compatibility.topic"/></li>
-    </list>
+    <img src="https://preview.dragon-code.pro/laravel-lang/localization-app.svg?brand=laravel&amp;preposition=with&amp;mode=dark"
+         alt="%instance%"
+    />
+
+    <p>
+        <format style="bold">
+            Controlling the localization of an app is super easy 😎
+        </format>
+    </p>
+
+    <chapter title="Support Projects" id="support_projects">
+        <include from="library-lists.topic" element-id="lists-laravel-projects"/>
+
+        <p>
+            And these are not all the projects that the
+            <format style="bold">%team-name%</format>
+            supports 😎!
+        </p>
+    </chapter>
 </topic>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="JSON Fallback" id="package-json-fallback">
+
+    <show-structure depth="2"/>
+
+    <include from="library-lists.topic" element-id="json-fallback-doesnt-need"/>
+
+    <chapter title="Installation" id="installation">
+        <note>
+            The compatibility table can be viewed <a href="#compatibility">here</a>.
+        </note>
+
+        <include from="library-lists.topic" element-id="json-fallback-doesnt-allow"/>
+
+        <p>
+            To install, run the console command:
+        </p>
+
+        <code-block lang="bash">
+            %install-json-fallback%
+        </code-block>
+    </chapter>
+
+    <chapter title="Usage" id="usage">
+        <p>
+            After installing, you need to add a link to the service provider in the <code>providers</code> section of
+            the <code>config/app.php</code> settings file:
+        </p>
+
+        <code-block src="json-fallback-install-laravel-10.php" lang="php"/>
+
+        <p>
+            Now JSON keys will correctly output the value based on the selected localization.
+        </p>
+    </chapter>
+
+    <chapter title="Compatibility" id="compatibility">
+        <link-summary>Compatibility table for the %repository-title-json-fallback% package</link-summary>
+
+        <table>
+            <tr>
+                <td>Laravel</td>
+                <td>PHP</td>
+                <td>Package</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>10, 11</td>
+                <td>8.1, 8.2, 8.3</td>
+                <td><code>^2.0</code></td>
+                <td><img src="%badge-supported%" alt="supported"/></td>
+            </tr>
+            <tr>
+                <td>6, 7, 8, 9, 10</td>
+                <td>7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3</td>
+                <td><code>^1.0</code></td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+        </table>
+    </chapter>
+</topic>

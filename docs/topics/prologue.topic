@@ -6,40 +6,13 @@
         xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
         title="Prologue" id="prologue">
 
-    <p>
-        <img
-            src="https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&amp;preposition=with&amp;mode=dark"
-            alt="localize your app"
-        />
-    </p>
-    <p>
-        <format style="bold">%instance%</format>
-        projects allow you to easily connect translation packages to your
-        project that serve different tasks.
-    </p>
-
-    <chapter title="Support Projects" id="support_projects">
-        <include from="library-lists.topic" element-id="lists-laravel-projects" />
-
-        <p>
-            And these are not all the projects that the
-            <format style="bold">%team-name%</format>
-            supports 😎!
-        </p>
-    </chapter>
-
-    <p>
-        Open source software is used in all projects we deliver.
-        Laravel, Nginx, Ubuntu are just a few of the free pieces of software we use every single day.
-        For this, we are very grateful. When we feel we have solved a problem in a way that can help other developers, we
-        release our code as open source software on GitHub.
-    </p>
-
-    <seealso style="cards">
-        <category ref="getting-started">
-            <a href="installation.topic" />
-            <a href="usage-add-locales.topic" />
-            <a href="usage-update-locales.topic" />
-        </category>
-    </seealso>
+    <list>
+        <li><a href="release-notes.topic"/></li>
+        <li><a href="upgrade-guide.topic"/></li>
+        <li><a href="security-policy.topic"/></li>
+        <li><a href="questions-and-issues.topic"/></li>
+        <li><a href="contributions.topic"/></li>
+        <li><a href="our-team.topic"/></li>
+        <li><a href="license.topic"/></li>
+    </list>
 </topic>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Native Currency Names" id="package-native-currency-names">
+
+    <show-structure depth="2"/>
+    
+    <tip>
+        This package contains a list of localized currency names.
+    </tip>
+
+    <chapter title="Installation" id="installation">
+        <note>
+            The compatibility table can be viewed <a href="#compatibility">here</a>.
+        </note>
+
+        <p>
+            To install, run the console command:
+        </p>
+
+        <code-block lang="bash">
+            %install-native-currency-names%
+        </code-block>
+    </chapter>
+
+    <chapter title="Usage" id="usage">
+
+    </chapter>
+
+    <chapter title="Compatibility" id="compatibility">
+        <link-summary>Compatibility table for the %repository-title-native-currency-names% package</link-summary>
+
+        <table>
+            <tr>
+                <td>PHP</td>
+                <td>Package</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>8.1, 8.2, 8.3</td>
+                <td><code>^1.0</code></td>
+                <td><img src="%badge-supported%" alt="supported"/></td>
+            </tr>
+        </table>
+    </chapter>
+</topic>

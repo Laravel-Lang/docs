@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="To 2 from 1" id="upgrade-json-fallback-to-2-from-1">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+        title="To 2 from 1" id="upgrade-json-fallback-to-2-from-1">
 
     <link-summary>Information on upgrading %repository-title-json-fallback% to version 2 from 1</link-summary>
     <card-summary>Information on upgrading %repository-title-json-fallback% to version 2 from 1</card-summary>
@@ -27,7 +27,7 @@
             Next, run the update dependency console command:
         </p>
 
-        <include from="library-commands.topic" element-id="composer_update" />
+        <include from="library-commands.topic" element-id="composer_update"/>
     </chapter>
 
     <chapter title="Change namespace" id="change_namespace">

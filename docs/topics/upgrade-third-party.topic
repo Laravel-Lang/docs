@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="From third-party packages" id="upgrade-third-party">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+        title="From third-party packages" id="upgrade-third-party">
 
     <link-summary>Information on migrating from third party packages to %repository-title-common%</link-summary>
     <card-summary>Information on migrating from third party packages to %repository-title-common%</card-summary>
@@ -22,12 +22,12 @@
 
     <p>
         After that, check the
-        <a href="release-notes.topic#common">compatibility table</a>
+        <a href="package-common.topic#compatibility">compatibility table</a>
         for the version you need and install it:
     </p>
 
     <code-block lang="bash">
-        %install-common%:^%version-common-latest%
+        %install-common%
     </code-block>
 
     <p>
@@ -37,6 +37,7 @@
     <code-block lang="bash">
         rm -f config/laravel-lang.php
         rm -f config/lang-publisher.php
+        rm -f config/localization.php
     </code-block>
 
     <p>

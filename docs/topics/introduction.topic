@@ -26,11 +26,4 @@
             supports 😎!
         </p>
     </chapter>
-
-    <seealso style="cards">
-        <category ref="getting-started">
-            <a href="installation.topic"/>
-            <a href="basic-usage.topic"/>
-        </category>
-    </seealso>
 </topic>

@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Upgrade Guide" id="upgrade-guide">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+        title="Upgrade Guide" id="upgrade-guide">
 
     <list>
         <li>
-            <a href="upgrade-publisher.topic" />
+            <a href="upgrade-common.topic"/>
             <list>
-                <li><a href="upgrade-publisher-to-16-from-15.topic" /></li>
-                <li><a href="upgrade-publisher-to-15-from-14.topic" /></li>
+                <li><a href="upgrade-common-to-6-from-5.topic"/></li>
+                <li><a href="upgrade-common-to-5-from-4.topic"/></li>
             </list>
         </li>
         <li>
-            <if instance="laravel-lang">From laravel-lang/*</if>
+            <a href="upgrade-publisher.topic"/>
+            <list>
+                <li><a href="upgrade-publisher-to-16-from-15.topic"/></li>
+                <li><a href="upgrade-publisher-to-15-from-14.topic"/></li>
+            </list>
+        </li>
+        <li>
+            <a href="upgrade-json-fallback.topic"/>
+            <list>
+                <li><a href="upgrade-json-fallback-to-2-from-1.topic"/></li>
+            </list>
+        </li>
+        <li>
+            <a href="upgrade-third-party.topic"/>
         </li>
     </list>
 </topic>
