@@ -35,7 +35,6 @@
                      accepts-web-file-names-ref="redirect_to_introduction"/>
         <toc-element topic="basic-usage.topic"/>
         <toc-element topic="configuration.topic"/>
-        <toc-element topic="available-locales-list.topic"/>
     </toc-element>
     <toc-element topic="usage.topic">
         <toc-element topic="manage-locales.topic">
@@ -45,28 +44,22 @@
             <toc-element toc-title="Remove" topic="usage-remove-locales.topic"/>
         </toc-element>
         <toc-element topic="usage-facade.topic"/>
-        <toc-element topic="usage-aliases.topic"/>
-        <toc-element topic="usage-list-of-locales.topic"/>
-        <toc-element topic="usage-native-locales.topic">
-            <toc-element topic="usage-native-locale-names.topic"/>
-            <toc-element topic="usage-native-country-names.topic"/>
-            <toc-element topic="usage-native-currency-names.topic"/>
-        </toc-element>
+        <toc-element topic="available-locales-list.topic"/>
     </toc-element>
     <toc-element topic="packages.topic">
-        <toc-element topic="package-publisher.topic"/>
-        <toc-element topic="package-common.topic"/>
-        <toc-element topic="package-lang.topic"/>
-        <toc-element topic="package-actions.topic"/>
-        <toc-element topic="package-attributes.topic"/>
-        <toc-element topic="package-http-statuses.topic"/>
-        <toc-element topic="package-native-locale-names.topic"/>
-        <toc-element topic="package-native-country-names.topic"/>
-        <toc-element topic="package-native-currency-names.topic"/>
-        <toc-element topic="package-locales.topic">
+        <toc-element topic="packages-common.topic"/>
+        <toc-element topic="packages-lang.topic"/>
+        <toc-element topic="packages-actions.topic"/>
+        <toc-element topic="packages-attributes.topic"/>
+        <toc-element topic="packages-http-statuses.topic"/>
+        <toc-element topic="packages-native-locale-names.topic"/>
+        <toc-element topic="packages-native-country-names.topic"/>
+        <toc-element topic="packages-native-currency-names.topic"/>
+        <toc-element topic="packages-publisher.topic"/>
+        <toc-element topic="packages-locales.topic">
         </toc-element>
-        <toc-element topic="package-locale-list.topic"/>
-        <toc-element topic="package-json-fallback.topic"/>
+        <toc-element topic="packages-locale-list.topic"/>
+        <toc-element topic="packages-json-fallback.topic"/>
     </toc-element>
     <toc-element topic="plugins.topic">
         <toc-element topic="plugins-installation.topic"/>

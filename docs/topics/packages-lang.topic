@@ -3,10 +3,15 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Lang" id="package-lang">
+       title="Lang" id="packages-lang" help-id="package-lang">
 
     <show-structure depth="2"/>
 
+    <link-summary>Information on using the %repository-title-lang% package</link-summary>
+    <card-summary>Information on using the %repository-title-lang% package</card-summary>
+    <web-summary>Information on using the %repository-title-lang% package</web-summary>
+
+    <a href="packages-common.topic">foo bar baz</a>
     <tip>
         <p>
             This package contains translations of all official keys from Laravel projects:
@@ -17,6 +22,8 @@
     </tip>
 
     <chapter title="Installation" id="installation">
+        <link-summary>Installation information for the %repository-title-lang% package</link-summary>
+
         <note>
             The compatibility table can be viewed <a href="#compatibility">here</a>.
         </note>
@@ -31,6 +38,8 @@
     </chapter>
 
     <chapter title="Usage" id="usage">
+        <link-summary>Usage information for the %repository-title-lang% package</link-summary>
+
         <include from="library-descriptions.topic" element-id="now-use-update-locales"/>
         <include from="library-needs.topic" element-id="library-needs-locales-facade"/>
     </chapter>

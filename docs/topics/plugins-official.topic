@@ -17,7 +17,7 @@
         </tr>
         <tr>
             <td>
-                <a href="packages-lang.topic" instance="!laravel-lang">%package-lang%</a>
+                <a href="packages-lang.topic">%package-lang%</a>
                 <if instance="laravel-lang">%package-lang%</if>
             </td>
             <td>
@@ -26,7 +26,7 @@
         </tr>
         <tr>
             <td>
-                <a href="packages-actions.topic" instance="!laravel-lang">%package-actions%</a>
+                <a href="packages-actions.topic">%package-actions%</a>
                 <if instance="laravel-lang">%package-actions%</if>
             </td>
             <td>
@@ -35,7 +35,7 @@
         </tr>
         <tr>
             <td>
-                <a href="packages-attributes.topic" instance="!laravel-lang">%package-attributes%</a>
+                <a href="packages-attributes.topic">%package-attributes%</a>
                 <if instance="laravel-lang">%package-attributes%</if>
             </td>
             <td>
@@ -44,7 +44,7 @@
         </tr>
         <tr>
             <td>
-                <a href="packages-http-statuses.topic" instance="!laravel-lang">%package-http-statuses%</a>
+                <a href="packages-http-statuses.topic">%package-http-statuses%</a>
                 <if instance="laravel-lang">%package-http-statuses%</if>
             </td>
             <td>

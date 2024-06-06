@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Native Country Names" id="packages-native-country-names" help-id="package-native-country-names">
+
+    <show-structure depth="2"/>
+
+    <link-summary>Information on using the %repository-title-native-country-names% package</link-summary>
+    <card-summary>Information on using the %repository-title-native-country-names% package</card-summary>
+    <web-summary>Information on using the %repository-title-native-country-names% package</web-summary>
+
+    <tip>
+        This package contains a list of localized country names.
+    </tip>
+
+    <chapter title="Installation" id="installation">
+        <link-summary>Installation information for the %repository-title-native-country-names% package</link-summary>
+
+        <note>
+            The compatibility table can be viewed <a href="#compatibility">here</a>.
+        </note>
+
+        <p>
+            To install, run the console command:
+        </p>
+
+        <code-block lang="bash">
+            %install-native-country-names%
+        </code-block>
+    </chapter>
+
+    <chapter title="Usage" id="usage">
+        <link-summary>Usage information for the %repository-title-native-country-names% package</link-summary>
+
+        <chapter title="Localized Names" id="localized_names">
+            <code-block lang="php">
+                use LaravelLang\NativeCountryNames\CountryNames;
+                use LaravelLang\LocaleList\Locale;
+
+                return CountryNames::get('bn');
+                // or
+                return CountryNames::get(Locale::Bengali)
+            </code-block>
+
+            <p>
+                Result:
+            </p>
+
+            <code-block lang="php" src="usage-native-country-names-localized-names.txt"/>
+        </chapter>
+
+        <chapter title="Native Names" id="native_names">
+            <p>
+                You can also get a list of localized names if you call the
+                <code>get</code> method without passing parameters.
+                The same thing will happen if you pass an incorrect or empty value to the parameter.
+            </p>
+
+            <code-block lang="php">
+                use LaravelLang\NativeCountryNames\CountryNames;
+
+                return CountryNames::get();
+                // or
+                return CountryNames::get('');
+                // or
+                return CountryNames::get(null);
+                // or
+                return CountryNames::get('foo');
+            </code-block>
+
+            <p>
+                Result:
+            </p>
+
+            <code-block lang="php" src="usage-native-country-names-native-names.txt"/>
+        </chapter>
+
+        <chapter title="Sorting" id="sorting">
+            <p>
+                To get the result sorted by key or value, pass <code>SortBy</code> to the enum parameter.
+            </p>
+            <p>
+                By default, sorting by values is applied.
+            </p>
+
+            <chapter title="Sort by keys" id="sort_by_keys">
+                <code-block lang="php">
+                    use LaravelLang\NativeCountryNames\CountryNames;
+                    use LaravelLang\NativeCountryNames\Enums\SortBy;
+
+                    return CountryNames::get('en', SortBy::Key);
+                </code-block>
+
+                <p>
+                    Result:
+                </p>
+
+                <code-block lang="php" src="usage-native-country-names-sort-by-keys.txt"/>
+
+            </chapter>
+
+            <chapter title="Sort by values" id="sort_by_values">
+                <code-block lang="php">
+                    use LaravelLang\NativeCountryNames\CountryNames;
+                    use LaravelLang\NativeCountryNames\Enums\SortBy;
+
+                    return CountryNames::get('en', SortBy::Value);
+                    // or
+                    return CountryNames::get('en');
+                </code-block>
+
+                <p>
+                    Result:
+                </p>
+                <code-block lang="php" src="usage-native-country-names-sort-by-values.txt"/>
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Compatibility" id="compatibility">
+        <link-summary>Compatibility table for the %repository-title-native-country-names% package</link-summary>
+
+        <table>
+            <tr>
+                <td>PHP</td>
+                <td>Package</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>8.1, 8.2, 8.3</td>
+                <td><code>^1.0</code></td>
+                <td><img src="%badge-supported%" alt="supported"/></td>
+            </tr>
+        </table>
+    </chapter>
+</topic>

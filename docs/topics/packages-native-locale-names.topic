@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Native Locale Names" id="packages-native-locale-names" help-id="package-native-locale-names">
+
+    <show-structure depth="2"/>
+
+    <link-summary>Information on using the %repository-title-native-locale-names% package</link-summary>
+    <card-summary>Information on using the %repository-title-native-locale-names% package</card-summary>
+    <web-summary>Information on using the %repository-title-native-locale-names% package</web-summary>
+
+    <tip>
+        This package contains a list of localized locale names.
+    </tip>
+
+    <chapter title="Installation" id="installation">
+        <link-summary>Installation information for the %repository-title-native-locale-names% package</link-summary>
+
+        <note>
+            The compatibility table can be viewed <a href="#compatibility">here</a>.
+        </note>
+
+        <p>
+            To install, run the console command:
+        </p>
+
+        <code-block lang="bash">
+            %install-native-locale-names%
+        </code-block>
+    </chapter>
+
+    <chapter title="Usage" id="usage">
+        <link-summary>Usage information for the %repository-title-native-locale-names% package</link-summary>
+
+        <chapter title="Localized Names" id="localized_names">
+            <code-block lang="php">
+                use LaravelLang\NativeLocaleNames\LocaleNames;
+                use LaravelLang\LocaleList\Locale;
+
+                return LocaleNames::get('bn');
+                // or
+                return LocaleNames::get(Locale::Bengali)
+            </code-block>
+
+            <p>
+                Result:
+            </p>
+
+            <code-block lang="php" src="usage-native-locale-names-localized-names.txt"/>
+        </chapter>
+
+        <chapter title="Native Names" id="native_names">
+            <p>
+                You can also get a list of localized names if you call the
+                <code>get</code> method without passing parameters.
+                The same thing will happen if you pass an incorrect or empty value to the parameter.
+            </p>
+
+            <code-block lang="php">
+                use LaravelLang\NativeLocaleNames\LocaleNames;
+
+                return LocaleNames::get();
+                // or
+                return LocaleNames::get('');
+                // or
+                return LocaleNames::get(null);
+                // or
+                return LocaleNames::get('foo');
+            </code-block>
+
+            <p>
+                Result:
+            </p>
+
+            <code-block lang="php" src="usage-native-locale-names-native-names.txt"/>
+        </chapter>
+
+        <chapter title="Sorting" id="sorting">
+            <p>
+                To get the result sorted by key or value, pass <code>SortBy</code> to the enum parameter.
+            </p>
+            <p>
+                By default, sorting by values is applied.
+            </p>
+
+            <chapter title="Sort by keys" id="sort_by_keys">
+                <code-block lang="php">
+                    use LaravelLang\NativeLocaleNames\LocaleNames;
+                    use LaravelLang\NativeLocaleNames\Enums\SortBy;
+
+                    return LocaleNames::get('en', SortBy::Key);
+                </code-block>
+
+                <p>
+                    Result:
+                </p>
+
+                <code-block lang="php" src="usage-native-locale-names-sort-by-keys.txt"/>
+            </chapter>
+
+            <chapter title="Sort by values" id="sort_by_values">
+                <code-block lang="php">
+                    use LaravelLang\NativeLocaleNames\LocaleNames;
+                    use LaravelLang\NativeLocaleNames\Enums\SortBy;
+
+                    return LocaleNames::get('en', SortBy::Value);
+                    // or
+                    return LocaleNames::get('en');
+                </code-block>
+
+                <p>
+                    Result:
+                </p>
+
+                <code-block lang="php" src="usage-native-locale-names-sort-by-values.txt"/>
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Compatibility" id="compatibility">
+        <link-summary>Compatibility table for the %repository-title-native-locale-names% package</link-summary>
+
+        <table>
+            <tr>
+                <td>PHP</td>
+                <td>Package</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>8.1, 8.2, 8.3</td>
+                <td><code>^2.0</code></td>
+                <td><img src="%badge-supported%" alt="supported"/></td>
+            </tr>
+            <tr>
+                <td>8.1, 8.2, 8.3</td>
+                <td><code>^1.0</code></td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+        </table>
+    </chapter>
+</topic>

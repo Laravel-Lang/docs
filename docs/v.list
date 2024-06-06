@@ -91,4 +91,5 @@
     <var name="team-name" value="Laravel-Lang Team" />
     <var name="version-common-latest" value="6.0" />
     <var name="year" value="2024" />
+    <var name="locales-count" value="126" />
 </vars>

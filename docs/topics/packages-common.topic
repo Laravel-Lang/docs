@@ -3,11 +3,17 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Common" id="package-common">
+       title="Common" id="packages-common" help-id="package-common">
 
     <show-structure depth="2"/>
 
+    <link-summary>Information on using the %repository-title-common% package</link-summary>
+    <card-summary>Information on using the %repository-title-common% package</card-summary>
+    <web-summary>Information on using the %repository-title-common% package</web-summary>
+
     <chapter title="Installation" id="installation">
+        <link-summary>Installation information for the %repository-title-common% package</link-summary>
+
         <note>
             <p>
                 It is recommended to use this particular package as it will allow you to very quickly update all the
@@ -39,6 +45,8 @@
     </chapter>
 
     <chapter title="Usage" id="usage">
+        <link-summary>Usage information for the %repository-title-common% package</link-summary>
+
         <include from="library-descriptions.topic" element-id="now-use-update-locales"/>
         <include from="library-needs.topic" element-id="library-needs-locales-facade"/>
     </chapter>

@@ -7,8 +7,12 @@
     title="Native Locales" id="usage-native-locales">
 
     <list>
-        <li><a href="usage-native-locale-names.topic" /></li>
-        <li><a href="usage-native-country-names.topic" /></li>
+        <li><a href="usage-native-locale-names.topic" instance="!laravel-lang"/>
+            <if instance="laravel-lang">Locale Names</if>
+        </li>
+        <li><a href="usage-native-country-names.topic" instance="!laravel-lang"/>
+            <if instance="laravel-lang">Country Names</if>
+        </li>
         <li><a href="usage-native-currency-names.topic" /></li>
     </list>
 </topic>
