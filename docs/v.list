@@ -9,6 +9,7 @@
     <var name="badge-supported" value="badge-supported.svg" />
     <var name="command-add" value="php artisan lang:add" />
     <var name="command-add-empty" value="php artisan lang:add <locale>" />
+    <var name="command-add-simple" value="lang:add" />
     <var name="command-base" value="php artisan lang:<command>" />
     <var name="command-remove" value="php artisan lang:rm" />
     <var name="command-remove-empty" value="php artisan lang:rm <locale>" />
@@ -41,6 +42,7 @@
     <var name="package-lang" value="laravel-lang/lang" />
     <var name="package-locale-list" value="laravel-lang/locale-list" />
     <var name="package-locales" value="laravel-lang/locales" />
+    <var name="package-config" value="laravel-lang/config" />
     <var name="package-native-country-names" value="laravel-lang/native-country-names" />
     <var name="package-native-currency-names" value="laravel-lang/native-currency-name" />
     <var name="package-native-locale-names" value="laravel-lang/native-locale-names" />
@@ -55,6 +57,7 @@
     <var name="repository-label-docs" value="docs" />
     <var name="repository-label-http-statuses" value="http-statuses" />
     <var name="repository-label-json-fallback" value="json-fallback" />
+    <var name="repository-label-config" value="config" />
     <var name="repository-label-lang" value="lang" />
     <var name="repository-label-locale-list" value="locale-list" />
     <var name="repository-label-locales" value="locales" />
@@ -67,6 +70,7 @@
     <var name="repository-title-actions" value="Actions" />
     <var name="repository-title-attributes" value="Attributes" />
     <var name="repository-title-common" value="Common" />
+    <var name="repository-title-config" value="Config" />
     <var name="repository-title-docs" value="Documentation" />
     <var name="repository-title-http-statuses" value="HTTP Statuses" />
     <var name="repository-title-json-fallback" value="JSON Fallback" />
@@ -87,4 +91,5 @@
     <var name="team-name" value="Laravel-Lang Team" />
     <var name="version-common-latest" value="6.0" />
     <var name="year" value="2024" />
+    <var name="locales-count" value="126" />
 </vars>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Facade" id="usage-facade">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+        title="Facade" id="usage-facade">
 
     <link-summary>Information on using the Locales facade</link-summary>
     <card-summary>Information on using the Locales facade</card-summary>
@@ -15,41 +15,5 @@
         <a href="packages-locales.topic"><code>%package-locales%</code></a> package installed.
     </note>
 
-    <p>
-
-        To work with locales, you can use the facade <code>LaravelLang\Locales\Facades\Locales</code>.
-        It allows you to receive information in two ways: a list of locale codes or an array of DTO objects.
-    </p>
-
-    <chapter title="Data objects" id="data_objects">
-        <code-block lang="php" src="usage-facades-data.txt" />
-    </chapter>
-
-    <chapter title="Raw data" id="raw_data">
-        <code-block lang="php" src="usage-facades-raw-data.txt" />
-    </chapter>
-
-    <chapter title="Examples" id="examples">
-        <code-block lang="php" src="usage-facades-examples-1.txt" />
-        <code-block lang="php" src="usage-facades-examples-2.txt" />
-        <code-block lang="php" src="usage-facades-examples-3.txt" />
-
-        <code-block lang="php">
-            return Locales::raw()->getDefault();
-            // Non aliased
-            // de
-
-            // Aliased
-            // de-DE
-        </code-block>
-
-        <code-block lang="php">
-            return Locales::raw()->get('de');
-            // de
-
-            return Locales::raw()->get('foo');
-            // Will return the default locale
-            // de
-        </code-block>
-    </chapter>
+    <include from="packages-locales.topic" element-id="package-locales-usage"/>
 </topic>

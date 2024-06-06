@@ -1,38 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Publisher" id="packages-publisher">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Publisher" id="packages-publisher">
 
-    <link-summary>Installing the %repository-title-publisher% package</link-summary>
-    <card-summary>Installing the %repository-title-publisher% package</card-summary>
-    <web-summary>Installing the %repository-title-publisher% package</web-summary>
+    <show-structure depth="2"/>
 
-    <tip>
-        The compatibility table can be viewed <a href="release-notes.topic#publisher">here</a>.
-    </tip>
+    <link-summary>Information on using the %repository-title-publisher% package</link-summary>
+    <card-summary>Information on using the %repository-title-publisher% package</card-summary>
+    <web-summary>Information on using the %repository-title-publisher% package</web-summary>
 
-    <p>
-        This is the main package responsible for updating translations in the application.
-        By itself, it does not contain any keys, but in combination with
-        <a href="plugins-official.topic"><code>official</code></a>
-        or <a href="plugins-community.topic"><code>community</code></a> plugins, its potential is revealed.
-    </p>
-    <p>
-        To install, run the console command:
-    </p>
+    <chapter title="Installation" id="installation">
+        <link-summary>Installation information for the %repository-title-publisher% package</link-summary>
 
-    <code-block lang="bash">
-        %install-publisher%
-    </code-block>
+        <note>
+            The compatibility table can be viewed <a href="#compatibility">here</a>.
+        </note>
 
-    <note>
-        You can also easily create your own plugin using a
-        ready-made
-        <a href="https://github.com/Laravel-Lang/translations-template">
-            <code>translations template</code>
-        </a>.
-    </note>
+        <p>
+            To install, run the console command:
+        </p>
+
+        <code-block lang="bash">
+            %install-publisher%
+        </code-block>
+    </chapter>
+
+    <chapter title="Usage" id="usage">
+        <link-summary>Usage information for the %repository-title-publisher% package</link-summary>
+
+        <include from="library-descriptions.topic" element-id="now-use-update-locales"/>
+        <include from="library-needs.topic" element-id="library-needs-locales-facade"/>
+    </chapter>
+
+    <chapter title="Compatibility" id="compatibility">
+        <link-summary>Compatibility table for the %repository-title-publisher% package</link-summary>
+
+        <table>
+            <tr>
+                <td>Laravel</td>
+                <td>PHP</td>
+                <td>Package</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>10, 11</td>
+                <td>8.1, 8.2, 8.3</td>
+                <td><code>^16.0</code></td>
+                <td><img src="%badge-supported%" alt="supported"/></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>8.1, 8.2, 8.3</td>
+                <td><code>^15.0</code></td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+            <tr>
+                <td>8, 9, 10</td>
+                <td>8.1, 8.2</td>
+                <td><code>^14.0</code></td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+            <tr>
+                <td>7, 8, 9</td>
+                <td>8.0, 8.1</td>
+                <td><code>^13.0</code></td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+            <tr>
+                <td>7, 8, 9</td>
+                <td>7.3, 7.4, 8.0, 8.1</td>
+                <td><code>^12.0</code></td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+        </table>
+    </chapter>
 </topic>

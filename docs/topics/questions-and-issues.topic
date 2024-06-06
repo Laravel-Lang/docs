@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Questions and Issues" id="questions-and-issues">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+        title="Questions and Issues" id="questions-and-issues">
 
     <p>
         Find yourself stuck using the package? Found a bug?
@@ -17,7 +17,7 @@
 
         If you find a bug that regarding
         <format style="bold">security</format>
-        , please read the <a href="security-policy.topic" /> and do not publish this information publicly.
+        , please read the <a href="security-policy.topic"/> and do not publish this information publicly.
     </p>
     <tabs>
         <tab title="Bug report">
@@ -38,6 +38,9 @@
                 </li>
                 <li>
                     <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-json-fallback%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-json-fallback%">%repository-title-json-fallback%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?assignees=%repository-assign-bugs%&amp;labels=bug%2C%repository-label-config%&amp;template=bug_report.yml&amp;title=%5BBug%5D%3A+&amp;environment-package-name=%package-config%">%repository-title-config%</a>
                 </li>
             </list>
             <p><b>Localization packages</b></p>
@@ -75,7 +78,7 @@
             </list>
         </tab>
         <tab title="Feature request">
-            <note>Submit information for improvement</note>
+            <note>Suggestions for improving or adding new functionality</note>
             <p><b>Main packages</b></p>
             <list>
                 <li>
@@ -92,6 +95,9 @@
                 </li>
                 <li>
                     <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-json-fallback%&amp;projects=&amp;template=feature_request.yml">%repository-title-json-fallback%</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Laravel-Lang/%repository-bugs%/issues/new?labels=feature%2C%repository-label-config%&amp;projects=&amp;template=feature_request.yml">%repository-title-config%</a>
                 </li>
             </list>
             <p><b>Localization packages</b></p>
@@ -133,10 +139,11 @@
                 <li><a href="https://github.com/Laravel-Lang/common/discussions">Questions &amp; Discussions</a></li>
                 <li><a href="https://github.com/laravel/framework/issues">Laravel Issue</a></li>
             </list>
-        </tab>
-        <tab title="Chats">
+            <p>
+                Telegram:
+            </p>
             <list>
-                <li><a href="https://t.me/addlist/l0XGtvEIBiljMTMy">All Telegram chats</a></li>
+                <li><a href="https://t.me/addlist/l0XGtvEIBiljMTMy">All chats</a></li>
                 <li><a href="https://t.me/LaravelLangEng">English-speaking community</a></li>
                 <li><a href="https://t.me/LaravelLangRus">Russian-speaking community</a></li>
             </list>

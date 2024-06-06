@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Common" id="packages-common">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Common" id="packages-common">
 
-    <link-summary>Installing the %repository-title-common% package</link-summary>
-    <card-summary>Installing the %repository-title-common% package</card-summary>
-    <web-summary>Installing the %repository-title-common% package</web-summary>
+    <show-structure depth="2"/>
 
-    <snippet id="chapter-package-common">
+    <link-summary>Information on using the %repository-title-common% package</link-summary>
+    <card-summary>Information on using the %repository-title-common% package</card-summary>
+    <web-summary>Information on using the %repository-title-common% package</web-summary>
+
+    <chapter title="Installation" id="installation">
+        <link-summary>Installation information for the %repository-title-common% package</link-summary>
+
         <note>
             <p>
-                It is recommended to use this particular package as it will allow you to very quickly update all the necessary
+                It is recommended to use this particular package as it will allow you to very quickly update all the
+                necessary
                 dependencies that ensure application localization.
             </p>
             <p>
-                The compatibility table can be viewed <a href="release-notes.topic#common">here</a>.
+                The compatibility table can be viewed <a href="#compatibility">here</a>.
             </p>
         </note>
 
@@ -28,13 +32,85 @@
         <code-block lang="bash">
             %install-common%
         </code-block>
-        
-        <warning>
-            <p>When used in Laravel 10, you must manually specify the Lang package version to install:</p>
-            <code-block lang="bash">%install-lang%:^14.0</code-block>
-        </warning>
 
-        <include from="library-descriptions.topic" element-id="now-use-update-locales" />
-        <include from="library-needs.topic" element-id="library-needs-locales-facade" />
-    </snippet>
+        <warning>
+            <p>
+                When usage Laravel 10, you must manually specify the <code>%package-lang%</code> package version to
+                install:
+            </p>
+            <code-block lang="bash">
+                %install-lang%:^14.0
+            </code-block>
+        </warning>
+    </chapter>
+
+    <chapter title="Usage" id="usage">
+        <link-summary>Usage information for the %repository-title-common% package</link-summary>
+
+        <include from="library-descriptions.topic" element-id="now-use-update-locales"/>
+        <include from="library-needs.topic" element-id="library-needs-locales-facade"/>
+    </chapter>
+
+    <chapter title="Compatibility" id="compatibility">
+        <link-summary>Compatibility table for the %repository-title-common% package</link-summary>
+
+        <table>
+            <tr>
+                <td>Laravel</td>
+                <td>PHP</td>
+                <td>Package</td>
+                <td>Dependencies</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>10*, 11</td>
+                <td>8.1, 8.2, 8.3</td>
+                <td><code>^6.0</code></td>
+                <td>Publisher 16, Lang 13, 14, 15, Actions 1, Attributes 2, HTTP Statuses 3, Locales 2, JSON
+                    Fallback
+                    2
+                </td>
+                <td>
+                    <img src="%badge-supported%" alt="supported"/>
+                    <p>* When used in Laravel 10, you must manually specify the Lang package version to install:</p>
+                    <code-block lang="bash">%install-lang%:^14.0</code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>8.1, 8.2, 8.3</td>
+                <td><code>^5.0</code></td>
+                <td>Publisher 15, Lang 13, Actions 1, Attributes 2, HTTP Statuses 3, Locales 1</td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>8.1, 8.2</td>
+                <td><code>^4.0</code></td>
+                <td>Publisher 14, Lang 13, Attributes 2, HTTP Statuses 3, Locales 1</td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+            <tr>
+                <td>8, 9, 10</td>
+                <td>8.1, 8.2</td>
+                <td><code>^3.0</code></td>
+                <td>Publisher 14, Lang 12, Attributes 2, HTTP Statuses 3</td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+            <tr>
+                <td>7, 8, 9</td>
+                <td>8.0, 8.1</td>
+                <td><code>^2.0</code></td>
+                <td>Publisher 13, Lang 10, Attributes 1, HTTP Statuses 2</td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+            <tr>
+                <td>7, 8, 9</td>
+                <td>7.3, 7.4, 8.0, 8.1</td>
+                <td><code>^1.0</code></td>
+                <td>Publisher 12, Lang 10, Attributes 1, HTTP Statuses 2</td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+        </table>
+    </chapter>
 </topic>

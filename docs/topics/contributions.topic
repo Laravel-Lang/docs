@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Contribution Guide" id="contributions">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+        title="Contribution Guide" id="contributions">
 
     <link-summary>Guide to helping developers develop %instance% projects</link-summary>
     <card-summary>Guide to helping developers develop %instance% projects</card-summary>
     <web-summary>Guide to helping developers develop %instance% projects</web-summary>
 
-    <show-structure depth="2" />
+    <show-structure depth="2"/>
 
     <p>
         Contributions are
@@ -135,7 +135,8 @@
             </code-block>
 
             <p>
-                If you want to install all the missing locales, then run the command without specifying the localization code:
+                If you want to install all the missing locales, then run the command without specifying the localization
+                code:
             </p>
 
             <code-block lang="bash">
@@ -144,7 +145,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Coding style" id="coding_style">
+    <chapter title="Code Style" id="code_style">
         <p>
             %team-name% follows the
             <a href="https://www.php-fig.org/per/coding-style/">PER 2.0</a> coding standard and the
@@ -155,6 +156,18 @@
             <a href="https://github.com/TheDragonCode/codestyler"><code>dragon-code/codestyler</code></a>
             package.
         </p>
+        <p>
+            You can install it globally using the console command:
+        </p>
+        <code-block lang="bash">
+            composer global require dragon-code/codestyler
+        </code-block>
+        <p>
+            Then apply the code style by calling the console command <code>codestyle</code>:
+        </p>
+        <code-block lang="bash">
+            codestyle
+        </code-block>
     </chapter>
 
     <chapter title="Code of Conduct" id="code_of_conduct">
@@ -170,8 +183,11 @@
 
         <list>
             <li>Participants will be tolerant of opposing views.</li>
-            <li>Participants must ensure that their language and actions are free of personal attacks and disparaging personal remarks.</li>
-            <li>When interpreting the words and actions of others, participants should always assume good intentions.</li>
+            <li>Participants must ensure that their language and actions are free of personal attacks and disparaging
+                personal remarks.
+            </li>
+            <li>When interpreting the words and actions of others, participants should always assume good intentions.
+            </li>
             <li>Behavior that can be reasonably considered harassment will not be tolerated.</li>
         </list>
     </chapter>

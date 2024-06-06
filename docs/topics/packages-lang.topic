@@ -1,54 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Lang" id="packages-lang">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Lang" id="packages-lang">
 
-    <link-summary>Installing the %repository-title-lang% package</link-summary>
-    <card-summary>Installing the %repository-title-lang% package</card-summary>
-    <web-summary>Installing the %repository-title-lang% package</web-summary>
+    <show-structure depth="2"/>
 
+    <link-summary>Information on using the %repository-title-lang% package</link-summary>
+    <card-summary>Information on using the %repository-title-lang% package</card-summary>
+    <web-summary>Information on using the %repository-title-lang% package</web-summary>
+
+    <a href="packages-common.topic">foo bar baz</a>
     <tip>
-        The compatibility table can be viewed <a href="release-notes.topic#lang">here</a>.
-    </tip>
-
-    <p>
-        This package contains translations of all official keys from
-        <a href="https://laravel-lang.com">Laravel projects</a>:
-    </p>
-
-    <include from="library-lists.topic" element-id="lists-laravel-projects" />
-
-    <p>
-        To install, run the console command:
-    </p>
-
-    <code-block lang="bash">
-        %install-lang%
-    </code-block>
-
-    <include from="library-descriptions.topic" element-id="now-use-update-locales" />
-
-    <chapter title="Laravel Spark Aurelius + Mollie" id="spark_aurelius">
         <p>
-            If you are still using the Spark Aurelius and
-            <a href="https://github.com/laravel/cashier-mollie">Aurelius Mollie</a>
-            packages, then you need to manually install the
-            <a href="release-notes.topic#lang" /> package version 13 or lower.
+            This package contains translations of all official keys from Laravel projects:
         </p>
         <p>
-            This can be done like this:
+            <include from="library-lists.topic" element-id="lists-laravel-projects-inline"/>
+        </p>
+    </tip>
+
+    <chapter title="Installation" id="installation">
+        <link-summary>Installation information for the %repository-title-lang% package</link-summary>
+
+        <note>
+            The compatibility table can be viewed <a href="#compatibility">here</a>.
+        </note>
+
+        <p>
+            To install, run the console command:
         </p>
 
         <code-block lang="bash">
-            %install-lang%:^13.0
+            %install-lang%
         </code-block>
+    </chapter>
 
-        <p>
-            You can select the desired version of the <a href="release-notes.topic#lang" /> package using the
-            <a href="release-notes.topic#lang">compatibility table</a>.
-        </p>
+    <chapter title="Usage" id="usage">
+        <link-summary>Usage information for the %repository-title-lang% package</link-summary>
+
+        <include from="library-descriptions.topic" element-id="now-use-update-locales"/>
+        <include from="library-needs.topic" element-id="library-needs-locales-facade"/>
+    </chapter>
+
+    <chapter title="Compatibility" id="compatibility">
+        <link-summary>Compatibility table for the %repository-title-lang% package</link-summary>
+
+        <table>
+            <tr>
+                <td>Laravel</td>
+                <td>PHP</td>
+                <td>Publisher</td>
+                <td>Package</td>
+                <td>Dependencies</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td><code>^11.0.7</code></td>
+                <td>8.2, 8.3</td>
+                <td>16</td>
+                <td><code>^15.0</code></td>
+                <td>Breeze 2, Cashier Stripe 15, Fortify 1, Jetstream 5, Nova 4, Spark Paddle, Spark Stripe, UI 4
+                </td>
+                <td><img src="%badge-supported%" alt="supported"/></td>
+            </tr>
+            <tr>
+                <td>10, <code>&lt;=11.0.6*</code></td>
+                <td>8.1, 8.2, 8.3</td>
+                <td>14, 15, 16</td>
+                <td><code>^14.0</code></td>
+                <td>Breeze 1, 2, Cashier Stripe 13, 14, 15, Fortify 1, Jetstream 2, 3, 4, 5, Nova 4, Spark Paddle,
+                    Spark Stripe, UI 4
+                </td>
+                <td>
+                    <img src="%badge-supported%" alt="supported"/>
+                    <p>* Updates for Laravel 11 are not supported in this version.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>8.1, 8.2, 8.3</td>
+                <td>14, 15, 16</td>
+                <td><code>^13.0</code></td>
+                <td>Breeze 1, Cashier Stripe 13, 14, Fortify 1, Jetstream 2, 3, 4, Nova 4, Spark Aurelius 11, 12,
+                    Spark Aurelius Mollie 2, Spark Paddle, Spark Stripe, UI 4
+                </td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+            <tr>
+                <td>9, 10</td>
+                <td>8.1, 8.2</td>
+                <td>14</td>
+                <td><code>^12.0</code></td>
+                <td>Breeze 1, Cashier Stripe 12, 13, 14, Fortify 1, Jetstream 1, 2, 3, Nova 3, 4, Spark Aurelius 11,
+                    12, Spark Aurelius Mollie 2, Spark Paddle, Spark Stripe, UI 3, 4
+                </td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+            <tr>
+                <td>6, 7, 8, 9, 10</td>
+                <td>8.1, 8.2</td>
+                <td>---</td>
+                <td><code>^11.0</code></td>
+                <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, 2, Nova 3, 4, Spark Paddle, Spark
+                    Stripe, UI 1, 2, 3, 4
+                </td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+            <tr>
+                <td>7, 8, 9</td>
+                <td>8.1, 8.2</td>
+                <td>---</td>
+                <td><code>^10.0</code></td>
+                <td>Breeze 1, Cashier Stripe 12, 13, Fortify 1, Jetstream 1, Nova 3, Spark Paddle, Spark Stripe, UI
+                    1, 2, 3
+                </td>
+                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+            </tr>
+        </table>
     </chapter>
 </topic>
