@@ -56,8 +56,7 @@
         <toc-element topic="packages-native-country-names.topic"/>
         <toc-element topic="packages-native-currency-names.topic"/>
         <toc-element topic="packages-publisher.topic"/>
-        <toc-element topic="packages-locales.topic">
-        </toc-element>
+        <toc-element topic="packages-locales.topic"/>
         <toc-element topic="packages-locale-list.topic"/>
         <toc-element topic="packages-json-fallback.topic"/>
     </toc-element>

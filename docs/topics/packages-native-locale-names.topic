@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Native Locale Names" id="packages-native-locale-names" help-id="package-native-locale-names">
+       title="Native Locale Names" id="packages-native-locale-names">
 
     <show-structure depth="2"/>
 
