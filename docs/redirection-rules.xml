@@ -6,32 +6,4 @@
         <accepts>page.html</accepts>
     </rule>
     -->
-    <rule id="redirect_to_introduction">
-        <accepts>prologue.html</accepts>
-        <accepts>getting-started.html</accepts>
-    </rule>
-    <rule id="50843b18">
-        <description>Created after removal of "Locale List" from Laravel Lang</description>
-        <accepts>usage-list-of-locales.html</accepts>
-    </rule>
-    <rule id="6d98304e">
-        <description>Created after removal of "Aliases" from Laravel Lang</description>
-        <accepts>usage-aliases.html</accepts>
-    </rule>
-    <rule id="70f50cf1">
-        <description>Created after removal of "Locale Names" from Laravel Lang</description>
-        <accepts>usage-native-locale-names.html</accepts>
-    </rule>
-    <rule id="491a6a89">
-        <description>Created after removal of "Country Names" from Laravel Lang</description>
-        <accepts>usage-native-country-names.html</accepts>
-    </rule>
-    <rule id="14e2b5ff">
-        <description>Created after removal of "Currency Names" from Laravel Lang</description>
-        <accepts>usage-native-currency-names.html</accepts>
-    </rule>
-    <rule id="48980fb8">
-        <description>Created after removal of "Native Locales" from Laravel Lang</description>
-        <accepts>usage-native-locales.html</accepts>
-    </rule>
 </rules>
