@@ -30,44 +30,42 @@
     <chapter title="Usage" id="usage">
         <link-summary>Usage information for the %repository-title-locales% package</link-summary>
 
-        <snippet id="package-locales-usage">
-            <p>
-                To work with locales, you can use the facade <code>LaravelLang\Locales\Facades\Locales</code>.
-                It allows you to receive information in two ways: a list of locale codes or an array of DTO objects.
-            </p>
+        <p>
+            To work with locales, you can use the facade <code>LaravelLang\Locales\Facades\Locales</code>.
+            It allows you to receive information in two ways: a list of locale codes or an array of DTO objects.
+        </p>
 
-            <chapter title="Data objects" id="data_objects">
-                <code-block lang="php" src="usage-facades-data.txt"/>
-            </chapter>
+        <chapter title="Data objects" id="data_objects">
+            <code-block lang="php" src="usage-facades-data.txt"/>
+        </chapter>
 
-            <chapter title="Raw data" id="raw_data">
-                <code-block lang="php" src="usage-facades-raw-data.txt"/>
-            </chapter>
+        <chapter title="Raw data" id="raw_data">
+            <code-block lang="php" src="usage-facades-raw-data.txt"/>
+        </chapter>
 
-            <chapter title="Examples" id="examples">
-                <code-block lang="php" src="usage-facades-examples-1.txt"/>
-                <code-block lang="php" src="usage-facades-examples-2.txt"/>
-                <code-block lang="php" src="usage-facades-examples-3.txt"/>
+        <chapter title="Examples" id="examples">
+            <code-block lang="php" src="usage-facades-examples-1.txt"/>
+            <code-block lang="php" src="usage-facades-examples-2.txt"/>
+            <code-block lang="php" src="usage-facades-examples-3.txt"/>
 
-                <code-block lang="php">
-                    return Locales::raw()->getDefault();
-                    // Non aliased
-                    // de
+            <code-block lang="php">
+                return Locales::raw()->getDefault();
+                // Non aliased
+                // de
 
-                    // Aliased
-                    // de-DE
-                </code-block>
+                // Aliased
+                // de-DE
+            </code-block>
 
-                <code-block lang="php">
-                    return Locales::raw()->get('de');
-                    // de
+            <code-block lang="php">
+                return Locales::raw()->get('de');
+                // de
 
-                    return Locales::raw()->get('foo');
-                    // Will return the default locale
-                    // de
-                </code-block>
-            </chapter>
-        </snippet>
+                return Locales::raw()->get('foo');
+                // Will return the default locale
+                // de
+            </code-block>
+        </chapter>
     </chapter>
 
     <chapter title="Compatibility" id="compatibility">

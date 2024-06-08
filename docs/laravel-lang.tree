@@ -31,20 +31,16 @@
         <toc-element toc-title="License" topic="license.topic"/>
     </toc-element>
     <toc-element id="toc-getting-started" topic="getting-started.topic">
-        <toc-element toc-title="Introduction" topic="introduction.topic"
-                     accepts-web-file-names-ref="redirect_to_introduction"/>
+        <toc-element toc-title="Introduction" topic="introduction.topic"/>
         <toc-element topic="basic-usage.topic"/>
         <toc-element topic="configuration.topic"/>
-    </toc-element>
-    <toc-element topic="usage.topic">
-        <toc-element topic="manage-locales.topic">
-            <toc-element toc-title="Add" topic="usage-add-locales.topic"/>
-            <toc-element toc-title="Update" topic="usage-update-locales.topic"/>
-            <toc-element toc-title="Reset" topic="usage-reset-locales.topic"/>
-            <toc-element toc-title="Remove" topic="usage-remove-locales.topic"/>
-        </toc-element>
-        <toc-element topic="usage-facade.topic"/>
         <toc-element topic="available-locales-list.topic"/>
+    </toc-element>
+    <toc-element topic="manage-locales.topic">
+        <toc-element topic="usage-add-locales.topic"/>
+        <toc-element topic="usage-update-locales.topic"/>
+        <toc-element topic="usage-reset-locales.topic"/>
+        <toc-element topic="usage-remove-locales.topic"/>
     </toc-element>
     <toc-element topic="packages.topic">
         <toc-element topic="packages-common.topic"/>

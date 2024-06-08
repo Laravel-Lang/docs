@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Add" id="usage-add-locales">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+        title="Add Locales" id="usage-add-locales">
 
     <link-summary>Information on adding locales to a Laravel application</link-summary>
     <card-summary>Information on adding locales to a Laravel application</card-summary>
@@ -32,7 +32,8 @@
     </code-block>
 
     <p>
-        If the target files exist, you will be asked what to do in this case - skip installing the files or replace them.
+        If the target files exist, you will be asked what to do in this case - skip installing the files or replace
+        them.
     </p>
     <p>
         If these files contain keys that you added, it is recommended to skip them, since the
