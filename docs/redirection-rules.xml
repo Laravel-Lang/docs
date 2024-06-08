@@ -6,12 +6,4 @@
         <accepts>page.html</accepts>
     </rule>
     -->
-    <rule id="7b9f1fd6">
-        <description>Created after removal of "Facade" from Laravel Lang</description>
-        <accepts>usage-facade.html</accepts>
-    </rule>
-    <rule id="646ea8a">
-        <description>Created after removal of "Usage" from Laravel Lang</description>
-        <accepts>usage.html</accepts>
-    </rule>
 </rules>
