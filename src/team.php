@@ -177,6 +177,8 @@ $block = function (DOMNode $item) use ($dom) {
     return $element;
 };
 
+$break = fn () => $dom->makeItem('br', '');
+
 foreach ($team as $locale => $peoples) {
     if (empty($peoples)) {
         continue;
@@ -197,15 +199,24 @@ foreach ($team as $locale => $peoples) {
 
     $tableLocale->appendChild($block($localeLink));
 
+    $paragraph   = $dom->makeItem('p', '');
+    $lastPackage = array_key_last($packages);
+
     foreach ($packages as $name => $package) {
         $packageLink = $dom->makeItem('a', $package, [
             'href' => "$name-$locale.md",
         ]);
 
-        $tablePackages->appendChild($block($packageLink));
+        $paragraph->appendChild($packageLink);
+
+        if ($name !== $lastPackage) {
+            $paragraph->appendChild($break());
+        }
     }
 
-    foreach ($peoples as $people) {
+    $tablePackages->appendChild($paragraph);
+
+    foreach ($peoples as $key => $people) {
         $peopleLink = $dom->makeItem('a', '@' . $people, [
             'href' => 'https://github.com/' . $people,
         ]);
