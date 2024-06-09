@@ -43,6 +43,7 @@
         <toc-element topic="usage-remove-locales.topic"/>
     </toc-element>
     <toc-element topic="packages.topic">
+        <toc-element topic="packages-routes.topic" />
         <toc-element topic="packages-common.topic"/>
         <toc-element topic="packages-lang.topic"/>
         <toc-element topic="packages-actions.topic"/>
