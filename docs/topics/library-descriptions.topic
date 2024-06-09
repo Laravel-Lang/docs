@@ -34,4 +34,29 @@
             This option is available in the <code>%config-filename%</code> file:
         </p>
     </snippet>
+
+    <snippet id="route-caching-support">
+        <note>
+            <p>
+                Full support for <a href="https://laravel.com/docs/routing#route-caching">route caching</a>
+            </p>
+
+            <code-block lang="bash">
+                php artisan route:cache
+            </code-block>
+        </note>
+    </snippet>
+
+    <snippet id="routes-use-locale-parameter">
+        <tip>
+            <p>
+                To get started, you need to specify the
+                <code>{locale}</code> parameter anywhere in the URL of your routes.
+            </p>
+            <p>
+                The parameter name can be changed in the <code>routes</code> section
+                of the <code>%config-filename%</code> file.
+            </p>
+        </tip>
+    </snippet>
 </topic>

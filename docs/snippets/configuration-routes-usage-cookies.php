@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use LaravelLang\Routes\Middlewares\CookiesLocale;
+use LaravelLang\Routes\Middlewares\LocalizationByCookie;
 
 app('router')
-    ->middleware(CookiesLocale::class)
+    ->middleware(LocalizationByCookie::class)
     ->get('some', fn () => response()->json(__('Foo')));

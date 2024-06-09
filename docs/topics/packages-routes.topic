@@ -30,6 +30,8 @@
         You can also
         <a href="configuration.topic#routes">change</a>
         the default settings by making changes to the <code>%config-filename%</code> file.
+
+        <include from="library-descriptions.topic" element-id="route-caching-support" />
     </chapter>
 
     <chapter title="Usage" id="usage">
@@ -81,11 +83,7 @@
         </chapter>
 
         <chapter title="Via URL Parameter" id="via_url_parameter">
-            <tip>
-                Sets the localization according to the
-                <tooltip term="package-routes-parameter-name">locale</tooltip>
-                URL parameter.
-            </tip>
+            <include from="library-descriptions.topic" element-id="routes-use-locale-parameter" />
 
             <code-block lang="php" src="configuration-routes-usage-parameter.php" include-lines="5-" />
 
@@ -140,11 +138,7 @@
         </chapter>
 
         <chapter title="Via URL Parameter With Redirect" id="via_url_parameter_with_redirect">
-            <tip>
-                Sets the localization according to the
-                <tooltip term="package-routes-parameter-name">locale</tooltip>
-                URL parameter.
-            </tip>
+            <include from="library-descriptions.topic" element-id="routes-use-locale-parameter" />
 
             <code-block lang="php" src="configuration-routes-usage-parameter-redirect.php" include-lines="5-" />
 

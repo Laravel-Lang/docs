@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use LaravelLang\Routes\Middlewares\HeaderLocale;
+use LaravelLang\Routes\Middlewares\LocalizationByHeader;
 
 app('router')
-    ->middleware(HeaderLocale::class)
+    ->middleware(LocalizationByHeader::class)
     ->get('foo/{bar}', function (string $bar) {
         return response()->json([
             $bar => __('Foo'),

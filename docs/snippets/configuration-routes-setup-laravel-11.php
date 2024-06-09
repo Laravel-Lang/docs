@@ -6,19 +6,19 @@ declare(strict_types=1);
 
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Middleware;
-use LaravelLang\Routes\Middlewares\CookiesLocale;
-use LaravelLang\Routes\Middlewares\HeaderLocale;
-use LaravelLang\Routes\Middlewares\ParameterLocale;
-use LaravelLang\Routes\Middlewares\ParameterRedirectLocale;
-use LaravelLang\Routes\Middlewares\SessionLocale;
+use LaravelLang\Routes\Middlewares\LocalizationByCookie;
+use LaravelLang\Routes\Middlewares\LocalizationByHeader;
+use LaravelLang\Routes\Middlewares\LocalizationByParameter;
+use LaravelLang\Routes\Middlewares\LocalizationByParameterWithRedirect;
+use LaravelLang\Routes\Middlewares\LocalizationBySession;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->alias([
-            'localization.parameter'          => ParameterLocale::class,
-            'localization.parameter.redirect' => ParameterRedirectLocale::class,
-            'localization.header'             => HeaderLocale::class,
-            'localization.cookie'             => CookiesLocale::class,
-            'localization.session'            => SessionLocale::class,
+            'localization.parameter'          => LocalizationByParameter::class,
+            'localization.parameter.redirect' => LocalizationByParameterWithRedirect::class,
+            'localization.header'             => LocalizationByHeader::class,
+            'localization.cookie'             => LocalizationByCookie::class,
+            'localization.session'            => LocalizationBySession::class,
         ]);
     });
