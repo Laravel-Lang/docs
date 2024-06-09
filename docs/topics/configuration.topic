@@ -1,31 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-        title="Configuration" id="configuration">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Configuration" id="configuration">
 
     <link-summary>Information on setting up %instance% packages</link-summary>
     <card-summary>Information on setting up %instance% packages</card-summary>
     <web-summary>Information on setting up %instance% packages</web-summary>
 
-    <show-structure depth="2"/>
+    <show-structure depth="2" />
 
-    <p>
-        Optionally, you can publish the config file with:
-    </p>
-    <code-block lang="bash">
-        php artisan vendor:publish --tag="%package-vendor-tag%"
-    </code-block>
-    <p>
-        This is the contents of the published <code>%config-filename%</code> file:
-    </p>
-    <code-block
+    <chapter title="Publish" id="publish">
+        <p>
+            Optionally, you can publish the config file with:
+        </p>
+        <code-block lang="bash">
+            php artisan vendor:publish --tag="%package-vendor-tag%"
+        </code-block>
+        <p>
+            This is the contents of the published <code>%config-filename%</code> file:
+        </p>
+        <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
             include-lines="7-"
-    />
+            collapsed-title="Show configuration"
+            collapsible="true"
+        />
+    </chapter>
+
+    <chapter title="Inline" id="inline">
+        <p>
+            The <code>inline</code> option determines what type of files to use when updating language files.
+        </p>
+
+        <list>
+            <li><code>true</code> means inline files will be used.</li>
+            <li><code>false</code> means that default files will be used.</li>
+        </list>
+
+        <p>
+            For example, the difference between them can be seen here:
+        </p>
+
+        <code-block>
+            The :attribute must be accepted. // default
+            This field must be accepted. // inline
+        </code-block>
+
+        <include from="library-descriptions.topic" element-id="available-config-option" />
+
+        <code-block
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
+            include-lines="8-14"
+        />
+    </chapter>
+
+    <chapter title="Alignment" id="alignment">
+        <p>
+            The <code>align</code> option defines the alignment of values relative
+            to each other when processing localization files.
+        </p>
+
+        <p>
+            When updating files, all comments from the final files are automatically deleted.
+            Unfortunately, <a href="https://www.php.net/manual/en/function.var-export.php">var_export</a>
+            does not know how to work with comments.
+        </p>
+        <p>
+            Your file example:
+        </p>
+        <code-block lang="php" src="configuration-alignment-auth-before.php" include-lines="3-" />
+        <p>
+            An updated file like this:
+        </p>
+        <code-block lang="php" src="configuration-alignment-auth-after.php" include-lines="3-" />
+        <p>
+            and example of <code>validation.php</code> file:
+        </p>
+        <code-block
+            lang="php"
+            src="configuration-alignment-validation-before.php"
+            include-lines="3-"
+            collapsed-title="Show content"
+            collapsible="true"
+        />
+        <p>
+            This is what it will look like after the update:
+        </p>
+        <code-block lang="php" src="configuration-alignment-validation-after.php" include-lines="3-" />
+
+        <include from="library-descriptions.topic" element-id="available-config-option" />
+
+        <code-block
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
+            include-lines="16-22"
+        />
+    </chapter>
+
     <chapter title="Aliases" id="aliases">
         <p>
             If you want to name codes differently, such as <code>de-DE</code> instead of <code>de</code> or
@@ -37,7 +113,7 @@
             the <code>%config-filename%</code> config file:
         </p>
 
-        <code-block lang="php" src="usage-aliases.php" include-lines="3-"/>
+        <code-block lang="php" src="usage-aliases.php" include-lines="3-" />
 
         <p>
             If the
@@ -63,56 +139,68 @@
             de-CH
             de-DE
         </code-block>
+
+        <include from="library-descriptions.topic" element-id="available-config-option" />
+
+        <code-block
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
+            include-lines="24-34"
+        />
     </chapter>
-    <chapter title="Alignment" id="alignment">
-        <p>
-            When updating files, all comments from the final files are automatically deleted.
-            Unfortunately, <a href="https://www.php.net/manual/en/function.var-export.php">var_export</a>
-            does not know how to work with comments.
-        </p>
-        <p>
-            Your file example:
-        </p>
-        <code-block lang="php" src="configuration-alignment-auth-before.php"/>
-        <p>
-            An updated file like this:
-        </p>
-        <code-block lang="php" src="configuration-alignment-auth-after.php"/>
-        <p>
-            and example of <code>validation.php</code> file:
-        </p>
-        <code-block lang="php" src="configuration-alignment-validation-before.php"/>
-        <p>
-            This is what it will look like after the update:
-        </p>
-        <code-block lang="php" src="configuration-alignment-validation-after.php"/>
-    </chapter>
+
     <chapter title="Smart Punctuation" id="smart_punctuation">
         <p>
             When updating translation keys, you can also enable intelligent converts ASCII quotes, dashes,
             and ellipses to their Unicode.
         </p>
+
         <p>
             For example:
         </p>
-        <code-block lang="json" src="smart-punctuation-before.json"/>
+
+        <code-block lang="json" src="smart-punctuation-before.json" />
+
         <p>
             Will result in files:
         </p>
-        <code-block lang="json" src="smart-punctuation-after.json"/>
-        <p>
-            This option is enabled in the <code>%config-filename%</code> file:
-        </p>
+
+        <code-block lang="json" src="smart-punctuation-after.json" />
+
+        <include from="library-descriptions.topic" element-id="available-config-option" />
+
         <code-block
-                lang="php"
-                src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-                include-lines="55-94"
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
+            include-lines="43-82"
+            collapsed-title="Show settings"
+            collapsible="true"
         />
+
         <p>
             You can also set different rules for any localization.
         </p>
         <p>
             By default, conversion is disabled.
         </p>
+    </chapter>
+
+    <chapter title="Routes" id="routes">
+        <p>
+            When using the package to work with
+            <a href="packages-routes.topic">
+                <format style="bold">routing</format>
+            </a>
+            , you can override the default values of key names.
+        </p>
+
+        <p>
+            This option is enabled in the <code>%config-filename%</code> file:
+        </p>
+        <code-block
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
+            include-lines="84-102"
+        />
     </chapter>
 </topic>

@@ -31,18 +31,20 @@
     <var name="install-native-currency-names" value="composer require laravel-lang/native-currency-names" />
     <var name="install-native-locale-names" value="composer require laravel-lang/native-locale-names" />
     <var name="install-publisher" value="composer require --dev laravel-lang/publisher" />
+    <var name="install-routes" value="composer require laravel-lang/routes" />
     <var name="locale-many" value="fr de de_CH vi zh_CN" />
     <var name="locale-one" value="fr" />
+    <var name="locales-count" value="126" />
     <var name="package-actions" value="laravel-lang/actions" />
     <var name="package-attributes" value="laravel-lang/attributes" />
     <var name="package-common" value="laravel-lang/common" />
+    <var name="package-config" value="laravel-lang/config" />
     <var name="package-docs" value="laravel-lang/docs" />
     <var name="package-http-statuses" value="laravel-lang/http-statuses" />
     <var name="package-json-fallback" value="laravel-lang/json-fallback" />
     <var name="package-lang" value="laravel-lang/lang" />
     <var name="package-locale-list" value="laravel-lang/locale-list" />
     <var name="package-locales" value="laravel-lang/locales" />
-    <var name="package-config" value="laravel-lang/config" />
     <var name="package-native-country-names" value="laravel-lang/native-country-names" />
     <var name="package-native-currency-names" value="laravel-lang/native-currency-name" />
     <var name="package-native-locale-names" value="laravel-lang/native-locale-names" />
@@ -54,10 +56,10 @@
     <var name="repository-label-actions" value="actions" />
     <var name="repository-label-attributes" value="attributes" />
     <var name="repository-label-common" value="common" />
+    <var name="repository-label-config" value="config" />
     <var name="repository-label-docs" value="docs" />
     <var name="repository-label-http-statuses" value="http-statuses" />
     <var name="repository-label-json-fallback" value="json-fallback" />
-    <var name="repository-label-config" value="config" />
     <var name="repository-label-lang" value="lang" />
     <var name="repository-label-locale-list" value="locale-list" />
     <var name="repository-label-locales" value="locales" />
@@ -81,6 +83,7 @@
     <var name="repository-title-native-currency-names" value="Native Currency Names" />
     <var name="repository-title-native-locale-names" value="Native Locale Names" />
     <var name="repository-title-publisher" value="Publisher" />
+    <var name="repository-title-routes" value="Routes" />
     <var name="repository-title-status-generator" value="Status Generator" />
     <var name="repository-title-translations-template" value="Translations Template" />
     <var name="security-caouecs-email" value="caouecs@caouecs.net" />
@@ -91,5 +94,4 @@
     <var name="team-name" value="Laravel-Lang Team" />
     <var name="version-common-latest" value="6.0" />
     <var name="year" value="2024" />
-    <var name="locales-count" value="126" />
 </vars>

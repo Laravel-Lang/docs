@@ -21,7 +21,7 @@
         "dragon-code/pretty-array": "^4.1",
         "dragon-code/support": "^6.12",
         "dragon-code/xml-core": "^2.2",
-        "laravel-lang/common": "^6.0.1",
+        "laravel-lang/common": "^6.3",
         "laravel-lang/locale-list": "^1.2",
         "stichoza/google-translate-php": "^5.1"
     },

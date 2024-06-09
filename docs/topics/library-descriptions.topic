@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-        title="Library Descriptions" id="library-descriptions">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Library Descriptions" id="library-descriptions">
 
     <snippet id="now-use-add-locales">
         <p>
@@ -27,5 +27,11 @@
         <code-block lang="bash">
             %command-update%
         </code-block>
+    </snippet>
+
+    <snippet id="available-config-option">
+        <p>
+            This option is available in the <code>%config-filename%</code> file:
+        </p>
     </snippet>
 </topic>

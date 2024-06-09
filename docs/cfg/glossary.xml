@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE terms SYSTEM "https://resources.jetbrains.com/writerside/1.0/glossary.dtd">
+<terms>
+    <term name="package-routes-parameter-name">
+        The parameter name can be changed in the settings file "%config-filename%".
+    </term>
+</terms>

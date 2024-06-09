@@ -1,9 +1,446 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Routes" id="packages-routes">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Routes" id="packages-routes">
 
-    <p>Start typing here...</p>
+    <show-structure depth="2" />
+
+    <link-summary>Information on using the %repository-title-routes% package</link-summary>
+    <card-summary>Information on using the %repository-title-routes% package</card-summary>
+    <web-summary>Information on using the %repository-title-routes% package</web-summary>
+
+    <chapter title="Installation" id="installation">
+        <link-summary>Installation information for the %repository-title-routes% package</link-summary>
+
+        <note>
+            The compatibility table can be viewed <a href="#compatibility">here</a>.
+        </note>
+
+        <p>
+            To install, run the console command:
+        </p>
+
+        <code-block lang="bash">
+            %install-routes%
+        </code-block>
+
+        You can also
+        <a href="configuration.topic#routes">
+            <format style="bold">change</format>
+        </a>
+        the default settings by making changes to the <code>%config-filename%</code> file.
+    </chapter>
+
+    <chapter title="Usage" id="usage">
+        <link-summary>Usage information for the %repository-title-routes% package</link-summary>
+
+        <p>
+            Let's say an application has two installed localizations - French and German.
+        </p>
+        <p>
+            The application settings look like this:
+        </p>
+
+        <code-block lang="php" src="configuration-routes-usage-app-example.php" include-lines="5-" />
+
+        <p>
+            We also have set values for French and German:
+        </p>
+
+        <code-block lang="json" src="configuration-routes-installed-french.json" />
+        <code-block lang="json" src="configuration-routes-installed-german.json" />
+
+        <chapter title="Direct" id="direct">
+            <p>
+                You can use a link to the middleware without adding aliases:
+            </p>
+
+            <code-block lang="php" src="configuration-routes-setup-direct.php" include-lines="5-" />
+        </chapter>
+
+        <chapter title="Aliases" id="aliases">
+            <p>
+                To use middleware aliases, register them in the application:
+            </p>
+
+            <tabs>
+                <tab title="Laravel 11">
+                    <code-block lang="php" src="configuration-routes-setup-laravel-11.php" include-lines="5-" />
+                </tab>
+                <tab title="Laravel 10">
+                    <code-block lang="php" src="configuration-routes-setup-laravel-10.php" include-lines="5-" />
+                </tab>
+            </tabs>
+
+            <p>
+                Next, you can specify aliases in the route <code>middleware</code> method:
+            </p>
+
+            <code-block lang="php" src="configuration-routes-setup-aliased.php" include-lines="5-" />
+        </chapter>
+
+        <chapter title="Via URL Parameter" id="via_url_parameter">
+            <tip>
+                Sets the localization according to the
+                <tooltip term="package-routes-parameter-name">locale</tooltip>
+                URL parameter.
+            </tip>
+
+            <code-block lang="php" src="configuration-routes-usage-parameter.php" include-lines="5-" />
+
+            <p>
+                If an incorrect or unset localization is transmitted,
+                the page will be rendered in accordance with the main localization installed in the application.
+            </p>
+
+            <chapter title="Examples" id="via_url_parameter_examples">
+                <tabs>
+                    <tab title="With installed">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/foo/de/show
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-german-example.json" />
+                    </tab>
+                    <tab title="With uninstalled">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/foo/as/show
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-french-example.json" />
+                    </tab>
+                    <tab title="With unknown">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/foo/qwerty/show
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-french-example.json" />
+                    </tab>
+                </tabs>
+            </chapter>
+        </chapter>
+
+        <chapter title="Via URL Parameter With Redirect" id="via_url_parameter_with_redirect">
+            <tip>
+                Sets the localization according to the
+                <tooltip term="package-routes-parameter-name">locale</tooltip>
+                URL parameter.
+            </tip>
+
+            <code-block lang="php" src="configuration-routes-usage-parameter-redirect.php" include-lines="5-" />
+
+            <p>
+                If an incorrect or unspecified localization is passed,
+                the page will be redirected to the main localization.
+            </p>
+
+            <chapter title="Examples" id="via_url_parameter_redirect_examples">
+                <tabs>
+                    <tab title="With installed">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/some/show/bar/de
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-german-example.json" />
+                    </tab>
+                    <tab title="With uninstalled">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/some/show/bar/as
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="curl">
+                            ### 302 Redirect
+                            Location: https://example.com/foo/fr/show
+                        </code-block>
+                    </tab>
+                    <tab title="With unknown">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/some/show/bar/qwerty
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="curl">
+                            ### 302 Redirect
+                            Location: https://example.com/foo/fr/show
+                        </code-block>
+                    </tab>
+                    <tab title="Without parameter">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/some/show/bar/
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="curl">
+                            ### 302 Redirect
+                            Location: https://example.com/foo/fr/show
+                        </code-block>
+                    </tab>
+                </tabs>
+            </chapter>
+        </chapter>
+
+        <chapter title="Via Header" id="via_header">
+            <tip>
+                Sets the localization according to the
+                <tooltip term="package-routes-parameter-name">X-Localization</tooltip>
+                header.
+            </tip>
+
+            <code-block lang="php" src="configuration-routes-usage-header.php" include-lines="5-" />
+
+            <p>
+                If an incorrect or unset localization is transmitted,
+                the page will be rendered in accordance with the main localization installed in the application.
+            </p>
+
+            <chapter title="Examples" id="via_header_examples">
+                <tabs>
+                    <tab title="With installed">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET 'https://example.com/foo/show' \
+                            --header 'X-Localization: de'
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-german-example.json" />
+                    </tab>
+                    <tab title="With uninstalled">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET 'https://example.com/foo/show' \
+                            --header 'X-Localization: as'
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-french-example.json" />
+                    </tab>
+                    <tab title="With unknown">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET 'https://example.com/foo/show' \
+                            --header 'X-Localization: qwerty'
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-french-example.json" />
+                    </tab>
+                </tabs>
+            </chapter>
+        </chapter>
+
+        <chapter title="Via Cookie" id="via_cookie">
+            <tip>
+                Sets the localization according to the
+                <tooltip term="package-routes-parameter-name">X-Localization</tooltip>
+                cookie.
+            </tip>
+
+            <code-block lang="php" src="configuration-routes-usage-cookies.php" include-lines="5-" />
+
+            <p>
+                If an incorrect or unset localization is transmitted,
+                the page will be rendered in accordance with the main localization installed in the application.
+            </p>
+
+            <chapter title="Examples" id="via_cookies_examples">
+                <tabs>
+                    <tab title="With installed">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/foo/show \
+                            -b "X-Localization=de"
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-german-example.json" />
+                    </tab>
+                    <tab title="With uninstalled">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/foo/show \
+                            -b "X-Localization=as"
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-french-example.json" />
+                    </tab>
+                    <tab title="With unknown">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/foo/show \
+                            -b "X-Localization=qwerty"
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-french-example.json" />
+                    </tab>
+                </tabs>
+            </chapter>
+        </chapter>
+
+        <chapter title="Via Session" id="via_session">
+            <tip>
+                Sets the localization according to the
+                <tooltip term="package-routes-parameter-name">X-Localization</tooltip>
+                session key.
+            </tip>
+
+            <code-block lang="php" src="configuration-routes-usage-session.php" include-lines="5-" />
+
+            <p>
+                If an incorrect or unset localization is transmitted,
+                the page will be rendered in accordance with the main localization installed in the application.
+            </p>
+
+            <p>
+                Technically, working with sessions is no different from working with cookies.
+                The difference is where they are stored.
+            </p>
+            <p>
+                You can <a href="https://laravel.com/docs/session">read</a>
+                more about how to work with sessions in the
+                <a href="https://laravel.com/docs/session">Laravel documentation</a>.
+            </p>
+
+            <chapter title="Examples" id="via_session_examples">
+                <tabs>
+                    <tab title="With installed">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            echo "X-Localization=de" >> cookies.txt
+                            
+                            curl -XGET https://example.com/foo/show \
+                            -b cookies.txt -c cookies.txt
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-german-example.json" />
+                    </tab>
+                    <tab title="With uninstalled">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            echo "X-Localization=as" >> cookies.txt
+
+                            curl -XGET https://example.com/foo/show \
+                            -b cookies.txt -c cookies.txt
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-french-example.json" />
+                    </tab>
+                    <tab title="With unknown">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            echo "X-Localization=qwerty" >> cookies.txt
+
+                            curl -XGET https://example.com/foo/show \
+                            -b cookies.txt -c cookies.txt
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-french-example.json" />
+                    </tab>
+                </tabs>
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Compatibility" id="compatibility">
+        <link-summary>Compatibility table for the %repository-title-routes% package</link-summary>
+
+        <table>
+            <tr>
+                <td>Laravel</td>
+                <td>PHP</td>
+                <td>Package</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>10, 11</td>
+                <td>8.1, 8.2, 8.3</td>
+                <td><code>^1.0</code></td>
+                <td><img src="%badge-supported%" alt="supported" /></td>
+            </tr>
+        </table>
+    </chapter>
 </topic>
