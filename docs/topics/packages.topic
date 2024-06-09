@@ -6,6 +6,12 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Packages" id="packages">
 
+    <chapter title="Starter Kits" id="starter_kits">
+        <list>
+            <li><a href="packages-common.topic" /></li>
+        </list>
+    </chapter>
+
     <chapter title="Translation" id="translation">
         <list>
             <li><a href="packages-lang.topic" /></li>
@@ -18,10 +24,10 @@
         </list>
     </chapter>
 
-    <chapter title="Management" id="management">
+    <chapter title="Features" id="features">
         <list>
-            <li><a href="packages-common.topic" /></li>
             <li><a href="packages-routes.topic" /></li>
+            <li><a href="packages-json-fallback.topic" /></li>
         </list>
     </chapter>
 
@@ -30,8 +36,6 @@
             <li><a href="packages-publisher.topic" /></li>
             <li><a href="packages-locales.topic" /></li>
             <li><a href="packages-locale-list.topic" /></li>
-            <li><a href="packages-locale-list.topic" /></li>
-            <li><a href="packages-json-fallback.topic" /></li>
         </list>
     </chapter>
 </topic>
