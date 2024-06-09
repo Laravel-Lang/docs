@@ -25,7 +25,7 @@ env:
     CONFIG_JSON_VERSION: main
     INSTANCE: docs/laravel-lang
     DOMAIN_NAME: laravel-lang.com
-    BUILDER_VERSION: 241.15989
+    BUILDER_VERSION: 241.16003
 
 jobs:
     build:
