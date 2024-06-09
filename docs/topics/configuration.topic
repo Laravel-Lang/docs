@@ -188,9 +188,7 @@
     <chapter title="Routes" id="routes">
         <p>
             When using the package to work with
-            <a href="packages-routes.topic">
-                <format style="bold">routing</format>
-            </a>
+            <a href="packages-routes.topic">routing</a>
             , you can override the default values of key names.
         </p>
 

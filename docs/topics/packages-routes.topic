@@ -28,9 +28,7 @@
         </code-block>
 
         You can also
-        <a href="configuration.topic#routes">
-            <format style="bold">change</format>
-        </a>
+        <a href="configuration.topic#routes">change</a>
         the default settings by making changes to the <code>%config-filename%</code> file.
     </chapter>
 
@@ -378,7 +376,7 @@
                         </p>
                         <code-block lang="bash">
                             echo "X-Localization=de" >> cookies.txt
-                            
+
                             curl -XGET https://example.com/foo/show \
                             -b cookies.txt -c cookies.txt
                         </code-block>
