@@ -6,4 +6,8 @@ use LaravelLang\Routes\Middlewares\LocalizationByCookie;
 
 app('router')
     ->middleware(LocalizationByCookie::class)
-    ->get('some', fn () => response()->json(__('Foo')));
+    ->get('foo/{bar}', function (string $bar) {
+        return response()->json([
+            $bar => __('Foo'),
+        ]);
+    });
