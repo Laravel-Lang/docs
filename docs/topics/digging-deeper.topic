@@ -4,11 +4,12 @@
 <topic
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Common" id="upgrade-common">
+    title="Digging Deeper" id="digging-deeper">
 
     <list>
-        <li><a href="upgrade-common-to-6-from-5.topic" /></li>
-        <li><a href="upgrade-common-to-5-from-4.topic" /></li>
-        <li><a href="upgrade-third-party.topic" /></li>
+        <li><a href="packages-publisher.topic" /></li>
+        <li><a href="packages-locales.topic" /></li>
+        <li><a href="packages-locale-list.topic" /></li>
+        <li><a href="packages-json-fallback.topic" /></li>
     </list>
 </topic>

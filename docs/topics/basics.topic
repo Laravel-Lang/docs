@@ -4,11 +4,10 @@
 <topic
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Support" id="packages-support">
+    title="The Basics" id="basics">
 
     <list>
-        <li><a href="packages-publisher.topic" /></li>
-        <li><a href="packages-locales.topic" /></li>
-        <li><a href="packages-locale-list.topic" /></li>
+        <li><a href="packages-common.topic" /></li>
+        <li><a href="packages-routes.topic" /></li>
     </list>
 </topic>

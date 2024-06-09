@@ -13,6 +13,7 @@
             <toc-element topic="upgrade-common.topic">
                 <toc-element topic="upgrade-common-to-6-from-5.topic" />
                 <toc-element topic="upgrade-common-to-5-from-4.topic" />
+                <toc-element topic="upgrade-third-party.topic" />
             </toc-element>
             <toc-element topic="upgrade-publisher.topic">
                 <toc-element topic="upgrade-publisher-to-16-from-15.topic" />
@@ -21,7 +22,6 @@
             <toc-element topic="upgrade-json-fallback.topic">
                 <toc-element topic="upgrade-json-fallback-to-2-from-1.topic" />
             </toc-element>
-            <toc-element topic="upgrade-third-party.topic" />
         </toc-element>
         <toc-element topic="security-policy.topic" />
         <toc-element topic="questions-and-issues.topic" />
@@ -42,26 +42,24 @@
         <toc-element topic="usage-reset-locales.topic" />
         <toc-element topic="usage-remove-locales.topic" />
     </toc-element>
-    <toc-element topic="packages.topic">
+    <toc-element topic="basics.topic">
         <toc-element topic="packages-common.topic" />
-        <toc-element topic="packages-translations.topic">
-            <toc-element topic="packages-lang.topic" />
-            <toc-element topic="packages-actions.topic" />
-            <toc-element topic="packages-attributes.topic" />
-            <toc-element topic="packages-http-statuses.topic" />
-            <toc-element topic="packages-native-locale-names.topic" />
-            <toc-element topic="packages-native-country-names.topic" />
-            <toc-element topic="packages-native-currency-names.topic" />
-        </toc-element>
-        <toc-element topic="packages-features.topic">
-            <toc-element topic="packages-routes.topic" />
-            <toc-element topic="packages-json-fallback.topic" />
-        </toc-element>
-        <toc-element topic="packages-support.topic">
-            <toc-element topic="packages-publisher.topic" />
-            <toc-element topic="packages-locales.topic" />
-            <toc-element topic="packages-locale-list.topic" />
-        </toc-element>
+        <toc-element topic="packages-routes.topic" />
+    </toc-element>
+    <toc-element topic="packages-translations.topic">
+        <toc-element topic="packages-lang.topic" />
+        <toc-element topic="packages-actions.topic" />
+        <toc-element topic="packages-attributes.topic" />
+        <toc-element topic="packages-http-statuses.topic" />
+        <toc-element topic="packages-native-locale-names.topic" />
+        <toc-element topic="packages-native-country-names.topic" />
+        <toc-element topic="packages-native-currency-names.topic" />
+    </toc-element>
+    <toc-element topic="digging-deeper.topic">
+        <toc-element topic="packages-publisher.topic" />
+        <toc-element topic="packages-locales.topic" />
+        <toc-element topic="packages-locale-list.topic" />
+        <toc-element topic="packages-json-fallback.topic" />
     </toc-element>
     <toc-element topic="plugins.topic">
         <toc-element topic="plugins-installation.topic" />

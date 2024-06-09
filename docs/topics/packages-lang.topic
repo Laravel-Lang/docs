@@ -11,7 +11,6 @@
     <card-summary>Information on using the %repository-title-lang% package</card-summary>
     <web-summary>Information on using the %repository-title-lang% package</web-summary>
 
-    <a href="packages-common.topic">foo bar baz</a>
     <tip>
         <p>
             This package contains translations of all official keys from Laravel projects:
