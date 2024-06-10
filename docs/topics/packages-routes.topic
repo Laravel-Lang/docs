@@ -417,6 +417,32 @@
         </chapter>
     </chapter>
 
+    <chapter title="Events" id="events">
+        <note>
+            The event is available in the <code>%package-routes%</code> package version <code>1.1</code> and higher.
+        </note>
+
+        <p>
+            When passing a localization parameter to install it in the application, the event will be called:
+        </p>
+
+        <code-block lang="php">
+            use LaravelLang\Routes\Events\LocaleHasBeenSetEvent;
+
+            LocaleHasBeenSetEvent::dispatch($locale);
+        </code-block>
+
+        <p>
+            The event's <code>$locale</code> property is of <code>LaravelLang\Locales\Data\LocaleData</code> type.
+        </p>
+
+        <p>
+            If necessary, you can listen to this event. For example:
+        </p>
+
+        <code-block lang="php" src="packages-routes-events-listen.php" include-lines="5-" />
+    </chapter>
+
     <chapter title="Compatibility" id="compatibility">
         <link-summary>Compatibility table for the %repository-title-routes% package</link-summary>
 

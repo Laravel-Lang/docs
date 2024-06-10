@@ -49,6 +49,7 @@
     <var name="package-native-currency-names" value="laravel-lang/native-currency-name" />
     <var name="package-native-locale-names" value="laravel-lang/native-locale-names" />
     <var name="package-publisher" value="laravel-lang/publisher" />
+    <var name="package-routes" value="laravel-lang/routes" />
     <var name="package-status-generator" value="laravel-lang/status-generator" />
     <var name="package-vendor-tag" value="localization" />
     <var name="repository-assign-bugs" value="andrey-helldar" />
