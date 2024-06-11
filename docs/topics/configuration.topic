@@ -55,7 +55,7 @@
         <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="8-14"
+            include-lines="8-16"
         />
     </chapter>
 
@@ -98,7 +98,7 @@
         <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="16-22"
+            include-lines="18-26"
         />
     </chapter>
 
@@ -145,7 +145,7 @@
         <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="24-34"
+            include-lines="28-40"
         />
     </chapter>
 
@@ -172,7 +172,7 @@
         <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="43-82"
+            include-lines="42-90"
             collapsed-title="Show settings"
             collapsible="true"
         />
@@ -198,7 +198,7 @@
         <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="84-102"
+            include-lines="92-116"
         />
     </chapter>
 </topic>
