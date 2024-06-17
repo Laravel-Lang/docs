@@ -53,10 +53,21 @@
                 To get started, you need to specify the
                 <code>{locale}</code> parameter anywhere in the URL of your routes.
             </p>
-            <p>
-                The parameter name can be changed in the <code>routes</code> section
-                of the <code>%config-filename%</code> file.
-            </p>
+            <include from="library-descriptions.topic" element-id="routes-changeable-locale-parameter" />
         </tip>
+    </snippet>
+
+    <snippet id="routes-changeable-locale-parameter">
+        <p>
+            The parameter name can be changed in the <code>routes</code> section
+            of the <code>%config-filename%</code> file.
+        </p>
+    </snippet>
+
+    <snippet id="routes-changeable-locale-parameter-prefix-redirect">
+        <p>
+            The parameter name, name prefix and redirect option can be changed in the <code>routes</code> section
+            of the <code>%config-filename%</code> file.
+        </p>
     </snippet>
 </topic>

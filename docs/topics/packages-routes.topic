@@ -415,6 +415,138 @@
                 </tabs>
             </chapter>
         </chapter>
+
+        <chapter title="Via Localization Group" id="via_localization_group">
+            <tip>
+                <include from="library-descriptions.topic" element-id="routes-changeable-locale-parameter-prefix-redirect" />
+            </tip>
+
+            <code-block lang="php" src="configuration-routes-usage-localized-group.php" include-lines="5-" />
+
+            <p>
+                This method allows you to easily manage group prefixes using localized routes.
+            </p>
+            <p>
+                In addition to the main middleware for this group, <code>LocalizationByParameterPrefix</code>,
+                the following also takes part:
+                <code>LocalizationByCookie</code>,
+                <code>LocalizationByHeader</code> and
+                <code>LocalizationBySession</code> .
+            </p>
+            <p>
+                You can use any of three interaction methods:
+            </p>
+            <code-block lang="php">
+                use Illuminate\Support\Facades\Route;
+                use LaravelLang\Routes\Facades\LocalizationRoute;
+
+                app('router')->localizedGroup(fn () => ...)
+
+                Route::localizedGroup(fn () => ...)
+
+                LocalizationRoute::group(fn () => ...)
+            </code-block>
+
+            <p>
+                The final application will register two types of routes - with and without the
+                <code>{locale}</code> prefix. For example:
+            </p>
+            <table>
+                <tr>
+                    <td>URL</td>
+                    <td>Pattern</td>
+                    <td>Name</td>
+                </tr>
+                <tr>
+                    <td>https://example.com/fr/foo/show</td>
+                    <td><code>{locale}/foo/{bar}</code></td>
+                    <td><code>localized.show</code></td>
+                </tr>
+                <tr>
+                    <td>https://example.com/foo/show</td>
+                    <td><code>foo/{bar}</code></td>
+                    <td><code>show</code></td>
+                </tr>
+            </table>
+
+            <p>
+                The name prefix can be changed in the <code>routes</code> section
+                of the <code>%config-filename%</code> file.
+            </p>
+
+            <chapter title="Examples" id="via_localization_group_examples">
+                <tabs>
+                    <tab title="Default locale">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/fr/foo/show
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <tabs>
+                            <tab title="With enabled redirect">
+                                <code-block lang="curl">
+                                    ### 302 Redirect
+                                    Location: https://example.com/foo/show
+                                </code-block>
+                            </tab>
+                            <tab title="With disabled redirect">
+                                <code-block lang="json" src="configuration-routes-usage-french-example.json" />
+                            </tab>
+                        </tabs>
+                    </tab>
+                    <tab title="Non-default locale">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/de/foo/show
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="json" src="configuration-routes-usage-german-example.json" />
+                    </tab>
+                    <tab title="With uninstalled">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/as/foo/show
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="curl">
+                            ### 302 Redirect
+                            Location: https://example.com/foo/show
+                        </code-block>
+                    </tab>
+                    <tab title="With unknown">
+                        <p>
+                            Request:
+                        </p>
+                        <code-block lang="bash">
+                            curl -XGET https://example.com/qwerty/foo/show
+                        </code-block>
+
+                        <p>
+                            Response:
+                        </p>
+                        <code-block lang="curl">
+                            ### 302 Redirect
+                            Location: https://example.com/foo/show
+                        </code-block>
+                    </tab>
+                </tabs>
+            </chapter>
+        </chapter>
     </chapter>
 
     <chapter title="Events" id="events">

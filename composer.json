@@ -19,14 +19,12 @@
         "ext-dom": "*",
         "ext-simplexml": "*",
         "dragon-code/pretty-array": "^4.1",
-        "dragon-code/support": "^6.12",
-        "dragon-code/xml-core": "^2.2",
+        "dragon-code/support": "^6.13",
+        "dragon-code/xml-core": "^2.3",
         "laravel-lang/common": "^6.3",
-        "laravel-lang/locale-list": "^1.2",
-        "stichoza/google-translate-php": "^5.1"
-    },
-    "require-dev": {
-        "symfony/var-dumper": "^7.0"
+        "laravel-lang/locale-list": "^1.4",
+        "stichoza/google-translate-php": "^5.1.3",
+        "symfony/var-dumper": "^7.1.1"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
