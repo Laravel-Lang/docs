@@ -43,23 +43,23 @@
         <toc-element topic="usage-remove-locales.topic" />
     </toc-element>
     <toc-element topic="basics.topic">
-        <toc-element topic="packages-common.topic" />
-        <toc-element topic="packages-routes.topic" />
+        <toc-element topic="packages-common.topic"/>
+        <toc-element topic="packages-locales.topic"/>
+        <toc-element topic="packages-routes.topic"/>
     </toc-element>
-    <toc-element topic="packages-translations.topic">
+    <toc-element topic="localizations.topic" >
         <toc-element topic="packages-lang.topic" />
         <toc-element topic="packages-actions.topic" />
         <toc-element topic="packages-attributes.topic" />
         <toc-element topic="packages-http-statuses.topic" />
-        <toc-element topic="packages-native-locale-names.topic" />
-        <toc-element topic="packages-native-country-names.topic" />
-        <toc-element topic="packages-native-currency-names.topic" />
     </toc-element>
     <toc-element topic="digging-deeper.topic">
         <toc-element topic="packages-publisher.topic" />
-        <toc-element topic="packages-locales.topic" />
         <toc-element topic="packages-locale-list.topic" />
         <toc-element topic="packages-json-fallback.topic" />
+        <toc-element topic="packages-native-locale-names.topic"/>
+        <toc-element topic="packages-native-country-names.topic"/>
+        <toc-element topic="packages-native-currency-names.topic"/>
     </toc-element>
     <toc-element topic="plugins.topic">
         <toc-element topic="plugins-installation.topic" />

@@ -8,6 +8,7 @@
 
     <list>
         <li><a href="packages-common.topic" /></li>
+        <li><a href="packages-locales.topic" /></li>
         <li><a href="packages-routes.topic" /></li>
     </list>
 </topic>

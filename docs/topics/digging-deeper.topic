@@ -8,8 +8,10 @@
 
     <list>
         <li><a href="packages-publisher.topic" /></li>
-        <li><a href="packages-locales.topic" /></li>
         <li><a href="packages-locale-list.topic" /></li>
         <li><a href="packages-json-fallback.topic" /></li>
+        <li><a href="packages-native-locale-names.topic" /></li>
+        <li><a href="packages-native-country-names.topic" /></li>
+        <li><a href="packages-native-currency-names.topic" /></li>
     </list>
 </topic>
