@@ -416,9 +416,62 @@
             </chapter>
         </chapter>
 
+        <chapter title="Via Model" id="via_model">
+            <tip>
+                Sets the localization according to the
+                <tooltip term="package-routes-parameter-name">locale</tooltip>
+                column name.
+            </tip>
+
+            <code-block lang="php" src="configuration-routes-usage-column.php" include-lines="5-" />
+
+            <p>
+                This method allows you to set localization for any authorized client.
+                To do this, make sure that the model contains the
+                <tooltip term="package-routes-parameter-name">"locale"</tooltip>
+                attribute.
+            </p>
+            <p>
+                If the user table does not contain this column,
+                add it if necessary or create a dynamic method in the model class.
+            </p>
+            <p>
+                For example:
+            </p>
+
+            <code-block lang="php" src="configuration-routes-model-attribute.php" include-lines="5-" />
+
+            <p>
+                Now, if the user is authorized using middleware or manually, for example, using the
+                <code>Auth::login($user)</code> method, the application will return information in the language of his choice.
+            </p>
+
+            <p>
+                In addition, if the user is authorized using a certain guard,
+                then you can specify it using a colon when calling the middleware.
+            </p>
+            <p>
+                For example:
+            </p>
+
+            <code-block lang="php" src="configuration-routes-usage-column-guard.php" include-lines="5-" />
+
+            <p>
+                To obtain a user instance, the middleware uses the following code:
+            </p>
+
+            <code-block
+                lang="php"
+                src="https://raw.githubusercontent.com/Laravel-Lang/routes/main/src/Middlewares/LocalizationByModel.php"
+                include-lines="7-15,30-33,48"
+            />
+        </chapter>
+
         <chapter title="Via Localization Group" id="via_localization_group">
             <tip>
-                <include from="library-descriptions.topic" element-id="routes-changeable-locale-parameter-prefix-redirect" />
+                <include
+                    from="library-descriptions.topic"
+                    element-id="routes-changeable-locale-parameter-prefix-redirect" />
             </tip>
 
             <code-block lang="php" src="configuration-routes-usage-localized-group.php" include-lines="5-" />

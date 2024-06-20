@@ -2,6 +2,6 @@
 <!DOCTYPE terms SYSTEM "https://resources.jetbrains.com/writerside/1.0/glossary.dtd">
 <terms>
     <term name="package-routes-parameter-name">
-        The parameter name can be changed in the "routes" section of the "%config-filename%" file.
+        This name can be changed in the "routes" section of the "%config-filename%" file.
     </term>
 </terms>

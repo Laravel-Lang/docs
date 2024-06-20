@@ -7,7 +7,7 @@ app('router')
     ->get('some/{locale}', fn () => view('welcome'));
 
 app('router')
-    ->middleware('localization.parameter.redirect')
+    ->middleware('localization.redirect')
     ->get('some/{locale?}', fn () => view('welcome'));
 
 app('router')
@@ -20,4 +20,8 @@ app('router')
 
 app('router')
     ->middleware('localization.session')
+    ->get('some', fn () => view('welcome'));
+
+app('router')
+    ->middleware('localization.model')
     ->get('some', fn () => view('welcome'));
