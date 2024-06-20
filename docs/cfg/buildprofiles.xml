@@ -20,6 +20,9 @@
         <custom-favicons>
             favicon.svg,favicon.svg,favicon.svg,favicon.svg
         </custom-favicons>
+        <analytics-head-script-file>
+            analytics.html
+        </analytics-head-script-file>
     </variables>
     <build-profile instance="laravel-lang">
         <variables>
