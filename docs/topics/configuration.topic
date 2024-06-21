@@ -201,4 +201,33 @@
             include-lines="5,7-8,99,112-118,125-126,133-135,164"
         />
     </chapter>
+
+    <chapter title="Models" id="models">
+        <p>
+            You can define default parameter values when using the
+            <a href="packages-models.topic">%repository-title-models%</a> package.
+        </p>
+
+        <p>
+            This setting available in the <code>%config-filename%</code> file:
+        </p>
+        <code-block
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
+            include-lines="8,137-"
+        />
+
+        <p>
+            The <code>suffix</code> parameter is used to specify
+            the suffix of the models to which the translation repository belongs.
+        </p>
+        <p>
+            For example:
+        </p>
+
+        <code-block>
+            App\Models\Post::class
+            App\Models\PostTranslation::class
+        </code-block>
+    </chapter>
 </topic>

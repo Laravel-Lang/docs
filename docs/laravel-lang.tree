@@ -46,6 +46,7 @@
         <toc-element topic="packages-common.topic"/>
         <toc-element topic="packages-locales.topic"/>
         <toc-element topic="packages-routes.topic"/>
+        <toc-element topic="packages-models.topic" />
     </toc-element>
     <toc-element topic="localizations.topic" >
         <toc-element topic="packages-lang.topic" />

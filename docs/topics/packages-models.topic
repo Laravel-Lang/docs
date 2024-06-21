@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Models" id="packages-models">
+
+    <show-structure depth="2" />
+
+    <link-summary>Information on using the %repository-title-models% package</link-summary>
+    <card-summary>Information on using the %repository-title-models% package</card-summary>
+    <web-summary>Information on using the %repository-title-models% package</web-summary>
+
+    <warning>
+        <p>
+            The <code>%repository-title-models%</code> project is in <format style="bold">beta</format> testing.
+        </p>
+        <p>
+            Use in production is highly discouraged until it is released into a stable version.
+        </p>
+        <p>
+            Documentation will also be updated frequently to reflect changes in the project.
+        </p>
+    </warning>
+
+    <chapter title="Installation" id="installation">
+        <link-summary>Installation information for the %package-models% package</link-summary>
+
+        <note>
+            The compatibility table can be viewed <a href="#compatibility">here</a>.
+        </note>
+
+        <p>
+            To install, run the console command:
+        </p>
+
+        <code-block lang="bash">
+            %install-models%
+        </code-block>
+
+        You can also
+        <a href="configuration.topic#models">change</a>
+        the default settings by making changes to the <code>%config-filename%</code> file.
+    </chapter>
+
+    <chapter title="Console Commands" id="console_commands">
+        <chapter title="Create Translation Model" id="create_translation_model">
+            TODO: Here you will find information about creating models
+
+            <code-block lang="bash">
+                php artisan make:model:localization
+            </code-block>
+        </chapter>
+
+        <chapter title="Helper Files for IDE" id="helper_files_for_ide">
+            <code-block lang="bash">
+                php artisan lang:models:helper
+            </code-block>
+        </chapter>
+    </chapter>
+
+    <chapter title="Usage" id="usage">
+        <link-summary>Usage information for the %repository-title-models% package</link-summary>
+
+        <chapter title="Model Setup" id="model_setup">
+            TODO: Here will be information on setting up the basic model
+        </chapter>
+
+        <chapter title="Create Translation" id="create_translation">
+            TODO: Here you will find information about adding a translation.
+        </chapter>
+
+        <chapter title="Update Translation" id="update_translation">
+            <p>
+                TODO:
+            </p>
+            <list>
+                <li>Information about what will happen if you
+                    <format style="bold">do not</format>
+                    save the base object
+                </li>
+                <li>Information about what will happen if you save the base object</li>
+            </list>
+        </chapter>
+
+        <chapter title="Get Translation" id="get_translation">
+            TODO
+        </chapter>
+
+        <chapter title="Has Translated" id="has_translated">
+            TODO
+        </chapter>
+
+        <chapter title="Is Translatable" id="is_translatable">
+            TODO
+        </chapter>
+
+        <chapter title="Forget Translation" id="forget_translation">
+            TODO: Here you will find information about deleting translations from the database.
+        </chapter>
+
+        <chapter title="Delete Base Model" id="delete_base_model">
+            TODO: Here will be information about deleting the base model (foreign connection).
+        </chapter>
+    </chapter>
+
+    <chapter title="Events" id="events">
+        <p>
+            When certain actions are performed, the following events will be triggered:
+        </p>
+
+        <code-block lang="php">
+            use LaravelLang\Models\Events\AllTranslationsHasBeenForgetEvent;
+            use LaravelLang\Models\Events\TranslationHasBeenForgetEvent;
+            use LaravelLang\Models\Events\TranslationHasBeenSetEvent;
+
+            AllTranslationsHasBeenForgetEvent::dispatch($model);
+            TranslationHasBeenForgetEvent::dispatch($model, $locale);
+            TranslationHasBeenSetEvent::dispatch($model, $column, $locale, $oldValue, $newValue);
+        </code-block>
+
+        <p>
+            If necessary, you can listen to this event. For example:
+        </p>
+
+        <code-block lang="php" src="packages-models-events-listen.php" include-lines="5-" />
+    </chapter>
+
+    <chapter title="Compatibility" id="compatibility">
+        <link-summary>Compatibility table for the %repository-title-models% package</link-summary>
+
+        <table>
+            <tr>
+                <td>Laravel</td>
+                <td>PHP</td>
+                <td>Package</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>11.4+</td>
+                <td>8.2, 8.3</td>
+                <td><code>^1.0</code></td>
+                <td><img src="%badge-supported%" alt="supported" /></td>
+            </tr>
+        </table>
+    </chapter>
+</topic>
