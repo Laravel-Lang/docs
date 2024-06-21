@@ -332,7 +332,15 @@
         </chapter>
 
         <chapter title="Delete Base Model" id="delete_base_model">
-            TODO: Here will be information about deleting the base model (foreign connection).
+            <p>
+                By default, the translation model contains a foreign link to the parent model.
+                Therefore, if it is softly deleted using the
+                <a href="https://laravel.com/docs/eloquent#soft-deleting">SoftDeletes</a> trait,
+                all translations will remain in their places, but when the
+                <code>forceDelete</code> method is called, the translations will be automatically deleted from the database.
+            </p>
+
+            <code-block lang="php" src="models-usage-delete-base-model.php" include-lines="5-" />
         </chapter>
     </chapter>
 
