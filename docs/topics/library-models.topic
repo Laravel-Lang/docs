@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Library Models" id="library-models">
+
+    <snippet id="ensure_locale_installed">
+        <tip>
+            <p>
+                Make sure the required localization is installed in the application.
+            </p>
+            <p>
+                You can add a new localization using the <code>%command-add-empty%</code> console command.
+                You can read more about this on the
+                <format style="bold"><a href="usage-add-locales.topic" /></format>
+                page.
+            </p>
+        </tip>
+    </snippet>
+</topic>

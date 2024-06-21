@@ -184,7 +184,50 @@
         </chapter>
 
         <chapter title="Create Translation" id="create_translation">
-            TODO: Here you will find information about adding a translation.
+            <include from="library-models.topic" element-id="ensure_locale_installed" />
+
+            <p>
+                To add a translation to your application's current locale, simply assign a value to the model property.
+                For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5-7" />
+
+            <p>
+                You can also set a new value using the <code>setTranslation</code> method:
+            </p>
+
+            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,8-9" />
+
+            <p>
+                These methods will set a new value to the currently active locale.
+                To set the value to a specific locale, pass its code as the third parameter in this method.
+                For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,10-11" />
+            
+            <p>
+                It is also possible to use mass filling:
+            </p>
+
+            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,12-15" />
+
+            <note>
+                <p>
+                    Please note that despite calling these methods, the new values will be stored to the model objects.
+                    To write changes to the database, simply call the <code>save</code> method on the parent model.
+                    For example:
+                </p>
+
+                <code-block lang="php" src="models-usage-create-translation.php" include-lines="17" />
+            </note>
+            
+            <p>
+                Of course, filling can also be done when creating the model. For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,18-21" />
         </chapter>
 
         <chapter title="Update Translation" id="update_translation">
