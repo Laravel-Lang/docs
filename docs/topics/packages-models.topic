@@ -349,21 +349,13 @@
             When certain actions are performed, the following events will be triggered:
         </p>
 
-        <code-block lang="php">
-            use LaravelLang\Models\Events\AllTranslationsHasBeenForgetEvent;
-            use LaravelLang\Models\Events\TranslationHasBeenForgetEvent;
-            use LaravelLang\Models\Events\TranslationHasBeenSetEvent;
-
-            AllTranslationsHasBeenForgetEvent::dispatch($model);
-            TranslationHasBeenForgetEvent::dispatch($model, $locale);
-            TranslationHasBeenSetEvent::dispatch($model, $column, $locale, $oldValue, $newValue);
-        </code-block>
+        <code-block lang="php" src="models-usage-events.php" include-lines="5-" />
 
         <p>
             If necessary, you can listen to this event. For example:
         </p>
 
-        <code-block lang="php" src="packages-models-events-listen.php" include-lines="5-" />
+        <code-block lang="php" src="models-usage-events-listen.php" include-lines="5-" />
     </chapter>
 
     <chapter title="Compatibility" id="compatibility">
