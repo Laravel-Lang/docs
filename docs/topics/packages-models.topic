@@ -14,7 +14,9 @@
 
     <warning>
         <p>
-            The <code>%repository-title-models%</code> project is in <format style="bold">beta</format> testing.
+            The <code>%repository-title-models%</code> project is in
+            <format style="bold">beta</format>
+            testing.
         </p>
         <p>
             Use in production is highly discouraged until it is released into a stable version.
@@ -46,17 +48,112 @@
 
     <chapter title="Console Commands" id="console_commands">
         <chapter title="Create Translation Model" id="create_translation_model">
-            TODO: Here you will find information about creating models
+            <p>
+                The storage is optimized for storing large volumes of data without mixing them with each other.
+                Thus, for each model that requires translations, its own model is created.
+            </p>
+            <p>
+                The easiest way to create a repository is to use the
+                <code>%command-models-make-storage-simple%</code> console command:
+            </p>
 
             <code-block lang="bash">
-                php artisan make:model:localization
+                %command-models-make-storage%
             </code-block>
+
+            <p>
+                When executed, you will be asked for a source model and, if it does not exist, it will be created.
+                After this, they will ask questions about the columns to create. For example, "title", "description", etc.
+            </p>
+            <p>
+                Don't worry if you added extra columns or didn't add them at all - the console command will generate
+                a model file and its migration, in which you can make the necessary changes.
+            </p>
+            <p>
+                The created storage model will and should always be next to the parent model. For example:
+            </p>
+
+            <code-block>
+                App\Models\Content\News
+                App\Models\Content\NewsTranslation
+                App\Models\Products\Category
+                App\Models\Products\CategoryTranslation
+            </code-block>
+
+            <tip>
+                The default suffix is <code>Translation</code>, but you can replace it with your own in the
+                <code>models</code> section of the
+                <a href="configuration.topic#models">%config-filename%</a> settings file.
+            </tip>
+
+            <p>
+                After this, all that remains is to start the migration by calling the console command
+                <code>php artisan migrate</code>.
+            </p>
+
+            <chapter title="Command Options" id="command_options">
+                <deflist type="narrow">
+                    <def title="model">
+                        <p>
+                            Points to the name of the parent model for which the repository is to be created.
+                        </p>
+                        <p>
+                            For example:
+                        </p>
+                        <code-block lang="bash">
+                            %command-models-make-storage% Page
+                            # or
+                            %command-models-make-storage% App\Models\Page
+                        </code-block>
+                    </def>
+                    <def title="--columns">
+                        <p>
+                            The parameter can contain one or more values and contains a list of columns to be added.
+                        </p>
+                        <p>
+                            For example:
+                        </p>
+                        <code-block lang="bash">
+                            --columns=title --columns=description
+                        </code-block>
+                        <code-block lang="php">
+                            Artisan::call('%command-models-make-storage-simple%', [
+                                '--columns' => ['title', 'description'],
+                            ]);
+                        </code-block>
+                    </def>
+                </deflist>
+            </chapter>
         </chapter>
 
         <chapter title="Helper Files for IDE" id="helper_files_for_ide">
+            <p>
+                To help your IDE work with translatable fields, we recommend running the console command:
+            </p>
+
             <code-block lang="bash">
                 php artisan lang:models:helper
             </code-block>
+
+            <p>
+                This will create helper files that will allow the IDE to “recognize” the fields. For example:
+            </p>
+
+            <tabs>
+                <tab title="After">
+                    <img src="models-helper-after.png" alt="wit helper" />
+                </tab>
+                <tab title="Before">
+                    <img src="models-helper-before.png" alt="without helper" />
+                </tab>
+            </tabs>
+
+            <p>
+                You can also change the path to the directory for storing these files in the
+                <code>helpers</code> parameter of the <code>models</code> section of the
+                <a href="configuration.topic#models">%config-filename%</a> settings file.
+                Make sure the new path is indexed by your IDE.
+            </p>
         </chapter>
     </chapter>
 
