@@ -183,9 +183,9 @@
     <chapter title="Usage" id="usage">
         <link-summary>Usage information for the %repository-title-models% package</link-summary>
 
-        <chapter title="Add &amp; Update Translation" id="create_translation">
-            <include from="library-models.topic" element-id="ensure_locale_installed" />
+        <include from="library-models.topic" element-id="ensure_locale_installed" />
 
+        <chapter title="Add &amp; Update Translation" id="add_update_translation">
             <p>
                 To add or update a translation to your application's current locale, simply assign a value to the model property.
                 For example:
@@ -231,8 +231,6 @@
         </chapter>
 
         <chapter title="Get Translation" id="get_translation">
-            <include from="library-models.topic" element-id="ensure_locale_installed" />
-
             <p>
                 To get the value of a property for the current localization,
                 simply make a call to the model property. For example:
@@ -267,8 +265,6 @@
         </chapter>
 
         <chapter title="Has Translated" id="has_translated">
-            <include from="library-models.topic" element-id="ensure_locale_installed" />
-
             <p>
                 There are several ways to check if a column has a translation.
                 The first is to call the <code>hasTranslated</code> method, passing the column name as a parameter.
@@ -312,7 +308,27 @@
         </chapter>
 
         <chapter title="Forget Translation" id="forget_translation">
-            TODO: Here you will find information about deleting translations from the database.
+            <warning>
+                <p>
+                    Unlike <a href="#add_update_translation">add and update</a> methods, the
+                    <code>forgetTranslation</code> and
+                    <code>forgetAllTranslations</code> method immediately makes changes to the database by calling the
+                    <code>delete</code> method on the translation model.
+                </p>
+                <p>
+                    By default, the translation model does not contain the
+                    <a href="https://laravel.com/docs/eloquent#soft-deleting">SoftDeletes</a> trait, so the data is deleted immediately.
+                    If desired, you can add them yourself to the model class and migration file.
+                </p>
+            </warning>
+
+            <code-block lang="php" src="models-usage-forget-translation.php" include-lines="5,7-12" />
+
+            <p>
+                You can also remove all localizations at once by calling the <code>forgetAllTranslations</code> method.
+            </p>
+
+            <code-block lang="php" src="models-usage-forget-translation.php" include-lines="5,7-8,13-14" />
         </chapter>
 
         <chapter title="Delete Base Model" id="delete_base_model">

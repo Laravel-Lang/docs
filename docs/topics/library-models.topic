@@ -7,7 +7,7 @@
     title="Library Models" id="library-models">
 
     <snippet id="ensure_locale_installed">
-        <tip>
+        <note>
             <p>
                 Make sure the required localization is installed in the application.
             </p>
@@ -17,6 +17,6 @@
                 <format style="bold"><a href="usage-add-locales.topic" /></format>
                 page.
             </p>
-        </tip>
+        </note>
     </snippet>
 </topic>
