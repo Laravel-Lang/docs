@@ -267,6 +267,8 @@
         </chapter>
 
         <chapter title="Has Translated" id="has_translated">
+            <include from="library-models.topic" element-id="ensure_locale_installed" />
+
             <p>
                 There are several ways to check if a column has a translation.
                 The first is to call the <code>hasTranslated</code> method, passing the column name as a parameter.
@@ -298,7 +300,15 @@
         </chapter>
 
         <chapter title="Is Translatable" id="is_translatable">
-            TODO
+            <p>
+                The <code>isTranslatable</code> method checks for the presence of a field in the
+                <code>$fillable</code> Translate property of the model.
+            </p>
+            <p>
+                For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-is-translation.php" include-lines="5-" />
         </chapter>
 
         <chapter title="Forget Translation" id="forget_translation">
