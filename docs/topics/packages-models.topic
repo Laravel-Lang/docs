@@ -191,13 +191,13 @@
                 For example:
             </p>
 
-            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5-7" />
+            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-10" />
 
             <p>
                 You can also set a new value using the <code>setTranslation</code> method:
             </p>
 
-            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,8-9" />
+            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-8,11-12" />
 
             <p>
                 These methods will set a new value to the currently active locale.
@@ -205,13 +205,13 @@
                 For example:
             </p>
 
-            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,10-11" />
+            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5-8,13-16" />
 
             <p>
                 It is also possible to use mass filling:
             </p>
 
-            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,12-15" />
+            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-8,17-20" />
 
             <note>
                 <p>
@@ -220,14 +220,14 @@
                     For example:
                 </p>
 
-                <code-block lang="php" src="models-usage-create-translation.php" include-lines="17" />
+                <code-block lang="php" src="models-usage-create-translation.php" include-lines="22" />
             </note>
 
             <p>
                 Of course, filling can also be done when creating the model. For example:
             </p>
 
-            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,18-21" />
+            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-8,23-26" />
         </chapter>
 
         <chapter title="Get Translation" id="get_translation">
