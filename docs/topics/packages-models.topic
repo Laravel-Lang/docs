@@ -231,7 +231,31 @@
         </chapter>
 
         <chapter title="Get Translation" id="get_translation">
-            TODO
+            <include from="library-models.topic" element-id="ensure_locale_installed" />
+
+            <p>
+                To get the value of a property for the current localization,
+                simply make a call to the model property. For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-get-translation.php" include-lines="5,7-10" />
+
+            <p>
+                You can also use the <code>getTranslation</code> method:
+            </p>
+
+            <code-block lang="php" src="models-usage-get-translation.php" include-lines="5,7-8,11-12" />
+
+            <p>
+                To get a value for a specific locale, pass the localization code as the second argument.
+                For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-get-translation.php" include-lines="5,7-8,13-16" />
+
+            <tip>
+                Even if the model contains changes that were not written to the database, these methods will return this value.
+            </tip>
         </chapter>
 
         <chapter title="Has Translated" id="has_translated">
