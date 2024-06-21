@@ -4,4 +4,10 @@
     <term name="package-routes-parameter-name">
         This name can be changed in the "routes" section of the "%config-filename%" file.
     </term>
+    <term name="package-models-app-main-config-place">
+        The value set in the "app.locale" parameter of the "config/app.php" file.
+    </term>
+    <term name="package-models-app-fallback-config-place">
+        The value set in the "app.fallback_locale" parameter of the "config/app.php" file.
+    </term>
 </terms>

@@ -241,6 +241,14 @@
             <code-block lang="php" src="models-usage-get-translation.php" include-lines="5,7-10" />
 
             <p>
+                If the value of the
+                <tooltip term="package-models-app-main-config-place">main locale</tooltip>
+                is missing, the method will return the value of the
+                <tooltip term="package-models-app-fallback-config-place">fallback locale</tooltip>
+                .
+            </p>
+
+            <p>
                 You can also use the <code>getTranslation</code> method:
             </p>
 
@@ -259,7 +267,34 @@
         </chapter>
 
         <chapter title="Has Translated" id="has_translated">
-            TODO
+            <p>
+                There are several ways to check if a column has a translation.
+                The first is to call the <code>hasTranslated</code> method, passing the column name as a parameter.
+            </p>
+
+            <code-block lang="php" src="models-usage-has-translation.php" include-lines="5,7-10" />
+
+            <p>
+                This method checks both the
+                <tooltip term="package-models-app-main-config-place">main</tooltip>
+                and
+                <tooltip term="package-models-app-fallback-config-place">fallback</tooltip>
+                locales.
+                Returns <code>true</code> if one of the values is filled or <code>false</code> if both are empty.
+            </p>
+
+            <note>
+                Please note that stored boolean values (<code>true / false</code>) as well as numeric values
+                (<code>0, 0.0</code>) are considered complete and will return <code>true</code>.
+            </note>
+
+            <p>
+                If you need to check for the presence of a value for a specific localization,
+                pass its code as the second argument.
+                For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-has-translation.php" include-lines="5-8,11-14" />
         </chapter>
 
         <chapter title="Is Translatable" id="is_translatable">
