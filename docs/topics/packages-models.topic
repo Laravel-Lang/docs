@@ -183,11 +183,11 @@
     <chapter title="Usage" id="usage">
         <link-summary>Usage information for the %repository-title-models% package</link-summary>
 
-        <chapter title="Create Translation" id="create_translation">
+        <chapter title="Add &amp; Update Translation" id="create_translation">
             <include from="library-models.topic" element-id="ensure_locale_installed" />
 
             <p>
-                To add a translation to your application's current locale, simply assign a value to the model property.
+                To add or update a translation to your application's current locale, simply assign a value to the model property.
                 For example:
             </p>
 
@@ -206,7 +206,7 @@
             </p>
 
             <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,10-11" />
-            
+
             <p>
                 It is also possible to use mass filling:
             </p>
@@ -222,25 +222,12 @@
 
                 <code-block lang="php" src="models-usage-create-translation.php" include-lines="17" />
             </note>
-            
+
             <p>
                 Of course, filling can also be done when creating the model. For example:
             </p>
 
             <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,18-21" />
-        </chapter>
-
-        <chapter title="Update Translation" id="update_translation">
-            <p>
-                TODO:
-            </p>
-            <list>
-                <li>Information about what will happen if you
-                    <format style="bold">do not</format>
-                    save the base object
-                </li>
-                <li>Information about what will happen if you save the base object</li>
-            </list>
         </chapter>
 
         <chapter title="Get Translation" id="get_translation">
