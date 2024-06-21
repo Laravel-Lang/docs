@@ -47,6 +47,8 @@
     </chapter>
 
     <chapter title="Console Commands" id="console_commands">
+        <link-summary>Information about the console commands of the %repository-title-models% package.</link-summary>
+
         <chapter title="Create Translation Model" id="create_translation_model">
             <p>
                 The storage is optimized for storing large volumes of data without mixing them with each other.
@@ -126,7 +128,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Helper Files for IDE" id="helper_files_for_ide">
+        <chapter title="IDE helpers" id="ide_helpers">
             <p>
                 To help your IDE work with translatable fields, we recommend running the console command:
             </p>
@@ -161,7 +163,24 @@
         <link-summary>Usage information for the %repository-title-models% package</link-summary>
 
         <chapter title="Model Setup" id="model_setup">
-            TODO: Here will be information on setting up the basic model
+            <p>
+                After creating the translation repository,
+                you need to connect the <code>LaravelLang\Models\HasTranslations</code> trait to the main model.
+            </p>
+            <p>
+                For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-base-model.php" include-lines="5-" />
+
+            <p>
+                Also ensure that the base model does not contain physical or virtual fields used for translations.
+            </p>
+            <p>
+                For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-conflict-fields.php" include-lines="5-" />
         </chapter>
 
         <chapter title="Create Translation" id="create_translation">
