@@ -14,7 +14,7 @@
 
     <warning>
         <p>
-            The <code>%repository-title-models%</code> project is in beta testing.
+            The <code>%repository-title-models%</code> project is in <format style="bold">beta</format> testing.
         </p>
         <p>
             Use in production is highly discouraged until it is released into a stable version.
