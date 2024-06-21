@@ -128,6 +128,27 @@
             </chapter>
         </chapter>
 
+        <chapter title="Model Setup" id="model_setup">
+            <p>
+                After creating the translation repository,
+                you need to connect the <code>LaravelLang\Models\HasTranslations</code> trait to the main model.
+            </p>
+            <p>
+                For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-base-model.php" include-lines="5-" />
+
+            <p>
+                Also ensure that the base model does not contain physical or virtual fields used for translations.
+            </p>
+            <p>
+                For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-conflict-fields.php" include-lines="5-" />
+        </chapter>
+
         <chapter title="IDE helpers" id="ide_helpers">
             <p>
                 To help your IDE work with translatable fields, we recommend running the console command:
@@ -161,27 +182,6 @@
 
     <chapter title="Usage" id="usage">
         <link-summary>Usage information for the %repository-title-models% package</link-summary>
-
-        <chapter title="Model Setup" id="model_setup">
-            <p>
-                After creating the translation repository,
-                you need to connect the <code>LaravelLang\Models\HasTranslations</code> trait to the main model.
-            </p>
-            <p>
-                For example:
-            </p>
-
-            <code-block lang="php" src="models-usage-base-model.php" include-lines="5-" />
-
-            <p>
-                Also ensure that the base model does not contain physical or virtual fields used for translations.
-            </p>
-            <p>
-                For example:
-            </p>
-
-            <code-block lang="php" src="models-usage-conflict-fields.php" include-lines="5-" />
-        </chapter>
 
         <chapter title="Create Translation" id="create_translation">
             <include from="library-models.topic" element-id="ensure_locale_installed" />
