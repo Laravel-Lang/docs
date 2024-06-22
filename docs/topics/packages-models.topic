@@ -89,9 +89,12 @@
             </tip>
 
             <p>
-                After this, all that remains is to start the migration by calling the console command
-                <code>php artisan migrate</code>.
+                After this, all that remains is to start the migration by calling the console command:
             </p>
+
+            <code-block lang="bash">
+                php artisan migrate
+            </code-block>
 
             <chapter title="Options" id="options">
                 <deflist type="narrow">
