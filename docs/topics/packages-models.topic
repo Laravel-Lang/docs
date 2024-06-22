@@ -6,7 +6,7 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Models" id="packages-models">
 
-    <show-structure depth="2" />
+    <show-structure depth="3" />
 
     <link-summary>Information on using the %repository-title-models% package</link-summary>
     <card-summary>Information on using the %repository-title-models% package</card-summary>
@@ -185,49 +185,73 @@
 
         <include from="library-models.topic" element-id="ensure_locale_installed" />
 
-        <chapter title="Add &amp; Update Translation" id="add_update_translation">
-            <p>
-                To add or update a translation to your application's current locale, simply assign a value to the model property.
-                For example:
-            </p>
-
-            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-10" />
-
-            <p>
-                You can also set a new value using the <code>setTranslation</code> method:
-            </p>
-
-            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-8,11-12" />
-
-            <p>
-                These methods will set a new value to the currently active locale.
-                To set the value to a specific locale, pass its code as the third parameter in this method.
-                For example:
-            </p>
-
-            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5-8,13-16" />
-
-            <p>
-                It is also possible to use mass filling:
-            </p>
-
-            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-8,17-20" />
-
-            <note>
+        <chapter title="Set Translations" id="set_translations">
+            <chapter title="Single value" id="single_value">
                 <p>
-                    Please note that despite calling these methods, the new values will be stored to the model objects.
-                    To write changes to the database, simply call the <code>save</code> method on the parent model.
+                    To add or update a translation to your application's current locale, simply assign a value to the model property.
                     For example:
                 </p>
 
-                <code-block lang="php" src="models-usage-create-translation.php" include-lines="22" />
-            </note>
+                <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-10" />
+
+                <p>
+                    You can also set a new value using the <code>setTranslation</code> method:
+                </p>
+
+                <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-8,11-12" />
+
+                <p>
+                    These methods will set a new value to the currently active locale.
+                    To set the value to a specific locale, pass its code as the third parameter in this method.
+                    For example:
+                </p>
+
+                <code-block lang="php" src="models-usage-create-translation.php" include-lines="5-8,13-16" />
+
+                <p>
+                    It is also possible to use mass filling:
+                </p>
+
+                <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-8,17-20" />
+
+                <note>
+                    <p>
+                        Please note that despite calling these methods, the new values will be stored to the model objects.
+                        To write changes to the database, simply call the <code>save</code> method on the parent model.
+                        For example:
+                    </p>
+
+                    <code-block lang="php" src="models-usage-create-translation.php" include-lines="22" />
+                </note>
+
+                <p>
+                    Of course, filling can also be done when creating the model. For example:
+                </p>
+
+                <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-8,23-26" />
+            </chapter>
+
+            <chapter title="Plural value" id="plural_value">
+                <p>
+                    If you need to quickly fill a property with translations from several localizations,
+                    you can use any of the following ways:
+                </p>
+            </chapter>
+
+            <code-block lang="php" src="models-usage-set-translation-plural.php" include-lines="5-32" />
 
             <p>
-                Of course, filling can also be done when creating the model. For example:
+                You can also assign <code>iterable</code> objects when bulk populating. For example:
             </p>
 
-            <code-block lang="php" src="models-usage-create-translation.php" include-lines="5,7-8,23-26" />
+            <code-block lang="php" src="models-usage-set-translation-plural.php" include-lines="34-42" />
+
+            <p>
+                Please note that there is no strict need to indicate exact locations for each of the fields.
+                For example, the example above will populate the
+                <code>title</code> field for French, English, and German, while the
+                <code>description</code> field will only set values for French and German.
+            </p>
         </chapter>
 
         <chapter title="Get Translation" id="get_translation">
@@ -310,7 +334,7 @@
         <chapter title="Forget Translation" id="forget_translation">
             <warning>
                 <p>
-                    Unlike <a href="#add_update_translation">add and update</a> methods, the
+                    Unlike <a href="#set_translations">add and update</a> methods, the
                     <code>forgetTranslation</code> and
                     <code>forgetAllTranslations</code> method immediately makes changes to the database by calling the
                     <code>delete</code> method on the translation model.
