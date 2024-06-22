@@ -185,6 +185,40 @@
 
         <include from="library-models.topic" element-id="ensure_locale_installed" />
 
+        <chapter title="Get Translation" id="get_translation">
+            <p>
+                To get the value of a property for the current localization,
+                simply make a call to the model property. For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-get-translation.php" include-lines="5,7-10" />
+
+            <p>
+                If the value of the
+                <tooltip term="package-models-app-main-config-place">main locale</tooltip>
+                is missing, the method will return the value of the
+                <tooltip term="package-models-app-fallback-config-place">fallback locale</tooltip>
+                .
+            </p>
+
+            <p>
+                You can also use the <code>getTranslation</code> method:
+            </p>
+
+            <code-block lang="php" src="models-usage-get-translation.php" include-lines="5,7-8,11-12" />
+
+            <p>
+                To get a value for a specific locale, pass the localization code as the second argument.
+                For example:
+            </p>
+
+            <code-block lang="php" src="models-usage-get-translation.php" include-lines="5,7-8,13-16" />
+
+            <tip>
+                Even if the model contains changes that were not written to the database, these methods will return this value.
+            </tip>
+        </chapter>
+
         <chapter title="Set Translations" id="set_translations">
             <chapter title="Single value" id="single_value">
                 <p>
@@ -254,38 +288,28 @@
             </p>
         </chapter>
 
-        <chapter title="Get Translation" id="get_translation">
-            <p>
-                To get the value of a property for the current localization,
-                simply make a call to the model property. For example:
-            </p>
+        <chapter title="Forget Translation" id="forget_translation">
+            <warning>
+                <p>
+                    Unlike <a href="#set_translations">add and update</a> methods, the
+                    <code>forgetTranslation</code> and
+                    <code>forgetAllTranslations</code> method immediately makes changes to the database by calling the
+                    <code>delete</code> method on the translation model.
+                </p>
+                <p>
+                    By default, the translation model does not contain the
+                    <a href="https://laravel.com/docs/eloquent#soft-deleting">SoftDeletes</a> trait, so the data is deleted immediately.
+                    If desired, you can add them yourself to the model class and migration file.
+                </p>
+            </warning>
 
-            <code-block lang="php" src="models-usage-get-translation.php" include-lines="5,7-10" />
-
-            <p>
-                If the value of the
-                <tooltip term="package-models-app-main-config-place">main locale</tooltip>
-                is missing, the method will return the value of the
-                <tooltip term="package-models-app-fallback-config-place">fallback locale</tooltip>
-                .
-            </p>
-
-            <p>
-                You can also use the <code>getTranslation</code> method:
-            </p>
-
-            <code-block lang="php" src="models-usage-get-translation.php" include-lines="5,7-8,11-12" />
+            <code-block lang="php" src="models-usage-forget-translation.php" include-lines="5,7-12" />
 
             <p>
-                To get a value for a specific locale, pass the localization code as the second argument.
-                For example:
+                You can also remove all localizations at once by calling the <code>forgetAllTranslations</code> method.
             </p>
 
-            <code-block lang="php" src="models-usage-get-translation.php" include-lines="5,7-8,13-16" />
-
-            <tip>
-                Even if the model contains changes that were not written to the database, these methods will return this value.
-            </tip>
+            <code-block lang="php" src="models-usage-forget-translation.php" include-lines="5,7-8,13-14" />
         </chapter>
 
         <chapter title="Has Translated" id="has_translated">
@@ -329,30 +353,6 @@
             </p>
 
             <code-block lang="php" src="models-usage-is-translation.php" include-lines="5-" />
-        </chapter>
-
-        <chapter title="Forget Translation" id="forget_translation">
-            <warning>
-                <p>
-                    Unlike <a href="#set_translations">add and update</a> methods, the
-                    <code>forgetTranslation</code> and
-                    <code>forgetAllTranslations</code> method immediately makes changes to the database by calling the
-                    <code>delete</code> method on the translation model.
-                </p>
-                <p>
-                    By default, the translation model does not contain the
-                    <a href="https://laravel.com/docs/eloquent#soft-deleting">SoftDeletes</a> trait, so the data is deleted immediately.
-                    If desired, you can add them yourself to the model class and migration file.
-                </p>
-            </warning>
-
-            <code-block lang="php" src="models-usage-forget-translation.php" include-lines="5,7-12" />
-
-            <p>
-                You can also remove all localizations at once by calling the <code>forgetAllTranslations</code> method.
-            </p>
-
-            <code-block lang="php" src="models-usage-forget-translation.php" include-lines="5,7-8,13-14" />
         </chapter>
 
         <chapter title="Delete Base Model" id="delete_base_model">
