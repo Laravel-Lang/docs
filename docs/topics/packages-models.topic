@@ -186,6 +186,12 @@
         <include from="library-models.topic" element-id="ensure_locale_installed" />
 
         <chapter title="Get Translation" id="get_translation">
+            <tip>
+                All repository stores automatically propagate the
+                <a href="https://laravel.com/docs/eloquent-relationships#eager-loading">eager loading</a>
+                flag to the parent model, so there is no need to do this manually.
+            </tip>
+
             <p>
                 To get the value of a property for the current localization,
                 simply make a call to the model property. For example:
