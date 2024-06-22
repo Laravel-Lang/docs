@@ -1,17 +1,38 @@
+use LaravelLang\LocaleList\Direction;
+use LaravelLang\LocaleList\Locale;
+use LaravelLang\Locales\Data\CountryData;
+use LaravelLang\Locales\Data\CurrencyData;
 use LaravelLang\Locales\Data\LocaleData;
 use LaravelLang\Locales\Facades\Locales;
 
 // config('app.locale') // de
 
-return Locales::get('foo');
+return Locales::get('foo', withCountry: true, withCurrency: true);
 
 // Will return the default locale
 LocaleData {
   +code: "de"
-  +type: "Latn"
-  +name: "German"
-  +native: "Deutsch"
-  +localized: "Deutsch"
   +regional: "de_DE"
-  +orientation: "left-to-right"
+  +type: "Latn"
+  +native: "Deutsch"
+  +localized: "Allemand"
+  +country: CountryData {
+    +code: "DE"
+    +native: "Deutschland"
+    +localized: "Allemagne"
+  }
+  +currency: CurrencyData {
+    +code: "EUR"
+    +numeric: 978
+    +native: "Euro"
+    +localized: "euro"
+  }
+  +direction: Direction {
+    +name: "LeftToRight"
+    +value: "ltr"
+  }
+  +locale: Locale {
+    +name: "German"
+    +value: "de"
+  }
 }

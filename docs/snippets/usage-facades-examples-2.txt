@@ -1,26 +1,64 @@
+use LaravelLang\LocaleList\Direction;
+use LaravelLang\LocaleList\Locale;
+use LaravelLang\Locales\Data\CountryData;
+use LaravelLang\Locales\Data\CurrencyData;
 use LaravelLang\Locales\Data\LocaleData;
 use LaravelLang\Locales\Facades\Locales;
 
 // config('app.locale') // vi
 
-return Locales::get('de');
+return Locales::get('de', withCountry: true, withCurrency: true);
 
 LocaleData {
   +code: "de"
-  +type: "Latn"
-  +name: "German"
-  +native: "Deutsch"
-  +localized: "Tiếng Đức"
   +regional: "de_DE"
-  +orientation: "left-to-right"
+  +type: "Latn"
+  +native: "Deutsch"
+  +localized: "Allemand"
+  +country: CountryData {
+    +code: "DE"
+    +native: "Deutschland"
+    +localized: "Allemagne"
+  }
+  +currency: CurrencyData {
+    +code: "EUR"
+    +numeric: 978
+    +native: "Euro"
+    +localized: "euro"
+  }
+  +direction: Direction {
+    +name: "LeftToRight"
+    +value: "ltr"
+  }
+  +locale: Locale {
+    +name: "German"
+    +value: "de"
+  }
 }
 
 LocaleData {
   +code: "ar"
-  +type: "Arab"
-  +name: "Arabic"
-  +native: "العربية"
-  +localized: "Tiếng Ả Rập"
   +regional: "ar_AE"
-  +orientation: "right-to-left"
+  +type: "Arab"
+  +native: "العربية"
+  +localized: "Arabe"
+  +country: CountryData {
+    +code: "EG"
+    +native: "مصر"
+    +localized: "Égypte"
+  }
+  +currency: CurrencyData {
+    +code: "EGP"
+    +numeric: 818
+    +native: "جنيه مصري"
+    +localized: "livre égyptienne"
+  }
+  +direction: Direction {
+    +name: "RightToLeft"
+    +value: "rtl"
+  }
+  +locale: Locale {
+    +name: "Arabic"
+    +value: "ar"
+  }
 }

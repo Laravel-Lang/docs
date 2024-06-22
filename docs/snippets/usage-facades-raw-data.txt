@@ -1,4 +1,5 @@
 use LaravelLang\LocaleList\Locale;
+use LaravelLang\Locales\Data\LocaleData;
 use LaravelLang\Locales\Facades\Locales;
 
 // List of available localizations.
@@ -14,13 +15,13 @@ Locales::raw()->notInstalled(): array // array<string>
 Locales::raw()->protects(): array // array<string>
 
 // Check if language packs are available in requested locale.
-Locales::raw()->isAvailable(Locale|string|null $locale): bool
+Locales::raw()->isAvailable(LocaleData|Locale|string|null $locale): bool
 
 // Check if a language pack is installed.
-Locales::raw()->isInstalled(Locale|string|null $locale): bool
+Locales::raw()->isInstalled(LocaleData|Locale|string|null $locale): bool
 
 // The checked locale protecting.
-Locales::raw()->isProtected(Locale|string|null $locale): bool
+Locales::raw()->isProtected(LocaleData|Locale|string|null $locale): bool
 
 // Validate and returns the correct localization.
 // If an uninstalled localization is requested, then it will return the currently active one in the application.

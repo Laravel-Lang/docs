@@ -1,28 +1,66 @@
+use LaravelLang\LocaleList\Direction;
+use LaravelLang\LocaleList\Locale;
+use LaravelLang\Locales\Data\CountryData;
+use LaravelLang\Locales\Data\CurrencyData;
 use LaravelLang\Locales\Data\LocaleData;
 use LaravelLang\Locales\Facades\Locales;
 
 // config('app.locale') // de
 
-return Locales::getDefault();
+return Locales::getDefault(withCountry: true, withCurrency: true);
 
 // Non aliased
 LocaleData {
   +code: "de"
-  +type: "Latn"
-  +name: "German"
-  +native: "Deutsch"
-  +localized: "Deutsch"
   +regional: "de_DE"
-  +orientation: "left-to-right"
+  +type: "Latn"
+  +native: "Deutsch"
+  +localized: "Allemand"
+  +country: CountryData {
+    +code: "DE"
+    +native: "Deutschland"
+    +localized: "Allemagne"
+  }
+  +currency: CurrencyData {
+    +code: "EUR"
+    +numeric: 978
+    +native: "Euro"
+    +localized: "euro"
+  }
+  +direction: Direction {
+    +name: "LeftToRight"
+    +value: "ltr"
+  }
+  +locale: Locale {
+    +name: "German"
+    +value: "de"
+  }
 }
 
 // Aliased
 LocaleData {
   +code: "de-DE"
-  +type: "Latn"
-  +name: "German"
-  +native: "Deutsch"
-  +localized: "Deutsch"
   +regional: "de_DE"
-  +orientation: "left-to-right"
+  +type: "Latn"
+  +native: "Deutsch"
+  +localized: "Allemand"
+  +country: CountryData {
+    +code: "DE"
+    +native: "Deutschland"
+    +localized: "Allemagne"
+  }
+  +currency: CurrencyData {
+    +code: "EUR"
+    +numeric: 978
+    +native: "Euro"
+    +localized: "euro"
+  }
+  +direction: Direction {
+    +name: "LeftToRight"
+    +value: "ltr"
+  }
+  +locale: Locale {
+    +name: "German"
+    +value: "de"
+  }
 }
