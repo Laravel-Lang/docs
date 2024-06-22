@@ -22,14 +22,14 @@ class AppServiceProvider extends ServiceProvider
         Event::listen(static function (TranslationHasBeenForgetEvent $event) {
             Log::info('Forget locale', [
                 'model'  => $event->model->getKey(),
-                'locale' => $event->locale,
+                'locale' => $event->locale?->value,
             ]);
         });
 
         Event::listen(static function (TranslationHasBeenSetEvent $event) {
             Log::info('Set new translation', [
                 'model'  => $event->model->getKey(),
-                'locale' => $event->locale,
+                'locale' => $event->locale?->value,
                 'column' => $event->column,
 
                 'old' => $event->oldValue,
