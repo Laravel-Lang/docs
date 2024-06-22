@@ -93,7 +93,7 @@
                 <code>php artisan migrate</code>.
             </p>
 
-            <chapter title="Command Options" id="command_options">
+            <chapter title="Options" id="options">
                 <deflist type="narrow">
                     <def title="model">
                         <p>
