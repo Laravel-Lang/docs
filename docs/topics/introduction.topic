@@ -6,6 +6,7 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Introduction" id="introduction">
 
+    <title instance="laravel-lang">Getting Started</title>
     <section-starting-page>
         <title>🗺️ %instance%</title>
 
@@ -75,6 +76,5 @@
                 </group>
             </links>
         </misc>
-
     </section-starting-page>
 </topic>

@@ -10,7 +10,7 @@
         <title>The Basics</title>
 
         <description>
-            Controlling the localization of an app is super easy 😎
+            🗺️ Localize your application
         </description>
 
         <spotlight>
@@ -19,7 +19,7 @@
         </spotlight>
 
         <primary>
-            <title>Getting started</title>
+            <title>Packages</title>
 
             <a href="packages-common.topic" />
             <a href="packages-locales.topic" />
