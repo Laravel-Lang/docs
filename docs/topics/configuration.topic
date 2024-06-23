@@ -6,9 +6,9 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Configuration" id="configuration">
 
-    <link-summary>Information on setting up %instance% packages</link-summary>
-    <card-summary>Information on setting up %instance% packages</card-summary>
-    <web-summary>Information on setting up %instance% packages</web-summary>
+    <link-summary>Detailed information on setting up packages</link-summary>
+    <card-summary>Detailed information on setting up packages</card-summary>
+    <web-summary>Detailed information on setting up packages</web-summary>
 
     <show-structure depth="2" />
 

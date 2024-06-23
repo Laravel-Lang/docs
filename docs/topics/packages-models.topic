@@ -8,9 +8,9 @@
 
     <show-structure depth="3" />
 
-    <link-summary>Information on using the %repository-title-models% package</link-summary>
-    <card-summary>Information on using the %repository-title-models% package</card-summary>
-    <web-summary>Information on using the %repository-title-models% package</web-summary>
+    <link-summary>Easy and fast way to localize models</link-summary>
+    <card-summary>Easy and fast way to localize models</card-summary>
+    <web-summary>Easy and fast way to localize models</web-summary>
 
     <warning>
         <p>

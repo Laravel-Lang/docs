@@ -6,9 +6,9 @@
         xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
         title="Remove Locales" id="usage-remove-locales">
 
-    <link-summary>Information on removing locales to a Laravel application</link-summary>
-    <card-summary>Information on removing locales to a Laravel application</card-summary>
-    <web-summary>Information on removing locales to a Laravel application</web-summary>
+    <link-summary>Removing locales to a Laravel application</link-summary>
+    <card-summary>Removing locales to a Laravel application</card-summary>
+    <web-summary>Removing locales to a Laravel application</web-summary>
 
     <title instance="laravel-lang">Remove Locales</title>
 

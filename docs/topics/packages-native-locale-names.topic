@@ -7,9 +7,9 @@
 
     <show-structure depth="2"/>
 
-    <link-summary>Information on using the %repository-title-native-locale-names% package</link-summary>
-    <card-summary>Information on using the %repository-title-native-locale-names% package</card-summary>
-    <web-summary>Information on using the %repository-title-native-locale-names% package</web-summary>
+    <link-summary>Translation of locale names</link-summary>
+    <card-summary>Translation of locale names</card-summary>
+    <web-summary>Translation of locale names</web-summary>
 
     <tip>
         This package contains a list of localized locale names.

@@ -6,9 +6,9 @@
         xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
         title="Update Locales" id="usage-update-locales">
 
-    <link-summary>Information on updating locales to a Laravel application</link-summary>
-    <card-summary>Information on updating locales to a Laravel application</card-summary>
-    <web-summary>Information on updating locales to a Laravel application</web-summary>
+    <link-summary>Updating locales to a Laravel application</link-summary>
+    <card-summary>Updating locales to a Laravel application</card-summary>
+    <web-summary>Updating locales to a Laravel application</web-summary>
 
     <title instance="laravel-lang">Update Locales</title>
 

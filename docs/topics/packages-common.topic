@@ -7,9 +7,9 @@
 
     <show-structure depth="2"/>
 
-    <link-summary>Information on using the %repository-title-common% package</link-summary>
-    <card-summary>Information on using the %repository-title-common% package</card-summary>
-    <web-summary>Information on using the %repository-title-common% package</web-summary>
+    <link-summary>Easily connect the necessary language packs to the application</link-summary>
+    <card-summary>Easily connect the necessary language packs to the application</card-summary>
+    <web-summary>Easily connect the necessary language packs to the application</web-summary>
 
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-common% package</link-summary>

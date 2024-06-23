@@ -6,9 +6,9 @@
         xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
         title="Add Locales" id="usage-add-locales">
 
-    <link-summary>Information on adding locales to a Laravel application</link-summary>
-    <card-summary>Information on adding locales to a Laravel application</card-summary>
-    <web-summary>Information on adding locales to a Laravel application</web-summary>
+    <link-summary>Adding locales to a Laravel application</link-summary>
+    <card-summary>Adding locales to a Laravel application</card-summary>
+    <web-summary>Adding locales to a Laravel application</web-summary>
 
     <title instance="laravel-lang">Add Locales</title>
 

@@ -7,9 +7,9 @@
 
     <show-structure depth="2"/>
 
-    <link-summary>Information on using the %repository-title-http-statuses% package</link-summary>
-    <card-summary>Information on using the %repository-title-http-statuses% package</card-summary>
-    <web-summary>Information on using the %repository-title-http-statuses% package</web-summary>
+    <link-summary>Translation of HTTP statuses</link-summary>
+    <card-summary>Translation of HTTP statuses</card-summary>
+    <web-summary>Translation of HTTP statuses</web-summary>
 
     <tip>
         <p>

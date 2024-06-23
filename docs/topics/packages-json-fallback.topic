@@ -7,9 +7,9 @@
 
     <show-structure depth="2"/>
 
-    <link-summary>Information on using the %repository-title-json-fallback% package</link-summary>
-    <card-summary>Information on using the %repository-title-json-fallback% package</card-summary>
-    <web-summary>Information on using the %repository-title-json-fallback% package</web-summary>
+    <link-summary>Adds support for fallback JSON string translation</link-summary>
+    <card-summary>Adds support for fallback JSON string translation</card-summary>
+    <web-summary>Adds support for fallback JSON string translation</web-summary>
 
     <include from="library-lists.topic" element-id="json-fallback-doesnt-need"/>
 

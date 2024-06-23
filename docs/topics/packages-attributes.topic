@@ -7,9 +7,9 @@
 
     <show-structure depth="2"/>
 
-    <link-summary>Information on using the %repository-title-attributes% package</link-summary>
-    <card-summary>Information on using the %repository-title-attributes% package</card-summary>
-    <web-summary>Information on using the %repository-title-attributes% package</web-summary>
+    <link-summary>Translation of form element names</link-summary>
+    <card-summary>Translation of form element names</card-summary>
+    <web-summary>Translation of form element names</web-summary>
 
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-attributes% package</link-summary>

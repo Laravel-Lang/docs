@@ -8,9 +8,9 @@
 
     <show-structure depth="2" />
 
-    <link-summary>Information on using the %repository-title-routes% package</link-summary>
-    <card-summary>Information on using the %repository-title-routes% package</card-summary>
-    <web-summary>Information on using the %repository-title-routes% package</web-summary>
+    <link-summary>Easy and fast way to localize routes</link-summary>
+    <card-summary>Easy and fast way to localize routes</card-summary>
+    <web-summary>Easy and fast way to localize routes</web-summary>
 
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-routes% package</link-summary>

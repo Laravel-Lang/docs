@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Publisher" id="packages-publisher">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Publisher" id="packages-publisher">
 
-    <show-structure depth="2"/>
+    <show-structure depth="2" />
 
-    <link-summary>Information on using the %repository-title-publisher% package</link-summary>
-    <card-summary>Information on using the %repository-title-publisher% package</card-summary>
-    <web-summary>Information on using the %repository-title-publisher% package</web-summary>
+    <link-summary>The %repository-title-publisher% provides functionality for working with application localization</link-summary>
+    <card-summary>The %repository-title-publisher% provides functionality for working with application localization</card-summary>
+    <web-summary>The %repository-title-publisher% provides functionality for working with application localization</web-summary>
 
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-publisher% package</link-summary>
@@ -30,8 +31,8 @@
     <chapter title="Usage" id="usage">
         <link-summary>Usage information for the %repository-title-publisher% package</link-summary>
 
-        <include from="library-descriptions.topic" element-id="now-use-update-locales"/>
-        <include from="library-needs.topic" element-id="library-needs-locales-facade"/>
+        <include from="library-descriptions.topic" element-id="now-use-update-locales" />
+        <include from="library-needs.topic" element-id="library-needs-locales-facade" />
     </chapter>
 
     <chapter title="Compatibility" id="compatibility">
@@ -48,31 +49,31 @@
                 <td>10, 11</td>
                 <td>8.1, 8.2, 8.3</td>
                 <td><code>^16.0</code></td>
-                <td><img src="%badge-supported%" alt="supported"/></td>
+                <td><img src="%badge-supported%" alt="supported" /></td>
             </tr>
             <tr>
                 <td>10</td>
                 <td>8.1, 8.2, 8.3</td>
                 <td><code>^15.0</code></td>
-                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+                <td><img src="%badge-not-supported%" alt="not supported" /></td>
             </tr>
             <tr>
                 <td>8, 9, 10</td>
                 <td>8.1, 8.2</td>
                 <td><code>^14.0</code></td>
-                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+                <td><img src="%badge-not-supported%" alt="not supported" /></td>
             </tr>
             <tr>
                 <td>7, 8, 9</td>
                 <td>8.0, 8.1</td>
                 <td><code>^13.0</code></td>
-                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+                <td><img src="%badge-not-supported%" alt="not supported" /></td>
             </tr>
             <tr>
                 <td>7, 8, 9</td>
                 <td>7.3, 7.4, 8.0, 8.1</td>
                 <td><code>^12.0</code></td>
-                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+                <td><img src="%badge-not-supported%" alt="not supported" /></td>
             </tr>
         </table>
     </chapter>

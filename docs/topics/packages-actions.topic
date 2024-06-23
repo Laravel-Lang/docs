@@ -7,9 +7,9 @@
 
     <show-structure depth="2"/>
 
-    <link-summary>Information on using the %repository-title-actions% package</link-summary>
-    <card-summary>Information on using the %repository-title-actions% package</card-summary>
-    <web-summary>Information on using the %repository-title-actions% package</web-summary>
+    <link-summary>Translation of buttons and other action elements</link-summary>
+    <card-summary>Translation of buttons and other action elements</card-summary>
+    <web-summary>Translation of buttons and other action elements</web-summary>
 
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-actions% package</link-summary>

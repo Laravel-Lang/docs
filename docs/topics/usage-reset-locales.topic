@@ -6,9 +6,9 @@
         xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
         title="Reset Locales" id="usage-reset-locales">
 
-    <link-summary>Information on resetting locales to a Laravel application</link-summary>
-    <card-summary>Information on resetting locales to a Laravel application</card-summary>
-    <web-summary>Information on resetting locales to a Laravel application</web-summary>
+    <link-summary>Resetting locales to a Laravel application</link-summary>
+    <card-summary>Resetting locales to a Laravel application</card-summary>
+    <web-summary>Resetting locales to a Laravel application</web-summary>
 
     <title instance="laravel-lang">Reset Locales</title>
 

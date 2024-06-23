@@ -7,9 +7,9 @@
 
     <show-structure depth="2"/>
 
-    <link-summary>Information on using the %repository-title-locale-list% package</link-summary>
-    <card-summary>Information on using the %repository-title-locale-list% package</card-summary>
-    <web-summary>Information on using the %repository-title-locale-list% package</web-summary>
+    <link-summary>List of localizations available in %instance% projects</link-summary>
+    <card-summary>List of localizations available in %instance% projects</card-summary>
+    <web-summary>List of localizations available in %instance% projects</web-summary>
 
     <tip>
         <p>

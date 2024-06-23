@@ -1,29 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Introduction" id="introduction">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Introduction" id="introduction">
 
-    <title instance="laravel-lang">🗺️ %instance%</title>
+    <section-starting-page>
+        <title instance="laravel-lang">🗺️ %instance%</title>
 
-    <img src="https://preview.dragon-code.pro/laravel-lang/localization-app.svg?brand=laravel&amp;preposition=with&amp;mode=dark"
-         alt="%instance%"
-    />
-
-    <p>
-        <format style="bold">
+        <description>
             Controlling the localization of an app is super easy 😎
-        </format>
-    </p>
+        </description>
 
-    <chapter title="Support Projects" id="support_projects">
-        <include from="library-lists.topic" element-id="lists-laravel-projects"/>
+        <spotlight>
+            <a href="basic-usage.topic" type="integration" />
+            <a href="configuration.topic" type="settings" />
+        </spotlight>
 
-        <p>
-            And these are not all the projects that the
-            <format style="bold">%team-name%</format>
-            supports 😎!
-        </p>
-    </chapter>
+        <primary>
+            <title>Getting started</title>
+
+            <a href="packages-common.topic" />
+            <a href="packages-models.topic" />
+            <a href="packages-routes.topic" />
+            <a href="packages-locales.topic" />
+        </primary>
+
+        <secondary>
+            <title>Managing locales</title>
+
+            <a href="usage-add-locales.topic" />
+            <a href="usage-update-locales.topic" />
+            <a href="usage-reset-locales.topic" />
+            <a href="usage-remove-locales.topic" />
+        </secondary>
+
+        <!--    Optionally add additional cards and links to topics that are not in this section but may be relevant.    -->
+        <misc>
+            <cards>
+                <title>Explore localization packages</title>
+
+                <a href="packages-lang.topic" />
+                <a href="packages-actions.topic" />
+                <a href="packages-attributes.topic" />
+                <a href="packages-http-statuses.topic" />
+            </cards>
+
+            <cards narrow="true">
+                <title>Digging deeper</title>
+
+                <a href="packages-locale-list.topic" />
+                <a href="packages-json-fallback.topic" />
+                <a href="packages-native-locale-names.topic" />
+                <a href="packages-native-country-names.topic" />
+                <a href="packages-native-currency-names.topic" />
+                <a href="packages-publisher.topic" />
+            </cards>
+
+            <links>
+                <group>
+                    <title>Plugins</title>
+
+                    <a href="plugins-installation.topic" />
+                    <a href="plugins-official.topic" />
+                    <a href="plugins-community.topic" />
+                </group>
+                <group>
+                    <title>Completion status</title>
+
+                    <a href="statuses-lang.md">Lang</a>
+                    <a href="statuses-actions.md">Actions</a>
+                    <a href="statuses-attributes.md">Attributes</a>
+                    <a href="statuses-http-statuses.md">HTTP Statuses</a>
+                </group>
+            </links>
+        </misc>
+
+    </section-starting-page>
 </topic>
