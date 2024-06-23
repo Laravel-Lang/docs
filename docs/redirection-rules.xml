@@ -6,4 +6,8 @@
         <accepts>page.html</accepts>
     </rule>
     -->
+    <rule id="1dfdc619">
+        <description>Created after removal of "Getting Started" from Laravel Lang</description>
+        <accepts>getting-started.html</accepts>
+    </rule>
 </rules>

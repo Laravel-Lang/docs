@@ -30,8 +30,7 @@
         </toc-element>
         <toc-element toc-title="License" topic="license.topic" />
     </toc-element>
-    <toc-element id="toc-getting-started" topic="getting-started.topic">
-        <toc-element topic="introduction.topic" />
+    <toc-element topic="introduction.topic" accepts-web-file-names-ref="1dfdc619">
         <toc-element topic="basic-usage.topic" />
         <toc-element topic="configuration.topic" />
         <toc-element topic="available-locales-list.topic" />
