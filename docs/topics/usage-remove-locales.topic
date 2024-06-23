@@ -10,7 +10,7 @@
     <card-summary>Removing locales to a Laravel application</card-summary>
     <web-summary>Removing locales to a Laravel application</web-summary>
 
-    <title instance="laravel-lang">Remove Locales</title>
+    <title>Remove Locales</title>
 
     <warning>
         When this command is executed, the entire locale folder with all files is deleted except default and fallback locales.

@@ -10,7 +10,7 @@
     <card-summary>Updating locales to a Laravel application</card-summary>
     <web-summary>Updating locales to a Laravel application</web-summary>
 
-    <title instance="laravel-lang">Update Locales</title>
+    <title>Update Locales</title>
 
     <p>
         To update files, call the console command:

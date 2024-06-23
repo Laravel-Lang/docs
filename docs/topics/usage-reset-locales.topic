@@ -10,7 +10,7 @@
     <card-summary>Resetting locales to a Laravel application</card-summary>
     <web-summary>Resetting locales to a Laravel application</web-summary>
 
-    <title instance="laravel-lang">Reset Locales</title>
+    <title>Reset Locales</title>
 
     <p>
         To reset files to default state, use the console command:

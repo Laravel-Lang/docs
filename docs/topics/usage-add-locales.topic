@@ -10,7 +10,7 @@
     <card-summary>Adding locales to a Laravel application</card-summary>
     <web-summary>Adding locales to a Laravel application</web-summary>
 
-    <title instance="laravel-lang">Add Locales</title>
+    <title>Add Locales</title>
 
     <note>
         <p>
