@@ -158,7 +158,7 @@
             </p>
 
             <code-block lang="bash">
-                php artisan lang:models:helper
+                %command-models-make-helpers%
             </code-block>
 
             <p>

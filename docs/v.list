@@ -20,6 +20,8 @@
     <var name="command-update-simple" value="lang:update" />
     <var name="command-models-make-storage" value="php artisan make:model-translation" />
     <var name="command-models-make-storage-simple" value="make:model-translation" />
+    <var name="command-models-make-helpers" value="php artisan lang:models-helper" />
+    <var name="command-models-make-helpers-simple" value="lang:models-helper" />
     <var name="config-filename" value="config/localization.php" />
     <var name="install-actions" value="composer require --dev laravel-lang/actions" />
     <var name="install-attributes" value="composer require --dev laravel-lang/attributes" />
