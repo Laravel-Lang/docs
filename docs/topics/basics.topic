@@ -6,9 +6,34 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="The Basics" id="basics">
 
-    <list>
-        <li><a href="packages-common.topic" /></li>
-        <li><a href="packages-locales.topic" /></li>
-        <li><a href="packages-routes.topic" /></li>
-    </list>
+    <section-starting-page>
+        <title>The Basics</title>
+
+        <description>
+            Controlling the localization of an app is super easy 😎
+        </description>
+
+        <spotlight>
+            <a href="basic-usage.topic" type="integration" />
+            <a href="configuration.topic" type="settings" />
+        </spotlight>
+
+        <primary>
+            <title>Getting started</title>
+
+            <a href="packages-common.topic" />
+            <a href="packages-locales.topic" />
+            <a href="packages-models.topic" />
+            <a href="packages-routes.topic" />
+        </primary>
+
+        <secondary>
+            <title>Managing locales</title>
+
+            <a href="usage-add-locales.topic" />
+            <a href="usage-update-locales.topic" />
+            <a href="usage-reset-locales.topic" />
+            <a href="usage-remove-locales.topic" />
+        </secondary>
+    </section-starting-page>
 </topic>
