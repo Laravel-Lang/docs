@@ -7,7 +7,7 @@
     title="Introduction" id="introduction">
 
     <section-starting-page>
-        <title instance="laravel-lang">🗺️ %instance%</title>
+        <title>🗺️ %instance%</title>
 
         <description>
             Controlling the localization of an app is super easy 😎
@@ -22,9 +22,9 @@
             <title>Getting started</title>
 
             <a href="packages-common.topic" />
+            <a href="packages-locales.topic" />
             <a href="packages-models.topic" />
             <a href="packages-routes.topic" />
-            <a href="packages-locales.topic" />
         </primary>
 
         <secondary>
@@ -36,7 +36,6 @@
             <a href="usage-remove-locales.topic" />
         </secondary>
 
-        <!--    Optionally add additional cards and links to topics that are not in this section but may be relevant.    -->
         <misc>
             <cards>
                 <title>Explore localization packages</title>
