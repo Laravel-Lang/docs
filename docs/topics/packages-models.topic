@@ -15,14 +15,11 @@
     <warning>
         <p>
             The <code>%repository-title-models%</code> project is in
-            <format style="bold">beta</format>
+            <format style="bold">release candidate</format>
             testing.
         </p>
         <p>
-            Use in production is highly discouraged until it is released into a stable version.
-        </p>
-        <p>
-            Documentation will also be updated frequently to reflect changes in the project.
+            Use in production is discouraged until it is released into a stable version.
         </p>
     </warning>
 
@@ -402,7 +399,7 @@
                 <td>Status</td>
             </tr>
             <tr>
-                <td>11.4+</td>
+                <td>10, 11</td>
                 <td>8.2, 8.3</td>
                 <td><code>^1.0</code></td>
                 <td><img src="%badge-supported%" alt="supported" /></td>
