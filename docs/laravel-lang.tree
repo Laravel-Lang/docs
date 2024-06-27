@@ -55,6 +55,7 @@
     </toc-element>
     <toc-element topic="digging-deeper.topic">
         <toc-element topic="packages-publisher.topic" />
+        <toc-element topic="packages-translator.topic" />
         <toc-element topic="packages-locale-list.topic" />
         <toc-element topic="packages-json-fallback.topic" />
         <toc-element topic="packages-native-locale-names.topic" />

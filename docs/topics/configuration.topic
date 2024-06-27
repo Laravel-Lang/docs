@@ -55,7 +55,7 @@
         <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="8,17,164"
+            include-lines="8,17,232"
         />
     </chapter>
 
@@ -98,7 +98,7 @@
         <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="8,27,164"
+            include-lines="8,27,232"
         />
     </chapter>
 
@@ -145,7 +145,7 @@
         <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="8,38-41,164"
+            include-lines="8,38-41,232"
         />
     </chapter>
 
@@ -172,7 +172,7 @@
         <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="6,7-8,52-91,164"
+            include-lines="6,7-8,52-91,232"
             collapsed-title="Show settings"
             collapsible="true"
         />
@@ -198,7 +198,7 @@
         <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="5,7-8,99,112-118,125-126,133-135,164"
+            include-lines="5,7-8,99,112-118,125-126,133-135,232"
         />
     </chapter>
 
@@ -214,7 +214,7 @@
         <code-block
             lang="php"
             src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="8,137-"
+            include-lines="8,137-163,232"
         />
 
         <p>
@@ -229,5 +229,22 @@
             App\Models\Post::class
             App\Models\PostTranslation::class
         </code-block>
+    </chapter>
+
+    <chapter title="Translator" id="translator">
+        <p>
+            Here you can not only activate default translators, but also create your own.
+            You can read more about this on the
+            <a href="packages-translator.topic">%repository-title-translator%</a> package information page.
+        </p>
+
+        <p>
+            This setting available in the <code>%config-filename%</code> file:
+        </p>
+        <code-block
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
+            include-lines="8,165-231,232"
+        />
     </chapter>
 </topic>

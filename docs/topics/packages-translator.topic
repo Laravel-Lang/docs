@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Translator" id="packages-translator">
+
+    <show-structure depth="3" />
+
+    <link-summary>Text translation using multiple API translators</link-summary>
+    <card-summary>Text translation using multiple API translators</card-summary>
+    <web-summary>Text translation using multiple API translators</web-summary>
+
+    <warning>
+        <p>
+            The <code>%repository-title-translator%</code> project is in
+            <format style="bold">alpha</format>
+            testing.
+        </p>
+        <p>
+            Use in production is discouraged until it is released into a stable version.
+        </p>
+    </warning>
+
+    <chapter title="Installation" id="installation">
+        <link-summary>Installation information for the %package-translator% package</link-summary>
+
+        <note>
+            The compatibility table can be viewed <a href="#compatibility">here</a>.
+        </note>
+
+        <p>
+            To install, run the console command:
+        </p>
+
+        <code-block lang="bash">
+            %install-translator%
+        </code-block>
+
+        You can also
+        <a href="configuration.topic#translator">change</a>
+        the default settings by making changes to the <code>%config-filename%</code> file.
+    </chapter>
+
+    <chapter title="Usage" id="usage">
+        <link-summary>Usage information for the %repository-title-translator% package</link-summary>
+
+        <tip>
+            If necessary, specify the providers' authorization data in the <code>%config-filename%</code> settings file.
+            Without this, paid services will not work properly.
+        </tip>
+
+        <p>
+            In progress...
+        </p>
+    </chapter>
+
+    <chapter title="Compatibility" id="compatibility">
+        <link-summary>Compatibility table for the %repository-title-models% package</link-summary>
+
+        <table>
+            <tr>
+                <td>Laravel</td>
+                <td>PHP</td>
+                <td>Translators API</td>
+                <td>Package</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>10, 11</td>
+                <td>8.2, 8.3</td>
+                <td>Google Translate, Deepl, Yandex.Translate</td>
+                <td><code>^1.0</code></td>
+                <td><img src="%badge-supported%" alt="supported" /></td>
+            </tr>
+        </table>
+    </chapter>
+</topic>
