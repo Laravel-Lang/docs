@@ -6,7 +6,7 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="Translator" id="packages-translator">
 
-    <show-structure depth="3" />
+    <show-structure depth="3" for="chapter" />
 
     <link-summary>Text translation using multiple API translators</link-summary>
     <card-summary>Text translation using multiple API translators</card-summary>
@@ -51,9 +51,162 @@
             Without this, paid services will not work properly.
         </tip>
 
-        <p>
-            In progress...
-        </p>
+        <chapter title="Cyclic translation" id="cyclical_translation">
+            <p>
+                Not all API services cover the required number of localizations for translation,
+                and therefore it is possible to find one that can translate the text with one call.
+            </p>
+            <p>
+                For example, we have settings:
+            </p>
+
+            <code-block
+                lang="php"
+                src="translator-usage-cyclic.php"
+                include-lines="5-"
+            />
+
+            <p>
+                In the settings, we specified Google Translate and DeepL Translate as active translators,
+                and also deactivated Yandex.Translate.
+                The <code>enabled</code> parameter applies only to cyclic translation.
+            </p>
+            <p>
+                Let's say Google Translate can only translate into French, and DeepL Translate can only translate into German.
+                Thus, we get three translation cases:
+            </p>
+
+            <tabs>
+                <tab title="Into French">
+                    <procedure id="procedure-tif" style="steps">
+                        <step>
+                            We check whether Google Translate can translate into this language. Yes, he can translate.
+                        </step>
+                        <p>
+                            We return text translation from Google Translate.
+                        </p>
+                    </procedure>
+                </tab>
+                <tab title="Into German">
+                    <procedure id="procedure-tig" style="steps">
+                        <step>
+                            We check whether Google Translate can translate into this language. No, he cannot.
+                            Let's move on to the next translator.
+                        </step>
+                        <step>
+                            We check whether DeepL Translate can translate into this language. Yes, he can translate.
+                        </step>
+                        <p>
+                            We return the text translation from DeepL Translate.
+                        </p>
+                    </procedure>
+                </tab>
+                <tab title="Into an unsupported language">
+                    <procedure id="procedure-tiu" style="steps">
+                        <step>
+                            We check whether Google Translate can translate into this language. No, he cannot.
+                            Let's move on to the next translator.
+                        </step>
+                        <step>
+                            We check whether DeepL Translate can translate into this language. No, he cannot.
+                            Let's move on to the next translator.
+                        </step>
+                        <p>
+                            We return the original text without translation.
+                        </p>
+                    </procedure>
+                </tab>
+            </tabs>
+
+            <chapter title="Via Facade" id="via_facade">
+                <code-block
+                    lang="php"
+                    src="translator-usage-cyclic-facade.php"
+                    include-lines="5-"
+                />
+            </chapter>
+
+            <chapter title="Via Dependency Injection" id="via_dependency_injection">
+                <code-block
+                    lang="php"
+                    src="translator-usage-cyclic-di.php"
+                    include-lines="5-"
+                />
+            </chapter>
+        </chapter>
+
+        <chapter title="Direct translate" id="direct_translate">
+            <chapter title="Via Google Translate" id="via_google">
+                <note>
+                    When directly translating text using
+                    <a href="https://translate.google.com">Google Translate</a>, the
+                    <code>enabled</code> settings parameter is ignored.
+                </note>
+
+                <include
+                    from="library-descriptions.topic"
+                    element-id="translator-you-can-translate-via-facade-and-di" />
+
+                <tabs>
+                    <tab title="Via Facade">
+                        <code-block lang="php" src="translator-usage-google-facade.php" include-lines="5-" />
+                    </tab>
+                    <tab title="Via Translator DI">
+                        <code-block lang="php" src="translator-usage-google-translator.php" include-lines="5-" />
+                    </tab>
+                    <tab title="Via Google DI">
+                        <code-block lang="php" src="translator-usage-google-direct.php" include-lines="5-" />
+                    </tab>
+                </tabs>
+            </chapter>
+
+            <chapter title="Via DeepL Translate" id="via_deepl">
+                <note>
+                    When directly translating text using
+                    <a href="https://www.deepl.com/ru/translator">DeepL Translate</a>, the
+                    <code>enabled</code> settings parameter is ignored.
+                </note>
+
+                <include
+                    from="library-descriptions.topic"
+                    element-id="translator-you-can-translate-via-facade-and-di" />
+
+                <tabs>
+                    <tab title="Via Facade">
+                        <code-block lang="php" src="translator-usage-deepl-facade.php" include-lines="5-" />
+                    </tab>
+                    <tab title="Via Translator DI">
+                        <code-block lang="php" src="translator-usage-deepl-translator.php" include-lines="5-" />
+                    </tab>
+                    <tab title="Via DeepL DI">
+                        <code-block lang="php" src="translator-usage-deepl-direct.php" include-lines="5-" />
+                    </tab>
+                </tabs>
+            </chapter>
+
+            <chapter title="Via Yandex Translate" id="via_yandex">
+                <note>
+                    When directly translating text using <a href="https://translate.yandex.ru">Yandex.Translate</a>, the
+                    <code>enabled</code> settings parameter is ignored.
+                </note>
+
+                <include
+                    from="library-descriptions.topic"
+                    element-id="translator-you-can-translate-via-facade-and-di" />
+
+                <tabs>
+                    <tab title="Via Facade">
+                        <code-block lang="php" src="translator-usage-yandex-facade.php" include-lines="5-" />
+                    </tab>
+                    <tab title="Via Translator DI">
+                        <code-block lang="php" src="translator-usage-yandex-translator.php" include-lines="5-" />
+                    </tab>
+                    <tab title="Via Yandex DI">
+                        <code-block lang="php" src="translator-usage-yandex-direct.php" include-lines="5-" />
+                    </tab>
+                </tabs>
+            </chapter>
+        </chapter>
     </chapter>
 
     <chapter title="Compatibility" id="compatibility">
@@ -70,7 +223,11 @@
             <tr>
                 <td>10, 11</td>
                 <td>8.2, 8.3</td>
-                <td>Google Translate, Deepl, Yandex.Translate</td>
+                <td>
+                    Google Translate,
+                    DeepL Translate,
+                    Yandex.Translate
+                </td>
                 <td><code>^1.0</code></td>
                 <td><img src="%badge-supported%" alt="supported" /></td>
             </tr>

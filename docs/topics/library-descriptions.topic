@@ -70,4 +70,12 @@
             of the <code>%config-filename%</code> file.
         </p>
     </snippet>
+
+    <snippet id="translator-you-can-translate-via-facade-and-di">
+        <p>
+            To call direct translation, you can use either the
+            <code>LaravelLang\Translator\Facades\Translate</code> facade or the
+            <code>LaravelLang\Translator\Services\Translate</code> service class, connecting it via DI.
+        </p>
+    </snippet>
 </topic>
