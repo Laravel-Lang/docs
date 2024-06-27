@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Country Names" id="packages-native-country-names">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Country Names" id="packages-native-country-names">
 
-    <show-structure depth="2"/>
+    <show-structure depth="2" />
 
     <link-summary>Translation of country names</link-summary>
     <card-summary>Translation of country names</card-summary>
@@ -41,14 +42,20 @@
 
                 return CountryNames::get('bn');
                 // or
-                return CountryNames::get(Locale::Bengali)
+                return CountryNames::get(Locale::Bengali);
             </code-block>
 
             <p>
                 Result:
             </p>
 
-            <code-block lang="php" src="usage-native-country-names-localized-names.txt"/>
+            <code-block
+                lang="php"
+                src="usage-native-country-names-localized-names.txt"
+                collapsed-title="Show result"
+                collapsible="true"
+                default-state="collapsed"
+            />
         </chapter>
 
         <chapter title="Native Names" id="native_names">
@@ -74,7 +81,13 @@
                 Result:
             </p>
 
-            <code-block lang="php" src="usage-native-country-names-native-names.txt"/>
+            <code-block
+                lang="php"
+                src="usage-native-country-names-native-names.txt"
+                collapsed-title="Show result"
+                collapsible="true"
+                default-state="collapsed"
+            />
         </chapter>
 
         <chapter title="Sorting" id="sorting">
@@ -97,7 +110,13 @@
                     Result:
                 </p>
 
-                <code-block lang="php" src="usage-native-country-names-sort-by-keys.txt"/>
+                <code-block
+                    lang="php"
+                    src="usage-native-country-names-sort-by-keys.txt"
+                    collapsed-title="Show result"
+                    collapsible="true"
+                    default-state="collapsed"
+                />
 
             </chapter>
 
@@ -114,7 +133,13 @@
                 <p>
                     Result:
                 </p>
-                <code-block lang="php" src="usage-native-country-names-sort-by-values.txt"/>
+                <code-block
+                    lang="php"
+                    src="usage-native-country-names-sort-by-values.txt"
+                    collapsed-title="Show result"
+                    collapsible="true"
+                    default-state="collapsed"
+                />
             </chapter>
         </chapter>
     </chapter>
@@ -131,7 +156,7 @@
             <tr>
                 <td>8.1, 8.2, 8.3</td>
                 <td><code>^1.0</code></td>
-                <td><img src="%badge-supported%" alt="supported"/></td>
+                <td><img src="%badge-supported%" alt="supported" /></td>
             </tr>
         </table>
     </chapter>

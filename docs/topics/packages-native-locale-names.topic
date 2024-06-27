@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Locale Names" id="packages-native-locale-names">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Locale Names" id="packages-native-locale-names">
 
-    <show-structure depth="2"/>
+    <show-structure depth="2" />
 
     <link-summary>Translation of locale names</link-summary>
     <card-summary>Translation of locale names</card-summary>
@@ -41,14 +42,16 @@
 
                 return LocaleNames::get('bn');
                 // or
-                return LocaleNames::get(Locale::Bengali)
+                return LocaleNames::get(Locale::Bengali);
             </code-block>
 
-            <p>
-                Result:
-            </p>
-
-            <code-block lang="php" src="usage-native-locale-names-localized-names.txt"/>
+            <code-block
+                lang="php"
+                src="usage-native-locale-names-localized-names.txt"
+                collapsed-title="Show result"
+                collapsible="true"
+                default-state="collapsed"
+            />
         </chapter>
 
         <chapter title="Native Names" id="native_names">
@@ -70,11 +73,13 @@
                 return LocaleNames::get('foo');
             </code-block>
 
-            <p>
-                Result:
-            </p>
-
-            <code-block lang="php" src="usage-native-locale-names-native-names.txt"/>
+            <code-block
+                lang="php"
+                src="usage-native-locale-names-native-names.txt"
+                collapsed-title="Show result"
+                collapsible="true"
+                default-state="collapsed"
+            />
         </chapter>
 
         <chapter title="Sorting" id="sorting">
@@ -93,11 +98,13 @@
                     return LocaleNames::get('en', SortBy::Key);
                 </code-block>
 
-                <p>
-                    Result:
-                </p>
-
-                <code-block lang="php" src="usage-native-locale-names-sort-by-keys.txt"/>
+                <code-block
+                    lang="php"
+                    src="usage-native-locale-names-sort-by-keys.txt"
+                    collapsed-title="Show result"
+                    collapsible="true"
+                    default-state="collapsed"
+                />
             </chapter>
 
             <chapter title="Sort by values" id="sort_by_values">
@@ -110,11 +117,13 @@
                     return LocaleNames::get('en');
                 </code-block>
 
-                <p>
-                    Result:
-                </p>
-
-                <code-block lang="php" src="usage-native-locale-names-sort-by-values.txt"/>
+                <code-block
+                    lang="php"
+                    src="usage-native-locale-names-sort-by-values.txt"
+                    collapsed-title="Show result"
+                    collapsible="true"
+                    default-state="collapsed"
+                />
             </chapter>
         </chapter>
     </chapter>
@@ -131,12 +140,12 @@
             <tr>
                 <td>8.1, 8.2, 8.3</td>
                 <td><code>^2.0</code></td>
-                <td><img src="%badge-supported%" alt="supported"/></td>
+                <td><img src="%badge-supported%" alt="supported" /></td>
             </tr>
             <tr>
                 <td>8.1, 8.2, 8.3</td>
                 <td><code>^1.0</code></td>
-                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+                <td><img src="%badge-not-supported%" alt="not supported" /></td>
             </tr>
         </table>
     </chapter>
