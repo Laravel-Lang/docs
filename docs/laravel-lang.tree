@@ -15,19 +15,18 @@
                 <toc-element topic="upgrade-common-to-5-from-4.topic" />
                 <toc-element topic="upgrade-third-party.topic" />
             </toc-element>
-            <toc-element topic="upgrade-publisher.topic">
+            <toc-element topic="upgrade-publisher.topic" sort-children="descending">
                 <toc-element topic="upgrade-publisher-to-16-from-15.topic" />
                 <toc-element topic="upgrade-publisher-to-15-from-14.topic" />
             </toc-element>
-            <toc-element topic="upgrade-json-fallback.topic">
+            <toc-element topic="upgrade-json-fallback.topic" sort-children="descending">
                 <toc-element topic="upgrade-json-fallback-to-2-from-1.topic" />
             </toc-element>
         </toc-element>
         <toc-element topic="security-policy.topic" />
         <toc-element topic="questions-and-issues.topic" />
         <toc-element topic="contributions.topic" />
-        <toc-element toc-title="Our Team" topic="our-team.topic">
-        </toc-element>
+        <toc-element toc-title="Our Team" topic="our-team.topic" />
         <toc-element toc-title="License" topic="license.topic" />
     </toc-element>
     <toc-element topic="introduction.topic" accepts-web-file-names-ref="1dfdc619">
@@ -41,26 +40,22 @@
         <toc-element topic="usage-reset-locales.topic" />
         <toc-element topic="usage-remove-locales.topic" />
     </toc-element>
-    <toc-element topic="basics.topic">
+    <toc-element topic="packages.topic" accepts-web-file-names-ref="451edbda">
         <toc-element topic="packages-common.topic" />
-        <toc-element topic="packages-locales.topic" />
         <toc-element topic="packages-routes.topic" />
         <toc-element topic="packages-models.topic" />
-    </toc-element>
-    <toc-element topic="localizations.topic">
+        <toc-element topic="packages-locales.topic" />
         <toc-element topic="packages-lang.topic" />
         <toc-element topic="packages-actions.topic" />
         <toc-element topic="packages-attributes.topic" />
         <toc-element topic="packages-http-statuses.topic" />
-    </toc-element>
-    <toc-element topic="digging-deeper.topic">
+        <toc-element topic="packages-native-locale-names.topic" />
+        <toc-element topic="packages-native-country-names.topic" />
+        <toc-element topic="packages-native-currency-names.topic" />
         <toc-element topic="packages-publisher.topic" />
         <toc-element topic="packages-translator.topic" />
         <toc-element topic="packages-locale-list.topic" />
         <toc-element topic="packages-json-fallback.topic" />
-        <toc-element topic="packages-native-locale-names.topic" />
-        <toc-element topic="packages-native-country-names.topic" />
-        <toc-element topic="packages-native-currency-names.topic" />
     </toc-element>
     <toc-element topic="plugins.topic">
         <toc-element topic="plugins-installation.topic" />
@@ -68,7 +63,7 @@
         <toc-element topic="plugins-community.topic" />
     </toc-element>
     <toc-element topic="statuses.topic">
-        <toc-element toc-title="Lang" topic="statuses-lang.md">
+        <toc-element toc-title="Lang" topic="statuses-lang.md" sort-children="ascending">
             <toc-element topic="statuses-lang-af.md" />
             <toc-element topic="statuses-lang-ak.md" />
             <toc-element topic="statuses-lang-am.md" />
@@ -195,7 +190,7 @@
             <toc-element topic="statuses-lang-zh_TW.md" />
             <toc-element topic="statuses-lang-zu.md" />
         </toc-element>
-        <toc-element toc-title="Actions" topic="statuses-actions.md">
+        <toc-element toc-title="Actions" topic="statuses-actions.md" sort-children="ascending">
             <toc-element topic="statuses-actions-af.md" />
             <toc-element topic="statuses-actions-ak.md" />
             <toc-element topic="statuses-actions-am.md" />
@@ -322,7 +317,7 @@
             <toc-element topic="statuses-actions-zh_TW.md" />
             <toc-element topic="statuses-actions-zu.md" />
         </toc-element>
-        <toc-element toc-title="Attributes" topic="statuses-attributes.md">
+        <toc-element toc-title="Attributes" topic="statuses-attributes.md" sort-children="ascending">
             <toc-element topic="statuses-attributes-af.md" />
             <toc-element topic="statuses-attributes-ak.md" />
             <toc-element topic="statuses-attributes-am.md" />
@@ -449,7 +444,7 @@
             <toc-element topic="statuses-attributes-zh_TW.md" />
             <toc-element topic="statuses-attributes-zu.md" />
         </toc-element>
-        <toc-element toc-title="HTTP Statuses" topic="statuses-http-statuses.md">
+        <toc-element toc-title="HTTP Statuses" topic="statuses-http-statuses.md" sort-children="ascending">
             <toc-element topic="statuses-http-statuses-af.md" />
             <toc-element topic="statuses-http-statuses-ak.md" />
             <toc-element topic="statuses-http-statuses-am.md" />

@@ -15,10 +15,7 @@
             Controlling the localization of an app is super easy 😎
         </description>
 
-        <spotlight>
-            <a href="basic-usage.topic" type="integration" />
-            <a href="configuration.topic" type="settings" />
-        </spotlight>
+        <include from="library-starting-page.topic" element-id="spotlight" />
 
         <primary>
             <title>Getting started</title>
@@ -46,16 +43,17 @@
                 <a href="packages-actions.topic" />
                 <a href="packages-attributes.topic" />
                 <a href="packages-http-statuses.topic" />
+                <a href="packages-native-locale-names.topic" />
+                <a href="packages-native-country-names.topic" />
+                <a href="packages-native-currency-names.topic" />
             </cards>
 
-            <cards narrow="true">
+            <cards>
                 <title>Digging deeper</title>
 
                 <a href="packages-locale-list.topic" />
                 <a href="packages-json-fallback.topic" />
-                <a href="packages-native-locale-names.topic" />
-                <a href="packages-native-country-names.topic" />
-                <a href="packages-native-currency-names.topic" />
+                <a href="packages-translator.topic" />
                 <a href="packages-publisher.topic" />
             </cards>
 

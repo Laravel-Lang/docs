@@ -10,4 +10,16 @@
         <description>Created after removal of "Getting Started" from Laravel Lang</description>
         <accepts>getting-started.html</accepts>
     </rule>
+    <rule id="5bf90f96">
+        <description>Created after removal of "The Basics" from Laravel Lang</description>
+        <accepts>basics.html</accepts>
+    </rule>
+    <rule id="485c6e10">
+        <description>Created after removal of "Localizations" from Laravel Lang</description>
+        <accepts>localizations.html</accepts>
+    </rule>
+    <rule id="451edbda">
+        <description>Created after removal of "Digging Deeper" from Laravel Lang</description>
+        <accepts>digging-deeper.html</accepts>
+    </rule>
 </rules>

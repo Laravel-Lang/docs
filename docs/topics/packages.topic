@@ -4,50 +4,48 @@
 <topic
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Localizations" id="localizations">
+    title="Packages" id="packages">
 
     <section-starting-page>
-        <title>Localizations</title>
+        <title>Packages</title>
 
         <description>
-            Here you will find information on app localization
+            Various packages for localizing your application
         </description>
 
-        <spotlight>
-            <a href="basic-usage.topic" type="integration" />
-            <a href="configuration.topic" type="settings" />
-        </spotlight>
+        <include from="library-starting-page.topic" element-id="spotlight" />
 
         <primary>
-            <title>Packages</title>
+            <title>Management</title>
+
+            <a href="packages-common.topic" />
+            <a href="packages-locales.topic" />
+            <a href="packages-models.topic" />
+            <a href="packages-routes.topic" />
+            <a href="packages-translator.topic" />
+            <a href="packages-json-fallback.topic" />
+        </primary>
+
+        <secondary>
+            <title>Localization</title>
 
             <a href="packages-lang.topic" />
             <a href="packages-actions.topic" />
             <a href="packages-attributes.topic" />
             <a href="packages-http-statuses.topic" />
-        </primary>
-
-        <secondary>
-            <title>Digging deeper</title>
-
-            <a href="packages-locale-list.topic" />
-            <a href="packages-json-fallback.topic" />
             <a href="packages-native-locale-names.topic" />
             <a href="packages-native-country-names.topic" />
             <a href="packages-native-currency-names.topic" />
-            <a href="packages-publisher.topic" />
+
         </secondary>
 
         <misc>
             <cards>
-                <title>Managing locales</title>
+                <title>Helpers &amp; Libraries</title>
 
-                <a href="usage-add-locales.topic" />
-                <a href="usage-update-locales.topic" />
-                <a href="usage-reset-locales.topic" />
-                <a href="usage-remove-locales.topic" />
+                <a href="packages-locale-list.topic" />
+                <a href="packages-publisher.topic" />
             </cards>
         </misc>
-
     </section-starting-page>
 </topic>
