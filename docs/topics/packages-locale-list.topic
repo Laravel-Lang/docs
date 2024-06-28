@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Locale List" id="packages-locale-list">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Locale List" id="packages-locale-list">
 
-    <show-structure depth="2"/>
+    <show-structure depth="2" />
 
     <link-summary>List of localizations available in %instance% projects</link-summary>
     <card-summary>List of localizations available in %instance% projects</card-summary>
@@ -49,11 +50,13 @@
                     return Locale::Bengali;
                 </code-block>
 
-                <p>
-                    Result:
-                </p>
-
-                <code-block lang="php" src="usage-list-of-locales-bn.txt"/>
+                <code-block
+                    lang="php"
+                    src="usage-list-of-locales-bn.txt"
+                    collapsed-title="Show result"
+                    collapsible="true"
+                    default-state="collapsed"
+                />
             </chapter>
 
             <chapter title="List of codes" id="list_of_codes">
@@ -67,11 +70,13 @@
                     return Locale::values();
                 </code-block>
 
-                <p>
-                    Result:
-                </p>
-
-                <code-block lang="php" src="usage-list-of-locales-list-of-codes.txt"/>
+                <code-block
+                    lang="php"
+                    src="usage-list-of-locales-list-of-codes.txt"
+                    collapsed-title="Show result"
+                    collapsible="true"
+                    default-state="collapsed"
+                />
             </chapter>
 
             <chapter title="List of titles" id="list_of_titles">
@@ -85,11 +90,13 @@
                     return Locale::names();
                 </code-block>
 
-                <p>
-                    Result:
-                </p>
-
-                <code-block lang="php" src="usage-list-of-locales-list-of-titles.txt"/>
+                <code-block
+                    lang="php"
+                    src="usage-list-of-locales-list-of-titles.txt"
+                    collapsed-title="Show result"
+                    collapsible="true"
+                    default-state="collapsed"
+                />
             </chapter>
 
             <chapter title="List of codes with names" id="list_of_codes_with_names">
@@ -103,7 +110,13 @@
                     Result:
                 </p>
 
-                <code-block lang="php" src="usage-list-of-locales-list-of-names.txt"/>
+                <code-block
+                    lang="php"
+                    src="usage-list-of-locales-list-of-names.txt"
+                    collapsed-title="Show result"
+                    collapsible="true"
+                    default-state="collapsed"
+                />
             </chapter>
         </snippet>
     </chapter>
@@ -120,7 +133,7 @@
             <tr>
                 <td>8.1, 8.2, 8.3</td>
                 <td><code>^1.0</code></td>
-                <td><img src="%badge-supported%" alt="supported"/></td>
+                <td><img src="%badge-supported%" alt="supported" /></td>
             </tr>
         </table>
     </chapter>
