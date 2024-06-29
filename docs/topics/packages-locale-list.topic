@@ -106,10 +106,6 @@
                     return Locale::options();
                 </code-block>
 
-                <p>
-                    Result:
-                </p>
-
                 <code-block
                     lang="php"
                     src="usage-list-of-locales-list-of-names.txt"
