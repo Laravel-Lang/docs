@@ -7,6 +7,12 @@
     title="Library Descriptions" id="library-descriptions">
 
     <snippet id="now-use-add-locales">
+        <note>
+            The list of available localizations is available <a href="available-locales-list.topic">
+            <format style="bold">here</format>
+        </a>.
+        </note>
+        
         <p>
             Now you can <a href="usage-add-locales.topic">add</a> new localizations using the
             <code>%command-add-simple%</code> console command:
