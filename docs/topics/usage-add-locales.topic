@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-        title="Add Locales" id="usage-add-locales">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Add Locales" id="usage-add-locales">
 
     <link-summary>Adding locales to a Laravel application</link-summary>
     <card-summary>Adding locales to a Laravel application</card-summary>
@@ -17,12 +17,12 @@
             A list of available locale codes can be found <a href="available-locales-list.topic">here</a>.
         </p>
         <p>
-            This list contains %locales-count% locale codes.
+            The list contains %locales-count% locale codes.
         </p>
     </note>
 
     <p>
-        You can install the required locales by calling the console command <code>%command-add-empty%</code>,
+        You can install the required locales by calling the console command <code>%command-add-empty%</code> and
         passing it one or more locale codes, separated by a space:
     </p>
 
@@ -32,11 +32,10 @@
     </code-block>
 
     <p>
-        If the target files exist, you will be asked what to do in this case - skip installing the files or replace
-        them.
+        If the target files exist, you will be asked what to do - skip the installation or replace the files.
     </p>
     <p>
-        If these files contain keys that you added, it is recommended to skip them, since the
+        If these files contain keys that you have added, it is recommended that you skip them, as since the
         <code>%command-update%</code> command will be
         able to update the files without deleting your code.
     </p>

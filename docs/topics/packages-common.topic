@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Common" id="packages-common">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Common" id="packages-common">
 
-    <show-structure depth="2"/>
+    <show-structure depth="2" />
 
     <link-summary>Easily connect the necessary language packs to the application</link-summary>
     <card-summary>Easily connect the necessary language packs to the application</card-summary>
@@ -16,9 +17,8 @@
 
         <note>
             <p>
-                It is recommended to use this particular package as it will allow you to very quickly update all the
-                necessary
-                dependencies that ensure application localization.
+                It is recommended to use this special package because it allows you to update very quickly all
+                the necessary dependencies that ensure the localization of the application.
             </p>
             <p>
                 The compatibility table can be viewed <a href="#compatibility">here</a>.
@@ -26,7 +26,7 @@
         </note>
 
         <p>
-            You can install the package via <a href="https://getcomposer.org">Composer</a>:
+            You can install the package using <a href="https://getcomposer.org">Composer</a>:
         </p>
 
         <code-block lang="bash">
@@ -35,8 +35,8 @@
 
         <warning>
             <p>
-                When usage Laravel 10, you must manually specify the <code>%package-lang%</code> package version to
-                install:
+                If you are using Laravel 10, you will need to manually specify the
+                <code>%package-lang%</code> package version to install:
             </p>
             <code-block lang="bash">
                 %install-lang%:^14.0
@@ -47,8 +47,8 @@
     <chapter title="Usage" id="usage">
         <link-summary>Usage information for the %repository-title-common% package</link-summary>
 
-        <include from="library-descriptions.topic" element-id="now-use-update-locales"/>
-        <include from="library-needs.topic" element-id="library-needs-locales-facade"/>
+        <include from="library-descriptions.topic" element-id="now-use-update-locales" />
+        <include from="library-needs.topic" element-id="library-needs-locales-facade" />
     </chapter>
 
     <chapter title="Compatibility" id="compatibility">
@@ -71,8 +71,8 @@
                     2
                 </td>
                 <td>
-                    <img src="%badge-supported%" alt="supported"/>
-                    <p>* When used in Laravel 10, you must manually specify the Lang package version to install:</p>
+                    <img src="%badge-supported%" alt="supported" />
+                    <p>* When used in Laravel 10, you need to manually specify the lang package version to install:</p>
                     <code-block lang="bash">%install-lang%:^14.0</code-block>
                 </td>
             </tr>
@@ -81,35 +81,35 @@
                 <td>8.1, 8.2, 8.3</td>
                 <td><code>^5.0</code></td>
                 <td>Publisher 15, Lang 13, Actions 1, Attributes 2, HTTP Statuses 3, Locales 1</td>
-                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+                <td><img src="%badge-not-supported%" alt="not supported" /></td>
             </tr>
             <tr>
                 <td>10</td>
                 <td>8.1, 8.2</td>
                 <td><code>^4.0</code></td>
                 <td>Publisher 14, Lang 13, Attributes 2, HTTP Statuses 3, Locales 1</td>
-                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+                <td><img src="%badge-not-supported%" alt="not supported" /></td>
             </tr>
             <tr>
                 <td>8, 9, 10</td>
                 <td>8.1, 8.2</td>
                 <td><code>^3.0</code></td>
                 <td>Publisher 14, Lang 12, Attributes 2, HTTP Statuses 3</td>
-                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+                <td><img src="%badge-not-supported%" alt="not supported" /></td>
             </tr>
             <tr>
                 <td>7, 8, 9</td>
                 <td>8.0, 8.1</td>
                 <td><code>^2.0</code></td>
                 <td>Publisher 13, Lang 10, Attributes 1, HTTP Statuses 2</td>
-                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+                <td><img src="%badge-not-supported%" alt="not supported" /></td>
             </tr>
             <tr>
                 <td>7, 8, 9</td>
                 <td>7.3, 7.4, 8.0, 8.1</td>
                 <td><code>^1.0</code></td>
                 <td>Publisher 12, Lang 10, Attributes 1, HTTP Statuses 2</td>
-                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+                <td><img src="%badge-not-supported%" alt="not supported" /></td>
             </tr>
         </table>
     </chapter>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-        title="Update Locales" id="usage-update-locales">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Update Locales" id="usage-update-locales">
 
     <link-summary>Updating locales to a Laravel application</link-summary>
     <card-summary>Updating locales to a Laravel application</card-summary>
@@ -13,7 +13,7 @@
     <title>Update Locales</title>
 
     <p>
-        To update files, call the console command:
+        To update files, run the console command:
     </p>
 
     <code-block lang="bash">
@@ -21,22 +21,22 @@
     </code-block>
 
     <p>
-        Yes, that's all you need to do 🙂
+        Yes, that's all you have to do 🙂
     </p>
     <p>
-        This console command will detect the localizations installed in the application and update the files.
+        This console command detects the localizations installed in the application and updates the files.
     </p>
 
     <tip>
         <p>
-            Some minor versions of Laravel may remove keys from their repositories, causing them to accumulate in the
-            application.
-            This happens very rarely, but it does happen.
+            Some minor versions of Laravel may remove keys from their repositories, causing them to disappear
+            from the application.
+            This is very rare, but it does happen.
         </p>
         <p>
-            The localization update command only adds new or updates existing translation phrases.
-            To remove unused phrases, use the console command
-            <a href="usage-reset-locales.topic"><code>%command-reset%</code></a>.
+            The Localization Update command only adds new or updates existing translation phrases.
+            To remove unused phrases, use the
+            <a href="usage-reset-locales.topic"><code>%command-reset%</code></a> console command .
         </p>
     </tip>
 </topic>

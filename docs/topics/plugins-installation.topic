@@ -11,12 +11,12 @@
     <web-summary>Information on installing localization plugins using %repository-title-publisher%</web-summary>
 
     <note>
-        You can also see the list of available <a href="plugins-official.topic">official</a> plugins and created
-        by <a href="plugins-community.topic">communities</a>.
+        You can also see the list of available <a href="plugins-official.topic">official</a> and
+        <a href="plugins-community.topic">community</a> created plugins.
     </note>
 
     <p>
-        For a manager to work, you need to do two things:
+        To be a manager, you have to do two things:
     </p>
 
     <list style="decimal">
@@ -29,13 +29,13 @@
     </list>
 
     <p>
-        Now, when the
+        Now, when you run the
         <code>%command-update%</code> command is executed, the manager will check the specified packages and
         automatically update the files in your application.
     </p>
     <p>
-        If files with the same names exist in different packages, for example, <code>custom.php</code>,
-        then during their processing all keys from all files will be combined.
+        If files with the same name exist in different packages, e.g. <code>custom.php</code>,
+        then during their processing all keys from all files will be during processing.
     </p>
 
     <tip>

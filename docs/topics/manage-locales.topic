@@ -15,7 +15,7 @@
     </warning>
 
     <p>
-        Almost all console commands accept an array of localizations as a parameter.
+        Almost all console commands take an array of localizations as parameters.
     </p>
     <p>
         For example:

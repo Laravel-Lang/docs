@@ -29,7 +29,7 @@
 
         You can also
         <a href="configuration.topic#routes">change</a>
-        the default settings by making changes to the <code>%config-filename%</code> file.
+        the default settings by editing the <code>%config-filename%</code> file.
 
         <include from="library-descriptions.topic" element-id="route-caching-support" />
     </chapter>
@@ -38,16 +38,16 @@
         <link-summary>Usage information for the %repository-title-routes% package</link-summary>
 
         <p>
-            Let's say an application has two installed localizations - French and German.
+            Let's say an application has two localizations installed - French and German.
         </p>
         <p>
-            The application settings look like this:
+            The application settings will look like this:
         </p>
 
         <code-block lang="php" src="configuration-routes-usage-app-example.php" include-lines="5-" />
 
         <p>
-            We also have set values for French and German:
+            We have also set values for French and German:
         </p>
 
         <code-block lang="json" src="configuration-routes-installed-french.json" />
@@ -76,7 +76,7 @@
             </tabs>
 
             <p>
-                Next, you can specify aliases in the route <code>middleware</code> method:
+                Next, you can specify aliases in the <code>middleware</code> route method:
             </p>
 
             <code-block lang="php" src="configuration-routes-setup-aliased.php" include-lines="5-" />
@@ -88,8 +88,8 @@
             <code-block lang="php" src="configuration-routes-usage-parameter.php" include-lines="5-" />
 
             <p>
-                If an incorrect or unset localization is transmitted,
-                the page will be rendered in accordance with the main localization installed in the application.
+                If an incorrect or unset localization is transferred the page will be rendered according to
+                the main localization installed in the application.
             </p>
 
             <chapter title="Examples" id="via_url_parameter_examples">
@@ -224,8 +224,8 @@
             <code-block lang="php" src="configuration-routes-usage-header.php" include-lines="5-" />
 
             <p>
-                If an incorrect or unset localization is transmitted,
-                the page will be rendered in accordance with the main localization installed in the application.
+                If an incorrect or unset localization is submitted,
+                the page will be rendered according to the main localization installed in the application.
             </p>
 
             <chapter title="Examples" id="via_header_examples">
@@ -286,8 +286,8 @@
             <code-block lang="php" src="configuration-routes-usage-cookies.php" include-lines="5-" />
 
             <p>
-                If an incorrect or unset localization is transmitted,
-                the page will be rendered in accordance with the main localization installed in the application.
+                If an incorrect or unset localization is transferred
+                the page will be rendered according to the main localization installed in the application.
             </p>
 
             <chapter title="Examples" id="via_cookies_examples">
@@ -348,17 +348,17 @@
             <code-block lang="php" src="configuration-routes-usage-session.php" include-lines="5-" />
 
             <p>
-                If an incorrect or unset localization is transmitted,
-                the page will be rendered in accordance with the main localization installed in the application.
+                If an incorrect or unset localization is transferred
+                the page will be rendered according to the main localization installed in the application.
             </p>
 
             <p>
-                Technically, working with sessions is no different from working with cookies.
+                Technically, working with sessions is no different than working with cookies.
                 The difference is where they are stored.
             </p>
             <p>
                 You can <a href="https://laravel.com/docs/session">read</a>
-                more about how to work with sessions in the
+                more about working with sessions in the
                 <a href="https://laravel.com/docs/session">Laravel documentation</a>.
             </p>
 
@@ -426,14 +426,14 @@
             <code-block lang="php" src="configuration-routes-usage-column.php" include-lines="5-" />
 
             <p>
-                This method allows you to set localization for any authorized client.
+                This method allows you to set the locale for any authorized client.
                 To do this, make sure that the model contains the
                 <tooltip term="package-routes-parameter-name">"locale"</tooltip>
                 attribute.
             </p>
             <p>
-                If the user table does not contain this column,
-                add it if necessary or create a dynamic method in the model class.
+                If the user table does not have this column,
+                add it if necessary, or create a dynamic method in the model class.
             </p>
             <p>
                 For example:
@@ -442,13 +442,14 @@
             <code-block lang="php" src="configuration-routes-model-attribute.php" include-lines="5-" />
 
             <p>
-                Now, if the user is authorized using middleware or manually, for example, using the
-                <code>Auth::login($user)</code> method, the application will return information in the language of his choice.
+                Now, when the user is authorized via middleware or manually, for example, using the
+                <code>Auth::login($user)</code> method, the application will return information in the language
+                the user's choice.
             </p>
 
             <p>
-                In addition, if the user is authorized using a certain guard,
-                then you can specify it using a colon when calling the middleware.
+                In addition, if the user is authorized with a particular guard,
+                you can specify it with a colon when calling the middleware.
             </p>
             <p>
                 For example:
@@ -457,7 +458,7 @@
             <code-block lang="php" src="configuration-routes-usage-column-guard.php" include-lines="5-" />
 
             <p>
-                To obtain a user instance, the middleware uses the following code:
+                To get a user instance, the middleware uses the following code:
             </p>
 
             <code-block
@@ -481,13 +482,13 @@
             </p>
             <p>
                 In addition to the main middleware for this group, <code>LocalizationByParameterPrefix</code>,
-                the following also takes part:
+                the following are also involved part:
                 <code>LocalizationByCookie</code>,
                 <code>LocalizationByHeader</code> and
                 <code>LocalizationBySession</code> .
             </p>
             <p>
-                You can use any of three interaction methods:
+                You can use one of three interaction methods:
             </p>
             <code-block lang="php">
                 use Illuminate\Support\Facades\Route;
@@ -608,7 +609,7 @@
         </note>
 
         <p>
-            When passing a localization parameter to install it in the application, the event will be called:
+            When a localization parameter is passed to install it in the application, the event is invoked:
         </p>
 
         <code-block lang="php">
@@ -618,7 +619,8 @@
         </code-block>
 
         <p>
-            The event's <code>$locale</code> property is of <code>LaravelLang\Locales\Data\LocaleData</code> type.
+            The <code>$locale</code> property of the event is of the
+            <code>LaravelLang\Locales\Data\LocaleData</code> type.
         </p>
 
         <p>

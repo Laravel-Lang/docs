@@ -2,9 +2,9 @@
 <!DOCTYPE topic
     SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-        title="Remove Locales" id="usage-remove-locales">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Remove Locales" id="usage-remove-locales">
 
     <link-summary>Removing locales to a Laravel application</link-summary>
     <card-summary>Removing locales to a Laravel application</card-summary>
@@ -13,11 +13,11 @@
     <title>Remove Locales</title>
 
     <warning>
-        When this command is executed, the entire locale folder with all files is deleted except default and fallback locales.
+        When executed, this command deletes the entire locale folder with all files except the default and fallback locales.
     </warning>
 
     <p>
-        To delete localizations, you must use
+        To delete localizations, you must use the
         <code>%command-remove-empty%</code> command, passing the letter abbreviations into it:
     </p>
 
@@ -35,14 +35,14 @@
     </code-block>
 
     <p>
-        By default, the command will return an error message when trying to remove a protected locale.
+        By default, the command returns an error message when it attempts to remove a protected locale.
     </p>
     <p>
-        Protected locales are the set codes in the <code>locale</code> and
+        Protected locales are the codes set in the <code>locale</code> and
         <code>fallback_locale</code> parameters of the <code>config/app.php</code> file.
     </p>
     <p>
-        To force the deletion of a protected localization, use the <code>force</code> option:
+        To force the deletion of a protected locale, use the <code>force</code> option:
     </p>
 
     <code-block lang="bash">

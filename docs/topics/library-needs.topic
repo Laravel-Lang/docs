@@ -15,8 +15,8 @@
         <code-block lang="json" src="composer-post-update-cmd.json"/>
 
         <p>
-            This will allow localization files to be automatically updated after dependency updates, rather than
-            manually calling the <code>%command-update%</code> console command.
+            This allows localization files to be automatically updated after dependency updates, rather than
+            manually running the <code>%command-update%</code> console command.
         </p>
     </snippet>
 </topic>
