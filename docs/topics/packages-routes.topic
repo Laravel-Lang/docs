@@ -37,6 +37,8 @@
     <chapter title="Usage" id="usage">
         <link-summary>Usage information for the %repository-title-routes% package</link-summary>
 
+        <include from="library-models.topic" element-id="video-usage"/>
+
         <p>
             Let's say an application has two localizations installed - French and German.
         </p>

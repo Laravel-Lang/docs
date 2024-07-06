@@ -19,4 +19,14 @@
             </p>
         </note>
     </snippet>
+
+    <snippet id="video-usage">
+        <p>
+            Here you can watch a short video on installing and using the
+            <a href="packages-routes.topic#usage">%repository-title-routes%</a>
+            and <a href="packages-models.topic#usage">%repository-title-models%</a> projects in one application:
+        </p>
+
+        <video src="https://youtu.be/mH76pGbpVu0" />
+    </snippet>
 </topic>

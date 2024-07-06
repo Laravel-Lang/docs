@@ -184,6 +184,8 @@
         <link-summary>Usage information for the %repository-title-models% package</link-summary>
 
         <include from="library-models.topic" element-id="ensure_locale_installed" />
+        
+        <include from="library-models.topic" element-id="video-usage"/>
 
         <chapter title="Get Translation" id="get_translation">
             <tip>
