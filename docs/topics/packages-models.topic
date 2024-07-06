@@ -12,17 +12,6 @@
     <card-summary>Easy and fast way to localize models</card-summary>
     <web-summary>Easy and fast way to localize models</web-summary>
 
-    <warning>
-        <p>
-            The <code>%repository-title-models%</code> project is in
-            <format style="bold">release candidate</format>
-            testing.
-        </p>
-        <p>
-            Use in production is discouraged until it is released into a stable version.
-        </p>
-    </warning>
-
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %package-models% package</link-summary>
 
