@@ -37,7 +37,7 @@
     <chapter title="Usage" id="usage">
         <link-summary>Usage information for the %repository-title-routes% package</link-summary>
 
-        <include from="library-models.topic" element-id="video-usage"/>
+        <include from="library-models.topic" element-id="video-usage" />
 
         <p>
             Let's say an application has two localizations installed - French and German.
@@ -529,6 +529,24 @@
                 The name prefix can be changed in the <code>routes</code> section
                 of the <code>%config-filename%</code> file.
             </p>
+
+            <note>
+                <p>
+                    Since version <a href="https://github.com/Laravel-Lang/routes/releases/tag/1.4.0">1.4</a>,
+                    when calling a localized route name, such as
+                    <code>route('localized.show', ['bar' => 'show'])</code>,
+                    there is no need to specify the current localization code.
+                </p>
+
+                <tabs>
+                    <tab title="After">
+                        <code-block lang="php" src="packages-routes-auto-locale.php" include-lines="11-15" />
+                    </tab>
+                    <tab title="Before">
+                        <code-block lang="php" src="packages-routes-auto-locale.php" include-lines="5-9" />
+                    </tab>
+                </tabs>
+            </note>
 
             <chapter title="Examples" id="via_localization_group_examples">
                 <tabs>
