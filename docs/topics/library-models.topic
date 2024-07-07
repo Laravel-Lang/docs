@@ -24,16 +24,10 @@
         <p>
             Here you can watch a short video on installing and using the
             <a href="packages-routes.topic#usage">%repository-title-routes%</a>
-            and <a href="packages-models.topic#usage">%repository-title-models%</a> projects in one application:
+            and <a href="packages-models.topic#usage">%repository-title-models%</a> projects in one application
+            (<a href="https://youtu.be/mH76pGbpVu0">watch on YouTube</a>) :
         </p>
 
         <video src="https://youtu.be/mH76pGbpVu0" />
-
-        <p>
-            Note: <a href="https://www.jetbrains.com/help/writerside/getting-started.html">Writerside</a>
-            may not display videos correctly in low quality.
-            You can either wait for the browser to load the video in higher quality
-            or watch it on YouTube by following the <a href="https://youtu.be/mH76pGbpVu0">link</a>.
-        </p>
     </snippet>
 </topic>
