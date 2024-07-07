@@ -269,13 +269,13 @@
                 </p>
             </chapter>
 
-            <code-block lang="php" src="models-usage-set-translation-plural.php" include-lines="5-32" />
+            <code-block lang="php" src="models-usage-set-translation-plural.php" include-lines="5-35" />
 
             <p>
                 You can also assign <code>iterable</code> objects when bulk populating. For example:
             </p>
 
-            <code-block lang="php" src="models-usage-set-translation-plural.php" include-lines="34-42" />
+            <code-block lang="php" src="models-usage-set-translation-plural.php" include-lines="37-45" />
 
             <p>
                 Please note that there is no strict need to indicate exact locations for each of the fields.

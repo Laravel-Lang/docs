@@ -3,8 +3,11 @@
 declare(strict_types=1);
 
 use App\Models\Article;
+use Illuminate\Database\Eloquent\Model;
 use LaravelLang\LocaleList\Locale;
+use LaravelLang\Models\HasTranslations;
 
+/** @var Model|HasTranslations $post */
 $post = Article::first();
 
 $titles = [
