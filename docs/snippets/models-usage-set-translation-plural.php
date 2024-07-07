@@ -20,16 +20,16 @@ $descriptions = collect([
 
 // Option 1
 foreach ($titles as $locale => $value) {
-    $post->setTranslation($value, $locale);
+    $post->setTranslation('title', $value, $locale);
 }
 
 foreach ($descriptions as $locale => $value) {
-    $post->setTranslation($value, $locale);
+    $post->setTranslation('description', $value, $locale);
 }
 
 // Option 2
 $post->setTranslations('title', $titles);
-$post->setTranslations('description', $titles);
+$post->setTranslations('description', $descriptions);
 
 $post->fill([
     'title'       => $titles,
