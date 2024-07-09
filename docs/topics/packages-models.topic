@@ -139,6 +139,17 @@
         </chapter>
 
         <chapter title="IDE helpers" id="ide_helpers">
+            <tip>
+                <p>
+                    When creating a repository using the <code>%command-models-make-storage%</code> console command,
+                    there is no need to separately call the generation of helper files.
+                    She will do everything herself.
+                </p>
+                <p>
+                    It is advisable to call the command when you have made any changes to the translation storage model.
+                </p>
+            </tip>
+
             <p>
                 To help your IDE work with translatable fields, we recommend running the console command:
             </p>
@@ -172,9 +183,7 @@
     <chapter title="Usage" id="usage">
         <link-summary>Usage information for the %repository-title-models% package</link-summary>
 
-        <include from="library-models.topic" element-id="ensure_locale_installed" />
-        
-        <include from="library-models.topic" element-id="video-usage"/>
+        <include from="library-models.topic" element-id="video-usage" />
 
         <chapter title="Get Translation" id="get_translation">
             <tip>
