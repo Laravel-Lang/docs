@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="JSON Fallback" id="packages-json-fallback">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="JSON Fallback" id="packages-json-fallback">
 
-    <show-structure depth="2"/>
+    <show-structure depth="2" />
 
     <link-summary>Adds support for fallback JSON string translation</link-summary>
     <card-summary>Adds support for fallback JSON string translation</card-summary>
     <web-summary>Adds support for fallback JSON string translation</web-summary>
 
-    <include from="library-lists.topic" element-id="json-fallback-doesnt-need"/>
+    <include from="library-lists.topic" element-id="json-fallback-doesnt-need" />
 
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-json-fallback% package</link-summary>
@@ -20,7 +21,7 @@
             The compatibility table can be viewed <a href="#compatibility">here</a>.
         </note>
 
-        <include from="library-lists.topic" element-id="json-fallback-doesnt-allow"/>
+        <include from="library-lists.topic" element-id="json-fallback-doesnt-allow" />
 
         <p>
             To install, run the console command:
@@ -34,16 +35,25 @@
     <chapter title="Usage" id="usage">
         <link-summary>Usage information for the %repository-title-json-fallback% package</link-summary>
 
-        <p>
-            After installing, you need to add a link to the service provider in the <code>providers</code> section of
-            the <code>config/app.php</code> settings file:
-        </p>
+        <snippet id="usage_section">
+            <note>
+                In Laravel 11, the <code>providers</code> section is missing from the
+                <code>config/app.php</code> configuration file.
+                You can add it manually.
+            </note>
 
-        <code-block src="json-fallback-install-laravel-10.php" lang="php"/>
+            <p>
+                After installing, you need to add a link to the service provider in the
+                <code>providers</code> section of
+                the <code>config/app.php</code> settings file:
+            </p>
 
-        <p>
-            Now JSON keys will correctly output the value based on the selected localization.
-        </p>
+            <code-block src="json-fallback-install.php" lang="php"/>
+
+            <p>
+                Now JSON keys will correctly output the value based on the selected localization.
+            </p>
+        </snippet>
     </chapter>
 
     <chapter title="Compatibility" id="compatibility">
@@ -60,13 +70,13 @@
                 <td>10, 11</td>
                 <td>8.1, 8.2, 8.3</td>
                 <td><code>^2.0</code></td>
-                <td><img src="%badge-supported%" alt="supported"/></td>
+                <td><img src="%badge-supported%" alt="supported" /></td>
             </tr>
             <tr>
                 <td>6, 7, 8, 9, 10</td>
                 <td>7.2, 7.3, 7.4, 8.0, 8.1, 8.2, 8.3</td>
                 <td><code>^1.0</code></td>
-                <td><img src="%badge-not-supported%" alt="not supported"/></td>
+                <td><img src="%badge-not-supported%" alt="not supported" /></td>
             </tr>
         </table>
     </chapter>
