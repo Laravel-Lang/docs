@@ -12,6 +12,7 @@
     <web-summary>Translation of HTTP statuses</web-summary>
 
     <primary-label ref="stable" />
+    <secondary-label ref="package-http-statuses" />
 
     <tip>
         <p>

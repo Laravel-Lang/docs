@@ -13,6 +13,7 @@
     <web-summary>Translation of locale names</web-summary>
 
     <primary-label ref="stable" />
+    <secondary-label ref="package-native-locale-names" />
 
     <tip>
         This package contains a list of localized locale names.

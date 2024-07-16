@@ -12,6 +12,7 @@
     <web-summary>Translation of buttons and other action elements</web-summary>
 
     <primary-label ref="stable" />
+    <secondary-label ref="package-actions" />
 
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-actions% package</link-summary>

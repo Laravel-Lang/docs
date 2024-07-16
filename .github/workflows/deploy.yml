@@ -40,7 +40,6 @@ jobs:
             -   name: Setup PHP
                 uses: shivammathur/setup-php@v2
                 with:
-                    php-version: ${{ matrix.php }}
                     extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
                     coverage: xdebug
 
@@ -56,6 +55,10 @@ jobs:
             -   name: Update Team
                 run: |
                     php src/team.php
+
+            -   name: Download versions
+                run: |
+                    php src/releases.php
 
             -   name: Move completion statuses
                 run: |
@@ -119,7 +122,6 @@ jobs:
             -   name: Setup PHP
                 uses: shivammathur/setup-php@v2
                 with:
-                    php-version: ${{ matrix.php }}
                     extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
                     coverage: xdebug
 

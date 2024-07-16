@@ -13,6 +13,7 @@
     <web-summary>The %repository-title-publisher% provides functionality for working with application localization</web-summary>
 
     <primary-label ref="stable" />
+    <secondary-label ref="package-publisher" />
 
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-publisher% package</link-summary>

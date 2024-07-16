@@ -13,6 +13,7 @@
     <web-summary>Easy and fast way to localize models</web-summary>
 
     <primary-label ref="stable" />
+    <secondary-label ref="package-models" />
 
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %package-models% package</link-summary>

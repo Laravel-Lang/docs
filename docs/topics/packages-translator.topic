@@ -13,6 +13,7 @@
     <web-summary>Text translation using multiple API translators</web-summary>
 
     <primary-label ref="alpha" />
+    <secondary-label ref="package-translator" />
 
     <warning>
         <p>

@@ -13,6 +13,7 @@
     <web-summary>Adds support for fallback JSON string translation</web-summary>
 
     <primary-label ref="stable" />
+    <secondary-label ref="package-json-fallback" />
 
     <include from="library-lists.topic" element-id="json-fallback-doesnt-need" />
 

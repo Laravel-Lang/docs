@@ -2,8 +2,8 @@ name: Tests
 
 on:
     push:
-      branches-ignore:
-          - main
+        branches-ignore:
+            - main
     pull_request:
 
 permissions: read-all
@@ -26,7 +26,6 @@ jobs:
             -   name: Setup PHP
                 uses: shivammathur/setup-php@v2
                 with:
-                    php-version: ${{ matrix.php }}
                     extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
                     coverage: xdebug
 
@@ -47,6 +46,10 @@ jobs:
                     git clone --no-tags --single-branch https://github.com/Laravel-Lang/attributes.git tmp/attributes
                     git clone --no-tags --single-branch https://github.com/Laravel-Lang/http-statuses.git tmp/http-statuses
                     git clone --no-tags --single-branch https://github.com/Laravel-Lang/lang.git tmp/lang
+
+            -   name: Download versions
+                run: |
+                    php src/releases.php
 
             -   name: Move completion statuses
                 run: |

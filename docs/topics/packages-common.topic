@@ -13,6 +13,7 @@
     <web-summary>Easily connect the necessary language packs to the application</web-summary>
 
     <primary-label ref="stable" />
+    <secondary-label ref="package-common" />
 
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-common% package</link-summary>

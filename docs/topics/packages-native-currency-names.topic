@@ -13,6 +13,7 @@
     <web-summary>Translation of currency names</web-summary>
 
     <primary-label ref="stable" />
+    <secondary-label ref="package-native-currency-names" />
 
     <tip>
         This package contains a list of localized currency names.
