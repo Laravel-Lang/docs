@@ -11,6 +11,8 @@
     <card-summary>Basic functionality for working with localizations</card-summary>
     <web-summary>Basic functionality for working with localizations</web-summary>
 
+    <primary-label ref="stable" />
+
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-locales% package</link-summary>
 

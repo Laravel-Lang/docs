@@ -11,6 +11,8 @@
     <card-summary>Translation of form element names</card-summary>
     <web-summary>Translation of form element names</web-summary>
 
+    <primary-label ref="stable" />
+
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-attributes% package</link-summary>
 

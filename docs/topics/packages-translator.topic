@@ -12,6 +12,8 @@
     <card-summary>Text translation using multiple API translators</card-summary>
     <web-summary>Text translation using multiple API translators</web-summary>
 
+    <primary-label ref="alpha" />
+
     <warning>
         <p>
             The <code>%repository-title-translator%</code> project is in

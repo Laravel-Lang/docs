@@ -12,6 +12,8 @@
     <card-summary>Adds support for fallback JSON string translation</card-summary>
     <web-summary>Adds support for fallback JSON string translation</web-summary>
 
+    <primary-label ref="stable" />
+
     <include from="library-lists.topic" element-id="json-fallback-doesnt-need" />
 
     <chapter title="Installation" id="installation">

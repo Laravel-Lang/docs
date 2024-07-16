@@ -11,7 +11,7 @@ permissions: read-all
 env:
     INSTANCE: docs/laravel-lang
     ARTIFACT: webHelpLARAVEL-LANG2-all.zip
-    BUILDER_VERSION: 241.16003
+    BUILDER_VERSION: 241.18775
 
 jobs:
     build:

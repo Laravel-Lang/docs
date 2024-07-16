@@ -12,6 +12,8 @@
     <card-summary>Translation of locale names</card-summary>
     <web-summary>Translation of locale names</web-summary>
 
+    <primary-label ref="stable" />
+
     <tip>
         This package contains a list of localized locale names.
     </tip>

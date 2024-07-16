@@ -11,6 +11,8 @@
     <card-summary>Translation of HTTP statuses</card-summary>
     <web-summary>Translation of HTTP statuses</web-summary>
 
+    <primary-label ref="stable" />
+
     <tip>
         <p>
             This package contains a translation of the names of all common HTTP code statuses and is linked to its

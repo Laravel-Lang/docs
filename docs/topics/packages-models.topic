@@ -12,6 +12,8 @@
     <card-summary>Easy and fast way to localize models</card-summary>
     <web-summary>Easy and fast way to localize models</web-summary>
 
+    <primary-label ref="stable" />
+
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %package-models% package</link-summary>
 

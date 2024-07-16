@@ -12,6 +12,8 @@
     <card-summary>Translations for Laravel Framework, Laravel Jetstream, Laravel Fortify, Laravel Breeze, Laravel Cashier, Laravel Nova, Laravel Spark and Laravel UI.</card-summary>
     <web-summary>Translations for Laravel Framework, Laravel Jetstream, Laravel Fortify, Laravel Breeze, Laravel Cashier, Laravel Nova, Laravel Spark and Laravel UI.</web-summary>
 
+    <primary-label ref="stable" />
+
     <tip>
         <p>
             This package contains translations of all official keys from Laravel projects:

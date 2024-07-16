@@ -12,6 +12,8 @@
     <card-summary>List of localizations available in %instance% projects</card-summary>
     <web-summary>List of localizations available in %instance% projects</web-summary>
 
+    <primary-label ref="stable" />
+
     <tip>
         <p>
             This package contains a list of available locales that all

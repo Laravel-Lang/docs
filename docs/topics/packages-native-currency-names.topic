@@ -12,6 +12,8 @@
     <card-summary>Translation of currency names</card-summary>
     <web-summary>Translation of currency names</web-summary>
 
+    <primary-label ref="stable" />
+
     <tip>
         This package contains a list of localized currency names.
     </tip>

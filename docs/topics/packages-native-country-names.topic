@@ -12,6 +12,8 @@
     <card-summary>Translation of country names</card-summary>
     <web-summary>Translation of country names</web-summary>
 
+    <primary-label ref="stable" />
+
     <tip>
         This package contains a list of localized country names.
     </tip>

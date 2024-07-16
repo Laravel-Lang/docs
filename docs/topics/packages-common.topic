@@ -12,6 +12,8 @@
     <card-summary>Easily connect the necessary language packs to the application</card-summary>
     <web-summary>Easily connect the necessary language packs to the application</web-summary>
 
+    <primary-label ref="stable" />
+
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-common% package</link-summary>
 
