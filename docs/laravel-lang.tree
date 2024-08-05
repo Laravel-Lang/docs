@@ -40,7 +40,7 @@
         <toc-element topic="usage-reset-locales.topic" />
         <toc-element topic="usage-remove-locales.topic" />
     </toc-element>
-    <toc-element topic="packages.topic" accepts-web-file-names-ref="451edbda">
+    <toc-element topic="packages.topic" accepts-web-file-names-ref="6b6769ff">
         <toc-element topic="packages-common.topic" />
         <toc-element topic="packages-routes.topic" />
         <toc-element topic="packages-models.topic" />

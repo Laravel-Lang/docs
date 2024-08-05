@@ -18,8 +18,8 @@
         <description>Created after removal of "Localizations" from Laravel Lang</description>
         <accepts>localizations.html</accepts>
     </rule>
-    <rule id="451edbda">
-        <description>Created after removal of "Digging Deeper" from Laravel Lang</description>
-        <accepts>digging-deeper.html</accepts>
+    <rule id="6b6769ff">
+        <description>Created after removal of "installation" from Laravel Lang</description>
+        <accepts>installation.html</accepts>
     </rule>
 </rules>
