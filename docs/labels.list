@@ -2,37 +2,26 @@
 <!DOCTYPE labels SYSTEM "https://resources.jetbrains.com/writerside/1.0/labels-list.dtd">
 <labels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/labels.xsd">
-    <primary-label id="alpha" name="Alpha" color="tangerine" short-name="α">The project is at the alpha testing stage
-    </primary-label>
-    <primary-label id="beta" name="Beta" color="strawberry" short-name="β">The project is at the beta testing stage
-    </primary-label>
-    <primary-label id="rc" name="Release Candidate" color="purple" short-name="RC">The project is being prepared for
-        release
-    </primary-label>
-    <primary-label id="stable" name="Stable" color="blue" short-name="S">A stable version of the project has been
-        released
-    </primary-label>
+    <primary-label id="alpha" name="Alpha" color="tangerine" short-name="α">The project is at the alpha testing stage</primary-label>
+    <primary-label id="beta" name="Beta" color="strawberry" short-name="β">The project is at the beta testing stage</primary-label>
+    <primary-label id="rc" name="Release Candidate" color="purple" short-name="RC">The project is being prepared for release</primary-label>
+    <primary-label id="stable" name="Stable" color="blue" short-name="S">A stable version of the project has been released</primary-label>
     <secondary-label id="package-lang" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-publisher" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-http-statuses" name="unknown" color="purple">Latest version is unknown</secondary-label>
-    <secondary-label id="package-status-generator" name="unknown" color="purple">Latest version is unknown
-    </secondary-label>
+    <secondary-label id="package-status-generator" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-attributes" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-json-fallback" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-common" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-locales" name="unknown" color="purple">Latest version is unknown</secondary-label>
-    <secondary-label id="package-native-locale-names" name="unknown" color="purple">Latest version is unknown
-    </secondary-label>
+    <secondary-label id="package-native-locale-names" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-locale-list" name="unknown" color="purple">Latest version is unknown</secondary-label>
-    <secondary-label id="package-native-country-names" name="unknown" color="purple">Latest version is unknown
-    </secondary-label>
-    <secondary-label id="package-native-currency-names" name="unknown" color="purple">Latest version is unknown
-    </secondary-label>
+    <secondary-label id="package-native-country-names" name="unknown" color="purple">Latest version is unknown</secondary-label>
+    <secondary-label id="package-native-currency-names" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-actions" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-webhooks-service" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-routes" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-models" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-config" name="unknown" color="purple">Latest version is unknown</secondary-label>
-    <secondary-label id="package-translator" name="unknown" color="purple">Latest version is unknown
-    </secondary-label>
+    <secondary-label id="package-translator" name="unknown" color="purple">Latest version is unknown</secondary-label>
 </labels>
