@@ -20,9 +20,13 @@
                 <code>laravel-lang/common</code> to <code>^6.0</code>
             </li>
         </list>
+        
+        <p>
+            And, if it is listed in the <code>require-dev</code> section, move it to the <code>require</code> section.
+        </p>
 
         <p>
-            Run the update dependency console command:
+            Next, run the update dependency console command:
         </p>
 
         <include from="library-commands.topic" element-id="composer_update"/>
