@@ -69,9 +69,17 @@
                 <td>10*, 11</td>
                 <td>8.1, 8.2, 8.3</td>
                 <td><code>^6.0</code></td>
-                <td>Publisher 16, Lang 13, 14, 15, Actions 1, Attributes 2, HTTP Statuses 3, Locales 2, JSON
-                    Fallback
-                    2
+                <td>
+                    Models 1,
+                    Routes 1,
+                    Locales 2,
+                    Publisher 16,
+                    Lang 13-15,
+                    Actions 1,
+                    Attributes 2,
+                    HTTP Statuses 3,
+                    Locales 2,
+                    JSON Fallback 2
                 </td>
                 <td>
                     <img src="%badge-supported%" alt="supported" />
