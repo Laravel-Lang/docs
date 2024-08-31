@@ -190,9 +190,27 @@
 
         <chapter title="Get Translation" id="get_translation">
             <tip>
-                All repository stores automatically propagate the
-                <a href="https://laravel.com/docs/eloquent-relationships#eager-loading">eager loading</a>
-                flag to the parent model, so there is no need to do this manually.
+                <p>
+                    All repository stores automatically propagate the
+                    <a href="https://laravel.com/docs/eloquent-relationships#eager-loading">eager loading</a>
+                    flag to the parent model, so there is no need to do this manually.
+                </p>
+                <p>
+                    By default, the relation will only contain records of basic localizations (current and fallback).
+                    But in some cases, you can load all of them by changing the
+                    <a href="configuration.topic#models">filter settings</a>:
+                </p>
+                <code-block lang="php">
+                    // %config-filename%
+                    config(['%config-filename-basename%.models.filter.enabled' => false]);
+                </code-block>
+                <code-block lang="ini">
+                    ; .env
+                    LOCALIZATION_FILTER_ENABLED=false
+                </code-block>
+                <p>
+                    In this case, all available localizations for the items will be loaded.
+                </p>
             </tip>
 
             <p>

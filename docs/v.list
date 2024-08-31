@@ -23,6 +23,7 @@
     <var name="command-update" value="php artisan lang:update" />
     <var name="command-update-simple" value="lang:update" />
     <var name="config-filename" value="config/localization.php" />
+    <var name="config-filename-basename" value="localization" />
     <var name="install-actions" value="composer require --dev laravel-lang/actions" />
     <var name="install-attributes" value="composer require --dev laravel-lang/attributes" />
     <var name="install-common" value="composer require laravel-lang/common" />
