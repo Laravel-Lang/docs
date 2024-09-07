@@ -222,7 +222,7 @@
         <chapter title="Via Header" id="via_header">
             <tip>
                 Sets the localization according to the
-                <tooltip term="package-routes-parameter-name">X-Localization</tooltip>
+                <tooltip term="package-routes-parameter-name">Accept-Language</tooltip>
                 header.
             </tip>
 
@@ -241,7 +241,7 @@
                         </p>
                         <code-block lang="bash">
                             curl -XGET 'https://example.com/foo/show' \
-                            --header 'X-Localization: de'
+                            --header 'Accept-Language: de'
                         </code-block>
 
                         <p>
@@ -255,7 +255,7 @@
                         </p>
                         <code-block lang="bash">
                             curl -XGET 'https://example.com/foo/show' \
-                            --header 'X-Localization: as'
+                            --header 'Accept-Language: as'
                         </code-block>
 
                         <p>
@@ -269,7 +269,7 @@
                         </p>
                         <code-block lang="bash">
                             curl -XGET 'https://example.com/foo/show' \
-                            --header 'X-Localization: qwerty'
+                            --header 'Accept-Language: qwerty'
                         </code-block>
 
                         <p>
@@ -284,7 +284,7 @@
         <chapter title="Via Cookie" id="via_cookie">
             <tip>
                 Sets the localization according to the
-                <tooltip term="package-routes-parameter-name">X-Localization</tooltip>
+                <tooltip term="package-routes-parameter-name">Accept-Language</tooltip>
                 cookie.
             </tip>
 
@@ -303,7 +303,7 @@
                         </p>
                         <code-block lang="bash">
                             curl -XGET https://example.com/foo/show \
-                            -b "X-Localization=de"
+                            -b "Accept-Language=de"
                         </code-block>
 
                         <p>
@@ -317,7 +317,7 @@
                         </p>
                         <code-block lang="bash">
                             curl -XGET https://example.com/foo/show \
-                            -b "X-Localization=as"
+                            -b "Accept-Language=as"
                         </code-block>
 
                         <p>
@@ -331,7 +331,7 @@
                         </p>
                         <code-block lang="bash">
                             curl -XGET https://example.com/foo/show \
-                            -b "X-Localization=qwerty"
+                            -b "Accept-Language=qwerty"
                         </code-block>
 
                         <p>
@@ -346,7 +346,7 @@
         <chapter title="Via Session" id="via_session">
             <tip>
                 Sets the localization according to the
-                <tooltip term="package-routes-parameter-name">X-Localization</tooltip>
+                <tooltip term="package-routes-parameter-name">Accept-Language</tooltip>
                 session key.
             </tip>
 
@@ -374,7 +374,7 @@
                             Request:
                         </p>
                         <code-block lang="bash">
-                            echo "X-Localization=de" >> cookies.txt
+                            echo "Accept-Language=de" >> cookies.txt
 
                             curl -XGET https://example.com/foo/show \
                             -b cookies.txt -c cookies.txt
@@ -390,7 +390,7 @@
                             Request:
                         </p>
                         <code-block lang="bash">
-                            echo "X-Localization=as" >> cookies.txt
+                            echo "Accept-Language=as" >> cookies.txt
 
                             curl -XGET https://example.com/foo/show \
                             -b cookies.txt -c cookies.txt
@@ -406,7 +406,7 @@
                             Request:
                         </p>
                         <code-block lang="bash">
-                            echo "X-Localization=qwerty" >> cookies.txt
+                            echo "Accept-Language=qwerty" >> cookies.txt
 
                             curl -XGET https://example.com/foo/show \
                             -b cookies.txt -c cookies.txt
