@@ -10,7 +10,8 @@ class Example
 {
     public function __construct(
         protected Yandex $yandex
-    ) {}
+    ) {
+    }
 
     public function fromString(): string
     {

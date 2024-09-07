@@ -10,7 +10,8 @@ class Example
 {
     public function __construct(
         protected Deepl $deepl
-    ) {}
+    ) {
+    }
 
     public function fromString(): string
     {
