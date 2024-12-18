@@ -163,7 +163,7 @@ $snippet = $dom->makeItem('snippet', '', ['id' => 'available-locales']);
 foreach (Locale::values() as $locale) {
     echo $locale . '...' . PHP_EOL;
 
-    $english   = LocaleNames::get('en')[$locale];
+    $english = LocaleNames::get('en')[$locale];
     $localized = LocaleNames::get($locale)[$locale];
 
     $chapter = $dom->makeItem('chapter', '', [
