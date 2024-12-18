@@ -61,7 +61,16 @@
             </tr>
             <tr>
                 <td><code>^11.0.7</code></td>
-                <td>8.2, 8.3</td>
+                <td>8.2, 8.3, 8.4</td>
+                <td>16</td>
+                <td><code>^15.10</code></td>
+                <td>Breeze 2, Cashier Stripe 15, Fortify 1, Jetstream 5, Nova 4/5, Spark Paddle, Spark Stripe, UI 4
+                </td>
+                <td><img src="%badge-supported%" alt="supported" /></td>
+            </tr>
+            <tr>
+                <td><code>^11.0.7</code></td>
+                <td>8.2, 8.3, 8.4</td>
                 <td>16</td>
                 <td><code>^15.0</code></td>
                 <td>Breeze 2, Cashier Stripe 15, Fortify 1, Jetstream 5, Nova 4, Spark Paddle, Spark Stripe, UI 4
