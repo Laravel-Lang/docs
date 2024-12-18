@@ -12,7 +12,7 @@ env:
     COMPOSER_TOKEN: ${{ secrets.COMPOSER_TOKEN }}
     INSTANCE: docs/laravel-lang
     ARTIFACT: webHelpLARAVEL-LANG2-all.zip
-    BUILDER_VERSION: 241.18775
+    BUILDER_VERSION: 243.22562
 
 jobs:
     build:
