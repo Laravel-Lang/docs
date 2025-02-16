@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="MoonShine Admin Panel" id="packages-moonshine-admin-panel">
+
+    <show-structure depth="2"/>
+
+    <link-summary>Translations for %repository-title-moonshine%</link-summary>
+    <card-summary>Translations for %repository-title-moonshine%</card-summary>
+    <web-summary>Translations for %repository-title-moonshine%</web-summary>
+
+    <primary-label ref="stable" />
+    <secondary-label ref="package-moonshine" />
+
+    <tip>
+        <p>
+            This package includes the localization of the Moonshine Admin Panel interface.
+        </p>
+        <p>
+            So, you can easily localize the translation of them too!
+        </p>
+    </tip>
+
+    <chapter title="Installation" id="installation">
+        <link-summary>Installation information for the %repository-title-moonshine% package</link-summary>
+
+        <note>
+            The compatibility table can be viewed <a href="#compatibility">here</a>.
+        </note>
+
+        <p>
+            To install, run the console command:
+        </p>
+
+        <code-block lang="bash">
+            %install-moonshine%
+        </code-block>
+    </chapter>
+
+    <chapter title="Usage" id="usage">
+        <link-summary>Usage information for the %repository-title-moonshine% package</link-summary>
+
+        <include from="library-descriptions.topic" element-id="now-use-update-locales"/>
+        <include from="library-needs.topic" element-id="library-needs-locales-facade"/>
+    </chapter>
+
+    <chapter title="Compatibility" id="compatibility">
+        <link-summary>Compatibility table for the %repository-title-moonshine% package</link-summary>
+
+        <table>
+            <tr>
+                <td>Laravel</td>
+                <td>PHP</td>
+                <td>Publisher</td>
+                <td>Package</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>10, 11</td>
+                <td>8.1, 8.2, 8.3</td>
+                <td>16</td>
+                <td><code>^1.0</code></td>
+                <td><img src="%badge-supported%" alt="supported"/></td>
+            </tr>
+        </table>
+    </chapter>
+</topic>

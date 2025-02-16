@@ -52,6 +52,7 @@
         <toc-element topic="packages-native-locale-names.topic" />
         <toc-element topic="packages-native-country-names.topic" />
         <toc-element topic="packages-native-currency-names.topic" />
+        <toc-element topic="packages-moonshine-admin-panel.topic" />
         <toc-element topic="packages-publisher.topic" />
         <toc-element topic="packages-translator.topic" />
         <toc-element topic="packages-locale-list.topic" />

@@ -142,6 +142,7 @@ $packages = [
     'statuses-actions'       => 'Actions',
     'statuses-attributes'    => 'Attributes',
     'statuses-http-statuses' => 'HTTP Statuses',
+    'statuses-moonshine'     => 'MoonShine Admin Panel',
 ];
 
 ksort($team);
@@ -159,7 +160,7 @@ $dom = Xml::init('topic', [
 $dom->doctype('topic', '', 'https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd');
 
 $snippet = $dom->makeItem('snippet', '', ['id' => 'our-team']);
-$table = $dom->makeItem('table', '');
+$table   = $dom->makeItem('table', '');
 
 $headers = $dom->makeItem('tr', '');
 
@@ -188,9 +189,9 @@ foreach ($team as $locale => $peoples) {
 
     $row = $dom->makeItem('tr', '');
 
-    $tableLocale = $dom->makeItem('td', '');
+    $tableLocale   = $dom->makeItem('td', '');
     $tablePackages = $dom->makeItem('td', '');
-    $tablePeoples = $dom->makeItem('td', '');
+    $tablePeoples  = $dom->makeItem('td', '');
 
     $localeLink = $dom->makeItem('a', $locale, [
         'href'    => 'available-locales-list.topic#lists-available-locales-' . $locale,
@@ -199,7 +200,7 @@ foreach ($team as $locale => $peoples) {
 
     $tableLocale->appendChild($block($localeLink));
 
-    $paragraph = $dom->makeItem('p', '');
+    $paragraph   = $dom->makeItem('p', '');
     $lastPackage = array_key_last($packages);
 
     foreach ($packages as $name => $package) {

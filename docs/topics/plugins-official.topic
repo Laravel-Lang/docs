@@ -47,6 +47,14 @@
                 Translation of HTTP statuses.
             </td>
         </tr>
+        <tr>
+            <td>
+                <a href="packages-moonshine-admin-panel.topic">%package-moonshine%</a>
+            </td>
+            <td>
+                Translations for <a href="https://getmoonshine.app">%repository-title-moonshine%</a>
+            </td>
+        </tr>
     </table>
 
     <seealso style="cards">

@@ -72,6 +72,7 @@ moveMain('actions', 'Actions');
 moveMain('attributes', 'Attributes');
 moveMain('http-statuses', 'HTTP Statuses');
 moveMain('lang', 'Lang');
+moveMain('moonshine', 'MoonShine');
 
 foreach (Locale::cases() as $locale) {
     if ($locale === Locale::English) {
@@ -82,4 +83,5 @@ foreach (Locale::cases() as $locale) {
     moveStatus('attributes', $locale);
     moveStatus('http-statuses', $locale);
     moveStatus('lang', $locale);
+    moveStatus('moonshine', $locale);
 }
