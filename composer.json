@@ -48,10 +48,12 @@
             "rm -rf tmp/attributes",
             "rm -rf tmp/http-statuses",
             "rm -rf tmp/lang",
+            "rm -rf tmp/moonshine",
             "git clone --no-tags --single-branch https://github.com/Laravel-Lang/actions.git tmp/actions",
             "git clone --no-tags --single-branch https://github.com/Laravel-Lang/attributes.git tmp/attributes",
             "git clone --no-tags --single-branch https://github.com/Laravel-Lang/http-statuses.git tmp/http-statuses",
-            "git clone --no-tags --single-branch https://github.com/Laravel-Lang/lang.git tmp/lang"
+            "git clone --no-tags --single-branch https://github.com/Laravel-Lang/lang.git tmp/lang",
+            "git clone --no-tags --single-branch https://github.com/Laravel-Lang/moonshine.git tmp/moonshine"
         ]
     }
 }
