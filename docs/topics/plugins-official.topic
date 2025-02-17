@@ -49,7 +49,8 @@
         </tr>
         <tr>
             <td>
-                <a href="packages-moonshine-admin-panel.topic">%package-moonshine%</a>
+                <a href="packages-moonshine-admin-panel.topic" instance="!laravel-lang">%package-moonshine%</a>
+                <if instance="laravel-lang">%package-moonshine%</if>
             </td>
             <td>
                 Translations for <a href="https://getmoonshine.app">%repository-title-moonshine%</a>
