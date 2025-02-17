@@ -55,6 +55,7 @@
                 <td>PHP</td>
                 <td>Publisher</td>
                 <td>Package</td>
+                <td>MoonShine</td>
                 <td>Status</td>
             </tr>
             <tr>
@@ -62,6 +63,7 @@
                 <td>8.2, 8.3, 8.4</td>
                 <td>15, 16</td>
                 <td><code>^1.0</code></td>
+                <td><code>^3.0</code></td>
                 <td><img src="%badge-supported%" alt="supported"/></td>
             </tr>
         </table>
