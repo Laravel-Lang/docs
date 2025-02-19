@@ -6,14 +6,6 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     title="%team-name%" id="our-team">
 
-    <p>
-        Here is a list of
-        <format style="bold">%team-name%</format>
-        team members responsible for translations.
-    </p>
-
-    <include from="library-our-team.topic" element-id="our-team" />
-
     <note>
         <p>
             If you want to join
@@ -27,4 +19,12 @@
             For service projects, we look at the proposed ideas, as well as the implementation of functionality.
         </p>
     </note>
+
+    <p>
+        Here is a list of
+        <format style="bold">%team-name%</format>
+        team members responsible for translations.
+    </p>
+
+    <include from="library-our-team.topic" element-id="our-team" />
 </topic>
