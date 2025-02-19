@@ -87,7 +87,7 @@
     <var name="repository-title-config" value="Config" />
     <var name="repository-title-docs" value="Documentation" />
     <var name="repository-title-http-statuses" value="HTTP Statuses" />
-    <var name="repository-title-moonshine" value="MoonShine Admin Panel" />
+    <var name="repository-title-moonshine" value="MoonShine" />
     <var name="repository-title-json-fallback" value="JSON Fallback" />
     <var name="repository-title-lang" value="Lang" />
     <var name="repository-title-locale-list" value="Locale List" />
