@@ -60,7 +60,7 @@
                 <td>Status</td>
             </tr>
             <tr>
-                <td><code>^11.0.7</code></td>
+                <td><code>^11.0.7, 12</code></td>
                 <td>8.2, 8.3, 8.4</td>
                 <td>16</td>
                 <td><code>^15.10</code></td>

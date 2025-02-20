@@ -420,7 +420,7 @@
                 <td>Status</td>
             </tr>
             <tr>
-                <td>10, 11</td>
+                <td>10, 11, 12</td>
                 <td>8.2, 8.3, 8.4</td>
                 <td><code>^1.0</code></td>
                 <td><img src="%badge-supported%" alt="supported" /></td>
