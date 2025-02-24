@@ -64,7 +64,7 @@
         <toc-element topic="plugins-community.topic" />
     </toc-element>
     <toc-element topic="statuses.topic">
-        <toc-element toc-title="Lang" topic="statuses-lang.md" sort-children="ascending">
+        <toc-element sort-children="ascending" toc-title="Lang" topic="statuses-lang.md">
             <toc-element topic="statuses-lang-af.md" />
             <toc-element topic="statuses-lang-ak.md" />
             <toc-element topic="statuses-lang-am.md" />
@@ -77,6 +77,7 @@
             <toc-element topic="statuses-lang-bm.md" />
             <toc-element topic="statuses-lang-bn.md" />
             <toc-element topic="statuses-lang-bs.md" />
+            <toc-element topic="statuses-lang-en_CA.md" />
             <toc-element topic="statuses-lang-ca.md" />
             <toc-element topic="statuses-lang-ceb.md" />
             <toc-element topic="statuses-lang-ckb.md" />
@@ -204,6 +205,7 @@
             <toc-element topic="statuses-actions-bm.md" />
             <toc-element topic="statuses-actions-bn.md" />
             <toc-element topic="statuses-actions-bs.md" />
+            <toc-element topic="statuses-actions-en_CA.md" />
             <toc-element topic="statuses-actions-ca.md" />
             <toc-element topic="statuses-actions-ceb.md" />
             <toc-element topic="statuses-actions-ckb.md" />
@@ -331,6 +333,7 @@
             <toc-element topic="statuses-attributes-bm.md" />
             <toc-element topic="statuses-attributes-bn.md" />
             <toc-element topic="statuses-attributes-bs.md" />
+            <toc-element topic="statuses-attributes-en_CA.md" />
             <toc-element topic="statuses-attributes-ca.md" />
             <toc-element topic="statuses-attributes-ceb.md" />
             <toc-element topic="statuses-attributes-ckb.md" />
@@ -458,6 +461,7 @@
             <toc-element topic="statuses-http-statuses-bm.md" />
             <toc-element topic="statuses-http-statuses-bn.md" />
             <toc-element topic="statuses-http-statuses-bs.md" />
+            <toc-element topic="statuses-http-statuses-en_CA.md" />
             <toc-element topic="statuses-http-statuses-ca.md" />
             <toc-element topic="statuses-http-statuses-ceb.md" />
             <toc-element topic="statuses-http-statuses-ckb.md" />
@@ -585,6 +589,7 @@
             <toc-element topic="statuses-moonshine-bm.md" />
             <toc-element topic="statuses-moonshine-bn.md" />
             <toc-element topic="statuses-moonshine-bs.md" />
+            <toc-element topic="statuses-moonshine-en_CA.md" />
             <toc-element topic="statuses-moonshine-ca.md" />
             <toc-element topic="statuses-moonshine-ceb.md" />
             <toc-element topic="statuses-moonshine-ckb.md" />
