@@ -17,6 +17,14 @@
         </tr>
         <tr>
             <td>
+                <a href="packages-starter-kits.topic">%package-starter-kits%</a>
+            </td>
+            <td>
+                Translations for <a href="https://laravel.com/docs/12.x/starter-kits" target="_blank">Laravel Starter Kits</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <a href="packages-lang.topic">%package-lang%</a>
             </td>
             <td>
@@ -49,8 +57,7 @@
         </tr>
         <tr>
             <td>
-                <a href="packages-moonshine-admin-panel.topic" instance="!laravel-lang">%package-moonshine%</a>
-                <if instance="laravel-lang">%package-moonshine%</if>
+                <a href="packages-moonshine.topic">%package-moonshine%</a>
             </td>
             <td>
                 Translations for <a href="https://getmoonshine.app">%repository-title-moonshine%</a>
