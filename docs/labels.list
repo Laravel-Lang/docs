@@ -38,4 +38,5 @@
     <secondary-label id="package-config" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-translator" name="unknown" color="purple">Latest version is unknown</secondary-label>
     <secondary-label id="package-moonshine" name="unknown" color="purple">Latest version is unknown</secondary-label>
+    <secondary-label id="package-starter-kits" name="unknown" color="purple">Latest version is unknown</secondary-label>
 </labels>

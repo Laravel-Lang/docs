@@ -11,10 +11,12 @@
     </tip>
 
     <list>
+        <li><a href="statuses-starter-kits.md" /></li>
         <li><a href="statuses-lang.md" /></li>
         <li><a href="statuses-actions.md" /></li>
         <li><a href="statuses-attributes.md" /></li>
         <li><a href="statuses-http-statuses.md" /></li>
+        <li><a href="statuses-moonshine.md" /></li>
     </list>
 
 </topic>

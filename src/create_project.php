@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use LaravelLang\LocaleList\Locale;
+use LaravelLang\NativeLocaleNames\LocaleNames;
 
 require 'autoload.php';
 
@@ -48,10 +49,10 @@ function createPage(string $stub, string $target, string $project, string $packa
 
 function createStatusPages(string $project, string $package): void
 {
-    foreach (Locale::cases() as $locale) {
-        createPage('statuses-page.md', "statuses-$package-$locale->value.md", $project, $package, [
-            '{localeName}' => $locale->name,
-            '{locale}'     => $locale->value,
+    foreach (LocaleNames::get() as $code => $name) {
+        createPage('statuses-page.md', "statuses-$package-$code.md", $project, $package, [
+            '{localeName}' => $name,
+            '{locale}'     => $code,
         ]);
     }
 }
