@@ -1,0 +1,41 @@
+{
+    "$schema": "https://laravel-ide.com/schema/laravel-ide-v2.json",
+    "completions": [
+        {
+            "complete": "directoryFiles",
+            "condition": [
+                {
+                    "functionNames": [
+                        "createPage"
+                    ],
+                    "place": "parameter",
+                    "parameters": [
+                        1
+                    ]
+                }
+            ],
+            "options": {
+                "directory": "stubs",
+                "recursive": true
+            }
+        },
+        {
+            "complete": "directoryFiles",
+            "condition": [
+                {
+                    "functionNames": [
+                        "pushToList"
+                    ],
+                    "place": "parameter",
+                    "parameters": [
+                        1
+                    ]
+                }
+            ],
+            "options": {
+                "directory": "docs",
+                "recursive": false
+            }
+        }
+    ]
+}

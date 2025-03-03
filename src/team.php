@@ -143,6 +143,7 @@ $packages = [
     'statuses-attributes'    => 'Attributes',
     'statuses-http-statuses' => 'HTTP Statuses',
     'statuses-moonshine'     => 'MoonShine Admin Panel',
+    'statuses-starter-kits'  => 'Starter Kits',
 ];
 
 ksort($team);

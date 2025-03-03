@@ -64,7 +64,7 @@
         <toc-element topic="plugins-community.topic" />
     </toc-element>
     <toc-element topic="statuses.topic">
-        <toc-element sort-children="ascending" toc-title="Lang" topic="statuses-lang.md">
+        <toc-element toc-title="Lang" topic="statuses-lang.md" sort-children="ascending">
             <toc-element topic="statuses-lang-af.md" />
             <toc-element topic="statuses-lang-ak.md" />
             <toc-element topic="statuses-lang-am.md" />

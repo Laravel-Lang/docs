@@ -14,8 +14,12 @@ if (empty($argv[1])) {
 $packages = array_map(fn (string $name) => 'statuses_' . $name . '_', [
     'actions',
     'attributes',
+    'http-statuses',
     'http_statuses',
     'lang',
+    'moonshine',
+    'starter-kits',
+    'starter_kits',
 ]);
 
 $path = __DIR__ . '/../' . $argv[1] . '/';
