@@ -26,6 +26,7 @@ function translate(Xml $dom, DOMElement &$chapter, string $locale, string $text)
         Locale::Bhojpuri->value          => 'bho',
         Locale::Bosnian->value           => 'bs',
         Locale::Bulgarian->value         => 'bg',
+        Locale::Canada->value            => 'en_CA',
         Locale::Catalan->value           => 'ca',
         Locale::Cebuano->value           => 'ceb',
         Locale::CentralKhmer->value      => 'km',
@@ -163,7 +164,7 @@ $snippet = $dom->makeItem('snippet', '', ['id' => 'available-locales']);
 foreach (Locale::values() as $locale) {
     echo $locale . '...' . PHP_EOL;
 
-    $english = LocaleNames::get('en')[$locale];
+    $english   = LocaleNames::get('en')[$locale];
     $localized = LocaleNames::get($locale)[$locale];
 
     $chapter = $dom->makeItem('chapter', '', [
