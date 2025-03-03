@@ -71,7 +71,7 @@ function pushToList(string $filename, string $search, iterable|string $replace, 
     file_put_contents(__DIR__ . '/../docs/' . $filename, $content);
 }
 
-function pushToMenu(string $project, string $package): void
+function pushToStatusesMenu(string $project, string $package): void
 {
     $items = collect(Locale::values())
         ->sort()
@@ -88,12 +88,20 @@ function pushToMenu(string $project, string $package): void
     pushToList('laravel-lang.tree', '<toc-element topic="statuses.topic">', $items, true);
 }
 
+function pushToPackagesMenu(string $package): void
+{
+    $item = "        <toc-element topic=\"packages-$package.topic\" />";
+
+    pushToList('laravel-lang.tree', '<toc-element topic="packages.topic">', $item, true);
+}
+
 // Run
 createPage('packages.xml', "packages-$package.topic", $project, $package);
 createPage('statuses-main.md', "statuses-$package.md", $project, $package);
 
 createStatusPages($project, $package);
-pushToMenu($project, $package);
+pushToStatusesMenu($project, $package);
+pushToPackagesMenu($package);
 
 pushToList(
     'labels.list',

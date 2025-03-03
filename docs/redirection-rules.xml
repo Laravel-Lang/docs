@@ -6,24 +6,4 @@
         <accepts>page.html</accepts>
     </rule>
     -->
-    <rule id="1dfdc619">
-        <description>Created after removal of "Getting Started" from Laravel Lang</description>
-        <accepts>getting-started.html</accepts>
-    </rule>
-    <rule id="5bf90f96">
-        <description>Created after removal of "The Basics" from Laravel Lang</description>
-        <accepts>basics.html</accepts>
-    </rule>
-    <rule id="485c6e10">
-        <description>Created after removal of "Localizations" from Laravel Lang</description>
-        <accepts>localizations.html</accepts>
-    </rule>
-    <rule id="6b6769ff">
-        <description>Created after removal of "installation" from Laravel Lang</description>
-        <accepts>installation.html</accepts>
-    </rule>
-    <rule id="48a6457a">
-        <description>Created after removal of "MoonShine Admin Panel" from Laravel Lang</description>
-        <accepts>packages-moonshine-admin-panel.html</accepts>
-    </rule>
 </rules>

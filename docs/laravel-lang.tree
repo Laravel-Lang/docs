@@ -29,7 +29,7 @@
         <toc-element toc-title="Our Team" topic="our-team.topic" />
         <toc-element toc-title="License" topic="license.topic" />
     </toc-element>
-    <toc-element topic="introduction.topic" accepts-web-file-names-ref="1dfdc619">
+    <toc-element topic="introduction.topic">
         <toc-element topic="basic-usage.topic" />
         <toc-element topic="configuration.topic" />
         <toc-element topic="available-locales-list.topic" />
@@ -40,7 +40,7 @@
         <toc-element topic="usage-reset-locales.topic" />
         <toc-element topic="usage-remove-locales.topic" />
     </toc-element>
-    <toc-element topic="packages.topic" accepts-web-file-names-ref="6b6769ff">
+    <toc-element topic="packages.topic">
         <toc-element topic="packages-common.topic" />
         <toc-element topic="packages-routes.topic" />
         <toc-element topic="packages-models.topic" />
@@ -52,7 +52,7 @@
         <toc-element topic="packages-native-locale-names.topic" />
         <toc-element topic="packages-native-country-names.topic" />
         <toc-element topic="packages-native-currency-names.topic" />
-        <toc-element topic="packages-moonshine.topic" accepts-web-file-names-ref="48a6457a" />
+        <toc-element topic="packages-moonshine.topic" />
         <toc-element topic="packages-publisher.topic" />
         <toc-element topic="packages-translator.topic" />
         <toc-element topic="packages-locale-list.topic" />
