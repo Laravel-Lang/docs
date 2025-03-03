@@ -30,6 +30,7 @@ if (! $package) {
  * 1. Add package to `src/clean_algolia.php`.
  * 2. Add package to `src/statuses.php`.
  * 3. Add package to `src/team.php`.
+ * 4. Add new `composer clone` script rules.
  */
 
 function createPage(string $stub, string $target, string $project, string $package, array $replaces = []): void

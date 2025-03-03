@@ -23,6 +23,7 @@
         "dragon-code/xml-core": "^2.3",
         "guzzlehttp/guzzle": "^7.8",
         "laravel-lang/common": "^6.5",
+        "laravel-lang/starter-kits": "@dev",
         "laravel-lang/translator": "^1.0@alpha",
         "stichoza/google-translate-php": "^5.1.3",
         "symfony/var-dumper": "^7.1.1"
@@ -47,11 +48,13 @@
             "rm -rf tmp/http-statuses",
             "rm -rf tmp/lang",
             "rm -rf tmp/moonshine",
+            "rm -rf tmp/starter-kits",
             "git clone --no-tags --single-branch https://github.com/Laravel-Lang/actions.git tmp/actions",
             "git clone --no-tags --single-branch https://github.com/Laravel-Lang/attributes.git tmp/attributes",
             "git clone --no-tags --single-branch https://github.com/Laravel-Lang/http-statuses.git tmp/http-statuses",
             "git clone --no-tags --single-branch https://github.com/Laravel-Lang/lang.git tmp/lang",
-            "git clone --no-tags --single-branch https://github.com/Laravel-Lang/moonshine.git tmp/moonshine"
+            "git clone --no-tags --single-branch https://github.com/Laravel-Lang/moonshine.git tmp/moonshine",
+            "git clone --no-tags --single-branch https://github.com/Laravel-Lang/starter-kits.git tmp/starter-kits"
         ]
     }
 }
