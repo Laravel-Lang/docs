@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Carbon\Carbon;
 use DragonCode\Core\Xml\Facades\Xml;
 use GuzzleHttp\Client;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use LaravelLang\LocaleList\Locale;
 
@@ -212,8 +213,18 @@ $activeAccounts = [];
 function filterPeoples(array $accounts, &$activeAccounts, $packages): array
 {
     return array_filter($accounts, static function ($account) use (&$activeAccounts, $packages) {
-        if (in_array($account, $activeAccounts, true)) {
-            return true;
+        if (array_key_exists($account, $activeAccounts)) {
+            return $activeAccounts[$account];
+        }
+
+        if ($activity = request("/users/$account/events")) {
+            $date = collect($activity)
+                ->filter(static fn (array $item) => Str::startsWith(Arr::get($item, 'repo.name'), 'Laravel-Lang/'))
+                ->max('created_at');
+
+            if ($date && Carbon::parse($date)->gt(Carbon::now()->subYear())) {
+                return $activeAccounts[$account] = true;
+            }
         }
 
         foreach (array_keys($packages) as $package) {
@@ -223,14 +234,12 @@ function filterPeoples(array $accounts, &$activeAccounts, $packages): array
                 $date = collect($activity)->max('commit.author.date');
 
                 if (Carbon::parse($date)->gt(Carbon::now()->subYear())) {
-                    $activeAccounts[] = $account;
-
-                    return true;
+                    return $activeAccounts[$account] = true;
                 }
             }
         }
 
-        return false;
+        return $activeAccounts[$account] = false;
     });
 }
 
