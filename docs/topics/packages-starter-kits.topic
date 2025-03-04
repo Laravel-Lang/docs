@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Starter Kits" id="packages-starter-kits">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Starter Kits" id="packages-starter-kits">
 
     <show-structure depth="2" />
 
@@ -41,6 +42,20 @@
 
     <chapter title="Usage" id="usage">
         <link-summary>Usage information for the %repository-title-starter-kits% package</link-summary>
+
+        <note>
+            <p>
+                For <a href="https://laravel.com/starter-kits">Laravel Starter Kits</a>
+                translation key publishing to work properly, do not rename the application name specified
+                in the `name` key of the `composer.json` file.
+                Otherwise, Starter Kits translations will not be installed.
+            </p>
+            <list>
+                <li><code>laravel/livewire-starter-kit</code></li>
+                <li><code>laravel/react-starter-kit</code></li>
+                <li><code>laravel/vue-starter-kit</code></li>
+            </list>
+        </note>
 
         <include from="library-descriptions.topic" element-id="now-use-update-locales" />
         <include from="library-needs.topic" element-id="library-needs-locales-facade" />
