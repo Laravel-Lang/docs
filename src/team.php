@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+use Carbon\Carbon;
 use DragonCode\Core\Xml\Facades\Xml;
+use GuzzleHttp\Client;
+use Illuminate\Support\Str;
 use LaravelLang\LocaleList\Locale;
 
 require 'autoload.php';
@@ -148,6 +151,29 @@ $packages = [
 
 ksort($team);
 
+function request(string $uri, ?array $default = null): ?array
+{
+    try {
+        $client = new Client([
+            'base_uri' => 'https://api.github.com',
+            'headers'  => [
+                'Authorization' => 'Bearer ' . ($_SERVER['COMPOSER_TOKEN'] ?? ''),
+            ],
+        ]);
+
+        $response = $client->get($uri);
+
+        if ($response->getStatusCode() < 400) {
+            return json_decode($response->getBody()->getContents(), true);
+        }
+
+        return $default;
+    }
+    catch (Throwable) {
+        return $default;
+    }
+}
+
 $dom = Xml::init('topic', [
     'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
 
@@ -181,8 +207,35 @@ $block = function (DOMNode $item) use ($dom) {
 
 $break = fn () => $dom->makeItem('br', '');
 
-foreach ($team as $locale => $peoples) {
-    if (empty($peoples)) {
+$activeAccounts = [];
+
+function filterPeoples(array $accounts, &$activeAccounts, $packages): array
+{
+    return array_filter($accounts, static function ($account) use (&$activeAccounts, $packages) {
+        if (in_array($account, $activeAccounts, true)) {
+            return true;
+        }
+
+        foreach (array_keys($packages) as $package) {
+            $repository = Str::after($package, 'statuses-');
+
+            if ($activity = request("/repos/Laravel-Lang/$repository/commits?author=$account")) {
+                $date = collect($activity)->max('commit.author.date');
+
+                if (Carbon::parse($date)->gt(Carbon::now()->subYear())) {
+                    $activeAccounts[] = $account;
+
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    });
+}
+
+foreach ($team as $locale => $accounts) {
+    if (! $peoples = filterPeoples($accounts, $activeAccounts, $packages)) {
         continue;
     }
 
