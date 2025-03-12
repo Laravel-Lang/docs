@@ -72,13 +72,6 @@ jobs:
                         artifacts/report.json
                     retention-days: 7
 
-            -   name: Upload search indexes
-                uses: actions/upload-artifact@v4
-                with:
-                    name: ${{ env.ARTIFACT_INDEXES }}
-                    path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
-                    retention-days: 7
-
     test:
         needs: build
         name: Testing
