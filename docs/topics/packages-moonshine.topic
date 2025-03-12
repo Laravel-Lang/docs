@@ -7,9 +7,9 @@
 
     <show-structure depth="2"/>
 
-    <link-summary>Translations for %repository-title-moonshine%</link-summary>
-    <card-summary>Translations for %repository-title-moonshine%</card-summary>
-    <web-summary>Translations for %repository-title-moonshine%</web-summary>
+    <link-summary>Translations for %repository-title-moonshine% admin panel</link-summary>
+    <card-summary>Translations for %repository-title-moonshine% admin panel</card-summary>
+    <web-summary>Translations for %repository-title-moonshine% admin panel</web-summary>
 
     <primary-label ref="stable" />
     <secondary-label ref="package-moonshine" />
