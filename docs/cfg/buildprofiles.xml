@@ -13,10 +13,10 @@
         <color-preset>contrast</color-preset>
         <primary-color>frozen</primary-color>
         <web-root>https://laravel-lang.com</web-root>
-        <enable-browser-edits>true</enable-browser-edits>
-        <browser-edits-url>
+        <enable-contribution>true</enable-contribution>
+        <contribute-url>
             https://github.com/Laravel-Lang/docs/edit/main/docs/
-        </browser-edits-url>
+        </contribute-url>
         <custom-favicons>
             favicon.svg,favicon.svg,favicon.svg,favicon.svg
         </custom-favicons>
@@ -31,11 +31,17 @@
             <og-image>https://raw.githubusercontent.com/Laravel-Lang/docs/main/docs/images/social-logo.png</og-image>
         </variables>
     </build-profile>
-    <sitemap priority="0.5" change-frequency="weekly"/>
+    <sitemap priority="0.5" change-frequency="weekly" />
     <footer>
-        <social type="blog" href="https://boosty.to/laravel-lang">
-            %instance% on Boosty
+        <social type="github" href="https://github.com/Laravel-Lang/common">
+            GitHub
         </social>
+        <social type="telegram" href="https://t.me/addlist/l0XGtvEIBiljMTMy">
+            Telegram
+        </social>
+        <link href="https://boosty.to/laravel-lang">
+            Boosty
+        </link>
         <link href="https://github.com/Laravel-Lang/common">
             GitHub
         </link>

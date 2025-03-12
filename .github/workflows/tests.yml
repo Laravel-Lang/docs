@@ -11,12 +11,12 @@ permissions: read-all
 env:
     COMPOSER_TOKEN: ${{ secrets.COMPOSER_TOKEN }}
     INSTANCE: docs/laravel-lang
-    ARTIFACT: webHelpLARAVEL-LANG2-all.zip
-    BUILDER_VERSION: 243.22562
+    ARTIFACT_DOCS: webHelpLARAVEL-LANG2-all.zip
+    BUILDER_VERSION: 2025.03.8312
 
 jobs:
     build:
-        name: Build Application
+        name: Build application
         runs-on: ubuntu-latest
 
         steps:
@@ -37,16 +37,11 @@ jobs:
                 run: composer update --no-progress --no-interaction
 
             -   name: Clone projects
+                run: composer clone
+
+            -   name: Update Team
                 run: |
-                    rm -rf tmp/actions
-                    rm -rf tmp/attributes
-                    rm -rf tmp/http-statuses
-                    rm -rf tmp/lang
-                    
-                    git clone --no-tags --single-branch https://github.com/Laravel-Lang/actions.git tmp/actions
-                    git clone --no-tags --single-branch https://github.com/Laravel-Lang/attributes.git tmp/attributes
-                    git clone --no-tags --single-branch https://github.com/Laravel-Lang/http-statuses.git tmp/http-statuses
-                    git clone --no-tags --single-branch https://github.com/Laravel-Lang/lang.git tmp/lang
+                    php src/team.php
 
             -   name: Download versions
                 run: |
@@ -65,7 +60,7 @@ jobs:
                 uses: JetBrains/writerside-github-action@v4
                 with:
                     instance: ${{ env.INSTANCE }}
-                    artifact: ${{ env.ARTIFACT }}
+                    artifact: ${{ env.ARTIFACT_DOCS }}
                     docker-version: ${{ env.BUILDER_VERSION }}
 
             -   name: Upload artifacts
@@ -73,15 +68,8 @@ jobs:
                 with:
                     name: docs
                     path: |
-                        artifacts/${{ env.ARTIFACT }}
+                        artifacts/${{ env.ARTIFACT_DOCS }}
                         artifacts/report.json
-                    retention-days: 7
-
-            -   name: Upload search indexes
-                uses: actions/upload-artifact@v4
-                with:
-                    name: algolia-indexes
-                    path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
                     retention-days: 7
 
     test:

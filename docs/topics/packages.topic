@@ -29,6 +29,7 @@
         <secondary>
             <title>Localization</title>
 
+            <a href="packages-starter-kits.topic" />
             <a href="packages-lang.topic" />
             <a href="packages-actions.topic" />
             <a href="packages-attributes.topic" />
@@ -36,6 +37,7 @@
             <a href="packages-native-locale-names.topic" />
             <a href="packages-native-country-names.topic" />
             <a href="packages-native-currency-names.topic" />
+            <a href="packages-moonshine.topic" />
 
         </secondary>
 
