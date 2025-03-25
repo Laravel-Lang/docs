@@ -24,7 +24,7 @@
         </p>
         <code-block
             lang="php"
-            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
+            src="%config-url%"
             include-lines="7-"
             collapsed-title="Show configuration"
             collapsible="true"
@@ -54,8 +54,8 @@
 
         <code-block
             lang="php"
-            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="8,17,246"
+            src="%config-url%"
+            include-lines="8,17,271"
         />
     </chapter>
 
@@ -97,8 +97,8 @@
 
         <code-block
             lang="php"
-            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="8,27,246"
+            src="%config-url%"
+            include-lines="8,27,271"
         />
     </chapter>
 
@@ -144,8 +144,8 @@
 
         <code-block
             lang="php"
-            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="8,38-41,246"
+            src="%config-url%"
+            include-lines="8,38-41,271"
         />
     </chapter>
 
@@ -171,8 +171,8 @@
 
         <code-block
             lang="php"
-            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="6,7-8,52-91,246"
+            src="%config-url%"
+            include-lines="6,7-8,52-91,271"
             collapsed-title="Show settings"
             collapsible="true"
         />
@@ -197,8 +197,8 @@
         </p>
         <code-block
             lang="php"
-            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="5,7-8,99,112-118,125-126,133-135,246"
+            src="%config-url%"
+            include-lines="5,7-8,99,112-118,125-126,133-135,138-139,142-147,151-160,271"
         />
     </chapter>
 
@@ -213,8 +213,8 @@
         </p>
         <code-block
             lang="php"
-            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="8,137-174,246"
+            src="%config-url%"
+            include-lines="8,168,179,188-190,198-199,271"
         />
 
         <p>
@@ -243,8 +243,8 @@
         </p>
         <code-block
             lang="php"
-            src="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php"
-            include-lines="8,176-245,246"
+            src="%config-url%"
+            include-lines="8,209,220-252,268-"
         />
     </chapter>
 </topic>
