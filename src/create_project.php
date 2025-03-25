@@ -48,6 +48,16 @@ function createPage(string $stub, string $target, string $project, string $packa
     echo "- The $target file was created\n";
 }
 
+function createStatusPages(string $project, string $package): void
+{
+    foreach (LocaleNames::get() as $code => $name) {
+        createPage('statuses-page.md', "statuses-$package-$code.md", $project, $package, [
+            '{localeName}' => $name,
+            '{locale}'     => $code,
+        ]);
+    }
+}
+
 function pushToList(string $filename, string $search, iterable|string $replace, bool $prependSearch = false): void
 {
     $content = file_get_contents(__DIR__ . '/../docs/' . $filename);
@@ -80,11 +90,20 @@ function pushToStatusesMenu(string $project, string $package): void
     pushToList('laravel-lang.tree', '<toc-element topic="statuses.topic">', $items, true);
 }
 
+function pushToPackagesMenu(string $package): void
+{
+    $item = "        <toc-element topic=\"packages-$package.topic\" />";
+
+    pushToList('laravel-lang.tree', '<toc-element topic="packages.topic">', $item, true);
+}
+
 // Run
 createPage('packages.xml', "packages-$package.topic", $project, $package);
 createPage('statuses-main.md', "statuses-$package.md", $project, $package);
 
+createStatusPages($project, $package);
 pushToStatusesMenu($project, $package);
+pushToPackagesMenu($package);
 
 pushToList(
     'labels.list',
