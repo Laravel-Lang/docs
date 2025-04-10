@@ -14,6 +14,7 @@
         <primary-color>frozen</primary-color>
         <web-root>https://laravel-lang.com</web-root>
         <enable-contribution>true</enable-contribution>
+        <code-soft-wrap>true</code-soft-wrap>
         <contribute-url>
             https://github.com/Laravel-Lang/docs/edit/main/docs/
         </contribute-url>
