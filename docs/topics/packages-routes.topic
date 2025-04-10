@@ -475,9 +475,15 @@
 
         <chapter title="Via Localization Group" id="via_localization_group">
             <note>
-                The <code>localizedRoute</code> helper will only work correctly when combined with the route wrapping
-                <tooltip term="package-routes-route-groups">group</tooltip>
-                method.
+                <p>
+                    When the <code>localizedRoute</code> helper is called without using route
+                    <tooltip term="package-routes-route-groups">grouping</tooltip>
+                    , localization will be specified as a query parameter. For example,
+                </p>
+
+                <code-block lang="bash">
+                https://example.com/foo?locale=fr
+                </code-block>
             </note>
 
             <tip>
