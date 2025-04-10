@@ -474,6 +474,12 @@
         </chapter>
 
         <chapter title="Via Localization Group" id="via_localization_group">
+            <note>
+                The <code>localizedRoute</code> helper will only work correctly when combined with the route wrapping
+                <tooltip term="package-routes-route-groups">group</tooltip>
+                method.
+            </note>
+
             <tip>
                 <include
                     from="library-descriptions.topic"
@@ -534,11 +540,6 @@
             </p>
 
             <note>
-                <p>
-                    Since version <a href="https://github.com/Laravel-Lang/routes/releases/tag/1.5.0">1.5</a>,
-                    you can use the <code>localizedRoute</code> function call.
-                </p>
-
                 <code-block lang="php" src="packages-routes-auto-locale.php" include-lines="5-" />
 
                 <p>
@@ -546,8 +547,8 @@
                     <a href="https://laravel-idea.com/">Laravel Idea</a>, a plugin for
                     <a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a>:
                 </p>
-                
-                <img src="packages-route-idea-friendly.png" alt="routes idea-friendly"/>
+
+                <img src="packages-route-idea-friendly.png" alt="routes idea-friendly" />
             </note>
 
             <chapter title="Examples" id="via_localization_group_examples">

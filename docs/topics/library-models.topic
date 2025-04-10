@@ -27,10 +27,6 @@
             and <a href="packages-models.topic#usage">%repository-title-models%</a> projects in one application
             (<a href="https://youtu.be/mH76pGbpVu0">watch on YouTube</a>) :
         </p>
-        
-        <tip>
-            The video is relevant for version <code>1.3.0</code>.
-        </tip>
 
         <video src="https://youtu.be/mH76pGbpVu0" />
     </snippet>
