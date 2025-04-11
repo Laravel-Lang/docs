@@ -55,7 +55,7 @@
         <code-block
             lang="php"
             src="%config-url%"
-            include-lines="8,17,271"
+            include-lines="8,17,279"
         />
     </chapter>
 
@@ -98,7 +98,7 @@
         <code-block
             lang="php"
             src="%config-url%"
-            include-lines="8,27,271"
+            include-lines="8,27,279"
         />
     </chapter>
 
@@ -145,7 +145,7 @@
         <code-block
             lang="php"
             src="%config-url%"
-            include-lines="8,38-41,271"
+            include-lines="8,38-41,279"
         />
     </chapter>
 
@@ -172,7 +172,7 @@
         <code-block
             lang="php"
             src="%config-url%"
-            include-lines="6,7-8,52-91,271"
+            include-lines="6,7-8,52-91,279"
             collapsed-title="Show settings"
             collapsible="true"
         />
