@@ -31,8 +31,7 @@
         <a href="https://nova.laravel.com/">Nova (also Dusk Suite and Log Viewer)</a>,
         <a href="https://nova.laravel.com/">Nova</a> (also
         <a href="https://github.com/laravel/nova-dusk-suite">Dusk Suite</a>,
-        <a href="https://github.com/laravel/nova-log-viewer">Log Viewer</a> ),
-        <a href="https://spark.laravel.com/">Spark (Stripe, Paddle)</a>
+        <a href="https://github.com/laravel/nova-log-viewer">Log Viewer</a> )
         and <a href="https://github.com/laravel/ui">UI</a>
     </snippet>
 
@@ -49,7 +48,6 @@
                 <a href="https://github.com/laravel/nova-log-viewer">Log Viewer</a>
                 )
             </li>
-            <li><a href="https://spark.laravel.com">Laravel Spark (Stripe, Paddle)</a></li>
             <li><a href="https://github.com/laravel/ui/">Laravel UI</a></li>
             <li>and other</li>
         </list>

@@ -8,9 +8,9 @@
 
     <show-structure depth="2" />
 
-    <link-summary>Translations for Laravel Framework, Laravel Jetstream, Laravel Fortify, Laravel Breeze, Laravel Cashier, Laravel Nova, Laravel Spark and Laravel UI.</link-summary>
-    <card-summary>Translations for Laravel Framework, Laravel Jetstream, Laravel Fortify, Laravel Breeze, Laravel Cashier, Laravel Nova, Laravel Spark and Laravel UI.</card-summary>
-    <web-summary>Translations for Laravel Framework, Laravel Jetstream, Laravel Fortify, Laravel Breeze, Laravel Cashier, Laravel Nova, Laravel Spark and Laravel UI.</web-summary>
+    <link-summary>Translations for Laravel Framework, Laravel Jetstream, Laravel Fortify, Laravel Breeze, Laravel Cashier, Laravel Nova and Laravel UI.</link-summary>
+    <card-summary>Translations for Laravel Framework, Laravel Jetstream, Laravel Fortify, Laravel Breeze, Laravel Cashier, Laravel Nova and Laravel UI.</card-summary>
+    <web-summary>Translations for Laravel Framework, Laravel Jetstream, Laravel Fortify, Laravel Breeze, Laravel Cashier, Laravel Nova and Laravel UI.</web-summary>
 
     <primary-label ref="stable" />
     <secondary-label ref="package-lang" />
@@ -64,9 +64,13 @@
                 <td>8.2, 8.3, 8.4</td>
                 <td>16</td>
                 <td><code>^15.10</code></td>
-                <td>Breeze 2, Cashier Stripe 15, Fortify 1, Jetstream 5, Nova 4/5, Spark Paddle, Spark Stripe, UI 4
+                <td>Breeze 2, Cashier Stripe 15, Fortify 1, Jetstream 5, Nova 4/5, Spark Paddle *, Spark Stripe *, UI 4
                 </td>
-                <td><img src="%badge-supported%" alt="supported" /></td>
+                <td>
+                    <img src="%badge-supported%" alt="supported" />
+                    * Spark projects have been removed from the
+                    <a href="https://github.com/laravel">Laravel</a> organization on GitHub
+                </td>
             </tr>
             <tr>
                 <td><code>^11.0.7</code></td>

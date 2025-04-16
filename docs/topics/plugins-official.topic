@@ -20,7 +20,9 @@
                 <a href="packages-starter-kits.topic">%package-starter-kits%</a>
             </td>
             <td>
-                Translations for <a href="https://laravel.com/docs/12.x/starter-kits" target="_blank">Laravel Starter Kits</a>
+                Translations for <a
+                href="https://laravel.com/docs/12.x/starter-kits"
+                target="_blank">Laravel Starter Kits</a>
             </td>
         </tr>
         <tr>
@@ -28,7 +30,15 @@
                 <a href="packages-lang.topic">%package-lang%</a>
             </td>
             <td>
-                Laravel Framework, Jetstream , Fortify, Breeze, Cashier, Nova, Spark and UI
+                <p>
+                    Laravel Framework, Jetstream , Fortify, Breeze, Cashier, Nova, Spark* and UI
+                </p>
+                <p>
+                    <format style="italic">
+                        * Spark projects have been removed from the
+                        <a href="https://github.com/laravel">Laravel</a> organization on GitHub
+                    </format>
+                </p>
             </td>
         </tr>
         <tr>
