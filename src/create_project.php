@@ -87,14 +87,14 @@ function pushToStatusesMenu(string $project, string $package): void
             '        </toc-element>'
         );
 
-    pushToList('laravel-lang.tree', '<toc-element topic="statuses.topic">', $items, true);
+    pushToList('laravel-lang.tree', '<toc-element toc-title="Statuses">', $items, true);
 }
 
 function pushToPackagesMenu(string $package): void
 {
     $item = "        <toc-element topic=\"packages-$package.topic\" />";
 
-    pushToList('laravel-lang.tree', '<toc-element topic="packages.topic">', $item, true);
+    pushToList('laravel-lang.tree', '<toc-element toc-title="Packages">', $item, true);
 }
 
 // Run

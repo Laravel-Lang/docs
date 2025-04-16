@@ -40,7 +40,7 @@
         <toc-element topic="usage-reset-locales.topic" />
         <toc-element topic="usage-remove-locales.topic" />
     </toc-element>
-    <toc-element topic="packages.topic">
+    <toc-element toc-title="Packages">
         <toc-element topic="packages-starter-kits.topic" />
         <toc-element topic="packages-common.topic" />
         <toc-element topic="packages-routes.topic" />
@@ -59,12 +59,12 @@
         <toc-element topic="packages-locale-list.topic" />
         <toc-element topic="packages-json-fallback.topic" />
     </toc-element>
-    <toc-element topic="plugins.topic">
+    <toc-element toc-title="Plugins">
         <toc-element topic="plugins-installation.topic" />
         <toc-element topic="plugins-official.topic" />
         <toc-element topic="plugins-community.topic" />
     </toc-element>
-    <toc-element topic="statuses.topic">
+    <toc-element toc-title="Statuses">
         <toc-element toc-title="Starter Kits" topic="statuses-starter-kits.md" sort-children="ascending">
             <toc-element topic="statuses-starter-kits-af.md" />
             <toc-element topic="statuses-starter-kits-ak.md" />
