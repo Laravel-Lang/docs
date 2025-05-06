@@ -35,12 +35,6 @@
         </code-block>
     </snippet>
 
-    <snippet id="available-config-option">
-        <p>
-            This option is available in the <code>%config-filename%</code> file:
-        </p>
-    </snippet>
-
     <snippet id="route-caching-support">
         <note>
             <p>

@@ -22,9 +22,11 @@
     <var name="command-reset" value="php artisan lang:reset" />
     <var name="command-update" value="php artisan lang:update" />
     <var name="command-update-simple" value="lang:update" />
-    <var name="config-filename" value="config/localization.php" />
-    <var name="config-filename-basename" value="localization" />
-    <var name="config-url" value="https://raw.githubusercontent.com/Laravel-Lang/config/main/config/public.php" />
+    <var name="config-filename-main" value="config/localization.php" />
+    <var name="config-filename-models" value="config/localization-models.php" />
+    <var name="config-filename-routes" value="config/localization-routes.php" />
+    <var name="config-filename-punctuation" value="config/localization-punctuation.php" />
+    <var name="config-filename-translators" value="config/localization-translators.php" />
     <var name="install-actions" value="composer require --dev laravel-lang/actions" />
     <var name="install-attributes" value="composer require --dev laravel-lang/attributes" />
     <var name="install-common" value="composer require laravel-lang/common" />
@@ -66,6 +68,12 @@
     <var name="package-status-generator" value="laravel-lang/status-generator" />
     <var name="package-translator" value="laravel-lang/translator" />
     <var name="package-vendor-tag" value="localization" />
+    <var name="package-vendor-tag-all" value="localization-all" />
+    <var name="package-vendor-tag-main" value="localization" />
+    <var name="package-vendor-tag-models" value="localization-models" />
+    <var name="package-vendor-tag-punctuation" value="localization-punctuation" />
+    <var name="package-vendor-tag-routes" value="localization-routes" />
+    <var name="package-vendor-tag-translators" value="localization-translators" />
     <var name="repository-assign-bugs" value="andrey-helldar" />
     <var name="repository-bugs" value="common" />
     <var name="repository-label-actions" value="actions" />
