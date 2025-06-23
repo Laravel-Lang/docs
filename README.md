@@ -7,10 +7,6 @@
 See the [documentation](https://laravel-lang.com) for detailed installation
 and [usage](https://laravel-lang.com/manage-locales.html) instructions.
 
-## Communication
-
-We also have official [chats](https://t.me/addlist/l0XGtvEIBiljMTMy) in Telegram.
-
 ## Contributing
 
 Please see [CONTRIBUTING](https://laravel-lang.com/contributions.html) for details.
