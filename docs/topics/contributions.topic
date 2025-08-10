@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-        title="Contribution Guide" id="contributions">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Contribution Guide" id="contributions">
 
     <link-summary>Guide to helping developers develop %instance% projects</link-summary>
     <card-summary>Guide to helping developers develop %instance% projects</card-summary>
     <web-summary>Guide to helping developers develop %instance% projects</web-summary>
 
-    <show-structure depth="2"/>
+    <show-structure depth="2" />
 
     <p>
         Contributions are
@@ -148,25 +148,14 @@
     <chapter title="Code Style" id="code_style">
         <p>
             %team-name% follows the
-            <a href="https://www.php-fig.org/per/coding-style/">PER 2.0</a> coding standard and the
+            <a href="https://www.php-fig.org/per/coding-style/">PER</a> coding standard and the
             <a href="https://www.php-fig.org/psr/psr-4/">PSR-4</a> autoloading standard.
         </p>
         <p>
-            The easiest way to maintain style code is to use the
-            <a href="https://github.com/TheDragonCode/codestyler"><code>dragon-code/codestyler</code></a>
-            package.
-        </p>
-        <p>
-            You can install it globally using the console command:
+            To apply the formatting of the code style, follow the console command:
         </p>
         <code-block lang="bash">
-            composer global require dragon-code/codestyler
-        </code-block>
-        <p>
-            Then apply the code style by calling the console command <code>codestyle</code>:
-        </p>
-        <code-block lang="bash">
-            codestyle
+            composer style
         </code-block>
     </chapter>
 
