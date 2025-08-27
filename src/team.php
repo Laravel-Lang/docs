@@ -169,8 +169,7 @@ function request(string $uri, ?array $default = null): ?array
         }
 
         return $default;
-    }
-    catch (Throwable) {
+    } catch (Throwable) {
         return $default;
     }
 }

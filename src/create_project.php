@@ -26,7 +26,7 @@ if (! $package) {
 
 /*
  * Manual:
- * 
+ *
  * 1. Add package to `src/clean_algolia.php`.
  * 2. Add package to `src/statuses.php`.
  * 3. Add package to `src/team.php`.

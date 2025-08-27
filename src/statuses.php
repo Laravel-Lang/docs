@@ -60,8 +60,7 @@ function moveStatus(string $package, Locale $locale): void
             > All lines are translated 😊
             >
             {style="note"}
-            HTML
-        ,
+            HTML,
         $content
     );
 

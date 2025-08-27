@@ -10,8 +10,7 @@ class Example
 {
     public function __construct(
         protected TranslateService $translate
-    ) {
-    }
+    ) {}
 
     public function get1(): string
     {
