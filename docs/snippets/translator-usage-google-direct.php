@@ -10,8 +10,7 @@ class Example
 {
     public function __construct(
         protected Google $google
-    ) {
-    }
+    ) {}
 
     public function fromString(): string
     {

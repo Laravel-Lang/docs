@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     /*
     |--------------------------------------------------------------------------
@@ -16,7 +18,7 @@ return [
 
     // many rules
 
-    'uuid'       => 'The :attribute must be a valid UUID.',
+    'uuid' => 'The :attribute must be a valid UUID.',
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Language Lines
@@ -27,7 +29,7 @@ return [
     | specify a specific custom language line for a given attribute rule.
     |
     */
-    'custom'     => [
+    'custom' => [
         'name' => [
             'required' => 'Custom message 1',
             'string'   => 'Custom message 2',
