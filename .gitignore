@@ -18,6 +18,7 @@ vendor/
 *.REMOTE
 
 composer.lock
+package-lock.json
 
 sitemap.xml
 
