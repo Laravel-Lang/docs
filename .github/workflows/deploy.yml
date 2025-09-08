@@ -8,6 +8,8 @@ on:
     repository_dispatch:
         types:
             - docs
+    schedule:
+        - cron: '0 1 * * *'
 
 permissions:
     id-token: write
