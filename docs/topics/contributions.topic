@@ -176,7 +176,7 @@
             The compliance of the title with the established format is checked by a regular expression:
         </p>
         <code-block lang="bash">
-            /^(Draft:\s)?\[[a-zA-Z,_\s]+\]:\s.+/
+            /^(Draft:\s)?\[[a-zA-Z,_\s]+\]:\s.+$/
         </code-block>
     </chapter>
 
