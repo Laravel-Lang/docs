@@ -44,7 +44,7 @@
     <var name="install-translator" value="composer require laravel-lang/translator" />
     <var name="locale-many" value="fr de de_CH vi zh_CN" />
     <var name="locale-one" value="fr" />
-    <var name="locales-count" value="127" />
+    <var name="locales-count" value="128" />
     <var name="package-actions" value="laravel-lang/actions" />
     <var name="package-attributes" value="laravel-lang/attributes" />
     <var name="package-common" value="laravel-lang/common" />
