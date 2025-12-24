@@ -58,7 +58,7 @@
     <var name="package-models" value="laravel-lang/models" />
     <var name="package-moonshine" value="laravel-lang/moonshine" />
     <var name="package-native-country-names" value="laravel-lang/native-country-names" />
-    <var name="package-native-currency-names" value="laravel-lang/native-currency-name" />
+    <var name="package-native-currency-names" value="laravel-lang/native-currency-names" />
     <var name="package-native-locale-names" value="laravel-lang/native-locale-names" />
     <var name="package-publisher" value="laravel-lang/publisher" />
     <var name="package-routes" value="laravel-lang/routes" />
