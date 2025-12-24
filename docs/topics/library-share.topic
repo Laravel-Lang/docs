@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/html-entities.dtd">
+<topic
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" is-library="true" id="library-share" title="Library Share">
+
+    <snippet id="view_on_github">
+        <p>
+            <icon src="../images/github-mark.svg" height="16" />
+
+            <a href="https://github.com/%package%">
+                View on GitHub
+            </a>
+        </p>
+    </snippet>
+</topic>

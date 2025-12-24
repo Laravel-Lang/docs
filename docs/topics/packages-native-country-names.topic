@@ -15,6 +15,10 @@
     <primary-label ref="stable" />
     <secondary-label ref="package-native-country-names" />
 
+    <include from="library-share.topic" element-id="view_on_github">
+        <var name="package" value="%package-native-country-names%" />
+    </include>
+
     <tip>
         This package contains a list of localized country names.
     </tip>

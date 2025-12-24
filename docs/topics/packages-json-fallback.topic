@@ -15,6 +15,10 @@
     <primary-label ref="stable" />
     <secondary-label ref="package-json-fallback" />
 
+    <include from="library-share.topic" element-id="view_on_github">
+        <var name="package" value="%package-json-fallback%" />
+    </include>
+
     <include from="library-lists.topic" element-id="json-fallback-doesnt-need" />
 
     <chapter title="Installation" id="installation">
