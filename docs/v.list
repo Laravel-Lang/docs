@@ -112,5 +112,5 @@
     <var name="security-subject" value="Security%20error%20detected" />
     <var name="team-name" value="Laravel-Lang Team" />
     <var name="version-common-latest" value="6.0" />
-    <var name="year" value="2025" />
+    <var name="year" value="2026" />
 </vars>
