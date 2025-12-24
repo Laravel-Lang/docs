@@ -109,6 +109,7 @@
             <toc-element topic="statuses-starter-kits-he.md" />
             <toc-element topic="statuses-starter-kits-hi.md" />
             <toc-element topic="statuses-starter-kits-hr.md" />
+            <toc-element topic="statuses-starter-kits-ht.md" />
             <toc-element topic="statuses-starter-kits-hu.md" />
             <toc-element topic="statuses-starter-kits-hy.md" />
             <toc-element topic="statuses-starter-kits-id.md" />
@@ -366,6 +367,7 @@
             <toc-element topic="statuses-actions-he.md" />
             <toc-element topic="statuses-actions-hi.md" />
             <toc-element topic="statuses-actions-hr.md" />
+            <toc-element topic="statuses-actions-ht.md" />
             <toc-element topic="statuses-actions-hu.md" />
             <toc-element topic="statuses-actions-hy.md" />
             <toc-element topic="statuses-actions-id.md" />
@@ -494,6 +496,7 @@
             <toc-element topic="statuses-attributes-he.md" />
             <toc-element topic="statuses-attributes-hi.md" />
             <toc-element topic="statuses-attributes-hr.md" />
+            <toc-element topic="statuses-attributes-ht.md" />
             <toc-element topic="statuses-attributes-hu.md" />
             <toc-element topic="statuses-attributes-hy.md" />
             <toc-element topic="statuses-attributes-id.md" />
@@ -622,6 +625,7 @@
             <toc-element topic="statuses-http-statuses-he.md" />
             <toc-element topic="statuses-http-statuses-hi.md" />
             <toc-element topic="statuses-http-statuses-hr.md" />
+            <toc-element topic="statuses-http-statuses-ht.md" />
             <toc-element topic="statuses-http-statuses-hu.md" />
             <toc-element topic="statuses-http-statuses-hy.md" />
             <toc-element topic="statuses-http-statuses-id.md" />
@@ -750,6 +754,7 @@
             <toc-element topic="statuses-moonshine-he.md" />
             <toc-element topic="statuses-moonshine-hi.md" />
             <toc-element topic="statuses-moonshine-hr.md" />
+            <toc-element topic="statuses-moonshine-ht.md" />
             <toc-element topic="statuses-moonshine-hu.md" />
             <toc-element topic="statuses-moonshine-hy.md" />
             <toc-element topic="statuses-moonshine-id.md" />
