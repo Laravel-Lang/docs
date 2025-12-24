@@ -64,6 +64,7 @@
             "git clone --no-tags --single-branch https://github.com/Laravel-Lang/lang.git tmp/lang",
             "git clone --no-tags --single-branch https://github.com/Laravel-Lang/moonshine.git tmp/moonshine",
             "git clone --no-tags --single-branch https://github.com/Laravel-Lang/starter-kits.git tmp/starter-kits"
-        ]
+        ],
+        "style": "vendor/bin/pint --parallel"
     }
 }
