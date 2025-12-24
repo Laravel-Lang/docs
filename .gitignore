@@ -25,3 +25,6 @@ sitemap.xml
 
 *.zip
 *.tar.gz
+
+biome.json
+pint.json
