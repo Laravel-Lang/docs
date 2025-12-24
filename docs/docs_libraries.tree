@@ -3,8 +3,9 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="docs_libraries"
-                  name="docs_libraries" is-library="true" start-page="library-starting-page.topic">
+                  name="docs_libraries" is-library="true" start-page="library-share.topic">
 
+    <toc-element topic="library-share.topic" />
     <toc-element topic="library-starting-page.topic" />
     <toc-element topic="library-our-team.topic" />
     <toc-element topic="library-needs.topic" />

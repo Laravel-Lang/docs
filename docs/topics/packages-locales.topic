@@ -14,6 +14,10 @@
     <primary-label ref="stable" />
     <secondary-label ref="package-locales" />
 
+    <include from="library-share.topic" element-id="view_on_github">
+        <var name="package" value="%package-locales%" />
+    </include>
+
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-locales% package</link-summary>
 

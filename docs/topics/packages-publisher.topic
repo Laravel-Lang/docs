@@ -15,6 +15,10 @@
     <primary-label ref="stable" />
     <secondary-label ref="package-publisher" />
 
+    <include from="library-share.topic" element-id="view_on_github">
+        <var name="package" value="%package-publisher%" />
+    </include>
+
     <chapter title="Installation" id="installation">
         <link-summary>Installation information for the %repository-title-publisher% package</link-summary>
 
