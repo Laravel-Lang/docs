@@ -1,0 +1,10 @@
+# $schema: ../resources/schema.json
+
+image:
+    parameters:
+        icon: 'photograph'
+        packageManager: 'composer'
+        packageDev: true
+        packageName: 'laravel-lang/common'
+        title: 'Localize Application'
+        description: 'with Laravel Lang'
