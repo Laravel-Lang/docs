@@ -1,8 +1,8 @@
 # Laravel Lang
 
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://banners.beyondco.de/Localize%20Application.png?theme=dark&pattern=topography&style=style_2&fontSize=100px&images=photograph&packageManager=composer+require+--dev&packageName=laravel-lang%2Fcommon&description=with+Laravel+Lang&md=1&showWatermark=1">
-    <img src="https://banners.beyondco.de/Localize%20Application.png?theme=light&pattern=topography&style=style_2&fontSize=100px&images=photograph&packageManager=composer+require+--dev&packageName=laravel-lang%2Fcommon&description=with+Laravel+Lang&md=1&showWatermark=1" alt="Localize Application">
+    <source media="(prefers-color-scheme: dark)" srcset="https://banners.beyondco.de/Docs.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&icon=photograph&packageManager=composer+require&packageDev=true&packageName=laravel-lang%2Fdocs&description=with+Laravel+Lang&theme=dark&images=photograph">
+    <img src="https://banners.beyondco.de/Localize%20Application.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&icon=photograph&packageManager=composer+require&packageDev=true&packageName=laravel-lang%2Fdocs&description=with+Laravel+Lang&theme=light&images=photograph" alt="Docs">
 </picture>
 
 ## Documentation
