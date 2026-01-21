@@ -34,6 +34,7 @@
     'Galician' => 'gl',
     'Georgian' => 'ka',
     'German' => 'de',
+    'GermanAustria' => 'de_AT',
     'GermanSwitzerland' => 'de_CH',
     'Greek' => 'el',
     'Gujarati' => 'gu',

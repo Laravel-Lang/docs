@@ -47,6 +47,7 @@ function translate(Xml $dom, DOMElement &$chapter, string $locale, string $text)
         Locale::Galician->value          => 'gl',
         Locale::Georgian->value          => 'ka',
         Locale::German->value            => 'de',
+        Locale::GermanAustria->value     => 'de',
         Locale::GermanSwitzerland->value => 'de',
         Locale::Greek->value             => 'el',
         Locale::Gujarati->value          => 'gu',

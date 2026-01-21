@@ -48,6 +48,7 @@ $team = [
     Locale::Galician->value           => [],
     Locale::Georgian->value           => [],
     Locale::German->value             => ['sotten', 'WhereIsLucas'],
+    Locale::GermanAustria->value      => ['sotten', 'WhereIsLucas'],
     Locale::GermanSwitzerland->value  => ['sotten'],
     Locale::Greek->value              => ['michaelkonstantinou'],
     Locale::Gujarati->value           => [],

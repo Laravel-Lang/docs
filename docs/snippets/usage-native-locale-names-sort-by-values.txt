@@ -37,6 +37,7 @@
     'lg' => 'Ganda',
     'ka' => 'Georgian',
     'de' => 'German',
+    'de_AT' => 'German (Austria)',
     'de_CH' => 'German (Switzerland)',
     'el' => 'Greek',
     'gu' => 'Gujarati',

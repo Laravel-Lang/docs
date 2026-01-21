@@ -18,6 +18,7 @@
     'cy' => 'United Kingdom',
     'da' => 'Denmark',
     'de' => 'Germany',
+    'de_AT' => 'Austria',
     'de_CH' => 'Switzerland',
     'doi' => 'India',
     'ee' => 'Ghana',
