@@ -18,6 +18,7 @@
     'cy' => 'Y Deyrnas Unedig',
     'da' => 'Danmark',
     'de' => 'Deutschland',
+    'de_AT' => 'Österreich',
     'de_CH' => 'Schweiz',
     'doi' => 'भारत',
     'ee' => 'Ghana Nutome',

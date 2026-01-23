@@ -18,7 +18,7 @@
     <var name="command-remove" value="php artisan lang:rm" />
     <var name="command-remove-empty" value="php artisan lang:rm <locale>" />
     <var name="command-remove-force" value="php artisan lang:rm en --force" />
-    <var name="command-remove-many" value="php artisan lang:rm fr de de_CH vi zh_CN" />
+    <var name="command-remove-many" value="php artisan lang:rm fr de de_AT de_CH vi zh_CN" />
     <var name="command-reset" value="php artisan lang:reset" />
     <var name="command-update" value="php artisan lang:update" />
     <var name="command-update-simple" value="lang:update" />
@@ -42,7 +42,7 @@
     <var name="install-routes" value="composer require laravel-lang/routes" />
     <var name="install-starter-kits" value="composer require --dev laravel-lang/starter-kits" />
     <var name="install-translator" value="composer require laravel-lang/translator" />
-    <var name="locale-many" value="fr de de_CH vi zh_CN" />
+    <var name="locale-many" value="fr de de_AT de_CH vi zh_CN" />
     <var name="locale-one" value="fr" />
     <var name="locales-count" value="128" />
     <var name="package-actions" value="laravel-lang/actions" />

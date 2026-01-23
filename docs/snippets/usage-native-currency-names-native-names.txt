@@ -18,6 +18,7 @@
     'cy' => 'Punt Prydain',
     'da' => 'dansk krone',
     'de' => 'Euro',
+    'de_AT' => 'Euro',
     'de_CH' => 'Schweizer Franken',
     'doi' => 'भारती रपेऽ',
     'ee' => 'ghana siɖi',

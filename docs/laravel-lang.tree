@@ -85,6 +85,7 @@
             <toc-element topic="statuses-starter-kits-cy.md" />
             <toc-element topic="statuses-starter-kits-da.md" />
             <toc-element topic="statuses-starter-kits-de.md" />
+            <toc-element topic="statuses-starter-kits-de_AT.md" />
             <toc-element topic="statuses-starter-kits-de_CH.md" />
             <toc-element topic="statuses-starter-kits-doi.md" />
             <toc-element topic="statuses-starter-kits-ee.md" />
@@ -216,6 +217,7 @@
             <toc-element topic="statuses-lang-cy.md" />
             <toc-element topic="statuses-lang-da.md" />
             <toc-element topic="statuses-lang-de.md" />
+            <toc-element topic="statuses-lang-de_AT.md" />
             <toc-element topic="statuses-lang-de_CH.md" />
             <toc-element topic="statuses-lang-doi.md" />
             <toc-element topic="statuses-lang-ee.md" />
@@ -345,6 +347,7 @@
             <toc-element topic="statuses-actions-cy.md" />
             <toc-element topic="statuses-actions-da.md" />
             <toc-element topic="statuses-actions-de.md" />
+            <toc-element topic="statuses-actions-de_AT.md" />
             <toc-element topic="statuses-actions-de_CH.md" />
             <toc-element topic="statuses-actions-doi.md" />
             <toc-element topic="statuses-actions-ee.md" />
@@ -474,6 +477,7 @@
             <toc-element topic="statuses-attributes-cy.md" />
             <toc-element topic="statuses-attributes-da.md" />
             <toc-element topic="statuses-attributes-de.md" />
+            <toc-element topic="statuses-attributes-de_AT.md" />
             <toc-element topic="statuses-attributes-de_CH.md" />
             <toc-element topic="statuses-attributes-doi.md" />
             <toc-element topic="statuses-attributes-ee.md" />
@@ -603,6 +607,7 @@
             <toc-element topic="statuses-http-statuses-cy.md" />
             <toc-element topic="statuses-http-statuses-da.md" />
             <toc-element topic="statuses-http-statuses-de.md" />
+            <toc-element topic="statuses-http-statuses-de_AT.md" />
             <toc-element topic="statuses-http-statuses-de_CH.md" />
             <toc-element topic="statuses-http-statuses-doi.md" />
             <toc-element topic="statuses-http-statuses-ee.md" />
@@ -732,6 +737,7 @@
             <toc-element topic="statuses-moonshine-cy.md" />
             <toc-element topic="statuses-moonshine-da.md" />
             <toc-element topic="statuses-moonshine-de.md" />
+            <toc-element topic="statuses-moonshine-de_AT.md" />
             <toc-element topic="statuses-moonshine-de_CH.md" />
             <toc-element topic="statuses-moonshine-doi.md" />
             <toc-element topic="statuses-moonshine-ee.md" />
