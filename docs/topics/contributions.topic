@@ -110,7 +110,7 @@
             <p>
                 As a rule, all our projects already contain available localizations,
                 but if you want to suggest a new one,
-                <a href="https://github.com/Laravel-Lang/common/discussions/new?category=ideas&amp;title=I%20want%20to%20add%20a%20new%20localization">
+                <a href="https://github.com/orgs/Laravel-Lang/discussions/new?category=ideas&amp;title=I%20want%20to%20add%20a%20new%20localization">
                     write to us
                 </a>
                 about it.
@@ -120,7 +120,7 @@
         <chapter title="For third-party projects" id="for_third_party_projects">
             <tip>
                 To add a locale that is not in <code>%package-locale-list%</code>,
-                <a href="https://github.com/Laravel-Lang/common/discussions/new?category=ideas&amp;title=I%20want%20to%20add%20a%20new%20localization">
+                <a href="https://github.com/orgs/Laravel-Lang/discussions/new?category=ideas&amp;title=I%20want%20to%20add%20a%20new%20localization">
                     write to us
                 </a>.
             </tip>
