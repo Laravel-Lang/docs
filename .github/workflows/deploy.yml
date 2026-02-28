@@ -103,7 +103,7 @@ jobs:
 
         steps:
             -   name: Download docs artifact
-                uses: actions/download-artifact@v7
+                uses: actions/download-artifact@v8
                 with:
                     name: docs
                     path: artifacts
@@ -137,7 +137,7 @@ jobs:
                 run: composer update --no-progress --no-interaction
 
             -   name: Download search artifact
-                uses: actions/download-artifact@v7
+                uses: actions/download-artifact@v8
                 with:
                     name: ${{ env.ARTIFACT_INDEXES }}
 
@@ -197,12 +197,12 @@ jobs:
 
         steps:
             -   name: Download docs artifact
-                uses: actions/download-artifact@v7
+                uses: actions/download-artifact@v8
                 with:
                     name: docs
 
             -   name: Download robots artifact
-                uses: actions/download-artifact@v7
+                uses: actions/download-artifact@v8
                 with:
                     name: robots
 
@@ -241,7 +241,7 @@ jobs:
 
         steps:
             -   name: Download search artifact
-                uses: actions/download-artifact@v7
+                uses: actions/download-artifact@v8
                 with:
                     name: ${{ env.ARTIFACT_INDEXES_CLEARED }}
 
