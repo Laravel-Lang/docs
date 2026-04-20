@@ -14,142 +14,140 @@
 
     <chapter title="Publish" id="publish">
         <p>
-            Optionally, you can publish the config file with:
+            Optionally, you can publish the config files with:
         </p>
         <code-block lang="bash">
             php artisan vendor:publish --tag="%package-vendor-tag%"
         </code-block>
         <p>
-            This is the contents of the published <code>%config-filename%</code> file:
+            This command will publish the configuration files for all projects. To publish settings for specific packages, use the console commands:
         </p>
-        <code-block
-            lang="php"
-            src="%config-url%"
-            include-lines="7-"
-            collapsed-title="Show configuration"
-            collapsible="true"
-        />
-    </chapter>
-
-    <chapter title="Inline" id="inline">
-        <p>
-            The <code>inline</code> option determines what type of files to use when updating language files.
-        </p>
-
-        <list>
-            <li><code>true</code> means inline files will be used.</li>
-            <li><code>false</code> means that default files will be used.</li>
-        </list>
-
-        <p>
-            For example, the difference between them can be seen here:
-        </p>
-
-        <code-block>
-            The :attribute must be accepted. // default
-            This field must be accepted. // inline
-        </code-block>
-
-        <include from="library-descriptions.topic" element-id="available-config-option" />
-
-        <code-block
-            lang="php"
-            src="%config-url%"
-            include-lines="8,17,279"
-        />
-    </chapter>
-
-    <chapter title="Alignment" id="alignment">
-        <p>
-            The <code>align</code> option defines the alignment of values relative
-            to each other when processing localization files.
-        </p>
-
-        <p>
-            When updating files, all comments from the final files are automatically deleted.
-            Unfortunately, <a href="https://www.php.net/manual/en/function.var-export.php">var_export</a>
-            does not know how to work with comments.
-        </p>
-        <p>
-            Your file example:
-        </p>
-        <code-block lang="php" src="configuration-alignment-auth-before.php" include-lines="3-" />
-        <p>
-            An updated file like this:
-        </p>
-        <code-block lang="php" src="configuration-alignment-auth-after.php" include-lines="3-" />
-        <p>
-            and example of <code>validation.php</code> file:
-        </p>
-        <code-block
-            lang="php"
-            src="configuration-alignment-validation-before.php"
-            include-lines="3-"
-            collapsed-title="Show content"
-            collapsible="true"
-        />
-        <p>
-            This is what it will look like after the update:
-        </p>
-        <code-block lang="php" src="configuration-alignment-validation-after.php" include-lines="3-" />
-
-        <include from="library-descriptions.topic" element-id="available-config-option" />
-
-        <code-block
-            lang="php"
-            src="%config-url%"
-            include-lines="8,27,279"
-        />
-    </chapter>
-
-    <chapter title="Aliases" id="aliases">
-        <p>
-            If you want to name codes differently, such as <code>de-DE</code> instead of <code>de</code> or
-            <code>de-CH</code> instead of <code>de_CH</code>, you can define
-            <code>aliases</code> in the <a href="configuration.topic#aliases">configuration file</a>.
-        </p>
-        <p>
-            After that, all adding, updating, and deleting actions will automatically use the specified aliases in
-            the <code>%config-filename%</code> config file:
-        </p>
-
-        <code-block lang="php" src="usage-aliases.php" include-lines="3-" />
-
-        <p>
-            If the
-            <code>%config-filename%</code> file already exists, then you can add the aliases key in it and specify the
-            desired
-            <code>aliases</code> using a data array.
-        </p>
-        <p>
-            After this, you can, for example, add new localizations by specifying both the main code and its alias:
-        </p>
-
         <code-block lang="bash">
+            php artisan vendor:publish --tag="%package-vendor-tag-main%"
+            php artisan vendor:publish --tag="%package-vendor-tag-models%"
+            php artisan vendor:publish --tag="%package-vendor-tag-routes%"
+            php artisan vendor:publish --tag="%package-vendor-tag-punctuation%"
+            php artisan vendor:publish --tag="%package-vendor-tag-translators%"
+        </code-block>
+    </chapter>
+
+    <chapter title="Main" id="main">
+        <note>
+            Config filename is <code>%config-filename-main%</code>.
+        </note>
+
+        <code-block
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/2.x/config/main.php"
+            include-lines="5-"
+        />
+
+        <chapter title="Inline" id="inline">
+            <p>
+                The <code>inline</code> option determines what type of files to use when updating language files.
+            </p>
+
+            <list>
+                <li><code>true</code> means inline files will be used.</li>
+                <li><code>false</code> means that default files will be used.</li>
+            </list>
+
+            <p>
+                For example, the difference between them can be seen here:
+            </p>
+
+            <code-block>
+                The :attribute must be accepted. // default
+                This field must be accepted. // inline
+            </code-block>
+        </chapter>
+
+        <chapter title="Alignment" id="alignment">
+            <p>
+                The <code>align</code> option defines the alignment of values relative
+                to each other when processing localization files.
+            </p>
+
+            <p>
+                When updating files, all comments from the final files are automatically deleted.
+                Unfortunately, <a href="https://www.php.net/manual/en/function.var-export.php">var_export</a>
+                does not know how to work with comments.
+            </p>
+            <p>
+                Your file example:
+            </p>
+            <code-block lang="php" src="configuration-alignment-auth-before.php" include-lines="3-" />
+            <p>
+                An updated file like this:
+            </p>
+            <code-block lang="php" src="configuration-alignment-auth-after.php" include-lines="3-" />
+            <p>
+                and example of <code>validation.php</code> file:
+            </p>
+            <code-block
+                lang="php"
+                src="configuration-alignment-validation-before.php"
+                include-lines="3-"
+                collapsed-title="Show content"
+                collapsible="true"
+            />
+            <p>
+                This is what it will look like after the update:
+            </p>
+            <code-block lang="php" src="configuration-alignment-validation-after.php" include-lines="3-" />
+        </chapter>
+
+        <chapter title="Aliases" id="aliases">
+            <p>
+                If you want to name codes differently, such as <code>de-DE</code> instead of <code>de</code> or
+                <code>de-CH</code> instead of <code>de_CH</code>, you can define
+                <code>aliases</code> in the <a href="configuration.topic#aliases">configuration file</a>.
+            </p>
+            <p>
+                After that, all adding, updating, and deleting actions will automatically use the specified aliases in
+                the <code>%config-filename-main%</code> config file:
+            </p>
+
+            <code-block lang="php" src="usage-aliases.php" include-lines="3-" />
+
+            <p>
+                If the
+                <code>%config-filename-main%</code> file already exists, then you can add the aliases key in it and specify the
+                desired
+                <code>aliases</code> using a data array.
+            </p>
+            <p>
+                After this, you can, for example, add new localizations by specifying both the main code and its alias:
+            </p>
+
+            <code-block lang="bash">
             %command-add% de de_CH
         </code-block>
 
-        <p>
-            Installed locales will use the specified aliases as folder names for PHP translations and file names for
-            JSON translations:
-        </p>
+            <p>
+                Installed locales will use the specified aliases as folder names for PHP translations and file names for
+                JSON translations:
+            </p>
 
-        <code-block lang="plain text">
-            lang
-            de-CH
-            de-DE
-        </code-block>
-
-        <include from="library-descriptions.topic" element-id="available-config-option" />
-
-        <code-block
-            lang="php"
-            src="%config-url%"
-            include-lines="8,38-41,279"
-        />
+            <code-block lang="plain text">
+                lang
+                de-CH
+                de-DE
+            </code-block>
+        </chapter>
     </chapter>
 
     <chapter title="Smart Punctuation" id="smart_punctuation">
+        <note>
+            Config filename is <code>%config-filename-punctuation%</code>.
+        </note>
+
+        <code-block
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/2.x/config/punctuation.php"
+            include-lines="5-"
+        />
+
         <p>
             When updating translation keys, you can also enable intelligent converts ASCII quotes, dashes,
             and ellipses to their Unicode.
@@ -167,16 +165,6 @@
 
         <code-block lang="json" src="smart-punctuation-after.json" />
 
-        <include from="library-descriptions.topic" element-id="available-config-option" />
-
-        <code-block
-            lang="php"
-            src="%config-url%"
-            include-lines="6,7-8,52-91,279"
-            collapsed-title="Show settings"
-            collapsible="true"
-        />
-
         <p>
             You can also set different rules for any localization.
         </p>
@@ -186,36 +174,38 @@
     </chapter>
 
     <chapter title="Routes" id="routes">
+        <note>
+            Config filename is <code>%config-filename-routes%</code>.
+        </note>
+
+        <code-block
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/2.x/config/routes.php"
+            include-lines="5-"
+        />
+
         <p>
             When using the package to work with
             <a href="packages-routes.topic">routing</a>
             , you can override the default values of key names.
         </p>
-
-        <p>
-            This option is enabled in the <code>%config-filename%</code> file:
-        </p>
-        <code-block
-            lang="php"
-            src="%config-url%"
-            include-lines="5,7-8,99,112-118,125-126,134,142,145-147,150-155,159-168,279"
-        />
     </chapter>
 
     <chapter title="Models" id="models">
+        <note>
+            Config filename is <code>%config-filename-models%</code>.
+        </note>
+
+        <code-block
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/2.x/config/models.php"
+            include-lines="5-"
+        />
+
         <p>
             You can define default parameter values when using the
             <a href="packages-models.topic">%repository-title-models%</a> package.
         </p>
-
-        <p>
-            This setting available in the <code>%config-filename%</code> file:
-        </p>
-        <code-block
-            lang="php"
-            src="%config-url%"
-            include-lines="8,176,187,196-198,206-207,279"
-        />
 
         <p>
             The <code>suffix</code> parameter is used to specify
@@ -231,20 +221,21 @@
         </code-block>
     </chapter>
 
-    <chapter title="Translator" id="translator">
+    <chapter title="Translators" id="translators">
+        <note>
+            Config filename is <code>%config-filename-translators%</code>.
+        </note>
+
+        <code-block
+            lang="php"
+            src="https://raw.githubusercontent.com/Laravel-Lang/config/2.x/config/translators.php"
+            include-lines="5-"
+        />
+
         <p>
             Here you can not only activate default translators, but also create your own.
             You can read more about this on the
             <a href="packages-translator.topic">%repository-title-translator%</a> package information page.
         </p>
-
-        <p>
-            This setting available in the <code>%config-filename%</code> file:
-        </p>
-        <code-block
-            lang="php"
-            src="%config-url%"
-            include-lines="8,217,228-260,276-"
-        />
     </chapter>
 </topic>
