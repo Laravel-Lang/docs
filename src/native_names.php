@@ -19,8 +19,8 @@ require 'autoload.php';
 $pages = [
     // Locale
     ['usage-native-locale-names-localized-names.txt', fn () => LocaleNames::get(Locale::Bengali)],
-    ['usage-native-locale-names-native-names.txt', fn () => LocaleNames::get()],
-    ['usage-native-locale-names-sort-by-keys.txt', fn () => LocaleNames::get(Locale::English, LocalesSortBy::Key)],
+    ['usage-native-locale-names-native-names.txt', fn ()   => LocaleNames::get()],
+    ['usage-native-locale-names-sort-by-keys.txt', fn ()   => LocaleNames::get(Locale::English, LocalesSortBy::Key)],
     ['usage-native-locale-names-sort-by-values.txt', fn () => LocaleNames::get(Locale::English, LocalesSortBy::Value)],
     // Countries
     ['usage-native-country-names-localized-names.txt', fn () => flatten(CountryNames::get(Locale::Bengali))],
@@ -47,7 +47,7 @@ $pages = [
     // Locale List
     ['usage-list-of-locales-list-of-codes.txt', fn () => Locale::values()],
     ['usage-list-of-locales-list-of-titles.txt', fn () => Locale::names()],
-    ['usage-list-of-locales-list-of-names.txt', fn () => Locale::options()],
+    ['usage-list-of-locales-list-of-names.txt', fn ()  => Locale::options()],
 ];
 
 function flatten(Collection $items): array
